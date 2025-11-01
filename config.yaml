@@ -1,0 +1,53 @@
+# ===========================
+# 统一环境配置文件
+# 用于所有模块的Redis和基础配置
+# ===========================
+
+# Redis配置（统一）
+redis:
+  host: "localhost"
+  port: 6379
+  password: null  # 如果Redis设置了密码，请在此填写
+  
+  # 数据库分配（统一规范）
+  databases:
+    scraper_output: 0      # Scraper模块输出原始数据
+    cleaner_input: 0       # Cleaner模块从db0读取原始数据
+    cleaner_output: 1      # Cleaner模块输出清洗后数据到db1
+    processor_input: 1     # Processor模块从db1读取清洗数据
+    processor_output: 0    # Processor模块输出处理结果到db0（processed_data命名空间）
+    visualization: 0       # Visualization从db0读取processed_data
+
+  # 队列和键名（统一规范）
+  keys:
+    raw_data_queue: "data_queue"              # Scraper -> Cleaner 原始数据队列
+    cleaned_data_queue: "clean_data_queue"    # Cleaner -> Processor 清洗数据队列
+    processed_data: "processed_data"          # Processor -> Visualization 最终数据
+
+# 项目配置
+project:
+  name: "金融新闻实时趋势分析可视化系统"
+  version: "1.0.0"
+  python_env: "cs5481project"  # 统一虚拟环境名称
+
+# 日志配置（统一）
+logging:
+  level: "INFO"  # DEBUG, INFO, WARNING, ERROR
+  dir: "logs"
+  max_size_mb: 100
+  backup_count: 5
+
+# 模块启用配置
+modules:
+  scraper:
+    enabled: true
+    auto_start: false  # 是否自动启动
+  cleaner:
+    enabled: true
+    auto_start: false
+  processor:
+    enabled: true
+    auto_start: false
+  visualization:
+    enabled: true
+    auto_start: true  # 通常最后启动
