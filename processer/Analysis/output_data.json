@@ -1,803 +1,325 @@
 {
   "metadata": {
-    "timestamp": "2025-11-02 01:03:06",
+    "timestamp": "2025-11-02 18:58:14",
     "update_interval": 30,
     "data_version": "1.0",
     "news_sources": {
-      "rss": 817,
-      "reddit_post": 250,
+      "reddit_post": 1007,
+      "rss": 811,
+      "newsapi": 69,
+      "alphavantage": 39,
       "reddit_comment": 1,
       "stocktwits": 1
     }
   },
   "trending_keywords": [
     {
-      "keyword": "openai",
+      "keyword": "have",
       "rank": 1,
-      "current_frequency": 27,
-      "growth_rate": 43100.0,
+      "current_frequency": 886,
+      "growth_rate": 100.0,
       "trend_score": 1.0,
       "sentiment": {
         "positive": 0,
         "negative": 100,
-        "total_comments": 9
+        "total_comments": 398
       }
     },
     {
-      "keyword": "anthropic",
+      "keyword": "nbsp",
       "rank": 2,
-      "current_frequency": 17,
+      "current_frequency": 724,
       "growth_rate": 100.0,
-      "trend_score": 0.78,
+      "trend_score": 0.89,
       "sentiment": {
         "positive": 0,
         "negative": 100,
-        "total_comments": 2
-      }
-    },
-    {
-      "keyword": "has",
-      "rank": 3,
-      "current_frequency": 13,
-      "growth_rate": 1385.7,
-      "trend_score": 0.69,
-      "sentiment": {
-        "positive": 0,
-        "negative": 100,
-        "total_comments": 144
-      }
-    },
-    {
-      "keyword": "have",
-      "rank": 4,
-      "current_frequency": 8,
-      "growth_rate": 753.3,
-      "trend_score": 0.58,
-      "sentiment": {
-        "positive": 0,
-        "negative": 100,
-        "total_comments": 105
-      }
-    },
-    {
-      "keyword": "revenue",
-      "rank": 5,
-      "current_frequency": 8,
-      "growth_rate": 4700.0,
-      "trend_score": 0.58,
-      "sentiment": {
-        "positive": 0,
-        "negative": 100,
-        "total_comments": 40
-      }
-    },
-    {
-      "keyword": "business",
-      "rank": 6,
-      "current_frequency": 7,
-      "growth_rate": 2484.6,
-      "trend_score": 0.56,
-      "sentiment": {
-        "positive": 0,
-        "negative": 100,
-        "total_comments": 40
+        "total_comments": 325
       }
     },
     {
       "keyword": "from",
-      "rank": 7,
-      "current_frequency": 7,
-      "growth_rate": 546.2,
-      "trend_score": 0.56,
+      "rank": 3,
+      "current_frequency": 698,
+      "growth_rate": 100.0,
+      "trend_score": 0.87,
       "sentiment": {
         "positive": 0,
         "negative": 100,
-        "total_comments": 157
+        "total_comments": 376
+      }
+    },
+    {
+      "keyword": "like",
+      "rank": 4,
+      "current_frequency": 615,
+      "growth_rate": 100.0,
+      "trend_score": 0.82,
+      "sentiment": {
+        "positive": 0,
+        "negative": 100,
+        "total_comments": 316
+      }
+    },
+    {
+      "keyword": "about",
+      "rank": 5,
+      "current_frequency": 552,
+      "growth_rate": 100.0,
+      "trend_score": 0.77,
+      "sentiment": {
+        "positive": 0,
+        "negative": 100,
+        "total_comments": 287
       }
     },
     {
       "keyword": "market",
+      "rank": 6,
+      "current_frequency": 542,
+      "growth_rate": 100.0,
+      "trend_score": 0.77,
+      "sentiment": {
+        "positive": 0,
+        "negative": 100,
+        "total_comments": 372
+      }
+    },
+    {
+      "keyword": "has",
+      "rank": 7,
+      "current_frequency": 493,
+      "growth_rate": 100.0,
+      "trend_score": 0.73,
+      "sentiment": {
+        "positive": 0,
+        "negative": 100,
+        "total_comments": 335
+      }
+    },
+    {
+      "keyword": "stock",
       "rank": 8,
-      "current_frequency": 7,
-      "growth_rate": 366.7,
-      "trend_score": 0.56,
+      "current_frequency": 458,
+      "growth_rate": 100.0,
+      "trend_score": 0.71,
       "sentiment": {
         "positive": 0,
         "negative": 100,
-        "total_comments": 263
+        "total_comments": 342
       }
     },
     {
-      "keyword": "corporate",
+      "keyword": "out",
       "rank": 9,
-      "current_frequency": 7,
-      "growth_rate": 11100.0,
-      "trend_score": 0.56,
+      "current_frequency": 434,
+      "growth_rate": 100.0,
+      "trend_score": 0.69,
       "sentiment": {
         "positive": 0,
         "negative": 100,
-        "total_comments": 12
+        "total_comments": 546
       }
     },
     {
-      "keyword": "customers",
+      "keyword": "price",
       "rank": 10,
-      "current_frequency": 7,
-      "growth_rate": 33500.0,
-      "trend_score": 0.56,
+      "current_frequency": 424,
+      "growth_rate": 100.0,
+      "trend_score": 0.69,
       "sentiment": {
         "positive": 0,
         "negative": 100,
-        "total_comments": 9
+        "total_comments": 146
       }
     }
   ],
   "word_cloud": [
     {
-      "text": "openai",
-      "value": 27
-    },
-    {
-      "text": "anthropic",
-      "value": 17
-    },
-    {
-      "text": "has",
-      "value": 13
-    },
-    {
       "text": "have",
-      "value": 8
+      "value": 886
     },
     {
-      "text": "revenue",
-      "value": 8
-    },
-    {
-      "text": "business",
-      "value": 7
+      "text": "nbsp",
+      "value": 724
     },
     {
       "text": "from",
-      "value": 7
+      "value": 698
+    },
+    {
+      "text": "like",
+      "value": 615
+    },
+    {
+      "text": "about",
+      "value": 552
     },
     {
       "text": "market",
-      "value": 7
+      "value": 542
     },
     {
-      "text": "corporate",
-      "value": 7
+      "text": "has",
+      "value": 493
     },
     {
-      "text": "customers",
-      "value": 7
+      "text": "stock",
+      "value": 458
     },
     {
-      "text": "said",
-      "value": 6
+      "text": "out",
+      "value": 434
     },
     {
-      "text": "microsoft",
-      "value": 6
+      "text": "price",
+      "value": 424
     },
     {
       "text": "would",
-      "value": 5
+      "value": 381
     },
     {
-      "text": "model",
-      "value": 5
+      "text": "could",
+      "value": 373
     },
     {
-      "text": "mass",
-      "value": 5
+      "text": "time",
+      "value": 360
     },
     {
-      "text": "models",
-      "value": 4
+      "text": "after",
+      "value": 353
     },
     {
-      "text": "users",
-      "value": 4
+      "text": "get",
+      "value": 348
     },
     {
-      "text": "month",
-      "value": 4
+      "text": "new",
+      "value": 344
     },
     {
-      "text": "company",
-      "value": 4
+      "text": "over",
+      "value": 317
     },
     {
-      "text": "comes",
-      "value": 4
+      "text": "because",
+      "value": 314
+    },
+    {
+      "text": "one",
+      "value": 308
+    },
+    {
+      "text": "also",
+      "value": 301
     }
   ],
   "history_data": {
-    "openai": [
-      {
-        "timestamp": "2025-10-31 16:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-10-31 17:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 18:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 19:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-10-31 20:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 21:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 22:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 23:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 00:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 01:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 02:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 03:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 04:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 05:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 06:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 07:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 08:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 09:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 11:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 12:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 13:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 14:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 15:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 16:00:00",
-        "frequency": 1
-      }
-    ],
-    "anthropic": [
-      {
-        "timestamp": "2025-10-31 16:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 17:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 18:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 19:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 20:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 21:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 22:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 23:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 00:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 01:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 02:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 03:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 04:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 05:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 06:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 07:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 08:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 09:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 11:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 12:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 13:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 14:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 15:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 16:00:00",
-        "frequency": 1
-      }
-    ],
-    "has": [
-      {
-        "timestamp": "2025-10-31 16:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-10-31 17:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-10-31 18:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 19:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-10-31 20:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 21:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-10-31 22:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 23:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-11-01 00:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 01:00:00",
-        "frequency": 3
-      },
-      {
-        "timestamp": "2025-11-01 02:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-11-01 03:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-11-01 04:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 05:00:00",
-        "frequency": 3
-      },
-      {
-        "timestamp": "2025-11-01 06:00:00",
-        "frequency": 14
-      },
-      {
-        "timestamp": "2025-11-01 07:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 08:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 09:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 10:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 11:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 12:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 13:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-11-01 14:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 15:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 16:00:00",
-        "frequency": 3
-      }
-    ],
     "have": [
       {
-        "timestamp": "2025-10-31 16:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-10-31 17:00:00",
-        "frequency": 4
-      },
-      {
-        "timestamp": "2025-10-31 18:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 19:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-10-31 20:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-10-31 21:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-10-31 22:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-10-31 23:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-11-01 00:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 01:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 02:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 03:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 04:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-11-01 05:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-11-01 06:00:00",
-        "frequency": 8
-      },
-      {
-        "timestamp": "2025-11-01 07:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 08:00:00",
-        "frequency": 4
-      },
-      {
-        "timestamp": "2025-11-01 09:00:00",
-        "frequency": 1
-      },
-      {
         "timestamp": "2025-11-01 10:00:00",
         "frequency": 0
       },
       {
         "timestamp": "2025-11-01 11:00:00",
-        "frequency": 1
+        "frequency": 0
       },
       {
         "timestamp": "2025-11-01 12:00:00",
-        "frequency": 1
+        "frequency": 0
       },
       {
         "timestamp": "2025-11-01 13:00:00",
-        "frequency": 3
+        "frequency": 0
       },
       {
         "timestamp": "2025-11-01 14:00:00",
-        "frequency": 2
+        "frequency": 0
       },
       {
         "timestamp": "2025-11-01 15:00:00",
-        "frequency": 2
+        "frequency": 0
       },
       {
         "timestamp": "2025-11-01 16:00:00",
-        "frequency": 5
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 17:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 18:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 19:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 20:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 21:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 22:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 23:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 00:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 01:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 02:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 03:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 04:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 05:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 06:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 07:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 08:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 09:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 10:00:00",
+        "frequency": 398
       }
     ],
-    "revenue": [
-      {
-        "timestamp": "2025-10-31 16:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 17:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 18:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-10-31 19:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 20:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 21:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 22:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 23:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 00:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 01:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 02:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 03:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 04:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 05:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 06:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-11-01 07:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 08:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 09:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 11:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 12:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 13:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-11-01 14:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 15:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 16:00:00",
-        "frequency": 1
-      }
-    ],
-    "business": [
-      {
-        "timestamp": "2025-10-31 16:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 17:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 18:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 19:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-10-31 20:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 21:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-10-31 22:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 23:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 00:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 01:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 02:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 03:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 04:00:00",
-        "frequency": 3
-      },
-      {
-        "timestamp": "2025-11-01 05:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 06:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 07:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 08:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 09:00:00",
-        "frequency": 0
-      },
+    "nbsp": [
       {
         "timestamp": "2025-11-01 10:00:00",
         "frequency": 0
@@ -824,89 +346,89 @@
       },
       {
         "timestamp": "2025-11-01 16:00:00",
-        "frequency": 1
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 17:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 18:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 19:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 20:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 21:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 22:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 23:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 00:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 01:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 02:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 03:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 04:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 05:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 06:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 07:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 08:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 09:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 10:00:00",
+        "frequency": 325
       }
     ],
     "from": [
       {
-        "timestamp": "2025-10-31 16:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 17:00:00",
-        "frequency": 3
-      },
-      {
-        "timestamp": "2025-10-31 18:00:00",
-        "frequency": 3
-      },
-      {
-        "timestamp": "2025-10-31 19:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-10-31 20:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-10-31 21:00:00",
-        "frequency": 3
-      },
-      {
-        "timestamp": "2025-10-31 22:00:00",
-        "frequency": 3
-      },
-      {
-        "timestamp": "2025-10-31 23:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 00:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 01:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-11-01 02:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 03:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 04:00:00",
-        "frequency": 3
-      },
-      {
-        "timestamp": "2025-11-01 05:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-11-01 06:00:00",
-        "frequency": 13
-      },
-      {
-        "timestamp": "2025-11-01 07:00:00",
-        "frequency": 3
-      },
-      {
-        "timestamp": "2025-11-01 08:00:00",
-        "frequency": 3
-      },
-      {
-        "timestamp": "2025-11-01 09:00:00",
-        "frequency": 1
-      },
-      {
         "timestamp": "2025-11-01 10:00:00",
         "frequency": 0
       },
       {
         "timestamp": "2025-11-01 11:00:00",
-        "frequency": 1
+        "frequency": 0
       },
       {
         "timestamp": "2025-11-01 12:00:00",
@@ -914,203 +436,407 @@
       },
       {
         "timestamp": "2025-11-01 13:00:00",
-        "frequency": 2
+        "frequency": 0
       },
       {
         "timestamp": "2025-11-01 14:00:00",
-        "frequency": 2
+        "frequency": 0
       },
       {
         "timestamp": "2025-11-01 15:00:00",
-        "frequency": 1
+        "frequency": 0
       },
       {
         "timestamp": "2025-11-01 16:00:00",
-        "frequency": 3
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 17:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 18:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 19:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 20:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 21:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 22:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 23:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 00:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 01:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 02:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 03:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 04:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 05:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 06:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 07:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 08:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 09:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 10:00:00",
+        "frequency": 376
+      }
+    ],
+    "like": [
+      {
+        "timestamp": "2025-11-01 10:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 11:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 12:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 13:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 14:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 15:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 16:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 17:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 18:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 19:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 20:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 21:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 22:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 23:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 00:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 01:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 02:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 03:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 04:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 05:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 06:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 07:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 08:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 09:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 10:00:00",
+        "frequency": 316
+      }
+    ],
+    "about": [
+      {
+        "timestamp": "2025-11-01 10:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 11:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 12:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 13:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 14:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 15:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 16:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 17:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 18:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 19:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 20:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 21:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 22:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 23:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 00:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 01:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 02:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 03:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 04:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 05:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 06:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 07:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 08:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 09:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 10:00:00",
+        "frequency": 287
       }
     ],
     "market": [
       {
-        "timestamp": "2025-10-31 16:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-10-31 17:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-10-31 18:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-10-31 19:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-10-31 20:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-10-31 21:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-10-31 22:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-10-31 23:00:00",
-        "frequency": 3
-      },
-      {
-        "timestamp": "2025-11-01 00:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 01:00:00",
-        "frequency": 5
-      },
-      {
-        "timestamp": "2025-11-01 02:00:00",
-        "frequency": 8
-      },
-      {
-        "timestamp": "2025-11-01 03:00:00",
-        "frequency": 4
-      },
-      {
-        "timestamp": "2025-11-01 04:00:00",
-        "frequency": 3
-      },
-      {
-        "timestamp": "2025-11-01 05:00:00",
-        "frequency": 7
-      },
-      {
-        "timestamp": "2025-11-01 06:00:00",
-        "frequency": 13
-      },
-      {
-        "timestamp": "2025-11-01 07:00:00",
-        "frequency": 2
-      },
-      {
-        "timestamp": "2025-11-01 08:00:00",
-        "frequency": 4
-      },
-      {
-        "timestamp": "2025-11-01 09:00:00",
-        "frequency": 1
-      },
-      {
         "timestamp": "2025-11-01 10:00:00",
         "frequency": 0
       },
       {
         "timestamp": "2025-11-01 11:00:00",
-        "frequency": 2
+        "frequency": 0
       },
       {
         "timestamp": "2025-11-01 12:00:00",
-        "frequency": 1
+        "frequency": 0
       },
       {
         "timestamp": "2025-11-01 13:00:00",
-        "frequency": 3
+        "frequency": 0
       },
       {
         "timestamp": "2025-11-01 14:00:00",
-        "frequency": 1
+        "frequency": 0
       },
       {
         "timestamp": "2025-11-01 15:00:00",
-        "frequency": 2
+        "frequency": 0
       },
       {
         "timestamp": "2025-11-01 16:00:00",
-        "frequency": 1
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 17:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 18:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 19:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 20:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 21:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 22:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 23:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 00:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 01:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 02:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 03:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 04:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 05:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 06:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 07:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 08:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 09:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 10:00:00",
+        "frequency": 372
       }
     ],
-    "corporate": [
-      {
-        "timestamp": "2025-10-31 16:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 17:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 18:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 19:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 20:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 21:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 22:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 23:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 00:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 01:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 02:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 03:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 04:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 05:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 06:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 07:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 08:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 09:00:00",
-        "frequency": 0
-      },
+    "has": [
       {
         "timestamp": "2025-11-01 10:00:00",
         "frequency": 0
       },
       {
         "timestamp": "2025-11-01 11:00:00",
-        "frequency": 1
+        "frequency": 0
       },
       {
         "timestamp": "2025-11-01 12:00:00",
@@ -1130,82 +856,82 @@
       },
       {
         "timestamp": "2025-11-01 16:00:00",
-        "frequency": 1
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 17:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 18:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 19:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 20:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 21:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 22:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 23:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 00:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 01:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 02:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 03:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 04:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 05:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 06:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 07:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 08:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 09:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 10:00:00",
+        "frequency": 335
       }
     ],
-    "customers": [
-      {
-        "timestamp": "2025-10-31 16:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 17:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 18:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 19:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 20:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 21:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 22:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-10-31 23:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 00:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 01:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 02:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 03:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 04:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 05:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 06:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 07:00:00",
-        "frequency": 1
-      },
-      {
-        "timestamp": "2025-11-01 08:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 09:00:00",
-        "frequency": 0
-      },
+    "stock": [
       {
         "timestamp": "2025-11-01 10:00:00",
         "frequency": 0
@@ -1232,149 +958,425 @@
       },
       {
         "timestamp": "2025-11-01 16:00:00",
-        "frequency": 1
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 17:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 18:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 19:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 20:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 21:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 22:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 23:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 00:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 01:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 02:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 03:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 04:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 05:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 06:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 07:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 08:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 09:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 10:00:00",
+        "frequency": 342
+      }
+    ],
+    "out": [
+      {
+        "timestamp": "2025-11-01 10:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 11:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 12:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 13:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 14:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 15:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 16:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 17:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 18:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 19:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 20:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 21:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 22:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 23:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 00:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 01:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 02:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 03:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 04:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 05:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 06:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 07:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 08:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 09:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 10:00:00",
+        "frequency": 546
+      }
+    ],
+    "price": [
+      {
+        "timestamp": "2025-11-01 10:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 11:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 12:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 13:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 14:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 15:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 16:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 17:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 18:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 19:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 20:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 21:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 22:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 23:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 00:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 01:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 02:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 03:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 04:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 05:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 06:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 07:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 08:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 09:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 10:00:00",
+        "frequency": 146
       }
     ]
   },
   "news_feed": [
     {
-      "title": "Carnay said \"sorry\" to Donald Trump about Anti Tariff Ad And you think they would have been a tradewar with Canada ? lol The western countries doesn't have leaders anymore, but only courtiers with the fear of confrontation ...",
-      "publish_time": "2025-11-01 16:51:59",
+      "title": "REGARD YOLO AMZN CALLS TY I LOVE YOU BEZOS TY BEZOS I CAN NOW AFFORD ANOTHER YEAR OF AMAZON PRIME I AM A LOYAL FOREVR MEMBER NOW!",
+      "publish_time": "2025-11-02 10:58:12",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/StockMarket/comments/1olsr4a/carnay_said_sorry_to_donald_trump_about_anti/",
+      "url": "https://www.reddit.com/r/wallstreetbets/comments/1okuvxo/regard_yolo_amzn_calls_ty_i_love_you_bezos/",
       "sentiment": "negative"
     },
     {
-      "title": "Am I cooked? Am I cooked?",
-      "publish_time": "2025-11-01 16:50:49",
+      "title": "Seeking Advice: Should I sell my Binghamton properties and reinvest in Racine, WI? Hey everyone, looking for some perspective from experienced investors. I currently own two student/family rentals in Binghamton, NY and one property in Racine, WI. On paper, Binghamton gives me better returns, my spreadsheet looks great, but the real-world experience hasn’t matched the math. Binghamton properties (North St and Edwards St): Bought within the last year, total all-in cost around $500K after repairs ($120k for rehab). They are currently grossing $5.9K/month (One student rental and the other a family rental). Neighborhoods are rough, and I'm facing frequent tenant issues, late payments, and maintenance calls (family tenant). Property manager charges: * 10% monthly management fee * 50% of first month’s rent for new leases (almost every year for student rentals) * 30% of first month’s rent for renewals So my true annual management cost ends up around 12–14%, not 10%. Racine property: Managed by my broker for a flat 10% fee, no renewal charges. He also charges 50% for a new lease but I've had the same tenant for almost two years on a month-to-month lease (that's how he prefers it and I'm fine with it). He handles repairs and turnover, so it’s basically on autopilot. Returns are steady and stress-free, even if the yield is a bit lower. My realtor/manager in Binghamton suggested another option: Sell both current houses and use the proceeds to buy one or two in a better neighborhood within Binghamton. That could mean better tenants, but the annual turnover would still be there, and my true management cost would remain around 12-14% anyway. So now I’m in a dilemma: Do I sell both Binghamton houses and move that capital to Racine, where I already have a system that works and a trustworthy manager? Or do I stay in Binghamton, buy “nicer” properties, and hope the market + tenants improve? My spreadsheet says Binghamton wins. My sanity says Racine does. That said, it’s only been about two years since I started this whole real estate journey, so part of me wonders if I just need to be more patient instead of making a hasty move. My original plan was to hold the Binghamton properties for 5–10 years, banking on the neighborhoods improving and the market stabilizing. I just didn’t anticipate how challenging the tenant turnover and maintenance would be. Even after putting roughly $120K into repairs, these older properties keep demanding attention — constant maintenance calls, little things breaking, you name it. It’s starting to feel like a never-ending cycle of patchwork instead of progress. I’d love to hear your take on this. Has anyone here made that kind of shift, from high-yield, high-headache markets to lower-yield but hands-off ones? Was the stability worth the trade-off? Am I missing something obvious? TL;DR: Have two student/family rentals in Binghamton with great paper returns but high turnover, unreliable tenants, and real management costs closer to 14%. Have one Racine property that’s steady, hands-off, and managed flawlessly at a flat 10%. My realtor wants me to sell the Binghamton ones and buy in a “better” Binghamton neighborhood, but that doesn’t fix the turnover issue. Leaning toward selling both and reinvesting in Racine — my spreadsheet says Binghamton, but my sanity says Racine.",
+      "publish_time": "2025-11-02 10:58:11",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/wallstreetbets/comments/1olsq2j/am_i_cooked/",
+      "url": "https://www.reddit.com/r/RealEstate/comments/1okz286/seeking_advice_should_i_sell_my_binghamton/",
       "sentiment": "negative"
     },
     {
-      "title": "[WSJ] OpenAI’s Less-Flashy Rival Might Have a Better Business Model From WSJ: https://www.wsj.com/tech/ai/anthropic-business-model-ai-9e26b4ef >OpenAI recently inked hundreds of billions of dollars of deals to build data centers filled with chips it hopes will further its AI dominance. But one of its rivals—the Amazon-backed developer Anthropic—has a clearer path to making a sustainable business out of AI. > >Anthropic and OpenAI do similar things: They develop advanced AI models upon which chatbots, image generators and a host of other AI tools are based. > >But they have approached the question of how to generate revenue—and, one would hope, profit—from AI in different ways. > >Outside of OpenAI’s close partnership with Microsoft, which integrates OpenAI’s models into Microsoft’s software products, OpenAI mostly caters to the mass market. Its user base is, in large part, replacing search-engine queries with bot conversations, which has proved immensely popular. ChatGPT had more than 800 million weekly users as of this month, according to the company, which has helped OpenAI reach an annual revenue run rate of around $13 billion, around 30% of which it says comes from businesses. > >Anthropic has generated much less mass-market appeal. The company has said about 80% of its revenue comes from corporate customers. Last month it said it had some 300,000 of them. > >That focus has helped put Anthropic ahead of OpenAI among business users. Its cutting-edge Claude language models have been praised for their aptitude in coding: A July report from Menlo Ventures—which has invested in Anthropic—estimated via a survey that Anthropic had a 42% market share for coding, compared with OpenAI’s 21%. Anthropic is also now ahead of OpenAI in market share for overarching corporate AI use, Menlo Ventures estimated, at 32% to OpenAI’s 25%. > >Anthropic is also surprisingly close to OpenAI when it comes to revenue. The company is already at a $7 billion annual run rate and expects to get to $9 billion by the end of the year—a big lead over its better-known rival in revenue per user. > >Both companies have backing in the form of investments from big tech companies—Microsoft for OpenAI, and a combination of Amazon and Google for Anthropic—that help provide AI computing infrastructure and expose their products to a broad set of customers. > >But Anthropic’s growth path is a lot easier to understand than OpenAI’s. Corporate customers are devising a plethora of money-saving uses for AI in areas like coding, drafting legal documents and expediting billing. Those uses are likely to expand in the future and draw more customers to Anthropic, especially as the return on investment for them becomes easier to measure. > >Demonstrating how much demand there is for Anthropic among corporate customers, Microsoft in September said Anthropic’s leading language model, Claude, would be offered within its Copilot suite of software despite Microsoft’s ties to OpenAI. > >The mass-market consumer revenue model is more nebulous. OpenAI has yet to settle on a way to make money from it beyond charging subscription fees. It has a $20-a-month “plus” plan and $200-a-month “pro” plan for consumers, in addition to a free tier that comes with limits on queries and runs more slowly. Such subscription fees aren’t enough to offset the massive cost of developing and rolling out cutting-edge AI. > >The obvious revenue stream for OpenAI’s consumer business will be advertising. But it isn’t clear how OpenAI or its competitors would inject ads into chatbots. It won’t be as straightforward as search ads; users wouldn’t likely welcome brand placement in their bot chats. And as it looks for an ad-revenue model, OpenAI is in the unenviable position of competing with Google, which has its own suite of mass-market AI tools and far deeper roots in advertising. > >Of course, OpenAI is making a strong appeal to business customers too, both through Microsoft and on its own. And there is an argument that OpenAI’s vast user base and exposure to a wider set of queries will give it an edge among corporate users. > >Yet there is also a possibility that OpenAI’s mass-market appeal becomes a turnoff for corporate customers who want AI to be more boring and useful than fun and edgy. OpenAI recently said it would begin allowing adults to have erotic conversations with ChatGPT, and has urged for a hands-off approach to AI regulation. Even if the company makes its products more constrained in corporate contexts, its freewheeling reputation seems likely to limit its inroads. > >For all of OpenAI’s spending, meanwhile, Anthropic has shown it is as good or better in AI arenas that companies care about. Vals AI, a startup that evaluates AI models, ranks the latest version of Anthropic’s large language model Claude as top in a business-focused benchmark that brings together finance, legal and coding tasks. > >“Anthropic is laser-focused on these agentic enterprise use cases and they’re playing a very competitive game with OpenAI right now,” said Rayan Krishnan, a co-founder of Vals. > >OpenAI and its chief-executive-slash-showman Sam Altman have been hogging the AI spotlight lately. Anthropic’s business prospects—and the shrewdness of its main investors, Amazon and Google—may be more deserving of notice. > >(News Corp, owner of The Wall Street Journal, has a content-licensing partnership with OpenAI.)",
-      "publish_time": "2025-11-01 16:34:11",
+      "title": "Advice needed on low barrier to entry part time/gig work in NYC Hello, I am a student that needs some low barrier to entry gig work in in NYC fast. I have been using Ubereats which only gives so many hours. My questions are: 1. What are some other good sources go low barrier to entry good gig/PT work in NYC 2. Of the one day job apps: Wool, Qwick, Instawork, which one has the best ration of low barriers to entry and experience required/good pay? 3. Has anyone been able to get into cater/banquest waiting with little experience? Any thoughts or suggestions would be most helpful. Thanks",
+      "publish_time": "2025-11-02 10:58:11",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/StockMarket/comments/1olsas9/wsj_openais_lessflashy_rival_might_have_a_better/",
+      "url": "https://www.reddit.com/r/povertyfinance/comments/1olpm10/advice_needed_on_low_barrier_to_entry_part/",
       "sentiment": "negative"
     },
     {
-      "title": "Questions about Wise account foreign currency interest feature I have a few questions that have been bothering me for months. Any insight is much appreciated. \"Wise\" is legally set up as a money transfer service, not a bank. Wise allows US Citizens to convert and hold foreign currencies. Wise has an opt-in feature to earn interest on GBP and EUR as a US citizen/resident. Likely due to complex US and international banking laws, a US customer earns interest in USD. Lets say I hold a balance of 100 GBP with Wise. Wise converts the 100 GBP to 130 USD and sweeps the money to their partner bank (JPMorgan Chase) in the USA. This money is covered by FDIC. The money earns interest on this USD. The interest is sent to Wise as USD and passed to me after they take a percentage as a fee. The interest is \"paid\" to me in USD but automatically converted back to GBP into my GBP balance. The interest is accrued daily and paid monthly. On any day at any time, I can convert my GBP to USD and send it to my US bank account. **My Wise account always shows a balance in GBP that does not fluctuate.** Wise is currently offering interest at 3.4% APY for USD, 2.42% APY for GBP, and 0.8% APY for EUR. This seems representative of the current prime rates of those currencies. https://wise.com/us/legal/us-interest-program-agreement \"*For EUR and GBP, their values will be converted to the USD equivalent before being swept and held in the same manner described above for USD. Conversions will be made once daily at the time the funds will be swept into the Deposit Account(s).*\" ---------------------------------------- Questions: Am I actually holding GBP or at least have the rights to GBP with this feature? How is Wise as a company protecting against currency fluctuations risk? Are they using currency futures contracts as a hedge, hence the fee they charge on those interest payments to me? Hypothetically, what happens if in one single day the USD devalues 1000x and now my 100 GBP is worth 130,000 USD? What happens to Wise, the partner bank, and my Wise account? What are those partner banks actually investing in? Do you think they are actually buying GBP bonds, hence the different APY rates?",
-      "publish_time": "2025-11-01 16:19:51",
+      "title": "What’s more valuable early on, a great brand or a great product? I keep noticing startups with incredible branding and weak products still winning attention and products with real innovation losing steam because they look unpolished. At the early stage, which one actually matters more for traction: the product or how it *feels*?",
+      "publish_time": "2025-11-02 10:58:11",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/investing/comments/1olry0j/questions_about_wise_account_foreign_currency/",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1olkfot/whats_more_valuable_early_on_a_great_brand_or_a/",
       "sentiment": "negative"
     },
     {
-      "title": "How to prevent your brokerage account getting hacked? Say you have some money on Interactive Brokers or Charles Schwab, how do you prevent your accounts from getting hacked? I will be using strong password and 2 factor authentification with a physical token. What are the probabilities of getting hacked?",
-      "publish_time": "2025-11-01 16:15:21",
+      "title": "Are tools for idea development worth anything? Thinking of startup ideas, you probably thought of using one of the many tools that popped that promise to help you with developing your idea. You're wondering whether they are worth the money? I have tried several. First, it is important to understand that like the underlying AI models these tools reflect the vast knowledge available on the Internet. These tools add a structured process of ideation. Including requiring you to identify the problem (pain point) that you want to address. After that, they do market research for you, and competitive analysis. In a sense, it is like a custom ChatGPT. Of course, the underlying AI model is not necessarily OpenAI. If you try to do the same with any AI chat application, such as ChatGPT or Claude or Gemini, you will need to devise the structured process yourself. Though they will often suggest to you the next step. Now, here is where you discover the limitations of these ideation tools. They certainly can do a quick elimination of bad ideas. But above all certain threshold of the quality of idea, it is up to you to do further research by talking to people. This quick elimination helps you to weed out things below a certain threshold. You still need to go to the world and talk to people.",
+      "publish_time": "2025-11-02 10:58:11",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/investing/comments/1olru0y/how_to_prevent_your_brokerage_account_getting/",
+      "url": "https://www.reddit.com/r/Entrepreneur/comments/1olkckt/are_tools_for_idea_development_worth_anything/",
       "sentiment": "negative"
     },
     {
-      "title": "Dividends Strategy vs. S&P500 UCITS ACC ETF Hello all. I'm 30 now and have a huge debating that might affect my entire life. I want to get retired at the age of 60. Therefor, I have to options: 1. Put money in Dividend ETF (like DGRO or SCHD) every month for the next 30 years (better psychological, probably worse yield). 2. Put money in S&P500 UCITS ACC ETF every month for the next 30 years and than use the 300/400 rule and \"create\" dividends by selling it. (probably better yield than option 1 but with the sequence of returns risk exposure). Gemini has put another option that I would like to get advice about. Step 1 (age 30-53/54): Put in S&P500 UCITS ACC ETF for better growth. Step 2 (age 54/55-60): Selling in and but DGRO/SCHD/etc gradually. What do you think about each option and about the third one especially?",
-      "publish_time": "2025-11-01 16:12:38",
+      "title": "I bought an item described as \"new\" on the listing, but when it arrived, it had a stain on it. I contacted the seller, but he stopped replying. What can I do? I bought a shirt. It was described as \"new\". There was no mention of any markings or damage on the shirt on the listing. I messaged the seller and said that there is a marking on the collar of the shirt. and the seller replied back with three photos (two photos were of the shirt showing there is no marking, and the other photo is of the packaging). The seller said those photos were taken literally at the time of packing. But those photos don't prove that the shirt had no markings at the time of packing, because those photos could have been taken when the buyer purchased the shirt. And then the seller said maybe the marking is from the label during transit. And then I replied back saying I filmed myself opening the package and the black marking was already there when I opened it, and I also said the white paper bag that the seller put the shirt in had no markings in it. And then the seller stopped replying. It's been two days since I last talked to the seller. I don't think the seller was expecting me to film myself opening the package. Anyway, the marking is black and smudged into the shirt. So it looks like the seller really did try to remove the stain. I think the stain is a black permanent marker. What can I do?",
+      "publish_time": "2025-11-02 10:58:11",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/investing/comments/1olrrm6/dividends_strategy_vs_sp500_ucits_acc_etf/",
+      "url": "https://www.reddit.com/r/Ebay/comments/1olfstn/i_bought_an_item_described_as_new_on_the_listing/",
       "sentiment": "negative"
     },
     {
-      "title": "r/Stocks Weekly Thread on Meme Stocks Saturday - Nov 01, 2025 The meme stock scheduled posts will now run weekly and post Saturday afternoon and won't be a sticky; you're probably seeing this because automod sent you here! [Full list of meme stocks here.](https://www.reddit.com/r/stocks/wiki/meme-stocks) This will be updated every once in a while. ------ Welcome traders who just can't help them selves discuss the same exact stock that's been discussed 100s of times a day. I get it, you want to talk about what's popular, what's hot, and that 1.. single.. stock you like.. well here you go! Some helpful links just for you: * [Previous meme stock threads](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+title%3A%28common+OR+meme%29&restrict_sr=on&include_over_18=on&sort=new&t=all) * [General discussions](https://www.reddit.com/r/stocks/search?q=author%3Aautomoderator+title%3Adiscussion&restrict_sr=on&include_over_18=on&sort=new&t=all) * [The **original GME megathread**](https://www.reddit.com/r/stocks/comments/layb68/rstocks_gme_megathread/) with a ton of useful information * [Use Finviz for aggregated news on your favorite stock](https://finviz.com/quote.ashx?t=gme) An important message from the mod team [regarding meme stocks.](https://www.reddit.com/r/stocks/wiki/meme-stocks-warning) Lastly if you need professional help: * Problem Gambling: Call/Text: 1-800-522-4700 or [chat online now.](https://WWW.NCPGAMBLING.ORG/CHAT) * Crisis Hotline (24/7): 1-800-273-TALK (8255) (Veterans, press 1) or Text “HOME” to 741-741",
-      "publish_time": "2025-11-01 16:00:40",
+      "title": "As big tech pushes AI spending to the max, you may be helping to pay for it",
+      "publish_time": "2025-11-02 10:58:10",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/stocks/comments/1olrgry/rstocks_weekly_thread_on_meme_stocks_saturday_nov/",
+      "url": "https://www.reddit.com/r/technology/comments/1ol5e6l/as_big_tech_pushes_ai_spending_to_the_max_you_may/",
       "sentiment": "negative"
     },
     {
-      "title": "Am I Cooked? Definitely bought too early, but seemed like a market over reaction. Not looking to exercise this, just want to get up like 20% or something and get out around mid November.",
-      "publish_time": "2025-11-01 15:57:21",
+      "title": "Jensen Huang’s viral fried chicken and beer night with Samsung, Hyundai chiefs in South Korea moves markets",
+      "publish_time": "2025-11-02 10:58:10",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/wallstreetbets/comments/1olrdsl/am_i_cooked/",
+      "url": "https://www.reddit.com/r/nottheonion/comments/1omdp7k/jensen_huangs_viral_fried_chicken_and_beer_night/",
       "sentiment": "negative"
     },
     {
-      "title": "Does This Look Like A Man Worried About The Bubble",
-      "publish_time": "2025-11-01 15:48:17",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/wallstreetbets/comments/1olr5tj/does_this_look_like_a_man_worried_about_the_bubble/",
+      "title": "Elon Musk on Messaging Platform X Chat's Features and Bitcoin-Like P2P Encryption - CoinDesk Elon Musk on Messaging Platform X Chat's Features and Bitcoin-Like P2P Encryption&nbsp;&nbsp;CoinDesk",
+      "publish_time": "2025-11-02 10:58:09",
+      "source": "rss",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcGVBa3dGSU5JWWVNUGoydVNEMFozUDQteFQzTk5pN1FaZlVFYlhDYXBRWEY0Sm1jRlk1dzFTMzBScWhPLWdiUXhTdVo4V3hjMlBPejc3M1NvU1U3V2FfYnA1X2R4elNQX0Nvb2hhTmNzeUd2dGR4NElXTXR3RmZDNFAxZXlTYzVpZEU3YzNSdEUxd0VLUjNQRHVqNlJCSUFjOGptUk5hdXFVZ3pQMU9OeU1HV3JjMUhEV2M0bFNnREpndw?oc=5",
       "sentiment": "negative"
     },
     {
-      "title": "Hyperscalers are raising Capex for 2026 The hyperscalers announced increased Capex expectations for 2026. We don't have the clear numbers, but the estimated guidance is around $420-450 billion for MSFT, GOOG, AMZN and META. I think this spending is highly correlated with NVIDIA's revenue growth. Their revenue for 2023 was roughly $32 billion, in 2024 it was 96 billion and expectation is that for 2025 it may reach around $200B. Considering that there are other companies that are investing in AI infrastructure (OpenAI, Oracle etc,), and the potential of Chinese companies, should we expect that this cycle of Nvidia's revenue growth may continue? Another important matter we should consider is that NVIDIA's operating margin has dramatically increased in the last few years and it is not around 60%. So not only their revenue has been growing exponentially, but they also increase the profit they make from every dollar of revenue. Thoughts? [NVDA Operating margin](https://preview.redd.it/eeiur7fkxnyf1.png?width=932&format=png&auto=webp&s=100dcdb4276758274755da112313c035cddb277e) Chart from [stockpicker.tech](https://www.stockpicker.tech/user/dashboard/NVDA)",
-      "publish_time": "2025-11-01 15:22:26",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/StockMarket/comments/1olqiou/hyperscalers_are_raising_capex_for_2026/",
+      "title": "Huge News for Uber Stock and Nvidia Stock Investors as Companies Partner on Driverless Technology Driverless cars will require increasing computing requirements, a category Nvidia is poised to capture.",
+      "publish_time": "2025-11-02 10:58:09",
+      "source": "alphavantage",
+      "url": "https://www.fool.com/investing/2025/11/01/huge-news-for-uber-stock-and-nvidia-stock-investor/",
       "sentiment": "negative"
     },
     {
-      "title": "Increasing signs of market top for a correction vs major drawdown The S&P 500 may be due for a pullback now that it is 13% above its 200-day moving average. Almost 9% of the S&P 500 saw a 52-week low on Wednesday, sending an \"ominous signal\" as it's tough for bull markets to persist when stocks are falling in that way, according to Jonathan Krinsky, BTIG's chief market technician. \"Since 1990 there have only been four distinct periods\" when the S&P 500 had more 52-week lows than highs and the percentage of 52-week lows exceeded 8% while the index was within 3% of a 52-week high, Krinsky said in a note emailed Thursday. Those dates were December 1999, November 2007, July 2015 and November 2021, he said, noting that \"most market participants will recall those dates as essentially marking peaks before significant drawdowns.\" \"While we don't know if this period will follow suit, we do think the market is entirely too complacent about downside risk,\" Krinsky said. The S&P 500, which finished Wednesday nearly at its record peak, fell on Thursday.",
-      "publish_time": "2025-11-01 15:13:52",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/investing/comments/1olqb6m/increasing_signs_of_market_top_for_a_correction/",
+      "title": "Blue Owl ( OWL ) Q3 2025 Earnings Call Transcript Image source: The Motley Fool.Thursday, Oct. 30, 2025, at 10 a.m. ETNeed a quote from a Motley Fool analyst? Email pr@fool.comContinue reading ...",
+      "publish_time": "2025-11-02 10:58:09",
+      "source": "alphavantage",
+      "url": "https://www.fool.com/earnings/call-transcripts/2025/11/01/blue-owl-owl-q3-2025-earnings-call-transcript/",
       "sentiment": "negative"
     },
     {
-      "title": "$SLAP.X $BTC.X $ETH.X $SOL.X",
-      "publish_time": "2025-11-01 15:12:59",
-      "source": "stocktwits",
-      "url": "https://stocktwits.com/Just_Defi/message/634582340",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Was going to take META profit and put into AMZN",
-      "publish_time": "2025-11-01 14:26:51",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/wallstreetbets/comments/1olp68a/was_going_to_take_meta_profit_and_put_into_amzn/",
+      "title": "Crypto market sentiment stays in 'Fear' following Trump's deal with China - TradingView Crypto market sentiment stays in 'Fear' following Trump's deal with China&nbsp;&nbsp;TradingView",
+      "publish_time": "2025-11-02 10:58:09",
+      "source": "rss",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNN0dqN3Zsc19ueUJ3bUxpZTYzMnlDS202eFlabWFNM2w1ZktNWTV1YTZQVHFDMWtraVJ2RXdpMGtBVGtlN1gyQjQ0bEZwNE5XQnRwanNsRzFZYU9uMElzeDNMNzJNbGJ0RHhJeXo5ODd1YzJnZVVob3huQjVVMF9UN2t2Rm5rYk1tYXJKdVdKQkFHcUY4SlhfYU1iMDJiLTN0dnd4TmFVd3lZMTZ5ZXBLZlVsU2h2WWFzdjl5SnlTd0I4aGxvRmhFOEFXU093NWRr?oc=5",
       "sentiment": "negative"
     },
     {
-      "title": "I built a small public tool to expose how congressional trading looks in the wild, NBIS Example This repo is a stripped forensic sandbox that exposes how the Congressional trading game actually works. Read the README. It isn’t a trading system and it isn’t a shortcut. It is a clear visual reconstruction of the “leak” phenomenon that isn’t a leak at all. It is process-driven privilege in plain sight. What it is: A compact public-data rig that pulls disclosures, price history, and reconciliation logic to recreate the pattern. The crude brackets, lagging timestamps, and delayed reporting make the edge obvious. Anyone with earlier access wins. Everyone else reverse-engineers the smoke trail after the move. Why it’s public: People keep asking where the leaks come from. The answer is structural. Transparency by code makes that undeniable. This tool lets you rebuild the sequence from incomplete public crumbs and watch the advantage materialise step by step. Notes: Read the README before running. This is an exploration utility, not a signal engine. Not financial advice. This is not how I trade. For serious, reproducible tooling, see my other repos. This one exists for clarity, not alpha. [congress-filings-explorer](https://github.com/tg12/congressional-filings-explorer) [Tool Output Example](https://github.com/tg12/congressional-filings-explorer/blob/main/Screenshot%202025-10-26%20at%2009.03.59.png) [Trade Example](https://github.com/tg12/congressional-filings-explorer/blob/main/Screenshot%202025-10-26%20at%2009.04.28.png)",
-      "publish_time": "2025-11-01 14:16:28",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/investing/comments/1oloxj5/i_built_a_small_public_tool_to_expose_how/",
+      "title": "California Hits Bitcoin ATM Operator Coinhub with $675,000 Fine for Breaking Consumer Protection Laws - Brave New Coin California Hits Bitcoin ATM Operator Coinhub with $675,000 Fine for Breaking Consumer Protection Laws&nbsp;&nbsp;Brave New Coin",
+      "publish_time": "2025-11-02 10:58:09",
+      "source": "rss",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObVN5aVNjTUVaREpqVHFGNnV5a0J5RUQ0YXJUampjRE44Q256UFJNM2Ita3laMnNqMDE4VEtxYzhGT2pEZ3cwLUp2WUdoT1pvTzFkbzA5R0dQSTIwWW9mNnM5WHRDVkswS3V5OUJBNl9vSVVfOWNHSFhUaU41dFZpNUdYclpfWTUwMm9ndVJVLUJBQV9qcV9tOWVkWFFKQ2lxQmZvaFU4SHpUVnpfSEkzNXlxWXA5MUp1NDlMb1JFMTVmWHpOUk5KOEh1X3VSZw?oc=5",
       "sentiment": "negative"
     },
     {
-      "title": "Preparing for Late-Stage Roaring-20s with Sector Rotation For those who passed Econ 103 you should understand that the economy move in cycles: * Recession * Early Recovery * Mid-cycle * Late Recovery * End of Cycle It's an idea pioneered by Clement Jugar, confirmed by Wesley Mitchell and finally modelled by Burns & Mitchell. It is not only defined by the GDP growth during the time, but also the sectors that performs well during those times. |Cycle|GDP Growth|Sectors|Rates| |:-|:-|:-|:-| |Recession|\\-2% to 0%|Defensives|Lowest| |Early Recovery|0%-2%|Early Cyclicals|Low| |Mid-cycle|2%-4%|Technology/Resources|Rising| |Late Recovery|0.5%-2%|Technology/Industrials|Falling| |End of Cycle|0%-0.5%|Healthcare/Staples/Utilities|Falling| So if we operate according to the framework, let's check. * GDP Growth: 3.8% for Q2 2025, if we exclude datacenters and AI, it's at 0.1%. * Sectors: Tech stocks going new highs but so are the likes of Caterpilla and DOW Chemicals * Rates: More coming rate cuts expected The thesis that we are at the precipse of transitioning into End of Cycle is confirmed by the rates and the sector that's currently outperforming. GDP growth is a more intricate one since we are in a K-shaped society where while consumer discretionary is dropping among most incomes, the upper incomes and tech chads are propping up the economy for now. The likes of Costco, Walmart, Pepsi, Unitedhealth, Pfizer and many more have taken a beating in recent months, but have started to recover to prior to April 2025. Investing in those companies would fit within the framework of sector rotation and market cycles. It may even give outsized risk-adjusted reward since the multiples are not as insane as the alternatives. Utilities however is to be excluded because they have now become AI-adjacent stocks.",
-      "publish_time": "2025-11-01 14:08:02",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/investing/comments/1oloqcj/preparing_for_latestage_roaring20s_with_sector/",
+      "title": "Stock market today: Dow, S&P 500, Nasdaq futures mostly up with Fed decision, slew of Big Tech earnings on deck - Yahoo Finance Stock market today: Dow, S&amp;P 500, Nasdaq futures mostly up with Fed decision, slew of Big Tech earnings on deck&nbsp;&nbsp;Yahoo Finance",
+      "publish_time": "2025-11-02 10:58:09",
+      "source": "rss",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOVEMxbmNZS203QjJmb1ZISHVnemdMaGd5ZkZsRjAtaDRrZHV2eFJweXJCRG9ZQUpRRDRVeExkb3BJbXpVTm9TNWozWE93Q0doZVdBeHFnLXJudTA5YzNUTmRSYnZNUkxVdmNjYmZoOGVOaHZWejU0TnF3TzJ4azJFbTFLakIyOG5td0hldkVKZFgwaXdqN2lPOEJnU1gxWU15d1BuV2RWS2RROTluWjNocDBZVXRrNmw3Qm1qckd3SFN6TzRSaWlXQzRDMkY3T1BCSWNzS08xR2RGYmtmMXpCM1NLRkVGeGtKTnFWMnh3?oc=5",
       "sentiment": "negative"
     },
     {
-      "title": "No new contributions planned Hi, I currently have \\~$100k/$46k gains in a rollover IRA from a 401(k) after I left a company I worked for. I moved to freelance and long-term goal is to be freelance so I do not intend to have a 401(k) to move this back to. I do not plan to contribute to it and instead each year contribute to my roth IRA. Is it wise to pay the tax now, move it over, and then focus on just my roth IRA + tax free gains? I will be in the 24% bracket. Is it better to contribute something like $3500 to both my rollover & roth each year instead? Just confused what to do for the long-term not touching this for 20+ years.",
-      "publish_time": "2025-11-01 14:03:10",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/investing/comments/1oloma9/no_new_contributions_planned/",
+      "title": "Cryptocurrency company passes major milestone at game-changing facility: 'One of the few companies in the world' - The Cool Down Cryptocurrency company passes major milestone at game-changing facility: 'One of the few companies in the world'&nbsp;&nbsp;The Cool Down",
+      "publish_time": "2025-11-02 10:58:09",
+      "source": "rss",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNU1duaDVpMGZzTEJHTVRjYkNHX3BFU09aWWZlaGhsTURXM0QxMHpMc2Raby1LYjkya2QzcnZ0bEptUnpvbEhFdE9QRmJVY0JmUFYtSFNzbDYzbE9KZW5tTUstMm9FSHNibmVVWHBpeGlIT1Y0N2h4Nk5IUmg4b0RrZVVOd1RjZzg0b2dzUEdQOUxDV3dScGRWNg?oc=5",
       "sentiment": "negative"
     },
     {
-      "title": "Good time to fund Roth IRA? Hey everyone, I opened two Roth IRAs about two years ago and honestly haven’t checked them since. Just looked today and they’re up around $2,500. I’m thinking about throwing in $7k before the end of the year and another $7k next year. I kinda missed the dip back in April and now the market’s sitting near all-time highs. Would you guys just dump it all in as a lump sum or wait for a pullback before buying in?",
-      "publish_time": "2025-11-01 13:48:48",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/investing/comments/1oloaet/good_time_to_fund_roth_ira/",
+      "title": "Treasury Secretary Bessent Hails Bitcoin’s Uptime, Criticizes Senate - Bitbo Treasury Secretary Bessent Hails Bitcoin’s Uptime, Criticizes Senate&nbsp;&nbsp;Bitbo",
+      "publish_time": "2025-11-02 10:58:09",
+      "source": "rss",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE42WTl0Q3pVU18yVHFmZlFHZVU1cjR2UG5ZeDRxZUQ1bG82djk2cUM5NE5wd0J5RHJwWVBUVDVhc1BLVi1WSzE5RElzYkJ6Nm5DODRLNFNyUkt3MVl6VmlwMGduTVI?oc=5",
       "sentiment": "negative"
     },
     {
-      "title": "I updated my stock valuation sheet based on your feedback Hello again, last week i made a post about my stock valuation spreadsheet which uses wall street estimates and my (hopefully) conservative CAGR in order to calculate valuation estimates. The feedback from my last post was great and i did not expect that much interest. The sheet was shared over 700 times??? Anyways, thanks for the nice comments, questions and messages. So, for the updates i have made: - I added a gradient on the bar chart to more clearly show what is good/bad valuations. - I added historical FY revenues from 2022-2024 + Wall street estimates for 25 and 26. This makes it easier to see how the revenue scale into income. - Estimated revenue growth rate from 2024-2026. This is nice as the CAGR of the EPS can vary based on small number in divisor or one-off charges etc. Now, the biggest update is in my weighted PEG ratio which i use to sort the rows (the column furthest to the right). I added a 2030 PEG ratio column that i use to weigh the PEG towards future growth. I also readjusted the weights as follows: - 2025: 0.2 -> 0.1 - 2026: 0.3 ->0.4 - 2027: 0.5 -> 0.3 - 2030: (new) -> 0.2 I want to be cautious with weighing the model too much towards growth, as it creates more risk. The main goal is tho have a sheet that quickly sorts stocks based on recent price movements, to give a indication of what company to look into. My goal is to beat the SP500 and Nasdaq, so if you have any suggestions on stocks that can be added to the sheet, please leave a comment or send me a DM :) If you have tips on improvement to the sheet that is also more than welcome! [Here is the link to the updated sheet](https://imgur.com/a/uS0DdXN) Thanks",
-      "publish_time": "2025-11-01 13:38:42",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/investing/comments/1olo2ad/i_updated_my_stock_valuation_sheet_based_on_your/",
+      "title": "Coinbase holds edge in US crypto race even as rivals' public listings reshape landscape - Reuters Coinbase holds edge in US crypto race even as rivals' public listings reshape landscape&nbsp;&nbsp;Reuters",
+      "publish_time": "2025-11-02 10:58:09",
+      "source": "rss",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNN0NzY1lfakh6R3hBTFhVLXE1NHVIWjJNWjZmanlGZUdud1E0VUpoS1NHT3p1N3lrZDFKaUsyaG16eXhnelFoQ3RIZFk1SUZBNWtwbXNHMmpYMEotVEJ3dFJZX1JKWjBBamdJUS1KQU50MktXVWFhbi1iNUVzMFVZTjhtXzhDSDk0b2Y3dnFkS01ESFJrcEdnSWhzRUxZVGxfbXZxWWRIM2FZWHZFdzg0b2Y1WlRlZXpUMnVBbkVjcU03VmM?oc=5",
       "sentiment": "negative"
     },
     {
-      "title": "300k YOLO on $NVO and $META I love catching a falling knife",
-      "publish_time": "2025-11-01 13:37:46",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/wallstreetbets/comments/1olo1k9/300k_yolo_on_nvo_and_meta/",
+      "title": "MLTX INVESTOR REMINDER: MoonLake Immunotherapeutics Investors may have been Affected by Fraud -- Contact BFA Law if You Suffered Losses - MoonLake ( NASDAQ:MLTX ) NEW YORK, Nov. 01, 2025 ( GLOBE NEWSWIRE ) -- Leading securities law firm Bleichmar Fonti & Auld LLP announces that a lawsuit has been filed against MoonLake Immunotherapeutics ( NASDAQ:MLTX ) and certain of the Company's senior executives for potential violations of the federal securities laws.",
+      "publish_time": "2025-11-02 10:58:09",
+      "source": "alphavantage",
+      "url": "https://www.benzinga.com/pressreleases/25/11/g48577962/mltx-investor-reminder-moonlake-immunotherapeutics-investors-may-have-been-affected-by-fraud-conta",
       "sentiment": "negative"
     },
     {
-      "title": "Looking for China Stock/ETF Ideas: Focusing on 14th FYP 'Autonomy' Goals (IC/AI, Green Tech, Biotech) Hello everyone! I took a closer look at China's medium-term economic goals, especially the 14th Five-Year Plan. In doing so, I discovered three areas where the state is pouring in a lot of money and which are supposed to grow significantly by 2030. Now I am looking for tips for specific companies (stocks) or ETFs that could benefit most from these state strategies. My Top 3 Areas and Investment Ideas: 1. AI & Semiconductors: The government is pursuing an aggressive autonomy strategy. Huge sums are flowing into important areas of semiconductor production and AI infrastructure (especially domestic GPU hardware) so that the country can become more independent. Questions for the community: Which Chinese stocks (semiconductor equipment, materials, local GPU manufacturers) do you think benefit most from this state capital and the autonomy drive? Which companies besides SMIC are also important in building these supply chains domestically? Are there specific ETFs that better reflect this domestic focus than broad technology funds? 1. Green Energy & Clean Technologies: China is investing heavily in the goal of becoming climate-neutral by 2060. The focus is on the digitalization of the power grids and energy storage, especially batteries (investments here increased by 69% in the first half of 2025). Questions for the community: Which stocks in the area of smart grids/VPP (Virtual Power Plants) or battery component manufacturing, besides the big players (like CATL), benefit most from the restructuring of the national energy system? Are there recommended Clean Tech China ETFs that place a strong emphasis on domestic storage and grid integration and not just on solar cell production? 1. Biotechnology & Bioeconomy: This sector is considered a strategic future industry, with a clear focus on biopharmaceuticals and national biosecurity. The government absolutely wants to bring biotech and IT together. Questions for the community: Which specific companies (biopharma, CDMOs or advanced seed technology) are considered leading innovators in China and benefit directly from this state funding for the bioeconomy? Important Risk Assessment My analysis shows that state-led industrialization carries risks that must be kept in mind: Overcapacity: High state funding can lead to overcapacity and strong price drops (similar to steel, solar, and electric cars in the past). Geopolitics: Technology (AI, biotech) and the strategy of military-civil fusion increase the risk of sanctions and export controls. Question on risk management: Which companies/ETFs do you think are best equipped against these risks (especially overcapacity and geopolitical pressure)? How do you take these factors into account when determining your position sizes? I look forward to every helpful contribution and concrete suggestion!",
-      "publish_time": "2025-11-01 13:36:33",
+      "title": "JAMF INVESTOR NOTICE: Jamf Holding Corp. Shareholders May have Rights in the Upcoming Take Private Deal - Contact BFA Law - Jamf Holding ( NASDAQ:JAMF ) NEW YORK, Nov. 01, 2025 ( GLOBE NEWSWIRE ) -- Leading securities law firm Bleichmar Fonti & Auld LLP announces an investigation into Jamf Holding Corp.'s ( NASDAQ:JAMF ) board of directors for potential breaches of their fiduciary duties to shareholders in connection with a potential ...",
+      "publish_time": "2025-11-02 10:58:09",
+      "source": "alphavantage",
+      "url": "https://www.benzinga.com/pressreleases/25/11/g48577976/jamf-investor-notice-jamf-holding-corp-shareholders-may-have-rights-in-the-upcoming-take-private-d",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Grown children receiving $100,000 each-ages early 30’s. Current Fidelity account around 4 million -below is from Claude AI suggested allocation. That are already quite diversified with the S&P 500, some Vanguard funds, around $700,000 treasuries, Russell 1000, We could obviously ask their advisor, but they tend to be very cautious. We are at ATH’s and not gamblers, but want to be a bit more aggressive? Claude response - Looking at this portfolio, your children already have a solid, diversified foundation. For $100,000 with their ages and timeline flexibility, here are some more aggressive strategies to consider: Sector-Specific Growth Areas: • Healthcare/Biotech ETFs (XBI, IBB) - Demographics favor long-term growth • Emerging Markets (VWO, IEMG) - They’re underrepresented in emerging markets • Small-Cap Value (VBR, IWN) - Historically outperforms large-cap over long periods • International Developed (VEA, IEFA) - Their portfolio seems very US-heavy Individual Stock Concentration: Since they have broad market exposure already, they could allocate 20-30% to individual growth stocks in sectors they understand well - think established companies with strong moats that aren’t fully reflected in index weights. Real Estate Investment: • REITs (VNQ, SCHH) for real estate exposure without the down payment commitment • Infrastructure ETFs (IFRA, PAVE) for long-term demographic plays",
+      "publish_time": "2025-11-02 10:58:09",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/stocks/comments/1olo0ke/looking_for_china_stocketf_ideas_focusing_on_14th/",
+      "url": "https://www.reddit.com/r/investing/comments/1omamm5/grown_children_receiving_100000_eachages_early/",
       "sentiment": "negative"
     }
   ]

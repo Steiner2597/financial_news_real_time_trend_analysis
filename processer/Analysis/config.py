@@ -56,6 +56,6 @@ CONFIG = {
         "don", "should", "now", "d", "ll", "m", "o", "re", "ve", "y", "ain",
         "aren", "couldn", "didn", "doesn", "hadn", "hasn", "haven", "isn",
         "ma", "mightn", "mustn", "needn", "shan", "shouldn", "wasn", "weren",
-        "won", "wouldn", "$", "http", "https", "com", "www"
+        "won", "wouldn", "$", "http", "https", "com", "www", "has", "have"
     ]
 }

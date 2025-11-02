@@ -1,1 +1,2 @@
 "processer/Bert_Model/*.pth" 
+processer/Bert_Model/best_model.pth

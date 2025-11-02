@@ -168,6 +168,7 @@ class SinglePassCleaner:
         """
         # 检查必要字段：source 必须有，文本字段至少有一个
         if 'source' not in data or not data['source']:
+            logger.debug(f"❌ 验证失败: 缺少 source 字段")
             return False
         
         # 文本字段：text、content、title 至少有一个且非空
@@ -176,7 +177,11 @@ class SinglePassCleaner:
             for field in ['text', 'content', 'title']
         )
         
-        return has_text
+        if not has_text:
+            logger.debug(f"❌ 验证失败: 没有有效的文本字段 (text/content/title)")
+            return False
+        
+        return True
     
     def _get_item_id(self, data: Dict[str, Any]) -> str:
         """
@@ -313,7 +318,10 @@ class SinglePassCleaner:
             if key in data:
                 cleaned[key] = data[key]
         
-        # 5. 添加清洗时间戳
+        # 5. 添加处理时间戳（当前时间）
+        cleaned['timestamp'] = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
+        
+        # 6. 添加清洗时间戳（用于追踪）
         cleaned['cleaned_at'] = datetime.now().isoformat()
         
         return cleaned

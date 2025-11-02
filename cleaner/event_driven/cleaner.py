@@ -278,6 +278,30 @@ class EventDrivenCleaner:
                     
                     timestamp = data['timestamp']
                     
+                    # 转换时间戳为浮点数（处理字符串或数字类型）
+                    try:
+                        if isinstance(timestamp, str):
+                            # 如果是 ISO 格式字符串，转换为时间戳
+                            if 'T' in timestamp or '-' in timestamp:
+                                from datetime import datetime
+                                # 处理不同的 ISO 格式
+                                ts = timestamp.replace('Z', '+00:00').replace(' ', 'T')
+                                dt = datetime.fromisoformat(ts)
+                                timestamp = dt.timestamp()
+                            else:
+                                # 尝试直接转为浮点数
+                                timestamp = float(timestamp)
+                        elif not isinstance(timestamp, (int, float)):
+                            logger.warning(f"时间戳类型不支持: {type(timestamp)}, 跳过")
+                            continue
+                        
+                        # 确保是数字类型
+                        timestamp = float(timestamp)
+                        
+                    except (ValueError, TypeError) as e:
+                        logger.warning(f"时间戳转换失败: {timestamp} ({type(timestamp)}), 错误: {e}")
+                        continue
+                    
                     # 如果是旧数据，标记删除
                     if timestamp < cutoff_timestamp:
                         items_to_remove.append(i)
