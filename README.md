@@ -75,13 +75,13 @@ financial_real_time_trend_analysis/
 │   ├── control_center.py      # 主控制器
 │   └── crawlers/               # 各数据源爬虫
 ├── cleaner/                    # 🧹 数据清洗模块
-│   ├── event_driven/           # 事件驱动版本
+│   ├── services/           # 事件驱动版本
 │   │   ├── cleaner.py         # 主程序（使用这个）
 │   │   └── single_pass_cleaner.py
 │   └── download_nltk.py       # NLTK 数据下载（必须先运行）
 ├── processer/                  # 🤖 数据分析模块
 │   └── Analysis/
-│       ├── processor_event_driven.py  # 事件驱动处理器（使用这个）
+│       ├── data_processor.py  # 事件驱动处理器（使用这个）
 │       └── main.py            # 分析主逻辑
 ├── visualization/              # 📊 可视化模块
 │   ├── backend/               # FastAPI 后端
@@ -128,7 +128,7 @@ redis:
 | 顺序 | 模块 | Windows (bat 脚本) | Linux/Mac | 说明 |
 |------|------|-------------------|-----------|------|
 | 1️⃣ | Cleaner | `start_cleaner.bat` | `python cleaner.py` | 监听等待 Scraper 通知 |
-| 2️⃣ | Processor | `start_processor.bat` | `python processor_event_driven.py` | 监听等待 Cleaner 通知 |
+| 2️⃣ | Processor | `start_processor.bat` | `python data_processor.py` | 监听等待 Cleaner 通知 |
 | 3️⃣ | Scraper | `run.bat` → 选 2 | `python control_center.py` | **触发流程**：爬取 → 通知 Cleaner |
 | 4️⃣ | Backend | *(无 bat)* | `python run.py` | API 服务 |
 | 5️⃣ | Frontend | `start.bat` | `npm run dev` | 前端界面（可选） |

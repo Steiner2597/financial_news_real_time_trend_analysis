@@ -8,6 +8,6 @@ echo ========================================
 echo.
 
 cd /d "%~dp0Analysis"
-python processor_event_driven.py
+python data_processor.py
 
 pause

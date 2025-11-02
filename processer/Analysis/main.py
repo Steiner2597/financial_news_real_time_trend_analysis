@@ -4,7 +4,6 @@ from data_loader import DataLoader
 from text_analyzer import TextAnalyzer
 from sentiment_analyzer import SentimentAnalyzer
 from history_analyzer import HistoryAnalyzer
-from news_processor import NewsProcessor
 from redis_manager import RedisManager  # 新增导入
 from config import CONFIG
 import pandas as pd
@@ -16,7 +15,6 @@ class MainProcessor:
         self.text_analyzer = TextAnalyzer()
         self.sentiment_analyzer = SentimentAnalyzer()
         self.history_analyzer = HistoryAnalyzer()
-        self.news_processor = NewsProcessor()
         self.redis_manager = RedisManager()  # 新增
         self.config = CONFIG
 

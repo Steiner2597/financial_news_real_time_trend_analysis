@@ -15,7 +15,7 @@ def test_single_pass_cleaner():
     print("=" * 70)
     
     try:
-        from event_driven.single_pass_cleaner import SinglePassCleaner
+        from services.single_pass_cleaner import SinglePassCleaner
         import yaml
         
         # 加载配置
@@ -82,7 +82,7 @@ def test_event_driven_cleaner():
     print("=" * 70)
     
     try:
-        from event_driven.cleaner import EventDrivenCleaner
+        from services.cleaner import EventDrivenCleaner
         
         cleaner = EventDrivenCleaner()
         print("✓ EventDrivenCleaner 初始化成功")
@@ -114,7 +114,7 @@ def main():
     print("所有测试完成！")
     print("=" * 70)
     print("\n现在可以运行:")
-    print("  python data_cleaner_event_driven.py")
+    print("  python run_cleaner.py")
     print("  或: start_cleaner.bat")
     print("\n清洗器将:")
     print("  1. 等待爬虫完成通知")

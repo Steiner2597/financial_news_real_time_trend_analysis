@@ -1,169 +1,248 @@
-import os
+"""
+事件驱动的 Processor
+监听 Cleaner 完成通知，收到通知后执行处理
+"""
 import time
-import subprocess
+import json
+import signal
 import sys
+import redis
+from datetime import datetime
+from pathlib import Path
+
+# 添加 Analysis 目录到路径
+sys.path.insert(0, str(Path(__file__).parent))
+
+from config import CONFIG
 from main import MainProcessor
 from redis_manager import RedisManager
 
 
-class DataProcessor:
+class EventDrivenProcessor:
+    """事件驱动的处理器"""
+    
     def __init__(self):
-        self.main_processor = MainProcessor()
+        """初始化处理器"""
+        self.config = CONFIG
+        self.notification_config = self.config['redis'].get('notification', {})
+        self.enabled = self.notification_config.get('enabled', False)
+        self.channel = self.notification_config.get('channel', 'cleaner_complete')
+        self.mode = self.notification_config.get('mode', 'event_driven')
+        
+        self.processor = MainProcessor()
         self.redis_manager = RedisManager()
-
-        # 获取项目根目录
-        self.base_dir = os.path.dirname(os.path.abspath(__file__))
-        self.format_conversion_dir = os.path.join(self.base_dir, "Format conversion")
-        self.bert_model_dir = os.path.join(self.base_dir, "Bert_Model")
-        self.analysis_dir = os.path.join(self.base_dir, "Analysis")
-
-    def run_jsontocsv(self):
-        """运行JSON到CSV转换"""
-        print("开始JSON到CSV格式转换...")
-
+        self.running = True
+        
+        # Redis 订阅客户端
+        self.redis_sub_client = None
+        self.pubsub = None
+        
+        # 设置信号处理
+        signal.signal(signal.SIGINT, self._signal_handler)
+        signal.signal(signal.SIGTERM, self._signal_handler)
+        
+        print("=" * 70)
+        print("事件驱动处理器初始化")
+        print("=" * 70)
+        print(f"模式: {self.mode}")
+        print(f"监听频道: {self.channel}")
+        print(f"通知启用: {self.enabled}")
+        print("=" * 70)
+    
+    def _signal_handler(self, signum, frame):
+        """处理退出信号"""
+        print("\n\n⚠️  收到退出信号，正在关闭...")
+        self.running = False
+        
+        # 强制关闭 pubsub 连接以中断 get_message() 阻塞
         try:
-            # 构建JsontoCSV.py的路径
-            json_to_csv_script = os.path.join(self.format_conversion_dir, "JsontoCSV.py")
-
-            # 输入文件路径（从Redis获取的JSONL文件）
-            input_jsonl = os.path.join(self.format_conversion_dir, "input_data.jsonl")
-            # 输出文件路径（Bert_Model目录）
-            output_csv = os.path.join(self.bert_model_dir, "output_data.csv")
-
-            # 运行JsontoCSV.py
-            result = subprocess.run([
-                sys.executable, json_to_csv_script,
-                input_jsonl, output_csv
-            ], capture_output=True, text=True, cwd=self.base_dir)
-
-            if result.returncode == 0:
-                print("✅ JSON到CSV转换成功完成!")
-                print(result.stdout)
-                return True
-            else:
-                print("❌ JSON到CSV转换失败!")
-                print("错误输出:", result.stderr)
-                return False
-
-        except Exception as e:
-            print(f"❌ 运行JsontoCSV时出错: {e}")
-            return False
-
-    def run_bert_prediction(self):
-        """运行BERT情感预测"""
-        print("开始BERT情感预测...")
-
+            if self.pubsub:
+                self.pubsub.close()
+        except:
+            pass
+    
+    def _connect_redis(self):
+        """连接 Redis 订阅"""
         try:
-            # 构建predict_bert.py的路径
-            predict_script = os.path.join(self.bert_model_dir, "predict_bert.py")
-            model_path = os.path.join(self.bert_model_dir, "best_model.pth")
-
-            # 运行predict_bert.py
-            result = subprocess.run([
-                sys.executable, predict_script, model_path
-            ], capture_output=True, text=True, cwd=self.base_dir)
-
-            if result.returncode == 0:
-                print("✅ BERT情感预测成功完成!")
-                print(result.stdout)
-                return True
-            else:
-                print("❌ BERT情感预测失败!")
-                print("错误输出:", result.stderr)
-                return False
-
-        except Exception as e:
-            print(f"❌ 运行BERT预测时出错: {e}")
-            return False
-
-    def process_automatically(self, input_filename="raw_data_latest.json"):
-        """完整的自动处理流程"""
-        print("=" * 50)
-        print("开始完整的数据处理流程...")
-        print("=" * 50)
-
-        # 步骤1: 从Redis获取最新数据并保存到本地
-        print("\n📥 步骤1: 从Redis获取原始数据...")
-        raw_data_path = self.redis_manager.save_raw_data_to_local(input_filename)
-
-        if not raw_data_path:
-            print("❌ 无法获取原始数据，流程终止")
-            return False
-
-        # 步骤2: 将JSON数据转换为CSV格式（Format conversion → Bert_Model）
-        print("\n🔄 步骤2: 格式转换 (JSON → CSV)...")
-        if not self.run_jsontocsv():
-            print("❌ 格式转换失败，流程终止")
-            return False
-
-        # 步骤3: 运行BERT情感预测（生成Analysis/input_data.csv）
-        print("\n🤖 步骤3: BERT情感分析预测...")
-        if not self.run_bert_prediction():
-            print("❌ BERT预测失败，流程终止")
-            return False
-
-        # 步骤4: 运行主分析流程（使用预测后的数据）
-        print("\n📊 步骤4: 运行数据分析流程...")
-        try:
-            # 使用BERT预测后生成的数据作为输入
-            input_data_path = os.path.join(self.analysis_dir, "input_data.csv")
-
-            self.main_processor.process(
-                input_file=input_data_path,
-                output_file="output_data.json"
+            self.redis_sub_client = redis.Redis(
+                host=self.config['redis']['host'],
+                port=self.config['redis']['port'],
+                db=self.config['redis']['input_db'],
+                decode_responses=True
             )
+            self.redis_sub_client.ping()
+            print(f"✓ Redis 订阅连接成功: {self.config['redis']['host']}:{self.config['redis']['port']}/DB{self.config['redis']['input_db']}")
+            
+            # 创建发布订阅对象
+            self.pubsub = self.redis_sub_client.pubsub()
+            self.pubsub.subscribe(self.channel)
+            print(f"✓ 已订阅频道: {self.channel}")
+            
         except Exception as e:
-            print(f"❌ 数据分析失败: {e}")
-            return False
-
-        print("\n📤 步骤5: 发布结果到Redis哈希...")
-        success = self.redis_manager.publish_processed_data()
-
-        if success:
-            print("🎉 完整流程执行成功!")
-            print("✅ 数据已存储为Redis哈希格式")
-
-            # 验证数据存储
-            redis_info = self.redis_manager.get_redis_info()
-            if redis_info:
-                print(f"✅ processed_data字段数: {redis_info.get('processed_data_fields', 0)}")
-                print(f"✅ history_data字段数: {redis_info.get('history_data_fields', 0)}")
-        else:
-            print("⚠️  流程完成，但发布到Redis失败")
-
-        return success
-
-    def run_periodically(self, interval=300):
-        """定期运行完整处理流程"""
-        print(f"开始定期处理，间隔: {interval}秒")
-
+            print(f"✗ Redis 连接失败: {e}")
+            raise
+    
+    def _process_notification(self, message: dict):
+        """
+        处理收到的通知消息
+        
+        Args:
+            message: 通知消息
+        """
         try:
-            while True:
-                print(f"\n[{time.strftime('%Y-%m-%d %H:%M:%S')}] 开始新一轮完整处理...")
-                self.process_automatically()
-                print(f"等待 {interval} 秒后继续...")
-                time.sleep(interval)
+            print("\n" + "=" * 70)
+            print("📬 收到清洗完成通知")
+            print("=" * 70)
+            
+            # 解析消息
+            if isinstance(message, dict):
+                event = message.get('event', 'unknown')
+                timestamp = message.get('timestamp', 'N/A')
+                stats = message.get('statistics', {})
+                
+                print(f"事件类型: {event}")
+                print(f"时间戳: {timestamp}")
+                print(f"清洗数量: {stats.get('cleaned_items', 0)}")
+                print(f"队列长度: {stats.get('queue_length', 0)}")
+                
+                # 显示原始爬虫统计
+                crawler_stats = stats.get('crawler_stats', {})
+                if crawler_stats:
+                    print("\n原始数据统计:")
+                    print(f"  总数据量: {crawler_stats.get('total_items', 0)}")
+                    print(f"  总错误数: {crawler_stats.get('total_errors', 0)}")
+            
+            print("=" * 70)
+            print("🚀 开始执行数据处理...")
+            print("=" * 70)
+            
+            # 执行处理
+            self._run_processing()
+            
+            print("=" * 70)
+            print("✨ 数据处理完成")
+            print("=" * 70 + "\n")
+            
+        except Exception as e:
+            print(f"处理通知时出错: {e}")
+            import traceback
+            traceback.print_exc()
+    
+    def _run_processing(self):
+        """执行处理任务"""
+        try:
+            # MainProcessor.process() 会自动：
+            # 1. 从 Redis 读取数据（通过 DataLoader）
+            # 2. 处理数据
+            # 3. 保存到本地文件
+            # 4. 发布到 Redis（通过 RedisManager）
+            success = self.processor.process()
+            
+            if success:
+                print("✅ 数据处理成功")
+            else:
+                print("⚠️  数据处理失败或无数据")
+            
+        except Exception as e:
+            print(f"❌ 处理过程出错: {e}")
+            import traceback
+            traceback.print_exc()
+    
+    def run_event_driven(self):
+        """事件驱动模式：等待通知"""
+        print("\n" + "=" * 70)
+        print("🎧 事件驱动数据处理器已就绪")
+        print("=" * 70)
+        print(f"监听频道: {self.channel}")
+        print("按 Ctrl+C 停止")
+        print("=" * 70 + "\n")
+        
+        # 连接 Redis
+        self._connect_redis()
+        
+        # 监听消息（使用超时以支持 Ctrl+C）
+        try:
+            while self.running:
+                try:
+                    # 使用 get_message() 带超时，而不是 listen()
+                    raw_message = self.pubsub.get_message(timeout=1.0)
+                    
+                    if raw_message is None:
+                        # 没有消息，继续等待
+                        continue
+                    
+                    # 过滤掉订阅确认消息
+                    if raw_message['type'] != 'message':
+                        continue
+                    
+                    # 解析消息
+                    try:
+                        message_data = json.loads(raw_message['data'])
+                        self._process_notification(message_data)
+                    except json.JSONDecodeError:
+                        print(f"无法解析消息: {raw_message['data']}")
+                    except Exception as e:
+                        print(f"处理消息时出错: {e}")
+                
+                except Exception as e:
+                    if self.running:  # 只在运行时打印错误
+                        # 连接关闭是正常的（Ctrl+C 触发）
+                        if "closed" not in str(e).lower():
+                            print(f"接收消息时出错: {e}")
+                    break
+        
         except KeyboardInterrupt:
-            print("定期处理已停止")
+            pass
+        finally:
+            self._cleanup()
+    
+    def _cleanup(self):
+        """清理资源"""
+        print("\n" + "=" * 70)
+        print("🧹 清理资源...")
+        
+        try:
+            # 直接关闭所有连接，不等待服务器响应
+            if self.pubsub:
+                try:
+                    # 关闭底层连接（不发送 unsubscribe 命令）
+                    if hasattr(self.pubsub, 'connection') and self.pubsub.connection:
+                        self.pubsub.connection.disconnect()
+                    self.pubsub.close()
+                except:
+                    pass
+            
+            if self.redis_sub_client:
+                try:
+                    # 直接断开连接池
+                    self.redis_sub_client.close()
+                except:
+                    pass
+            
+        except:
+            pass
+        
+        print("\n👋 处理器已停止")
+    
+    def run(self):
+        """根据配置运行（仅支持事件驱动模式）"""
+        if not self.enabled:
+            print("❌ 错误：通知功能未启用")
+            print("请在 config.py 中设置 redis.notification.enabled = True")
+            return
+        
+        if self.mode != 'event_driven':
+            print(f"⚠️  警告：不支持的模式 '{self.mode}'，切换到事件驱动模式")
+            self.mode = 'event_driven'
+        
+        self.run_event_driven()
+
+
+def main():
+    """主函数"""
+    processor = EventDrivenProcessor()
+    processor.run()
 
 
 if __name__ == "__main__":
-    processor = DataProcessor()
-
-    # 运行一次完整流程
-    success = processor.process_automatically()
-
-    if success:
-        print("\n" + "=" * 50)
-        print("🎯 完整流程总结:")
-        print("  1. 📥 从Redis获取原始JSON数据")
-        print("  2. 🔄 Format conversion: JSON → CSV转换")
-        print("  3. 🤖 Bert_Model: 情感分析预测")
-        print("  4. 📊 Analysis: 词频统计和趋势分析")
-        print("  5. 📤 发布分析结果到Redis")
-        print("=" * 50)
-    else:
-        print("\n❌ 完整流程执行失败")
-
-    # 或者运行定期处理（取消注释下面的行）
-    # processor.run_periodically(interval=300)  # 5分钟间隔
+    main()

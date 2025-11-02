@@ -55,7 +55,7 @@ newsapi:
   - '"oil prices" OR "crude oil" OR "energy"'
   - '"gold prices" OR "precious metals"'
   rate_limits:
-    current_day_requests: 10
+    current_day_requests: 20
     last_reset_date: '2025-11-02'
     max_requests_per_day: 100
     requests_per_run: 5
@@ -66,8 +66,8 @@ reddit:
   comments_limit: 30
   comments_sort: best
   post_filters:
-    min_upvotes: 5
-    min_comments: 3
+    min_upvotes: 1
+    min_comments: 1
   enabled: true
   posts_limit: 50
   subreddits:
@@ -94,22 +94,266 @@ reddit:
   search_enabled: true
   search_keywords:
   - earnings
+  - quarterly results
+  - revenue beat
+  - EPS
+  - guidance raised
+  - profit margin
+  - guidance cut
+  - guidance lowered
+  - forward guidance miss
+  - earnings call
+  - earnings preview
+  - pre-earnings runup
+  - revenue slowdown
+  - profit margin squeeze
+  - weak outlook
   - IPO
+  - direct listing
+  - SPAC merger
+  - going public
+  - Biotech IPO
   - stock split
+  - reverse split
   - dividend announcement
+  - buyback program
+  - insider trading
+  - layoffs announced
+  - workforce reduction
+  - hiring freeze
+  - headcount cut
+  - executive shakeup
+  - board changes
   - merger deal
+  - acquisition
+  - M&A
+  - spinoff
+  - divestiture
   - market correction
   - bull run
   - bear market
-  - $AAPL earnings
-  - $TSLA news
+  - rally
+  - selloff
+  - crash
+  - circuit breaker
+  - market meltdown
+  - risk-off
+  - risk-on
+  - volatility spike
+  - VIX surge
+  - soft landing
+  - hard landing
+  - stagflation
+  - disinflation
+  - reflation trade
+  - flight to safety
+  - capital flight
+  - margin liquidation
+  - forced selling
+  - options flow
+  - dark pool activity
+  - dark pool print
+  - unusual volume
+  - block trade
+  - sweep order
+  - high short interest
+  - short squeeze brewing
+  - whale activity
+  - breakout level
+  - breakdown
+  - max pain
+  - gamma exposure
+  - $AAPL
+  - $TSLA
+  - $NVDA
+  - $MSFT
+  - $GOOGL
+  - $AMZN
+  - $META
+  - $NFLX
   - Bitcoin surge
+  - BTC pump
+  - Ethereum
+  - crypto rally
+  - altcoin
+  - DeFi
+  - ETF approval crypto
+  - BTC halving
+  - Bitcoin ETF flows
+  - on-chain activity
+  - whale wallet
+  - ETH staking
+  - token unlock
+  - miner capitulation
+  - protocol upgrade
+  - airdrop
+  - rug pull
   - Fed rate hike
-  - inflation concerns
+  - FOMC meeting
+  - Powell speech
+  - interest rate cut
+  - QE
+  - tapering
+  - unexpected rate move
+  - emergency rate action
+  - inflation
+  - CPI data
+  - unemployment rate
+  - GDP growth
+  - consumer confidence
+  - PMI
+  - unexpected CPI
+  - sticky inflation
+  - disinflation trend
   - recession signals
+  - yield curve
+  - bank crisis
+  - debt ceiling
+  - credit rating downgrade
+  - banking system stress
+  - sovereign debt crisis
+  - currency collapse
+  - flash crash
+  - market panic
+  - global liquidity crunch
+  - bailout talks
+  - capital controls
+  - AI breakthrough
+  - chip shortage
+  - supply chain
+  - oil price shock
+  - housing market
+  - AI chip demand
+  - GPU shortage
+  - AI arms race
+  - semiconductor export control
+  - advanced packaging
+  - battery breakthrough
+  - robotaxi approval
+  - SEC investigation
+  - antitrust
+  - lawsuit
+  - regulatory approval
+  - fine
+  - SEC crypto regulation
+  - GDPR fines
+  - money laundering crackdown
+  - FATF travel rule
+  - crypto ban discussion
+  - Congress hearing
+  - AI safety regulation
+  - national security review
+  - CEO resignation
+  - whistleblower
+  - earnings miss
+  - profit warning
+  - bankruptcy filing
+  - Ukraine war
+  - Russia sanctions
+  - Israel-Gaza conflict
+  - Middle East tensions
+  - Taiwan Strait
+  - South China Sea dispute
+  - Iran nuclear deal
+  - NATO expansion
+  - China-US trade war
+  - US-China tech decoupling
+  - cyber warfare
+  - US GDP growth
+  - US inflation report
+  - US unemployment claims
+  - US PCE inflation
+  - US consumer spending
+  - Eurozone inflation
+  - Germany recession
+  - ECB rate decision
+  - UK CPI data
+  - Eurozone PMI
+  - China manufacturing PMI
+  - Japan BoJ policy
+  - India GDP growth
+  - South Korea trade surplus
+  - ASEAN economic outlook
+  - Brazil inflation
+  - Nigeria currency crisis
+  - Turkey interest rates
+  - Argentina debt default
+  - South Africa rand
+  - OPEC meeting
+  - natural gas shortage
+  - Brent crude price
+  - gold rally
+  - lithium price surge
+  - rare earth supply
+  - nuclear power plant
+  - copper supply chain
+  - Ukraine grain exports
+  - Russia energy exports
+  - Hurricane Ian
+  - California wildfires
+  - Australian drought
+  - Monsoon floods
+  - climate change policy
+  - extreme weather insurance
+  - food inflation
+  - supply chain disruption
+  - flood damage cost
+  - wildfire economic impact
+  - US-China tech war
+  - Belt and Road Initiative
+  - ASEAN trade agreement
+  - African Continental Free Trade
+  - EU carbon border tax
+  - US tariff on EVs
+  - digital tax EU
+  - global minimum corporate tax
+  - debt relief initiative
+  - trade war escalation
+  - Brazil election
+  - Mexico trade deal
+  - Venezuela oil production
+  - Saudi Vision 2030
+  - UAE financial center
+  - OPEC+ agreement
+  - Vietnam manufacturing shift
+  - Indonesia nickel export
+  - Thailand tourism recovery
+  - Nigeria oil price
+  - South Africa power crisis
+  - Kenya fintech boom
+  - Fed rate hike China impact
+  - Ukraine war oil prices
+  - AI regulation EU
+  - Saudi Arabia oil output
+  - US-China tech decoupling
+  - Brazil inflation currency
+  - Nigeria debt restructuring
+  - EU crypto tax
+  - India manufacturing growth
+  - Mexico remittance flow
+  - breaking finance
+  - market alert
+  - trade war escalation
+  - emergency meeting
+  - asset freeze
+  - liquidity injection
+  - diamond hands
+  - paper hands
+  - YOLO trade
+  - bagholder
+  - tendies
+  - ape buy
+  - moon mission
+  - to the moon
+  - HODL
+  - dead cat bounce
+  - exit liquidity
+  - rekt
+  - buy the dip
+  - sell the news
   search_settings:
-    time_filter: day
-    sort: relevance
+    time_filter: hour
+    sort: new
     posts_per_keyword: 15
   user_agent: FinanceDataCrawler/1.0
 redis:
@@ -305,5 +549,5 @@ alphavantage:
     max_requests_per_day: 25
     requests_per_run: 5
     delay_between_requests: 12
-    current_day_requests: 20
+    current_day_requests: 25
     last_reset_date: '2025-11-02'

@@ -7,6 +7,6 @@ echo.
 echo 启动中...
 echo.
 
-python data_cleaner_event_driven.py
+python run_cleaner.py
 
 pause

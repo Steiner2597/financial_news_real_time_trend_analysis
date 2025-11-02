@@ -4,7 +4,7 @@
 
 ```
 cleaner/
-├── event_driven/                    # 事件驱动模块（新）
+├── services/                        # 事件驱动模块
 │   ├── __init__.py                 # 模块初始化
 │   ├── cleaner.py                  # 主清洗器类
 │   ├── redis_manager.py            # Redis 连接管理
@@ -12,7 +12,7 @@ cleaner/
 │   ├── cache_manager.py            # ID 缓存管理
 │   └── signal_handler.py           # 信号处理
 │
-├── data_cleaner_event_driven_v2.py # 新入口文件（使用模块化版本）
+├── run_cleaner.py                  # 入口文件
 ├── data_cleaner_module.py          # 核心清洗逻辑
 └── config_processing.yaml          # 配置文件
 ```
@@ -72,15 +72,15 @@ cleaner/
 cd cleaner
 
 # 方式 1: 直接运行
-python data_cleaner_event_driven.py
+python run_cleaner.py
 
 # 方式 2: 使用启动脚本
 start_cleaner.bat
 
 # 指定运行模式
-python data_cleaner_event_driven.py --mode event_driven   # 事件驱动模式（默认）
-python data_cleaner_event_driven.py --mode continuous     # 持续轮询模式
-python data_cleaner_event_driven.py --mode once          # 单次运行模式
+python run_cleaner.py --mode event_driven   # 事件驱动模式（默认）
+python run_cleaner.py --mode continuous     # 持续轮询模式
+python run_cleaner.py --mode once          # 单次运行模式
 ```
 
 ## 🔧 配置文件
@@ -146,7 +146,7 @@ deduplication:
 ### 从旧版本迁移到新版本
 
 1. **无需修改配置文件** - 配置文件完全兼容
-2. **更新启动脚本** - 将 `data_cleaner_event_driven.py` 改为 `data_cleaner_event_driven_v2.py`
+2. **更新启动脚本** - 将 `data_cleaner_event_driven.py` 改为 `run_cleaner.py`
 3. **测试运行** - 功能完全一致，只是内部结构更清晰
 
 ### 自定义扩展
@@ -171,7 +171,7 @@ deduplication:
 **解决方案**: 确保在 `cleaner/` 目录下运行
 ```bash
 cd cleaner
-python data_cleaner_event_driven_v2.py
+python run_cleaner.py
 ```
 
 ### 问题：找不到配置文件
@@ -180,7 +180,7 @@ python data_cleaner_event_driven_v2.py
 ```bash
 cleaner/
 ├── config_processing.yaml  # 确保存在
-└── data_cleaner_event_driven_v2.py
+└── run_cleaner.py
 ```
 
 ## 📚 进一步阅读

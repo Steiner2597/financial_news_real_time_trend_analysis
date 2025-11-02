@@ -20,7 +20,7 @@ QUEUE_IN = CONFIG['redis']['queue_in']
 
 # 导入清洗器
 sys.path.insert(0, str(Path(__file__).parent.parent))
-from event_driven.single_pass_cleaner import SinglePassCleaner
+from services.single_pass_cleaner import SinglePassCleaner
 
 print("=" * 80)
 print("🔍 Cleaner 调试工具")

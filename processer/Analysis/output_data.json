@@ -1,231 +1,225 @@
 {
   "metadata": {
-    "timestamp": "2025-11-02 18:58:14",
+    "timestamp": "2025-11-02 20:16:17",
     "update_interval": 30,
     "data_version": "1.0",
     "news_sources": {
-      "reddit_post": 1007,
-      "rss": 811,
-      "newsapi": 69,
-      "alphavantage": 39,
-      "reddit_comment": 1,
-      "stocktwits": 1
+      "reddit_post": 991,
+      "rss": 867,
+      "newsapi": 150,
+      "alphavantage": 80,
+      "twitter": 74,
+      "reddit": 69,
+      "stocktwits": 60,
+      "reddit_comment": 1
     }
   },
   "trending_keywords": [
     {
-      "keyword": "have",
+      "keyword": "market",
       "rank": 1,
-      "current_frequency": 886,
+      "current_frequency": 855,
       "growth_rate": 100.0,
       "trend_score": 1.0,
       "sentiment": {
-        "positive": 0,
-        "negative": 100,
-        "total_comments": 398
+        "positive": 4,
+        "negative": 96,
+        "total_comments": 696
+      }
+    },
+    {
+      "keyword": "from",
+      "rank": 2,
+      "current_frequency": 772,
+      "growth_rate": 100.0,
+      "trend_score": 0.94,
+      "sentiment": {
+        "positive": 1,
+        "negative": 99,
+        "total_comments": 452
       }
     },
     {
       "keyword": "nbsp",
-      "rank": 2,
-      "current_frequency": 724,
+      "rank": 3,
+      "current_frequency": 694,
       "growth_rate": 100.0,
       "trend_score": 0.89,
       "sentiment": {
         "positive": 0,
         "negative": 100,
-        "total_comments": 325
-      }
-    },
-    {
-      "keyword": "from",
-      "rank": 3,
-      "current_frequency": 698,
-      "growth_rate": 100.0,
-      "trend_score": 0.87,
-      "sentiment": {
-        "positive": 0,
-        "negative": 100,
-        "total_comments": 376
-      }
-    },
-    {
-      "keyword": "like",
-      "rank": 4,
-      "current_frequency": 615,
-      "growth_rate": 100.0,
-      "trend_score": 0.82,
-      "sentiment": {
-        "positive": 0,
-        "negative": 100,
-        "total_comments": 316
+        "total_comments": 310
       }
     },
     {
       "keyword": "about",
+      "rank": 4,
+      "current_frequency": 675,
+      "growth_rate": 100.0,
+      "trend_score": 0.87,
+      "sentiment": {
+        "positive": 4,
+        "negative": 96,
+        "total_comments": 444
+      }
+    },
+    {
+      "keyword": "like",
       "rank": 5,
-      "current_frequency": 552,
+      "current_frequency": 579,
       "growth_rate": 100.0,
-      "trend_score": 0.77,
+      "trend_score": 0.81,
       "sentiment": {
         "positive": 0,
         "negative": 100,
-        "total_comments": 287
-      }
-    },
-    {
-      "keyword": "market",
-      "rank": 6,
-      "current_frequency": 542,
-      "growth_rate": 100.0,
-      "trend_score": 0.77,
-      "sentiment": {
-        "positive": 0,
-        "negative": 100,
-        "total_comments": 372
-      }
-    },
-    {
-      "keyword": "has",
-      "rank": 7,
-      "current_frequency": 493,
-      "growth_rate": 100.0,
-      "trend_score": 0.73,
-      "sentiment": {
-        "positive": 0,
-        "negative": 100,
-        "total_comments": 335
+        "total_comments": 309
       }
     },
     {
       "keyword": "stock",
+      "rank": 6,
+      "current_frequency": 521,
+      "growth_rate": 100.0,
+      "trend_score": 0.77,
+      "sentiment": {
+        "positive": 3,
+        "negative": 97,
+        "total_comments": 585
+      }
+    },
+    {
+      "keyword": "stocks",
+      "rank": 7,
+      "current_frequency": 454,
+      "growth_rate": 100.0,
+      "trend_score": 0.72,
+      "sentiment": {
+        "positive": 5,
+        "negative": 95,
+        "total_comments": 365
+      }
+    },
+    {
+      "keyword": "time",
       "rank": 8,
-      "current_frequency": 458,
+      "current_frequency": 438,
       "growth_rate": 100.0,
       "trend_score": 0.71,
       "sentiment": {
-        "positive": 0,
-        "negative": 100,
-        "total_comments": 342
+        "positive": 3,
+        "negative": 97,
+        "total_comments": 484
       }
     },
     {
-      "keyword": "out",
+      "keyword": "new",
       "rank": 9,
-      "current_frequency": 434,
+      "current_frequency": 425,
       "growth_rate": 100.0,
-      "trend_score": 0.69,
+      "trend_score": 0.7,
       "sentiment": {
-        "positive": 0,
-        "negative": 100,
-        "total_comments": 546
+        "positive": 2,
+        "negative": 98,
+        "total_comments": 367
       }
     },
     {
-      "keyword": "price",
+      "keyword": "investors",
       "rank": 10,
       "current_frequency": 424,
       "growth_rate": 100.0,
-      "trend_score": 0.69,
+      "trend_score": 0.7,
       "sentiment": {
-        "positive": 0,
-        "negative": 100,
-        "total_comments": 146
+        "positive": 5,
+        "negative": 95,
+        "total_comments": 349
       }
     }
   ],
   "word_cloud": [
     {
-      "text": "have",
-      "value": 886
-    },
-    {
-      "text": "nbsp",
-      "value": 724
+      "text": "market",
+      "value": 855
     },
     {
       "text": "from",
-      "value": 698
+      "value": 772
     },
     {
-      "text": "like",
-      "value": 615
+      "text": "nbsp",
+      "value": 694
     },
     {
       "text": "about",
-      "value": 552
+      "value": 675
     },
     {
-      "text": "market",
-      "value": 542
-    },
-    {
-      "text": "has",
-      "value": 493
+      "text": "like",
+      "value": 579
     },
     {
       "text": "stock",
-      "value": 458
+      "value": 521
     },
     {
-      "text": "out",
-      "value": 434
-    },
-    {
-      "text": "price",
-      "value": 424
-    },
-    {
-      "text": "would",
-      "value": 381
-    },
-    {
-      "text": "could",
-      "value": 373
+      "text": "stocks",
+      "value": 454
     },
     {
       "text": "time",
-      "value": 360
-    },
-    {
-      "text": "after",
-      "value": 353
-    },
-    {
-      "text": "get",
-      "value": 348
+      "value": 438
     },
     {
       "text": "new",
-      "value": 344
+      "value": 425
+    },
+    {
+      "text": "investors",
+      "value": 424
+    },
+    {
+      "text": "price",
+      "value": 422
+    },
+    {
+      "text": "out",
+      "value": 415
+    },
+    {
+      "text": "year",
+      "value": 413
     },
     {
       "text": "over",
-      "value": 317
+      "value": 390
     },
     {
-      "text": "because",
-      "value": 314
+      "text": "growth",
+      "value": 387
     },
     {
-      "text": "one",
-      "value": 308
+      "text": "nasdaq",
+      "value": 382
     },
     {
-      "text": "also",
-      "value": 301
+      "text": "would",
+      "value": 382
+    },
+    {
+      "text": "first",
+      "value": 371
+    },
+    {
+      "text": "could",
+      "value": 366
+    },
+    {
+      "text": "into",
+      "value": 353
     }
   ],
   "history_data": {
-    "have": [
-      {
-        "timestamp": "2025-11-01 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 11:00:00",
-        "frequency": 0
-      },
+    "market": [
       {
         "timestamp": "2025-11-01 12:00:00",
         "frequency": 0
@@ -316,121 +310,19 @@
       },
       {
         "timestamp": "2025-11-02 10:00:00",
-        "frequency": 398
-      }
-    ],
-    "nbsp": [
-      {
-        "timestamp": "2025-11-01 10:00:00",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 11:00:00",
+        "timestamp": "2025-11-02 11:00:00",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 12:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 13:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 14:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 15:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 16:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 17:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 18:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 19:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 20:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 21:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 22:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 23:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 00:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 01:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 02:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 03:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 04:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 05:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 06:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 07:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 08:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 09:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 10:00:00",
-        "frequency": 325
+        "timestamp": "2025-11-02 12:00:00",
+        "frequency": 696
       }
     ],
     "from": [
       {
-        "timestamp": "2025-11-01 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 11:00:00",
-        "frequency": 0
-      },
-      {
         "timestamp": "2025-11-01 12:00:00",
         "frequency": 0
       },
@@ -520,18 +412,18 @@
       },
       {
         "timestamp": "2025-11-02 10:00:00",
-        "frequency": 376
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 11:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 12:00:00",
+        "frequency": 452
       }
     ],
-    "like": [
-      {
-        "timestamp": "2025-11-01 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 11:00:00",
-        "frequency": 0
-      },
+    "nbsp": [
       {
         "timestamp": "2025-11-01 12:00:00",
         "frequency": 0
@@ -622,19 +514,19 @@
       },
       {
         "timestamp": "2025-11-02 10:00:00",
-        "frequency": 316
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 11:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 12:00:00",
+        "frequency": 310
       }
     ],
     "about": [
       {
-        "timestamp": "2025-11-01 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 11:00:00",
-        "frequency": 0
-      },
-      {
         "timestamp": "2025-11-01 12:00:00",
         "frequency": 0
       },
@@ -724,18 +616,18 @@
       },
       {
         "timestamp": "2025-11-02 10:00:00",
-        "frequency": 287
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 11:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 12:00:00",
+        "frequency": 444
       }
     ],
-    "market": [
-      {
-        "timestamp": "2025-11-01 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 11:00:00",
-        "frequency": 0
-      },
+    "like": [
       {
         "timestamp": "2025-11-01 12:00:00",
         "frequency": 0
@@ -826,121 +718,19 @@
       },
       {
         "timestamp": "2025-11-02 10:00:00",
-        "frequency": 372
-      }
-    ],
-    "has": [
-      {
-        "timestamp": "2025-11-01 10:00:00",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 11:00:00",
+        "timestamp": "2025-11-02 11:00:00",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 12:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 13:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 14:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 15:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 16:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 17:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 18:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 19:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 20:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 21:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 22:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 23:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 00:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 01:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 02:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 03:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 04:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 05:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 06:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 07:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 08:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 09:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 10:00:00",
-        "frequency": 335
+        "timestamp": "2025-11-02 12:00:00",
+        "frequency": 309
       }
     ],
     "stock": [
       {
-        "timestamp": "2025-11-01 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 11:00:00",
-        "frequency": 0
-      },
-      {
         "timestamp": "2025-11-01 12:00:00",
         "frequency": 0
       },
@@ -1030,18 +820,18 @@
       },
       {
         "timestamp": "2025-11-02 10:00:00",
-        "frequency": 342
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 11:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 12:00:00",
+        "frequency": 585
       }
     ],
-    "out": [
-      {
-        "timestamp": "2025-11-01 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 11:00:00",
-        "frequency": 0
-      },
+    "stocks": [
       {
         "timestamp": "2025-11-01 12:00:00",
         "frequency": 0
@@ -1132,18 +922,18 @@
       },
       {
         "timestamp": "2025-11-02 10:00:00",
-        "frequency": 546
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 11:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 12:00:00",
+        "frequency": 365
       }
     ],
-    "price": [
-      {
-        "timestamp": "2025-11-01 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 11:00:00",
-        "frequency": 0
-      },
+    "time": [
       {
         "timestamp": "2025-11-01 12:00:00",
         "frequency": 0
@@ -1234,149 +1024,361 @@
       },
       {
         "timestamp": "2025-11-02 10:00:00",
-        "frequency": 146
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 11:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 12:00:00",
+        "frequency": 484
+      }
+    ],
+    "new": [
+      {
+        "timestamp": "2025-11-01 12:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 13:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 14:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 15:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 16:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 17:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 18:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 19:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 20:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 21:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 22:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 23:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 00:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 01:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 02:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 03:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 04:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 05:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 06:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 07:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 08:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 09:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 10:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 11:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 12:00:00",
+        "frequency": 367
+      }
+    ],
+    "investors": [
+      {
+        "timestamp": "2025-11-01 12:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 13:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 14:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 15:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 16:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 17:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 18:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 19:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 20:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 21:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 22:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-01 23:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 00:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 01:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 02:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 03:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 04:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 05:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 06:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 07:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 08:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 09:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 10:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 11:00:00",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02 12:00:00",
+        "frequency": 349
       }
     ]
   },
   "news_feed": [
     {
-      "title": "REGARD YOLO AMZN CALLS TY I LOVE YOU BEZOS TY BEZOS I CAN NOW AFFORD ANOTHER YEAR OF AMAZON PRIME I AM A LOYAL FOREVR MEMBER NOW!",
-      "publish_time": "2025-11-02 10:58:12",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/wallstreetbets/comments/1okuvxo/regard_yolo_amzn_calls_ty_i_love_you_bezos/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Seeking Advice: Should I sell my Binghamton properties and reinvest in Racine, WI? Hey everyone, looking for some perspective from experienced investors. I currently own two student/family rentals in Binghamton, NY and one property in Racine, WI. On paper, Binghamton gives me better returns, my spreadsheet looks great, but the real-world experience hasn’t matched the math. Binghamton properties (North St and Edwards St): Bought within the last year, total all-in cost around $500K after repairs ($120k for rehab). They are currently grossing $5.9K/month (One student rental and the other a family rental). Neighborhoods are rough, and I'm facing frequent tenant issues, late payments, and maintenance calls (family tenant). Property manager charges: * 10% monthly management fee * 50% of first month’s rent for new leases (almost every year for student rentals) * 30% of first month’s rent for renewals So my true annual management cost ends up around 12–14%, not 10%. Racine property: Managed by my broker for a flat 10% fee, no renewal charges. He also charges 50% for a new lease but I've had the same tenant for almost two years on a month-to-month lease (that's how he prefers it and I'm fine with it). He handles repairs and turnover, so it’s basically on autopilot. Returns are steady and stress-free, even if the yield is a bit lower. My realtor/manager in Binghamton suggested another option: Sell both current houses and use the proceeds to buy one or two in a better neighborhood within Binghamton. That could mean better tenants, but the annual turnover would still be there, and my true management cost would remain around 12-14% anyway. So now I’m in a dilemma: Do I sell both Binghamton houses and move that capital to Racine, where I already have a system that works and a trustworthy manager? Or do I stay in Binghamton, buy “nicer” properties, and hope the market + tenants improve? My spreadsheet says Binghamton wins. My sanity says Racine does. That said, it’s only been about two years since I started this whole real estate journey, so part of me wonders if I just need to be more patient instead of making a hasty move. My original plan was to hold the Binghamton properties for 5–10 years, banking on the neighborhoods improving and the market stabilizing. I just didn’t anticipate how challenging the tenant turnover and maintenance would be. Even after putting roughly $120K into repairs, these older properties keep demanding attention — constant maintenance calls, little things breaking, you name it. It’s starting to feel like a never-ending cycle of patchwork instead of progress. I’d love to hear your take on this. Has anyone here made that kind of shift, from high-yield, high-headache markets to lower-yield but hands-off ones? Was the stability worth the trade-off? Am I missing something obvious? TL;DR: Have two student/family rentals in Binghamton with great paper returns but high turnover, unreliable tenants, and real management costs closer to 14%. Have one Racine property that’s steady, hands-off, and managed flawlessly at a flat 10%. My realtor wants me to sell the Binghamton ones and buy in a “better” Binghamton neighborhood, but that doesn’t fix the turnover issue. Leaning toward selling both and reinvesting in Racine — my spreadsheet says Binghamton, but my sanity says Racine.",
-      "publish_time": "2025-11-02 10:58:11",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/RealEstate/comments/1okz286/seeking_advice_should_i_sell_my_binghamton/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Advice needed on low barrier to entry part time/gig work in NYC Hello, I am a student that needs some low barrier to entry gig work in in NYC fast. I have been using Ubereats which only gives so many hours. My questions are: 1. What are some other good sources go low barrier to entry good gig/PT work in NYC 2. Of the one day job apps: Wool, Qwick, Instawork, which one has the best ration of low barriers to entry and experience required/good pay? 3. Has anyone been able to get into cater/banquest waiting with little experience? Any thoughts or suggestions would be most helpful. Thanks",
-      "publish_time": "2025-11-02 10:58:11",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/povertyfinance/comments/1olpm10/advice_needed_on_low_barrier_to_entry_part/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "What’s more valuable early on, a great brand or a great product? I keep noticing startups with incredible branding and weak products still winning attention and products with real innovation losing steam because they look unpolished. At the early stage, which one actually matters more for traction: the product or how it *feels*?",
-      "publish_time": "2025-11-02 10:58:11",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/Entrepreneur/comments/1olkfot/whats_more_valuable_early_on_a_great_brand_or_a/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Are tools for idea development worth anything? Thinking of startup ideas, you probably thought of using one of the many tools that popped that promise to help you with developing your idea. You're wondering whether they are worth the money? I have tried several. First, it is important to understand that like the underlying AI models these tools reflect the vast knowledge available on the Internet. These tools add a structured process of ideation. Including requiring you to identify the problem (pain point) that you want to address. After that, they do market research for you, and competitive analysis. In a sense, it is like a custom ChatGPT. Of course, the underlying AI model is not necessarily OpenAI. If you try to do the same with any AI chat application, such as ChatGPT or Claude or Gemini, you will need to devise the structured process yourself. Though they will often suggest to you the next step. Now, here is where you discover the limitations of these ideation tools. They certainly can do a quick elimination of bad ideas. But above all certain threshold of the quality of idea, it is up to you to do further research by talking to people. This quick elimination helps you to weed out things below a certain threshold. You still need to go to the world and talk to people.",
-      "publish_time": "2025-11-02 10:58:11",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/Entrepreneur/comments/1olkckt/are_tools_for_idea_development_worth_anything/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "I bought an item described as \"new\" on the listing, but when it arrived, it had a stain on it. I contacted the seller, but he stopped replying. What can I do? I bought a shirt. It was described as \"new\". There was no mention of any markings or damage on the shirt on the listing. I messaged the seller and said that there is a marking on the collar of the shirt. and the seller replied back with three photos (two photos were of the shirt showing there is no marking, and the other photo is of the packaging). The seller said those photos were taken literally at the time of packing. But those photos don't prove that the shirt had no markings at the time of packing, because those photos could have been taken when the buyer purchased the shirt. And then the seller said maybe the marking is from the label during transit. And then I replied back saying I filmed myself opening the package and the black marking was already there when I opened it, and I also said the white paper bag that the seller put the shirt in had no markings in it. And then the seller stopped replying. It's been two days since I last talked to the seller. I don't think the seller was expecting me to film myself opening the package. Anyway, the marking is black and smudged into the shirt. So it looks like the seller really did try to remove the stain. I think the stain is a black permanent marker. What can I do?",
-      "publish_time": "2025-11-02 10:58:11",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/Ebay/comments/1olfstn/i_bought_an_item_described_as_new_on_the_listing/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "As big tech pushes AI spending to the max, you may be helping to pay for it",
-      "publish_time": "2025-11-02 10:58:10",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/technology/comments/1ol5e6l/as_big_tech_pushes_ai_spending_to_the_max_you_may/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Jensen Huang’s viral fried chicken and beer night with Samsung, Hyundai chiefs in South Korea moves markets",
-      "publish_time": "2025-11-02 10:58:10",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/nottheonion/comments/1omdp7k/jensen_huangs_viral_fried_chicken_and_beer_night/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Elon Musk on Messaging Platform X Chat's Features and Bitcoin-Like P2P Encryption - CoinDesk Elon Musk on Messaging Platform X Chat's Features and Bitcoin-Like P2P Encryption&nbsp;&nbsp;CoinDesk",
-      "publish_time": "2025-11-02 10:58:09",
-      "source": "rss",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOcGVBa3dGSU5JWWVNUGoydVNEMFozUDQteFQzTk5pN1FaZlVFYlhDYXBRWEY0Sm1jRlk1dzFTMzBScWhPLWdiUXhTdVo4V3hjMlBPejc3M1NvU1U3V2FfYnA1X2R4elNQX0Nvb2hhTmNzeUd2dGR4NElXTXR3RmZDNFAxZXlTYzVpZEU3YzNSdEUxd0VLUjNQRHVqNlJCSUFjOGptUk5hdXFVZ3pQMU9OeU1HV3JjMUhEV2M0bFNnREpndw?oc=5",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Huge News for Uber Stock and Nvidia Stock Investors as Companies Partner on Driverless Technology Driverless cars will require increasing computing requirements, a category Nvidia is poised to capture.",
-      "publish_time": "2025-11-02 10:58:09",
+      "title": "Financial markets respond positively to recent economic data showing resilience in consumer spending and business investment. Market analysts maintain their bullish outlook for the remainder of the year despite some lingering concerns about inflation.",
+      "publish_time": "2025-11-02 12:16:17",
       "source": "alphavantage",
-      "url": "https://www.fool.com/investing/2025/11/01/huge-news-for-uber-stock-and-nvidia-stock-investor/",
+      "url": "https://www.reuters.com/finance/?id=normal_56",
       "sentiment": "negative"
     },
     {
-      "title": "Blue Owl ( OWL ) Q3 2025 Earnings Call Transcript Image source: The Motley Fool.Thursday, Oct. 30, 2025, at 10 a.m. ETNeed a quote from a Motley Fool analyst? Email pr@fool.comContinue reading ...",
-      "publish_time": "2025-11-02 10:58:09",
+      "title": "Trading volumes remain elevated as institutional investors continue to rotate into growth stocks. The semiconductor sector shows particular strength driven by increased demand for AI chips and computing infrastructure upgrades.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "twitter",
+      "url": "https://www.reuters.com/finance/?id=normal_182",
+      "sentiment": "negative"
+    },
+    {
+      "title": "这是超过24小时的旧数据 #19: Trading volumes remain elevated as institutional investors continue to rotate into growth stocks. The semiconductor sector shows particular strength driven by increased demand for AI chips and computing infrastructure upgrades.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "rss",
+      "url": "https://reddit.com/r/stocks/?id=old_19",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Financial markets respond positively to recent economic data showing resilience in consumer spending and business investment. Market analysts maintain their bullish outlook for the remainder of the year despite some lingering concerns about inflation.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "rss",
+      "url": "https://finance.yahoo.com/?id=normal_136",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Bulls And Bears: Microsoft, Joby Aviation, Meta - And Nvidia Tops $5 Trillion - Apple ( NASDAQ:AAPL ), Amazon.com ( NASDAQ:AMZN ). Benzinga examined the prospects for many investors' favorite stocks over the last week - here's a look at some of our top stories. Wall Street extended its record-setting rally as Nvidia Corp. ( NASDAQ:NVDA ) crossed the $5 trillion market-cap milestone - a first in history.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "stocktwits",
+      "url": "https://seekingalpha.com/market-news/?id=normal_99",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Bulls And Bears: Microsoft, Joby Aviation, Meta - And Nvidia Tops $5 Trillion - Apple ( NASDAQ:AAPL ), Amazon.com ( NASDAQ:AMZN ). Benzinga examined the prospects for many investors' favorite stocks over the last week - here's a look at some of our top stories. Wall Street extended its record-setting rally as Nvidia Corp. ( NASDAQ:NVDA ) crossed the $5 trillion market-cap milestone - a first in history.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "newsapi",
+      "url": "https://finance.yahoo.com/?id=normal_169",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Trading volumes remain elevated as institutional investors continue to rotate into growth stocks. The semiconductor sector shows particular strength driven by increased demand for AI chips and computing infrastructure upgrades.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "twitter",
+      "url": "https://reddit.com/r/stocks/?id=normal_262",
+      "sentiment": "negative"
+    },
+    {
+      "title": "The stock market continues to show strength as major indices reach new all-time highs. Investors remain optimistic about corporate earnings and economic growth prospects. Technology stocks lead the gains with strong performance from cloud computing and artificial intelligence companies.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "newsapi",
+      "url": "https://www.bloomberg.com/quote/?id=normal_22",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Bulls And Bears: Microsoft, Joby Aviation, Meta - And Nvidia Tops $5 Trillion - Apple ( NASDAQ:AAPL ), Amazon.com ( NASDAQ:AMZN ). Benzinga examined the prospects for many investors' favorite stocks over the last week - here's a look at some of our top stories. Wall Street extended its record-setting rally as Nvidia Corp. ( NASDAQ:NVDA ) crossed the $5 trillion market-cap milestone - a first in history.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "stocktwits",
+      "url": "https://reddit.com/r/stocks/?id=normal_137",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Financial markets respond positively to recent economic data showing resilience in consumer spending and business investment. Market analysts maintain their bullish outlook for the remainder of the year despite some lingering concerns about inflation.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "newsapi",
+      "url": "https://finance.yahoo.com/?id=normal_196",
+      "sentiment": "negative"
+    },
+    {
+      "title": "这是超过24小时的旧数据 #17: Bulls And Bears: Microsoft, Joby Aviation, Meta - And Nvidia Tops $5 Trillion - Apple ( NASDAQ:AAPL ), Amazon.com ( NASDAQ:AMZN ). Benzinga examined the prospects for many investors' favorite stocks over the last week - here's a look at some of our top stories. Wall Street extended its record-setting rally as Nvidia Corp. ( NASDAQ:NVDA ) crossed the $5 trillion market-cap milestone - a first in history.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "twitter",
+      "url": "https://www.reuters.com/finance/?id=old_17",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Bulls And Bears: Microsoft, Joby Aviation, Meta - And Nvidia Tops $5 Trillion - Apple ( NASDAQ:AAPL ), Amazon.com ( NASDAQ:AMZN ). Benzinga examined the prospects for many investors' favorite stocks over the last week - here's a look at some of our top stories. Wall Street extended its record-setting rally as Nvidia Corp. ( NASDAQ:NVDA ) crossed the $5 trillion market-cap milestone - a first in history.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "reddit",
+      "url": "https://www.cnbc.com/markets/stocks/?id=normal_93",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Market sentiment improves on dovish Fed commentary suggesting patience with interest rate policy. Bond markets rally on expectations of potential rate cuts in the coming year, supporting equity valuations.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "rss",
+      "url": "https://www.reuters.com/finance/?id=normal_278",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Bulls And Bears: Microsoft, Joby Aviation, Meta - And Nvidia Tops $5 Trillion - Apple ( NASDAQ:AAPL ), Amazon.com ( NASDAQ:AMZN ). Benzinga examined the prospects for many investors' favorite stocks over the last week - here's a look at some of our top stories. Wall Street extended its record-setting rally as Nvidia Corp. ( NASDAQ:NVDA ) crossed the $5 trillion market-cap milestone - a first in history.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "twitter",
+      "url": "https://finance.yahoo.com/?id=normal_286",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Financial markets respond positively to recent economic data showing resilience in consumer spending and business investment. Market analysts maintain their bullish outlook for the remainder of the year despite some lingering concerns about inflation.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "newsapi",
+      "url": "https://www.reuters.com/finance/?id=normal_266",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Trading volumes remain elevated as institutional investors continue to rotate into growth stocks. The semiconductor sector shows particular strength driven by increased demand for AI chips and computing infrastructure upgrades.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "newsapi",
+      "url": "https://seekingalpha.com/market-news/?id=normal_17",
+      "sentiment": "negative"
+    },
+    {
+      "title": "这是超过24小时的旧数据 #65: The stock market continues to show strength as major indices reach new all-time highs. Investors remain optimistic about corporate earnings and economic growth prospects. Technology stocks lead the gains with strong performance from cloud computing and artificial intelligence companies.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "rss",
+      "url": "https://finance.yahoo.com/?id=old_65",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Market sentiment improves on dovish Fed commentary suggesting patience with interest rate policy. Bond markets rally on expectations of potential rate cuts in the coming year, supporting equity valuations.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "stocktwits",
+      "url": "https://finance.yahoo.com/?id=normal_127",
+      "sentiment": "negative"
+    },
+    {
+      "title": "这是超过24小时的旧数据 #67: Market sentiment improves on dovish Fed commentary suggesting patience with interest rate policy. Bond markets rally on expectations of potential rate cuts in the coming year, supporting equity valuations.",
+      "publish_time": "2025-11-02 12:16:17",
       "source": "alphavantage",
-      "url": "https://www.fool.com/earnings/call-transcripts/2025/11/01/blue-owl-owl-q3-2025-earnings-call-transcript/",
+      "url": "https://www.reuters.com/finance/?id=old_67",
       "sentiment": "negative"
     },
     {
-      "title": "Crypto market sentiment stays in 'Fear' following Trump's deal with China - TradingView Crypto market sentiment stays in 'Fear' following Trump's deal with China&nbsp;&nbsp;TradingView",
-      "publish_time": "2025-11-02 10:58:09",
-      "source": "rss",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNN0dqN3Zsc19ueUJ3bUxpZTYzMnlDS202eFlabWFNM2w1ZktNWTV1YTZQVHFDMWtraVJ2RXdpMGtBVGtlN1gyQjQ0bEZwNE5XQnRwanNsRzFZYU9uMElzeDNMNzJNbGJ0RHhJeXo5ODd1YzJnZVVob3huQjVVMF9UN2t2Rm5rYk1tYXJKdVdKQkFHcUY4SlhfYU1iMDJiLTN0dnd4TmFVd3lZMTZ5ZXBLZlVsU2h2WWFzdjl5SnlTd0I4aGxvRmhFOEFXU093NWRr?oc=5",
-      "sentiment": "negative"
-    },
-    {
-      "title": "California Hits Bitcoin ATM Operator Coinhub with $675,000 Fine for Breaking Consumer Protection Laws - Brave New Coin California Hits Bitcoin ATM Operator Coinhub with $675,000 Fine for Breaking Consumer Protection Laws&nbsp;&nbsp;Brave New Coin",
-      "publish_time": "2025-11-02 10:58:09",
-      "source": "rss",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObVN5aVNjTUVaREpqVHFGNnV5a0J5RUQ0YXJUampjRE44Q256UFJNM2Ita3laMnNqMDE4VEtxYzhGT2pEZ3cwLUp2WUdoT1pvTzFkbzA5R0dQSTIwWW9mNnM5WHRDVkswS3V5OUJBNl9vSVVfOWNHSFhUaU41dFZpNUdYclpfWTUwMm9ndVJVLUJBQV9qcV9tOWVkWFFKQ2lxQmZvaFU4SHpUVnpfSEkzNXlxWXA5MUp1NDlMb1JFMTVmWHpOUk5KOEh1X3VSZw?oc=5",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Stock market today: Dow, S&P 500, Nasdaq futures mostly up with Fed decision, slew of Big Tech earnings on deck - Yahoo Finance Stock market today: Dow, S&amp;P 500, Nasdaq futures mostly up with Fed decision, slew of Big Tech earnings on deck&nbsp;&nbsp;Yahoo Finance",
-      "publish_time": "2025-11-02 10:58:09",
-      "source": "rss",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxOVEMxbmNZS203QjJmb1ZISHVnemdMaGd5ZkZsRjAtaDRrZHV2eFJweXJCRG9ZQUpRRDRVeExkb3BJbXpVTm9TNWozWE93Q0doZVdBeHFnLXJudTA5YzNUTmRSYnZNUkxVdmNjYmZoOGVOaHZWejU0TnF3TzJ4azJFbTFLakIyOG5td0hldkVKZFgwaXdqN2lPOEJnU1gxWU15d1BuV2RWS2RROTluWjNocDBZVXRrNmw3Qm1qckd3SFN6TzRSaWlXQzRDMkY3T1BCSWNzS08xR2RGYmtmMXpCM1NLRkVGeGtKTnFWMnh3?oc=5",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Cryptocurrency company passes major milestone at game-changing facility: 'One of the few companies in the world' - The Cool Down Cryptocurrency company passes major milestone at game-changing facility: 'One of the few companies in the world'&nbsp;&nbsp;The Cool Down",
-      "publish_time": "2025-11-02 10:58:09",
-      "source": "rss",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNU1duaDVpMGZzTEJHTVRjYkNHX3BFU09aWWZlaGhsTURXM0QxMHpMc2Raby1LYjkya2QzcnZ0bEptUnpvbEhFdE9QRmJVY0JmUFYtSFNzbDYzbE9KZW5tTUstMm9FSHNibmVVWHBpeGlIT1Y0N2h4Nk5IUmg4b0RrZVVOd1RjZzg0b2dzUEdQOUxDV3dScGRWNg?oc=5",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Treasury Secretary Bessent Hails Bitcoin’s Uptime, Criticizes Senate - Bitbo Treasury Secretary Bessent Hails Bitcoin’s Uptime, Criticizes Senate&nbsp;&nbsp;Bitbo",
-      "publish_time": "2025-11-02 10:58:09",
-      "source": "rss",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE42WTl0Q3pVU18yVHFmZlFHZVU1cjR2UG5ZeDRxZUQ1bG82djk2cUM5NE5wd0J5RHJwWVBUVDVhc1BLVi1WSzE5RElzYkJ6Nm5DODRLNFNyUkt3MVl6VmlwMGduTVI?oc=5",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Coinbase holds edge in US crypto race even as rivals' public listings reshape landscape - Reuters Coinbase holds edge in US crypto race even as rivals' public listings reshape landscape&nbsp;&nbsp;Reuters",
-      "publish_time": "2025-11-02 10:58:09",
-      "source": "rss",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNN0NzY1lfakh6R3hBTFhVLXE1NHVIWjJNWjZmanlGZUdud1E0VUpoS1NHT3p1N3lrZDFKaUsyaG16eXhnelFoQ3RIZFk1SUZBNWtwbXNHMmpYMEotVEJ3dFJZX1JKWjBBamdJUS1KQU50MktXVWFhbi1iNUVzMFVZTjhtXzhDSDk0b2Y3dnFkS01ESFJrcEdnSWhzRUxZVGxfbXZxWWRIM2FZWHZFdzg0b2Y1WlRlZXpUMnVBbkVjcU03VmM?oc=5",
-      "sentiment": "negative"
-    },
-    {
-      "title": "MLTX INVESTOR REMINDER: MoonLake Immunotherapeutics Investors may have been Affected by Fraud -- Contact BFA Law if You Suffered Losses - MoonLake ( NASDAQ:MLTX ) NEW YORK, Nov. 01, 2025 ( GLOBE NEWSWIRE ) -- Leading securities law firm Bleichmar Fonti & Auld LLP announces that a lawsuit has been filed against MoonLake Immunotherapeutics ( NASDAQ:MLTX ) and certain of the Company's senior executives for potential violations of the federal securities laws.",
-      "publish_time": "2025-11-02 10:58:09",
-      "source": "alphavantage",
-      "url": "https://www.benzinga.com/pressreleases/25/11/g48577962/mltx-investor-reminder-moonlake-immunotherapeutics-investors-may-have-been-affected-by-fraud-conta",
-      "sentiment": "negative"
-    },
-    {
-      "title": "JAMF INVESTOR NOTICE: Jamf Holding Corp. Shareholders May have Rights in the Upcoming Take Private Deal - Contact BFA Law - Jamf Holding ( NASDAQ:JAMF ) NEW YORK, Nov. 01, 2025 ( GLOBE NEWSWIRE ) -- Leading securities law firm Bleichmar Fonti & Auld LLP announces an investigation into Jamf Holding Corp.'s ( NASDAQ:JAMF ) board of directors for potential breaches of their fiduciary duties to shareholders in connection with a potential ...",
-      "publish_time": "2025-11-02 10:58:09",
-      "source": "alphavantage",
-      "url": "https://www.benzinga.com/pressreleases/25/11/g48577976/jamf-investor-notice-jamf-holding-corp-shareholders-may-have-rights-in-the-upcoming-take-private-d",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Grown children receiving $100,000 each-ages early 30’s. Current Fidelity account around 4 million -below is from Claude AI suggested allocation. That are already quite diversified with the S&P 500, some Vanguard funds, around $700,000 treasuries, Russell 1000, We could obviously ask their advisor, but they tend to be very cautious. We are at ATH’s and not gamblers, but want to be a bit more aggressive? Claude response - Looking at this portfolio, your children already have a solid, diversified foundation. For $100,000 with their ages and timeline flexibility, here are some more aggressive strategies to consider: Sector-Specific Growth Areas: • Healthcare/Biotech ETFs (XBI, IBB) - Demographics favor long-term growth • Emerging Markets (VWO, IEMG) - They’re underrepresented in emerging markets • Small-Cap Value (VBR, IWN) - Historically outperforms large-cap over long periods • International Developed (VEA, IEFA) - Their portfolio seems very US-heavy Individual Stock Concentration: Since they have broad market exposure already, they could allocate 20-30% to individual growth stocks in sectors they understand well - think established companies with strong moats that aren’t fully reflected in index weights. Real Estate Investment: • REITs (VNQ, SCHH) for real estate exposure without the down payment commitment • Infrastructure ETFs (IFRA, PAVE) for long-term demographic plays",
-      "publish_time": "2025-11-02 10:58:09",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/investing/comments/1omamm5/grown_children_receiving_100000_eachages_early/",
+      "title": "这是超过24小时的旧数据 #15: Trading volumes remain elevated as institutional investors continue to rotate into growth stocks. The semiconductor sector shows particular strength driven by increased demand for AI chips and computing infrastructure upgrades.",
+      "publish_time": "2025-11-02 12:16:17",
+      "source": "newsapi",
+      "url": "https://www.bloomberg.com/quote/?id=old_15",
       "sentiment": "negative"
     }
   ]
