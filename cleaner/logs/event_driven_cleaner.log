@@ -9535,3 +9535,928 @@
 2025-11-02 19:15:26,976 [INFO] ✨ 数据清洗完成
 2025-11-02 19:15:26,976 [INFO] ======================================================================
 
+2025-11-02 19:21:19,041 [INFO] 
+📊 ID 缓存状态 (清洗前):
+2025-11-02 19:21:19,042 [INFO]   状态: 空（未初始化）
+2025-11-02 19:21:19,042 [INFO] 
+======================================================================
+2025-11-02 19:21:19,042 [INFO] 📬 收到爬虫完成通知
+2025-11-02 19:21:19,042 [INFO] ======================================================================
+2025-11-02 19:21:19,042 [INFO] 事件类型: unknown
+2025-11-02 19:21:19,042 [INFO] 时间戳: 1762082479
+2025-11-02 19:21:19,044 [INFO] 总数据量: 100
+2025-11-02 19:21:19,044 [INFO] 队列长度: 0
+2025-11-02 19:21:19,044 [INFO] ----------------------------------------------------------------------
+2025-11-02 19:21:19,044 [INFO] ======================================================================
+2025-11-02 19:21:19,044 [INFO] 🚀 开始执行数据清洗...
+2025-11-02 19:21:19,045 [INFO] ======================================================================
+2025-11-02 19:21:19,045 [INFO] 
+🧹 开始单次清洗...
+2025-11-02 19:21:19,047 [INFO] 📊 待清洗数据量: 100
+2025-11-02 19:21:19,147 [INFO] 进度: 100/100 (清洗: 100, 去重: 0, 无效: 0)
+2025-11-02 19:21:19,148 [INFO] 
+✨ 单次清洗完成
+2025-11-02 19:21:19,148 [INFO] 总处理: 100
+2025-11-02 19:21:19,148 [INFO] 清洗成功: 100
+2025-11-02 19:21:19,148 [INFO] 去重过滤: 0
+2025-11-02 19:21:19,148 [INFO] 无效数据: 0
+2025-11-02 19:21:19,149 [INFO] 
+📦 导出清洗结果到文件...
+2025-11-02 19:21:19,149 [INFO] 📦 导出 100 条数据到文件...
+2025-11-02 19:21:19,152 [INFO] ✅ 数据已导出到: D:\SE\workspace\financial_real_time_trend_analysis\cleaner\output\cleaned_2025-11-02.jsonl
+2025-11-02 19:21:19,152 [INFO] 📊 清洗完成，共处理 100 条数据
+2025-11-02 19:21:19,154 [INFO] 
+📊 ID 缓存状态 (清洗后):
+2025-11-02 19:21:19,154 [INFO]   类型: ZSET (时间窗口模式)
+2025-11-02 19:21:19,154 [INFO]   总 ID 数: 100
+2025-11-02 19:21:19,155 [INFO] 📤 准备发送清洗完成通知...
+2025-11-02 19:21:19,155 [INFO] 
+🧹 清理超过 24 小时的旧数据...
+2025-11-02 19:21:19,155 [INFO] 
+🗑️  开始清理超过 24 小时的旧数据...
+2025-11-02 19:21:19,156 [INFO] 队列 clean_data_queue 当前长度: 100
+2025-11-02 19:21:19,156 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,156 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,158 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,158 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,158 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,159 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,159 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,159 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,160 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,160 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,160 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,161 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,161 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,161 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,162 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,162 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,163 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,169 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,169 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,170 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,170 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,170 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,171 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,171 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,171 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,172 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,172 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,172 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,173 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,173 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,173 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,174 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,174 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,174 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,175 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,175 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,175 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,176 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,176 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,177 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,177 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,178 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,178 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,178 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,179 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,179 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,179 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,180 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,180 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,181 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,181 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,181 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,182 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,182 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,182 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,183 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,183 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,183 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,184 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,184 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,185 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,185 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,186 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,186 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,187 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,187 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,188 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,189 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,189 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,189 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,189 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,190 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,190 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,190 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,191 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,191 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,192 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,192 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,192 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,193 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,193 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,193 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,194 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,194 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,195 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,195 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,195 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,196 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,196 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,197 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,197 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,197 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,198 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,198 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,198 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,199 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,199 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,199 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,199 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,200 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:21:19,200 [INFO] ✅ 清理完成:
+2025-11-02 19:21:19,200 [INFO]    - 检查了 100 条数据
+2025-11-02 19:21:19,200 [INFO]    - 删除了 0 条旧数据
+2025-11-02 19:21:19,201 [INFO]    - 剩余 100 条数据
+2025-11-02 19:21:19,201 [INFO] 
+🔍 准备发送通知 - send_enabled: True, publish_client: True
+2025-11-02 19:21:19,201 [INFO] 
+📢 清洗完成通知已发送到频道 'cleaner_complete' (0 个订阅者)
+2025-11-02 19:21:19,202 [INFO] ======================================================================
+2025-11-02 19:21:19,202 [INFO] ✨ 数据清洗完成
+2025-11-02 19:21:19,202 [INFO] ======================================================================
+
+2025-11-02 19:22:51,872 [INFO] 
+📊 ID 缓存状态 (清洗前):
+2025-11-02 19:22:51,872 [INFO]   状态: 空（未初始化）
+2025-11-02 19:22:51,873 [INFO] 
+======================================================================
+2025-11-02 19:22:51,873 [INFO] 📬 收到爬虫完成通知
+2025-11-02 19:22:51,873 [INFO] ======================================================================
+2025-11-02 19:22:51,873 [INFO] 事件类型: unknown
+2025-11-02 19:22:51,873 [INFO] 时间戳: 1762082571
+2025-11-02 19:22:51,873 [INFO] 总数据量: 100
+2025-11-02 19:22:51,874 [INFO] 队列长度: 0
+2025-11-02 19:22:51,874 [INFO] ----------------------------------------------------------------------
+2025-11-02 19:22:51,874 [INFO] ======================================================================
+2025-11-02 19:22:51,874 [INFO] 🚀 开始执行数据清洗...
+2025-11-02 19:22:51,874 [INFO] ======================================================================
+2025-11-02 19:22:51,874 [INFO] 
+🧹 开始单次清洗...
+2025-11-02 19:22:51,876 [INFO] 📊 待清洗数据量: 100
+2025-11-02 19:22:51,976 [INFO] 进度: 100/100 (清洗: 100, 去重: 0, 无效: 0)
+2025-11-02 19:22:51,976 [INFO] 
+✨ 单次清洗完成
+2025-11-02 19:22:51,977 [INFO] 总处理: 100
+2025-11-02 19:22:51,977 [INFO] 清洗成功: 100
+2025-11-02 19:22:51,977 [INFO] 去重过滤: 0
+2025-11-02 19:22:51,977 [INFO] 无效数据: 0
+2025-11-02 19:22:51,977 [INFO] 
+📦 导出清洗结果到文件...
+2025-11-02 19:22:51,978 [INFO] 📦 导出 100 条数据到文件...
+2025-11-02 19:22:51,982 [INFO] ✅ 数据已导出到: D:\SE\workspace\financial_real_time_trend_analysis\cleaner\output\cleaned_2025-11-02.jsonl
+2025-11-02 19:22:51,982 [INFO] 📊 清洗完成，共处理 100 条数据
+2025-11-02 19:22:51,983 [INFO] 
+📊 ID 缓存状态 (清洗后):
+2025-11-02 19:22:51,983 [INFO]   类型: ZSET (时间窗口模式)
+2025-11-02 19:22:51,983 [INFO]   总 ID 数: 100
+2025-11-02 19:22:51,983 [INFO] 📤 准备发送清洗完成通知...
+2025-11-02 19:22:51,983 [INFO] 
+🧹 清理超过 24 小时的旧数据...
+2025-11-02 19:22:51,985 [INFO] 
+🗑️  开始清理超过 24 小时的旧数据...
+2025-11-02 19:22:51,986 [INFO] 队列 clean_data_queue 当前长度: 100
+2025-11-02 19:22:51,986 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,987 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,987 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,987 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,988 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,988 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,988 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,989 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,989 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,989 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,990 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,990 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,990 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,991 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,991 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,991 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,992 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,992 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,992 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,993 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,993 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,993 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,994 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,994 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,994 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,995 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,995 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,995 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,996 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,996 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,996 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,997 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,997 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,997 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:51,997 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,004 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,005 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,005 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,005 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,006 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,006 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,007 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,007 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,007 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,008 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,008 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,008 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,009 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,009 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,009 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,009 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,011 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,011 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,011 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,012 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,012 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,012 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,012 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,013 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,013 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,013 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,013 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,014 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,016 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,017 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,017 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,018 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,018 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,018 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,019 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,019 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,020 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,020 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,020 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,020 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,022 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,022 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,022 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,022 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,023 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,023 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,023 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,024 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,024 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,025 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,025 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,025 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,026 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,026 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,027 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,027 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,027 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,027 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,028 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,028 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,028 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,028 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,030 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,032 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,032 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:22:52,032 [INFO] ✅ 清理完成:
+2025-11-02 19:22:52,033 [INFO]    - 检查了 100 条数据
+2025-11-02 19:22:52,033 [INFO]    - 删除了 0 条旧数据
+2025-11-02 19:22:52,033 [INFO]    - 剩余 100 条数据
+2025-11-02 19:22:52,033 [INFO] 
+🔍 准备发送通知 - send_enabled: True, publish_client: True
+2025-11-02 19:22:52,033 [INFO] 
+📢 清洗完成通知已发送到频道 'cleaner_complete' (0 个订阅者)
+2025-11-02 19:22:52,034 [INFO] ======================================================================
+2025-11-02 19:22:52,034 [INFO] ✨ 数据清洗完成
+2025-11-02 19:22:52,034 [INFO] ======================================================================
+
+2025-11-02 19:24:44,666 [INFO] 
+📊 ID 缓存状态 (清洗前):
+2025-11-02 19:24:44,666 [INFO]   状态: 空（未初始化）
+2025-11-02 19:24:44,667 [INFO] 
+======================================================================
+2025-11-02 19:24:44,668 [INFO] 📬 收到爬虫完成通知
+2025-11-02 19:24:44,668 [INFO] ======================================================================
+2025-11-02 19:24:44,668 [INFO] 事件类型: unknown
+2025-11-02 19:24:44,668 [INFO] 时间戳: 1762082684
+2025-11-02 19:24:44,668 [INFO] 总数据量: 100
+2025-11-02 19:24:44,668 [INFO] 队列长度: 0
+2025-11-02 19:24:44,669 [INFO] ----------------------------------------------------------------------
+2025-11-02 19:24:44,669 [INFO] ======================================================================
+2025-11-02 19:24:44,669 [INFO] 🚀 开始执行数据清洗...
+2025-11-02 19:24:44,669 [INFO] ======================================================================
+2025-11-02 19:24:44,669 [INFO] 
+🧹 开始单次清洗...
+2025-11-02 19:24:44,672 [INFO] 📊 待清洗数据量: 100
+2025-11-02 19:24:44,773 [INFO] 进度: 100/100 (清洗: 100, 去重: 0, 无效: 0)
+2025-11-02 19:24:44,773 [INFO] 
+✨ 单次清洗完成
+2025-11-02 19:24:44,774 [INFO] 总处理: 100
+2025-11-02 19:24:44,774 [INFO] 清洗成功: 100
+2025-11-02 19:24:44,775 [INFO] 去重过滤: 0
+2025-11-02 19:24:44,776 [INFO] 无效数据: 0
+2025-11-02 19:24:44,776 [INFO] 
+📦 导出清洗结果到文件...
+2025-11-02 19:24:44,776 [INFO] 📦 导出 100 条数据到文件...
+2025-11-02 19:24:44,780 [INFO] ✅ 数据已导出到: D:\SE\workspace\financial_real_time_trend_analysis\cleaner\output\cleaned_2025-11-02.jsonl
+2025-11-02 19:24:44,780 [INFO] 📊 清洗完成，共处理 100 条数据
+2025-11-02 19:24:44,781 [INFO] 
+📊 ID 缓存状态 (清洗后):
+2025-11-02 19:24:44,781 [INFO]   类型: ZSET (时间窗口模式)
+2025-11-02 19:24:44,781 [INFO]   总 ID 数: 100
+2025-11-02 19:24:44,781 [INFO] 📤 准备发送清洗完成通知...
+2025-11-02 19:24:44,781 [INFO] 
+🧹 清理超过 24 小时的旧数据...
+2025-11-02 19:24:44,782 [INFO] 
+🗑️  开始清理超过 24 小时的旧数据...
+2025-11-02 19:24:44,784 [INFO] 队列 clean_data_queue 当前长度: 100
+2025-11-02 19:24:44,784 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,784 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,784 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,786 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,786 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,790 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,790 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,791 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,791 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,792 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,792 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,792 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,793 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,793 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,793 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,794 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,794 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,795 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,795 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,795 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,796 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,796 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,796 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,796 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,797 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,797 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,797 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,798 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,798 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,798 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,799 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,799 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,799 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,800 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,800 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,800 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,801 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,805 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,806 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,806 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,806 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,807 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,807 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,807 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,808 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,808 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,808 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,808 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,809 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,809 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,809 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,810 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,810 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,810 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,811 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,811 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,811 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,812 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,812 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,812 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,813 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,813 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,813 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,815 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,815 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,815 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,816 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,816 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,817 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,819 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,820 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,820 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,820 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,821 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,821 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,821 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,821 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,822 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,822 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,822 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,823 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,823 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,823 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,824 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,824 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,824 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,825 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,825 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,826 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,826 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,826 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,826 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,828 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,828 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,828 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,828 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,829 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,829 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,829 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,829 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:24:44,831 [INFO] ✅ 清理完成:
+2025-11-02 19:24:44,831 [INFO]    - 检查了 100 条数据
+2025-11-02 19:24:44,831 [INFO]    - 删除了 0 条旧数据
+2025-11-02 19:24:44,831 [INFO]    - 剩余 100 条数据
+2025-11-02 19:24:44,831 [INFO] 
+🔍 准备发送通知 - send_enabled: True, publish_client: True
+2025-11-02 19:24:44,831 [INFO] 
+📢 清洗完成通知已发送到频道 'cleaner_complete' (0 个订阅者)
+2025-11-02 19:24:44,832 [INFO] ======================================================================
+2025-11-02 19:24:44,835 [INFO] ✨ 数据清洗完成
+2025-11-02 19:24:44,835 [INFO] ======================================================================
+
+2025-11-02 19:37:44,945 [INFO] 
+📊 ID 缓存状态 (清洗前):
+2025-11-02 19:37:44,945 [INFO]   状态: 空（未初始化）
+2025-11-02 19:37:44,945 [INFO] 
+======================================================================
+2025-11-02 19:37:44,945 [INFO] 📬 收到爬虫完成通知
+2025-11-02 19:37:44,946 [INFO] ======================================================================
+2025-11-02 19:37:44,946 [INFO] 事件类型: unknown
+2025-11-02 19:37:44,947 [INFO] 时间戳: 1762083464
+2025-11-02 19:37:44,947 [INFO] 总数据量: 500
+2025-11-02 19:37:44,947 [INFO] 队列长度: 0
+2025-11-02 19:37:44,947 [INFO] ----------------------------------------------------------------------
+2025-11-02 19:37:44,947 [INFO] ======================================================================
+2025-11-02 19:37:44,948 [INFO] 🚀 开始执行数据清洗...
+2025-11-02 19:37:44,948 [INFO] ======================================================================
+2025-11-02 19:37:44,948 [INFO] 
+🧹 开始单次清洗...
+2025-11-02 19:37:44,950 [INFO] 📊 待清洗数据量: 500
+2025-11-02 19:37:45,061 [INFO] 进度: 100/500 (清洗: 90, 去重: 2, 无效: 8)
+2025-11-02 19:37:45,148 [INFO] 进度: 200/500 (清洗: 170, 去重: 10, 无效: 20)
+2025-11-02 19:37:45,230 [INFO] 进度: 300/500 (清洗: 250, 去重: 18, 无效: 32)
+2025-11-02 19:37:45,314 [INFO] 进度: 400/500 (清洗: 333, 去重: 29, 无效: 38)
+2025-11-02 19:37:45,394 [INFO] 进度: 500/500 (清洗: 413, 去重: 37, 无效: 50)
+2025-11-02 19:37:45,394 [INFO] 
+✨ 单次清洗完成
+2025-11-02 19:37:45,395 [INFO] 总处理: 500
+2025-11-02 19:37:45,395 [INFO] 清洗成功: 413
+2025-11-02 19:37:45,395 [INFO] 去重过滤: 37
+2025-11-02 19:37:45,395 [INFO] 无效数据: 50
+2025-11-02 19:37:45,395 [INFO] 
+📦 导出清洗结果到文件...
+2025-11-02 19:37:45,396 [INFO] 📦 导出 413 条数据到文件...
+2025-11-02 19:37:45,407 [INFO] ✅ 数据已导出到: D:\SE\workspace\financial_real_time_trend_analysis\cleaner\output\cleaned_2025-11-02.jsonl
+2025-11-02 19:37:45,408 [INFO] 📊 清洗完成，共处理 413 条数据
+2025-11-02 19:37:45,408 [INFO] 
+📊 ID 缓存状态 (清洗后):
+2025-11-02 19:37:45,408 [INFO]   类型: ZSET (时间窗口模式)
+2025-11-02 19:37:45,409 [INFO]   总 ID 数: 413
+2025-11-02 19:37:45,409 [INFO] 📤 准备发送清洗完成通知...
+2025-11-02 19:37:45,409 [INFO] 
+🧹 清理超过 24 小时的旧数据...
+2025-11-02 19:37:45,409 [INFO] 
+🗑️  开始清理超过 24 小时的旧数据...
+2025-11-02 19:37:45,411 [INFO] 队列 clean_data_queue 当前长度: 413
+2025-11-02 19:37:45,411 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,412 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,412 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,412 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,413 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,413 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,413 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,414 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,414 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,414 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,415 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,415 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,415 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,415 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,415 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,416 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,416 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,416 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,417 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,417 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,417 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,417 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,419 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,419 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,419 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,420 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,420 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,420 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,420 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,420 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,421 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,421 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,421 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,422 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,422 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,422 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,423 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,423 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,423 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,424 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,424 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,424 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,424 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,425 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,425 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,425 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,425 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,425 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,427 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,427 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,428 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,428 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,428 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,428 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,429 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,429 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,429 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,430 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,430 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,430 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,431 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,431 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,431 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,432 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,432 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,432 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,433 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,433 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,433 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,434 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,434 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,434 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,435 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,435 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,435 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,436 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,436 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,436 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,436 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,436 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,437 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,437 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,437 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,438 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,438 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,438 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,438 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,439 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,439 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,439 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,440 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,440 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,440 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,442 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,442 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,442 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,443 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,443 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,443 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,444 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,444 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,444 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,444 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,445 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,445 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,446 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,446 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,446 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,447 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,447 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,447 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,447 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,448 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,448 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,448 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,449 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,449 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,449 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,449 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,450 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,450 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,450 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,451 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,451 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,452 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,452 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,452 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,452 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,453 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,453 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,453 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,454 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,454 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,454 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,455 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,455 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,455 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,456 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,456 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,456 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,457 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,457 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,457 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,457 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,459 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,459 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,459 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,460 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,460 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,460 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,461 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,461 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,462 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,462 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,462 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,463 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,463 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,463 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,464 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,464 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,464 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,465 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,465 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,465 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,465 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,466 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,466 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,466 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,466 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,468 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,468 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,468 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,468 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,469 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,469 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,469 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,470 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,470 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,470 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,471 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,471 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,471 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,472 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,472 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,472 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,473 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,473 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,473 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,474 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,474 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,474 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,475 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,475 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,475 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,476 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,476 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,477 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,477 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,477 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,479 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,479 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,479 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,479 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,479 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,480 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,480 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,480 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,481 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,481 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,481 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,482 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,482 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,483 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,483 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,483 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,484 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,484 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,484 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,485 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,485 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,485 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,486 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,486 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,486 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,486 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,487 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,487 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,487 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,489 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,489 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,489 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,490 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,490 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,490 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,491 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,491 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,491 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,492 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,492 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,492 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,492 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,493 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,493 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,494 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,494 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,494 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,495 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,495 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,496 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,496 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,496 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,497 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,497 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,497 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,498 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,498 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,499 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,499 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,499 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,499 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,501 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,501 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,501 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,501 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,502 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,502 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,502 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,503 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,503 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,503 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,503 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,504 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,504 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,505 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,505 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,505 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,505 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,506 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,506 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,506 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,507 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,507 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,507 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,508 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,508 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,510 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,510 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,510 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,511 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,511 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,511 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,512 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,512 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,512 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,512 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,512 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,513 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,513 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,513 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,514 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,514 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,515 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,515 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,516 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,516 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,516 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,517 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,517 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,517 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,518 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,518 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,518 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,519 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,519 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,519 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,520 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,520 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,520 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,521 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,521 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,521 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,521 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,521 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,522 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,522 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,522 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,523 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,523 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,523 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,524 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,524 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,526 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,526 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,526 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,527 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,527 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,527 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,528 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,528 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,529 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,529 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,529 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,530 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,530 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,530 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,531 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,531 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,531 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,532 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,532 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,532 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,532 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,533 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,533 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,533 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,534 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,534 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,534 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,535 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,535 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,535 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,536 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,536 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,536 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,537 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,537 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,537 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,539 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,539 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,539 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,540 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,540 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,540 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,541 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,541 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,541 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,542 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,542 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,543 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,543 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,543 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,544 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,544 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,544 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,544 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,545 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,545 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,545 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,546 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,546 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,546 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,546 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,548 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,548 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,548 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,548 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,549 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,549 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,550 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,550 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,550 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,551 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,551 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,551 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,552 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,552 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,552 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,553 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,553 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,553 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,553 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,555 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,555 [ERROR] 处理数据时出错: '<' not supported between instances of 'str' and 'float'
+2025-11-02 19:37:45,555 [INFO] ✅ 清理完成:
+2025-11-02 19:37:45,555 [INFO]    - 检查了 413 条数据
+2025-11-02 19:37:45,556 [INFO]    - 删除了 0 条旧数据
+2025-11-02 19:37:45,556 [INFO]    - 剩余 413 条数据
+2025-11-02 19:37:45,557 [INFO] 
+🔍 准备发送通知 - send_enabled: True, publish_client: True
+2025-11-02 19:37:45,557 [INFO] 
+📢 清洗完成通知已发送到频道 'cleaner_complete' (0 个订阅者)
+2025-11-02 19:37:45,557 [INFO] ======================================================================
+2025-11-02 19:37:45,557 [INFO] ✨ 数据清洗完成
+2025-11-02 19:37:45,557 [INFO] ======================================================================
+
