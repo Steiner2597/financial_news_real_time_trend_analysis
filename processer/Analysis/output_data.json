@@ -1,13 +1,13 @@
 {
   "metadata": {
-    "timestamp": "2025-11-03T05:01:48Z",
+    "timestamp": "2025-11-03T05:41:56Z",
     "update_interval": 60,
     "data_version": "1.0",
     "news_sources": {
-      "reddit_comment": 30745,
-      "reddit_post": 8433,
-      "stocktwits": 2276,
-      "rss": 1514,
+      "reddit_comment": 31342,
+      "reddit_post": 8732,
+      "stocktwits": 2356,
+      "rss": 1559,
       "alphavantage": 38,
       "newsapi": 11
     }
@@ -16,212 +16,208 @@
     {
       "keyword": "like",
       "rank": 1,
-      "current_frequency": 995,
-      "growth_rate": 78.6,
-      "trend_score": 0.91,
+      "current_frequency": 984,
+      "growth_rate": 83.3,
+      "trend_score": 0.93,
       "sentiment": {
         "positive": 42,
         "negative": 58,
-        "total_comments": 7770
-      }
-    },
-    {
-      "keyword": "out",
-      "rank": 2,
-      "current_frequency": 815,
-      "growth_rate": -4.9,
-      "trend_score": 0.51,
-      "sentiment": {
-        "positive": 44,
-        "negative": 56,
-        "total_comments": 11904
+        "total_comments": 7994
       }
     },
     {
       "keyword": "from",
-      "rank": 3,
-      "current_frequency": 797,
-      "growth_rate": 64.2,
-      "trend_score": 0.74,
+      "rank": 2,
+      "current_frequency": 843,
+      "growth_rate": 81.0,
+      "trend_score": 0.84,
       "sentiment": {
         "positive": 45,
         "negative": 55,
-        "total_comments": 6728
+        "total_comments": 6925
       }
     },
     {
       "keyword": "about",
-      "rank": 4,
-      "current_frequency": 794,
-      "growth_rate": 81.0,
-      "trend_score": 0.8,
+      "rank": 3,
+      "current_frequency": 797,
+      "growth_rate": 87.9,
+      "trend_score": 0.84,
       "sentiment": {
         "positive": 41,
         "negative": 59,
-        "total_comments": 6132
+        "total_comments": 6318
+      }
+    },
+    {
+      "keyword": "out",
+      "rank": 4,
+      "current_frequency": 753,
+      "growth_rate": -8.6,
+      "trend_score": 0.49,
+      "sentiment": {
+        "positive": 45,
+        "negative": 55,
+        "total_comments": 12230
       }
     },
     {
       "keyword": "please",
       "rank": 5,
-      "current_frequency": 683,
-      "growth_rate": 119.5,
-      "trend_score": 0.81,
+      "current_frequency": 639,
+      "growth_rate": 111.6,
+      "trend_score": 0.79,
       "sentiment": {
         "positive": 81,
         "negative": 19,
-        "total_comments": 4431
+        "total_comments": 4591
       }
     },
     {
       "keyword": "get",
       "rank": 6,
-      "current_frequency": 614,
-      "growth_rate": 9.3,
-      "trend_score": 0.41,
+      "current_frequency": 635,
+      "growth_rate": 17.7,
+      "trend_score": 0.46,
       "sentiment": {
-        "positive": 43,
-        "negative": 57,
-        "total_comments": 7808
+        "positive": 44,
+        "negative": 56,
+        "total_comments": 8045
       }
     },
     {
       "keyword": "would",
       "rank": 7,
-      "current_frequency": 614,
-      "growth_rate": 54.7,
-      "trend_score": 0.59,
+      "current_frequency": 632,
+      "growth_rate": 65.5,
+      "trend_score": 0.65,
       "sentiment": {
         "positive": 38,
         "negative": 62,
-        "total_comments": 5506
-      }
-    },
-    {
-      "keyword": "one",
-      "rank": 8,
-      "current_frequency": 603,
-      "growth_rate": -30.8,
-      "trend_score": 0.49,
-      "sentiment": {
-        "positive": 45,
-        "negative": 55,
-        "total_comments": 12086
+        "total_comments": 5664
       }
     },
     {
       "keyword": "had",
-      "rank": 9,
-      "current_frequency": 601,
-      "growth_rate": 128.9,
+      "rank": 8,
+      "current_frequency": 595,
+      "growth_rate": 135.7,
       "trend_score": 0.76,
       "sentiment": {
-        "positive": 36,
-        "negative": 64,
-        "total_comments": 3660
+        "positive": 35,
+        "negative": 65,
+        "total_comments": 3762
+      }
+    },
+    {
+      "keyword": "one",
+      "rank": 9,
+      "current_frequency": 582,
+      "growth_rate": -30.5,
+      "trend_score": 0.48,
+      "sentiment": {
+        "positive": 45,
+        "negative": 55,
+        "total_comments": 12390
       }
     },
     {
       "keyword": "there",
       "rank": 10,
-      "current_frequency": 582,
-      "growth_rate": 40.9,
-      "trend_score": 0.51,
+      "current_frequency": 550,
+      "growth_rate": 38.7,
+      "trend_score": 0.49,
       "sentiment": {
-        "positive": 41,
-        "negative": 59,
-        "total_comments": 5739
+        "positive": 42,
+        "negative": 58,
+        "total_comments": 5880
       }
     }
   ],
   "word_cloud": [
     {
       "text": "like",
-      "value": 995
-    },
-    {
-      "text": "out",
-      "value": 815
+      "value": 984
     },
     {
       "text": "from",
-      "value": 797
+      "value": 843
     },
     {
       "text": "about",
-      "value": 794
+      "value": 797
+    },
+    {
+      "text": "out",
+      "value": 753
     },
     {
       "text": "please",
-      "value": 683
+      "value": 639
     },
     {
       "text": "get",
-      "value": 614
+      "value": 635
     },
     {
       "text": "would",
-      "value": 614
-    },
-    {
-      "text": "one",
-      "value": 603
+      "value": 632
     },
     {
       "text": "had",
-      "value": 601
+      "value": 595
     },
     {
-      "text": "there",
+      "text": "one",
       "value": 582
     },
     {
-      "text": "time",
-      "value": 539
+      "text": "there",
+      "value": 550
     },
     {
-      "text": "because",
-      "value": 460
+      "text": "time",
+      "value": 519
     },
     {
       "text": "even",
-      "value": 454
+      "value": 468
     },
     {
-      "text": "also",
-      "value": 452
-    },
-    {
-      "text": "here",
-      "value": 430
-    },
-    {
-      "text": "post",
-      "value": 424
-    },
-    {
-      "text": "want",
-      "value": 414
+      "text": "because",
+      "value": 451
     },
     {
       "text": "know",
-      "value": 411
+      "value": 447
+    },
+    {
+      "text": "here",
+      "value": 434
+    },
+    {
+      "text": "want",
+      "value": 428
+    },
+    {
+      "text": "post",
+      "value": 423
+    },
+    {
+      "text": "also",
+      "value": 404
     },
     {
       "text": "subreddit",
-      "value": 409
+      "value": 404
     },
     {
       "text": "questions",
-      "value": 397
+      "value": 393
     }
   ],
   "history_data": {
     "like": [
-      {
-        "timestamp": "2025-11-02T04:00:00Z",
-        "frequency": 0
-      },
       {
         "timestamp": "2025-11-02T05:00:00Z",
         "frequency": 0
@@ -317,115 +313,13 @@
       {
         "timestamp": "2025-11-03T04:00:00Z",
         "frequency": 396
-      }
-    ],
-    "out": [
-      {
-        "timestamp": "2025-11-02T04:00:00Z",
-        "frequency": 0
       },
       {
-        "timestamp": "2025-11-02T05:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T06:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T07:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T08:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T09:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T10:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T11:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T12:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T13:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T14:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T15:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 3186
-      },
-      {
-        "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 953
-      },
-      {
-        "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 763
-      },
-      {
-        "timestamp": "2025-11-02T19:00:00Z",
-        "frequency": 822
-      },
-      {
-        "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 735
-      },
-      {
-        "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 695
-      },
-      {
-        "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 688
-      },
-      {
-        "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 973
-      },
-      {
-        "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 630
-      },
-      {
-        "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 647
-      },
-      {
-        "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 640
-      },
-      {
-        "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 603
-      },
-      {
-        "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 569
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 224
       }
     ],
     "from": [
-      {
-        "timestamp": "2025-11-02T04:00:00Z",
-        "frequency": 0
-      },
       {
         "timestamp": "2025-11-02T05:00:00Z",
         "frequency": 0
@@ -521,13 +415,13 @@
       {
         "timestamp": "2025-11-03T04:00:00Z",
         "frequency": 311
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 197
       }
     ],
     "about": [
-      {
-        "timestamp": "2025-11-02T04:00:00Z",
-        "frequency": 0
-      },
       {
         "timestamp": "2025-11-02T05:00:00Z",
         "frequency": 0
@@ -623,13 +517,115 @@
       {
         "timestamp": "2025-11-03T04:00:00Z",
         "frequency": 318
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 186
+      }
+    ],
+    "out": [
+      {
+        "timestamp": "2025-11-02T05:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T06:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T07:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T08:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T09:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T10:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T11:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T12:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T13:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 3186
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 953
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 763
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 822
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 735
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 695
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 688
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 973
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 630
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 647
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 640
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 603
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 569
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 326
       }
     ],
     "please": [
-      {
-        "timestamp": "2025-11-02T04:00:00Z",
-        "frequency": 0
-      },
       {
         "timestamp": "2025-11-02T05:00:00Z",
         "frequency": 0
@@ -725,13 +721,13 @@
       {
         "timestamp": "2025-11-03T04:00:00Z",
         "frequency": 289
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 160
       }
     ],
     "get": [
-      {
-        "timestamp": "2025-11-02T04:00:00Z",
-        "frequency": 0
-      },
       {
         "timestamp": "2025-11-02T05:00:00Z",
         "frequency": 0
@@ -827,13 +823,13 @@
       {
         "timestamp": "2025-11-03T04:00:00Z",
         "frequency": 388
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 237
       }
     ],
     "would": [
-      {
-        "timestamp": "2025-11-02T04:00:00Z",
-        "frequency": 0
-      },
       {
         "timestamp": "2025-11-02T05:00:00Z",
         "frequency": 0
@@ -929,115 +925,13 @@
       {
         "timestamp": "2025-11-03T04:00:00Z",
         "frequency": 255
-      }
-    ],
-    "one": [
-      {
-        "timestamp": "2025-11-02T04:00:00Z",
-        "frequency": 0
       },
       {
-        "timestamp": "2025-11-02T05:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T06:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T07:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T08:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T09:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T10:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T11:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T12:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T13:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T14:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T15:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 3358
-      },
-      {
-        "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 955
-      },
-      {
-        "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 757
-      },
-      {
-        "timestamp": "2025-11-02T19:00:00Z",
-        "frequency": 843
-      },
-      {
-        "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 753
-      },
-      {
-        "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 738
-      },
-      {
-        "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 648
-      },
-      {
-        "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 934
-      },
-      {
-        "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 616
-      },
-      {
-        "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 667
-      },
-      {
-        "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 655
-      },
-      {
-        "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 633
-      },
-      {
-        "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 529
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 158
       }
     ],
     "had": [
-      {
-        "timestamp": "2025-11-02T04:00:00Z",
-        "frequency": 0
-      },
       {
         "timestamp": "2025-11-02T05:00:00Z",
         "frequency": 0
@@ -1133,13 +1027,115 @@
       {
         "timestamp": "2025-11-03T04:00:00Z",
         "frequency": 187
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 102
+      }
+    ],
+    "one": [
+      {
+        "timestamp": "2025-11-02T05:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T06:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T07:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T08:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T09:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T10:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T11:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T12:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T13:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 3358
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 955
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 757
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 843
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 753
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 738
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 648
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 934
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 616
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 667
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 655
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 633
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 529
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 304
       }
     ],
     "there": [
-      {
-        "timestamp": "2025-11-02T04:00:00Z",
-        "frequency": 0
-      },
       {
         "timestamp": "2025-11-02T05:00:00Z",
         "frequency": 0
@@ -1235,148 +1231,152 @@
       {
         "timestamp": "2025-11-03T04:00:00Z",
         "frequency": 282
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 141
       }
     ]
   },
   "news_feed": [
     {
-      "title": "Awareness 🚨 Awareness Post: Crypto Trading Scam by “Safia Bint Muhammad” 🚨 Hey everyone, I wanted to share this to help others stay alert. A person named Safia Bint Muhammad reached out to me claiming to be a crypto trader who could help me earn consistent rewards through “safe investments.” She sounded very persuasive, professional, and even seemed trustworthy at first — often talking about market knowledge, blockchain codes, and how “simple” the process was. After chatting for a while, she lured me into sending some money, promising quick returns and showing “screenshots” of fake profits. Once I asked for verification or tried to withdraw, she either avoided my messages or came up with excuses. I still have WhatsApp chat history and screenshots of her messages, which clearly show how she manipulates people using charm, trust-building, and fake crypto jargon. Please be careful — • Don’t share your personal details or wallet codes. • Never invest in crypto through someone who contacts you directly. • Verify any trading opportunity through official platforms only. If anyone else has had similar interactions with this person or similar scams, feel free to share your experience below so others can learn. Stay safe, everyone. 💬",
-      "publish_time": "2025-11-03T04:53:22Z",
+      "title": "Is it just me? TLDR: Complicated feeling towards bully. Does anyone else understand the feeling of hating someone who bullied you while acknowledging their success, and having this weird mixture of hate and 'woo you go girl but ughh I don't want your content on my feed\"??? Like I know they are talented and they work hard and that's great, they deserve their success because they worked for it. They've earned it, but I still feel this hatred for them that will likely never go away because they never apologised for what they did. Sometimes I don't understand why hurtful people become the most successful and publicly known for being \"kind\", while in my experience with them wasn't true. My partner suggests I am jealous, but I don't want her life style or success. Does anyone understand? AITAH? Should I just forgive and forget??",
+      "publish_time": "2025-11-03T05:31:48Z",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/islam/comments/1on2qys/awareness/",
+      "url": "https://www.reddit.com/r/AITAH/comments/1on3h9f/is_it_just_me/",
       "sentiment": "positive"
     },
     {
-      "title": "So I found this on Facebook from another persom who found it on Twitter Summary of the Chaos Zero Korean Controversy (with a little connection to Blue Archive) ----------------------------------------------------- I want to make it perfectly clear this is not my opinion but rather a translated statement from ........hmmm judging from the evidence provided, it seems to suggest that its by a former employee or someone who is involved in the project. (The materials are confidential, so the original poster applied mosaics to them before sharing.) ----------------------------------------------------- Originally, the scenario for Chaos Zero Nightmare was being written by a four-person team led by a popular Korean Cthulhu-style novelist known as “Kazesuke” (감기도령 / Gamgi Doryeong). However, due to internal disputes within the company, involving their flagship title Epic Seven scenario team ended up joining the Chaos Zero project. (In Japan, this game is published and operated by Yostar.) - In effect, the Epic Seven side had been transferred to Chaos Zero as a form of demotion by the producer (P). However, they didn’t get along with either the producer or the Chaos Zero writing team, and relations between them were hostile. In the midst of this, the producer — who was also the company’s representative — suddenly began criticizing Kazesuke’s scenario. - One day, the producer (P) brought his own scenario plot to the team and made the employees read both his and Kazesuke’s versions, then held an internal vote to decide which one was more interesting. Naturally, since P was the company president, he won. - Furthermore, P apparently really liked the heroine, Renoa, and created an original self-insert character named “Loius” to pair him with Renoa, essentially engaging in what’s known as a “Mary Sue / self-insert fantasy” move (often called a “Yume Otoko move” in Japanese). - The person who gave this testimony also attached materials — including the scenario plot personally written by P and concept art of Loius and others — which had never been made public outside the company. Because of this, the testimony is regarded by Korean users as almost certainly true. - The producer (P) personally admitted during an emergency livestream on November 1 that he had interfered with the scenario’s content and that there had been a mass departure of the writers. - (He claimed it was because they were pressed for deadlines, but did not go into further detail.) - The situation did not end there — the former Epic Seven team not only left Chaos Zero, but also announced their departure from Epic Seven itself. In an attempt to stop this, P handed over control of Chaos Zero to the former Epic Seven team. Unable to endure such treatment, Kazesuke and the other Chaos Zero writers left the project. - According to Kazesuke himself, “It felt like I’d been sent back to a high school with a caste system.” Naturally, the original Chaos Zero scenario ended up being heavily altered and lost its original form entirely. As expected, the internally reviewed version of the rewritten scenario received mostly negative evaluations. The former Epic Seven writers, upset by this criticism, ended up resigning as a group without ever finishing the Chaos Zero scenario. - As a result, only two members of the scenario team remained. The company hurriedly recruited new staff, but those new hires also quickly left one after another. In the end, the Chaos Zero scenario was completed amid constant turnover, with the scenario team never even exceeding ten members at its peak. - The game had originally been scheduled for release late last year, but these behind-the-scenes troubles were the reason it was only released just recently. - These testimonies were posted on “Blind,” the platform that requires employee verification, the same one involved in the recent KV incident. They came from internal employees of Smilegate Group, the developer of Chaos Zero. - (There are multiple testimonies from different employees confirming these details.) - (Blue Archive’s producer Kim Yong-ha also worked at the company during their previous title, Qurare.) - Thanks to the efforts of the distribution and publishing teams, the Japanese and overseas versions didn’t show any major issues, but in the Korean version, which retained the original script, a controversy erupted. - To give an example using Blue Archive terms, the Korean text was like a scene where: “The students, ignoring their teacher who’s just been shot, are only concerned about the Shiba Inu mob character next to them.” ----------------------------------------------- However, amid the controversy, suspicions arose about the writers’ expulsion, and people began to suspect that Chaos Zero, before being altered by the Epic Seven side, was originally intended to be a “time loop” story. - Users believe that traces of this original loop concept can still be found in various elements within the game itself. ------------------------------------------------- For example, the “Ego Manifestation” system was originally meant to represent the process of reclaiming one’s fragmented and worn-down self (ego) after countless repeating loops. - Likewise, the “Inspiration” and “Memory Fragments” systems were based on the same idea — they symbolized a worldview centered on regaining one’s true self. Originally, each fragment was even supposed to include individual character illustrations. ------------------------------------------------ The reason the gacha system is called “Rescue” also traces back to this concept. Originally, it wasn’t about recovering missing crew members, but rather about finding a timeline within the repeating loops where those who had died were still alive, and dropping an anchor there to rescue them — that was the intended meaning behind the term. - Because of this, the Captain was originally meant to be portrayed as a hero who achieved a 0% death rate among their crew. ---------------------------------------------------- Furthermore, Chaos Zero’s current slogan is “Turn all despair (chaos) to zero,” but traces from before release show that the original slogan was “Even if the nightmare repeats, from 0 to 1.” It was also described as a “Cosmic loop RPG that crosses between hope and despair.” - The most definitive piece of evidence is that, before release, the game’s official description explicitly referred to it as a “Chaos Loop RPG guided by your choices.” With all this evidence combined, it became clear that Chaos Zero was originally designed as a time-loop story, but was altered into its current form due to interference from P and the Epic Seven team — and that revelation became the spark that further fueled the controversy. ----------------------------------------------------- Outraged Korean users managed to uncover parts of the original story, revealing that Renoa, who in the released version (based on the original Korean text) looked down on the protagonist, the Captain, from the very beginning, was originally the main heroine and the Captain’s rightful partner. - Meanwhile, Owen, who became the subject of the NTR (cheating) controversy in the altered version, was revealed to have originally been a son-like character to the protagonist before the scenario was rewritten. ------------------------------------------------- In other words, the Captain, who was originally meant to be portrayed as a respected protagonist, was demoted to a replaceable, disposable “Unit A” due to the interference of P and the Epic Seven team. - What further enraged users was that, rather than completely scrapping the previous story and worldbuilding, the new team only erased the traces of former writer Kazesuke, while heavily altering the main characters — including the heroines — and the core narrative. - Furthermore, testimonies about workplace bullying within the Chaos Zero scenario team did not start only after the game’s release — similar reports had already surfaced back in July, well before launch. - On top of that, the controversy kept escalating, with suspicions of AI-generated illustrations used in-game and even issues related to feminist disputes, leaving the prospects for Chaos Zero’s continued service in Korea extremely bleak. - Meanwhile, Kazesuke (감기도령), who had been expelled from Chaos Zero, was — according to his own statements and those of dydldidl (Konoka’s writer, often called “Konoka’s Papa”) — indirectly confirmed to now be working at Nexon, writing for the story of Blue Archive. -------------------------------------- Source: whttps://x.com/Brolist_kr/status/1984606978652717373?s=19",
-      "publish_time": "2025-11-03T04:53:22Z",
+      "title": "Shopping quality help I recently came back to doing Instacart after about 8 months and even before than I’ve always only had Gold cart. So I’m a little unsure about this. How do I improve that? All last week, I only had 1 refund and 1 replacement. How can I improve so I can move up to Gold cart?",
+      "publish_time": "2025-11-03T05:31:48Z",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/ChaosZeroNightmare/comments/1on2iny/so_i_found_this_on_facebook_from_another_persom/",
+      "url": "https://www.reddit.com/r/InstacartShoppers/comments/1on3eay/shopping_quality_help/",
       "sentiment": "positive"
     },
     {
-      "title": "Hello everyone, Before joining this discussion, please take a moment to review the rules of r/AskPH [here](https://www.reddit.com/r/AskPH/wiki/full-rules), as well as the [Reddit Content Policy](https://www.redditinc.com/policies/content-policy). Comments that violate these rules will be addressed accordingly. You can learn more about our rule enforcement process [here](https://www.reddit.com/r/AskPH/wiki/rule-enforcement). If you need to appeal a ban, please follow the process outlined [here](https://www.reddit.com/r/AskPH/wiki/ban-appeal-process) in r/AskPH. *** This post's original body text: *** *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/AskPH) if you have any questions or concerns.*",
-      "publish_time": "2025-11-03T04:53:22Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/AskPH/comments/1on2okm/how_is_5060k_budget_enough_to_travel_to_south/nmtvblt/",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Ilang days? Labas na ba airfare?",
-      "publish_time": "2025-11-03T04:53:22Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/AskPH/comments/1on2okm/how_is_5060k_budget_enough_to_travel_to_south/nmtwlqn/",
-      "sentiment": "positive"
-    },
-    {
-      "title": "A Filipino culinary archivist calls for transparency from the DOT.",
-      "publish_time": "2025-11-03T04:53:22Z",
+      "title": "Teaching as a profession post bullying Sorry in advance for the long post... Has anyone here tried to become a teacher, but struggled due to past bullying? Anyone overcome that and become comfortable in the classroom? If so, what helped? During my undergrad, I was part of a Concurrent B.Ed program where you earn your teaching degree alongside your bachelor's. I enjoyed most of the program. However, I found the school placements to be incredibly stressful... Nerves were expected, but this was more than that. It was to the point where I was becoming literally sick every morning before going in and spending every other waking hour stressing about the next day. I eventually dropped the education component of the program, feeling that I am totally not fit to be a teacher. If I couldn't even handle the placements, how on earth could I ever be an effective teacher? I finished the bachelor of science and went on to grad school instead, where I am still. As part of the program I'm in now, I work as a TA and also tutor high school students on the side. I have taught large university classes, and assist with training other TAs. I am still very passionate about teaching and working with kids and teens. As I'm finishing grad school soon, I am considering the possibility of trying to return to teaching in high school as a profession. However, the thought of trying to manage a classroom full of teenagers still sends me panicking. It's not like I dislike kids/teens. Far from it. I want to get over this, but it's been years and I am still terrified of groups of teenagers in most contexts. I am in therapy, and will probably discuss this issue with my therapist at some point. But atm I'm just curious what advice others in a similar position might have to share. If anyone has any relatable experiences, I would love to hear your stories and perspectives. ------ TL;DR: I dropped out of a teaching program because of bullying-related trauma, but now I’m reconsidering teaching and wondering if anyone has overcome a similar fear.",
+      "publish_time": "2025-11-03T05:31:48Z",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/Philippines/comments/1on2j90/a_filipino_culinary_archivist_calls_for/",
+      "url": "https://www.reddit.com/r/bullying/comments/1on3f3l/teaching_as_a_profession_post_bullying/",
       "sentiment": "negative"
     },
     {
-      "title": "TLDR The OP believes the Department of Tourism invested a lot of money to invite Michelin to critique the country's culinary industry. However, the DOT allegedly isn\"t transparent about their involvement and how much taxpayer's money was spent. The OP also criticizes the DOT for investing more on marketing instead of addressing issues that have long plagued the country's tourism industry. He also points out the lack of assistance to businesses/groups in the culinary or tourism industry in general, resulting to an inferior product compared to neighboring countries.",
-      "publish_time": "2025-11-03T04:53:22Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/Philippines/comments/1on2j90/a_filipino_culinary_archivist_calls_for/nmtw6j8/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Chances of getting hired outside of Japan? I've been teaching abroad for about 5 years in South Korea in elementary schools (2 years common core, 2 years IB PYP). I'm wanting to make the switch to Japan (specifically Tokyo). From my research, it seems most teachers working in the schools I'm looking at started off at smaller schools or even English academies in Japan before getting hired at better schools. Is it nearly impossible to get a foot in the door without living in Japan already? For further context, I have a bachelor's in elementary education and a master's degree in reading education with 6 years total of teaching experience (mostly lower grades). Are there specific schools that are good for transitioning into Japan? Thanks in advance!",
-      "publish_time": "2025-11-03T04:53:22Z",
+      "title": "[USA]Valid AliExpress orders placed in November qualify for an instant 20% discount on your purchase.",
+      "publish_time": "2025-11-03T05:31:48Z",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/Internationalteachers/comments/1on2gdi/chances_of_getting_hired_outside_of_japan/",
+      "url": "https://www.reddit.com/r/Dragonballsuper/comments/1on3dzg/usavalid_aliexpress_orders_placed_in_november/",
       "sentiment": "negative"
     },
     {
-      "title": "It’s possible. I got my job from outside of Japan, as did the majority of my colleagues (exceptions are the Japanese language teachers and a couple of foreign teachers who switched schools within Japan). Don’t settle for eikawa or ALT work beforehand. It doesn’t count as experience for international schools. Do you have a teaching licence?",
-      "publish_time": "2025-11-03T04:53:22Z",
+      "title": "Hey so you might need to investigate the shopping quality section a bit more. Maybe share it here to get more refined help. I’ve done 7000+ orders but the new thing still confuses me sometimes. I fell off once and just stopped doing refunds and that’s seemed to fix it. But idk without more info",
+      "publish_time": "2025-11-03T05:31:48Z",
       "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/Internationalteachers/comments/1on2gdi/chances_of_getting_hired_outside_of_japan/nmtwjso/",
+      "url": "https://www.reddit.com/r/InstacartShoppers/comments/1on3eay/shopping_quality_help/nmu10jg/",
       "sentiment": "positive"
     },
     {
-      "title": "![gif](giphy|NMHpkm0MPar2U)",
-      "publish_time": "2025-11-03T04:53:22Z",
+      "title": "You need to do 1 more order for gold cart. 25",
+      "publish_time": "2025-11-03T05:31:48Z",
       "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/ChaosZeroNightmare/comments/1on2iny/so_i_found_this_on_facebook_from_another_persom/nmtvs83/",
+      "url": "https://www.reddit.com/r/InstacartShoppers/comments/1on3eay/shopping_quality_help/nmu0ml7/",
       "sentiment": "positive"
     },
     {
-      "title": "Thank you for posting on **r/Mom**! To chat, get support, and connect with other moms, **[join our moms' Discord server here](https://discord.gg/atVgaFJrYd)**. Check out our **[wiki](https://www.reddit.com/r/Mom/wiki/index/)** for resources, tips, FAQs, and helpful guides. And don't forget to check out **[the only mom guide you'll ever need](https://sarumom.short.gy/from-zero-to-mom-guide)**. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/Mom) if you have any questions or concerns.*",
-      "publish_time": "2025-11-03T04:53:22Z",
+      "title": "Thanks for posting to /r/DragonballSuper.\\ Please report any rule breaking posts and posts that are not relevant to the subreddit. Prohibited topics include: \"What if\"/\"Who would win\" posts, polls, screenshots of YT Community/Instagram/etc., \"DBSTubers\" and AI Art. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/Dragonballsuper) if you have any questions or concerns.*",
+      "publish_time": "2025-11-03T05:31:48Z",
       "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/Mom/comments/1on2r1q/does_my_son_not_love_me/nmtvuda/",
+      "url": "https://www.reddit.com/r/Dragonballsuper/comments/1on3dzg/usavalid_aliexpress_orders_placed_in_november/nmu0afo/",
       "sentiment": "positive"
     },
     {
-      "title": "That producer must take blame for everything he has done to a fking potential story about cthulhu-style.",
-      "publish_time": "2025-11-03T04:53:22Z",
+      "title": "r/onexindia requires all individuals to have a flair before posting/commenting. Please familiarize yourself with rules before proceeding further. The subreddit is heavily moderated to prevent larping and hate against individuals, and any reports shall be thoroughly investigated and users engaging in such activities shall be banned. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/onexindia) if you have any questions or concerns.*",
+      "publish_time": "2025-11-03T05:31:48Z",
       "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/ChaosZeroNightmare/comments/1on2iny/so_i_found_this_on_facebook_from_another_persom/nmtwpxh/",
-      "sentiment": "negative"
+      "url": "https://www.reddit.com/r/onexindia/comments/1on3efj/life_game_what_should_i_do_next/nmu0d87/",
+      "sentiment": "positive"
     },
     {
-      "title": "Difference between in 2013 and 2025 WC Final !! DY Patil Stadium was packed on Sunday as the Indian women’s team played their first home final of the ICC Women’s World Cup, facing South Africa, who also reached the final for the first time. Fans fill the DY Patil Stadium for the 2025 ICC Women's World Cup final (PTI) It was a far cry from the 2013 edition, as Australia defeated West Indies in the summit clash in front of near-empty stands at the Brabourne Stadium in Mumbai. Despite the rain, the crowd showed their determination by waiting patiently for two hours for the toss, delayed due to wet conditions. Fortunately, the match commenced in time, avoiding any loss of overs. The rain did not dampen the fans’ enthusiasm, and with the massive turnout, previous attendance records were likely to be broken.",
-      "publish_time": "2025-11-03T04:53:22Z",
+      "title": "Life Game: What Should I Do Next Hey folks, Lately I’ve been a bit lost. I’m 27M, working in consulting, earning around ₹1L/month. It’s okay, but I know I’m slightly behind because of a gap year and a few career detours. And now I’m stuck wondering what the next few years should look like. I feel like I’m juggling too many timelines — career, money, relationships — and not sure which ball I can afford to drop. For those who’ve crossed this phase — what worked for you? Did you grind first and balance later, or find a middle path early on? Long read below: --- Career: This one’s eating me up the most. Part of me wants to just grind hard till 35 — put in the hours, chase promotions, and build a solid cushion before the cost of living really hits. But the flip side is obvious — less time for friends, family, or even just breathing room. The other option is to move to an easier track — slower growth, but a saner life. And I genuinely don’t know what’s smarter. For those who’ve been through this: was the grind worth it, or do you wish you’d slowed down a bit earlier? --- Assets: No real assets yet. I’m clearing my education loan aggressively (almost 2x EMI) and putting over half my salary into savings + debt repayment. Still, it feels like I’m not really building anything tangible. For those who started from scratch — how did you actually begin building assets like a house, land, or something substantial while still working your way up? Is there a mental or financial framework that helped you prioritise between debt clearing, liquidity, and asset creation? --- Family & Personal Life: My family’s chill — not traditional at all. They’re not matchmaking or pushing marriage. They expect me to find someone on my own. I tried apps for a while but honestly lost interest in the swiping circus. Now I’ve kind of deprioritised dating, though I do worry I’ll be “late” if I only start looking seriously in my 30s. Thing is, I want an equal partnership — not the old-school setup — so I’m hoping it won’t be too hard later on. Still, curious how others managed this balance: career + finances + relationships without burning out or missing out. --- Disclosure: I used AI (ChatGPT) to help structure and write this post better — the thoughts are 100% mine though.",
+      "publish_time": "2025-11-03T05:31:48Z",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/IndiaCricket/comments/1on2opg/difference_between_in_2013_and_2025_wc_final/",
+      "url": "https://www.reddit.com/r/onexindia/comments/1on3efj/life_game_what_should_i_do_next/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Thanks for posting on r/Tollywood! Don't forget to check that your post abides by our rules! Similar Subs to check out: r/TeluguMusicMelodies : Subreddit to discuss and suggest telugu music r/tollywoodmovieclips : Subreddit to post all clips from telugu movies. r/Ni_bondha : Telugu Meme community *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/tollywood) if you have any questions or concerns.*",
+      "publish_time": "2025-11-03T05:31:48Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/tollywood/comments/1on3ehe/how_do_distributers_make_do_with_such_a_little/nmu0dhi/",
       "sentiment": "positive"
     },
     {
-      "title": "Join our official [Discord server](https://discord.gg/TXyybaSwRH) for more discussions. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/IndiaCricket) if you have any questions or concerns.*",
-      "publish_time": "2025-11-03T04:53:22Z",
+      "title": "How do distributers make do with such a little profits? This has been bugging me for a while. We consider a movie hit, when it returns all the investments of the distributors. Is that enough though? When the movie reaches that point, it has not earned u any profits. It just returned all ur investments. Almost all the biggies in recent times that are being considered \"hits\" have given so less profits. Why would anyone want to do such business. Especially for the big movies. There is always so much demand for big films and there won't be that much demand unless huge profits are guaranteed. 50 cr investment pedithe evaraina atleast 70-80 cr expect chestharu, not 51 or 52 crs and celebrate it as profitable and hit venture. Are we missing something here?",
+      "publish_time": "2025-11-03T05:31:48Z",
+      "source": "reddit_post",
+      "url": "https://www.reddit.com/r/tollywood/comments/1on3ehe/how_do_distributers_make_do_with_such_a_little/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Reminders: SEE THIS STICKY POST for how to deal with bullies: https://old.reddit.com/r/bullying/comments/anesxq/some_tips_for_newcomers/?st=k3buwwik&sh=a60f6e1d **THIS SUB IS NOT A REPLACEMENT FOR PROFESSIONAL COUNSELING** **USE APPROPRIATE LANGUAGE** **ZERO TOLERANCE RULE FOR VIOLENT OR HARMFUL BEHAVIOR** This is **NOT** a sub for karma-clickbait or YouTube videos comments. Any posts deemed not appropriate by the mods will be **immediately removed and the user banned without warning.** *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/bullying) if you have any questions or concerns.*",
+      "publish_time": "2025-11-03T05:31:48Z",
       "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/IndiaCricket/comments/1on2opg/difference_between_in_2013_and_2025_wc_final/nmtvcu9/",
+      "url": "https://www.reddit.com/r/bullying/comments/1on3f3l/teaching_as_a_profession_post_bullying/nmu0hoz/",
       "sentiment": "positive"
     },
     {
-      "title": "This should be the start of women’s cricket getting more mainstream. If the men’s team had a 1983, this should be 2025 for the women’s team.",
-      "publish_time": "2025-11-03T04:53:22Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/IndiaCricket/comments/1on2opg/difference_between_in_2013_and_2025_wc_final/nmtwnls/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "What are some of the most thrilling sports matches you watched? In the cricket world cup which concluded some hours ago, the knockouts had four big teams - Australia, South Africa, India and England. The semifinals with Australia & Finals with South Africa were some of the most thrilling cricket matches I watched.",
-      "publish_time": "2025-11-03T04:53:22Z",
+      "title": "I can’t stop worrying about my boyfriend and this girl in their friend group Hey, so this post is gonna be really dramatic and all over the place. I am also using voice to text and I’m not going to read it over so it might be a little bit wonky. Me (18) and my bf (19) have been dating for three years. We are super super happy with each other and he has never given me a reason not to trust him. He is going to be getting his own apartment with his friend Johnny (27), and this other girl that is in their friend group. My boyfriend doesn’t even follow her on Instagram so he doesn’t really know much about her. I also wanna say that I’m pretty sure she has a girlfriend. I think it’s insecurity because I have been cheated on in the past, but every time he brings up getting the apartment or hanging out in a group with her, I literally feel like I am going to start crying. He has literally been staying at my house for the past two nights and he left a few hours ago to go hang out with them all and still I feel so awful. Neither of us are really the type of people to text when we are hanging out with friends. He told me they were going to go look at apartments and then so that they weren’t looking at apartments because it was Sunday (I don’t know what that has to do with it.) and they got a motel to spend the night in (my bf, Johnny, the girl, and two other guys.) he didn’t text me for two hours. It made me feel really anxious. And he just told me that they are playing a drinking/smoking leaf game and you know shit always turns sexual when you are planning a drinking truth or dare game. He’s not going to make a move on her and I know that, but it just makes me worried because he’s going to be seeing her a lot more than me. He says that he is not attracted to her at all and not to be worried but I know the attraction can grow especially when you’re living with a pretty girl. I’m so tired of being worried about this girl and I know that he’s not going to cheat on me- or at least not anytime soon. I’m also unhappy about the whole living situation that they are going to be having in general so it just makes the whole thing feel worse. I’m literally just sitting here in my bed worrying about the clothes that she is wearing and worrying about how she gets when she’s drunk and worrying about if if my boyfriend is laughing at her jokes or if they are even interacting at all. I hate this and it makes me feel so fucking awful because I just wanna feel normal about my relationship with my boyfriend because he is literally the best guy in the whole world. I haven’t even met the girl. What can I do to make myself feel better about this?",
+      "publish_time": "2025-11-03T05:31:47Z",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/AskTheWorld/comments/1on2npp/what_are_some_of_the_most_thrilling_sports/",
+      "url": "https://www.reddit.com/r/Advice/comments/1on3ema/i_cant_stop_worrying_about_my_boyfriend_and_this/",
       "sentiment": "negative"
     },
     {
-      "title": "F1 European GP 1999 5 different leaders, almost every single team had a chance for their best result of the year, ending in celebration for some (Herbert, Trulli, Gene) and in tears for others (Frentzen, Badoer,...)",
-      "publish_time": "2025-11-03T04:53:22Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/AskTheWorld/comments/1on2npp/what_are_some_of_the_most_thrilling_sports/nmtvrdq/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "(How) Is 50-60K budget enough to travel to South Korea alone?",
-      "publish_time": "2025-11-03T04:53:22Z",
+      "title": "Feeling/Not understanding a lack of community and support in my circle I wanted to come here today to get some feelings off my chest that i've had for over a year now. Ever since my ex of 10 years and I split in 2022 I have struggled with depression, anxiety and loneliness since no longer having the one person I relied a lot on for support, company, friendship etc. (my ex). Suddenly I needed a lot more support and company from friends and family, and i'm so lucky that I mostly had them when I needed them. It has still been a difficult road that has certainly made me stronger along the way. In 2024 I met my now partner who is a lovely, kind, understanding and talented human! He has slowly became that safe place I was looking for in a partner and worlds better than my long-term ex in many ways. I have begun healing and built a life that feels much more safe and comfortable. My partner is a talented musician and composer, and listening to and supporting his music has been such a delight throughout the year and a half we've been together. I joke that I know i'm not expected to be at each of his bands shows, but I genuinely enjoy their music and stage presence so much that it just feels natural to go as often as I do, aside from the fact it's important to me that his passion feels supported in our relationship. Now here's the meat n potatoes; I will absolutely go to as many of his shows as I can, whether or not I have to sit alone. Unfortunately, it is usually just me myself and I. I promote his band and upcoming shows on social media to my friends, and have in the past shared his show dates with close friends and family. I'll admit that these days I no longer ask if anyone will be attending the shows, probably because I know people are busy and in the past have gone a few times. And I don't want to pester people. I am very appreciative of the times that folks have showed up, especially close ones. And I absolutely do not feel anyone is obligated to enjoy the shows, the music or be at any/all of them, but to get to the point, i'm having a hard time understanding why it has felt as lonely as it has. I understand that this is MY partner, and a genre of music that not everyone will love, but it is legitimately good music played by talented long-time musicians at local venues that almost never charge for entry. To me, it would feel wonderful if every now and then even just one of my close friends and family would use it as an opportunity to spend an evening listening to good music, spending casual time with me, eating food etc. What happens is I end up feeling disappointed if they do not show up, and also when I go by myself and sit alone for the 20th time this year. Luckily the other spouses/family of the band members often say hello and will offer I sit with them and that definitely helps. What stings a little is when (like tonight) I got there a little late and struggled to find a place to sit while it appeared groups of people were gathered together as friends/family and I was just by myself. Wishing I belonged to a group that was eager to go listen to music and eat pizza. Meanwhile I sat alone on a folding chair and ate my pizza in my lap, in the way of the bus cart. Clearly I was/am feeling a bit down on myself about it, but it's just kind of a drag that the reality is 90% of the time if I want to support my partner and his band I have to be ok sitting alone and sharing it with no one. My partner and I chatted about this tonight as I opened up to him about how I was feeling about it, and we talked about how aside from my own feelings and thoughts in the matter (obviously the most important thing here is that my partner is feeling supported!), its also a bit sad that due to my partners closer friends and family living in other states or cities hours away, he often doesn't have visitors of his own besides me. The community they've curated is absolutely supportive and there are some friends who are there for him pretty often, but I mentioned how fun it would be to sit with his crew, get to know them and feel less alone as we cheer him and the band on together. :) Hopefully those days are coming! Regardless, I'll continue to show up as often as I feel like it whether I do it alone or not. But will continue to wonder why it feels like its not so easy for others to be as excited or motivated to come see his shows when it feels like a fairly easy and generally enjoyable way to support us both. I figure there are more folks like me out there, either artists who feel they're on a lonely journey with less support than they expected, and/or their partners who feel at times like their only cheerleader. If anyone feels like sharing about this, you're welcome to! TL;DR - It feels more difficult than i'd like to get friends and family to join me for my partner's shows, and I sit alone a lot. I still have fun, but I wish I or we had more of a community of our own to provide at least semi-regular company & support of his music. Perhaps I could do better at asking them directly and more individually.",
+      "publish_time": "2025-11-03T05:31:47Z",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/AskPH/comments/1on2okm/how_is_5060k_budget_enough_to_travel_to_south/",
+      "url": "https://www.reddit.com/r/Vent/comments/1on39w9/feelingnot_understanding_a_lack_of_community_and/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Welcome to r/RenalCats; a subreddit for cats with kidney disease. Please use the report button if you encounter any rule breaking activity. Be kind, sincere and respectful. Stay on topic. No advertising or fundraising. Friendly advice is welcome but remember this community is not a replacement for a veterinarian. **If your post and/or comment does not show up:** You likely have a new and/or low karma account and are caught in the spam filter. Please allow time for a human mod to review and approve your post. **Pet loss posts:** All pet loss posts must be marked with **both** the \"pet loss\" flair *and* a spoiler tag. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/RenalCats) if you have any questions or concerns.*",
+      "publish_time": "2025-11-03T05:31:47Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/RenalCats/comments/1on3ae4/support_for_the_most_gentle_old_man/nmtzlsf/",
       "sentiment": "positive"
     },
     {
-      "title": "Does my son not love me? Let me give a bit of a backstory so it all makes sense. I had my son 14 months ago. His father and I have been happily together for 4 years and know each other for 12. We were over the moon to have a baby as we tried for quite some time. Two months after his birth, my husband was diagnosed with stage 4 Hodgkins Lymphoma and myself with severe Post Partum Depression. I was on several medications to stay functioning while my husband began his storm into chemo, treatments, medications, etc. It was hell. All while I had to work triple time just to keep our family afloat. My mother moved in with us full time and cut her work hours back to help care for my son. I make the most out of all of us so that is why I continued to work heavy amounts of over time. My work also did not pay for any form of maternity leave so I had to work OT my entire pregnancy just to create a nest egg for us. At this present time, my husband is in remission, in physical therapy and preparing to go back to work as of today to help take some of the burden off me. I have not stopped working overtime since the day I became pregnant. I ask if my son does not love me because…. I am a highly observant person and I notice little things with my son like every morning I go to greet him good morning first and he always looks past me and smiles towards my mother coming in, when I approach my son during playtime he tried to close the door on me several times today but when my husband approached, he immediately crawled over to him and tried to be picked up in his arms, when I call his name and try to play with him, he doesn’t always smile or respond playfully versus if my mom or husband do the same, he becomes excited and smiles for them, if two of us are in a room, he will crawl to the other person over me. I realize I may be projecting a lot of my insecurities but I am afraid that I have worked so much and so hard for my family that my son doesn’t have as strong of a bond with me that he does with my husband and my mother. He sees them far greater amounts than he sees me. On my days off, I spend ALL my time with him because I’m trying to make up for time lost working. I try to soak up every second with him. But, I can’t help but have a broken heart. I KNOW he’s only 14 months but children are smarter than we give them credit for. Does my son not love me?",
-      "publish_time": "2025-11-03T04:53:22Z",
+      "title": "Support for the most gentle old man Hi everyone, I am here seeking support, advice, and words of encouragement on behalf of my 16-year-old Ragdoll boy, Marcel. He has always been a healthy cat, aside from being diagnosed with diabetes nine years ago and having some mild urinary issues after the only time he was ever separated from us, when he stayed at a cat hotel for four days. That experience was so stressful for him that we promised never to separate from him again. He is a very affectionate boy who loves spending time with everyone in the family. His eating, bathroom habits, and behavior have all been normal. Two days ago, we woke up to find blood all over the house and took him to the vet immediately. I have attached the conclusions from that visit for reference. The vet was optimistic and even talked about pre-booking his next annual checkup. We have been giving him the prescribed medicine and looking into an ultrasound, as the vet referred us to an external provider who offers it at a lower cost. The following day, Marcel still had not eaten, drunk, or used the bathroom, so we brought him back to the vet for a follow-up. This time, the vet was much more serious and advised that he would likely die if we did not hospitalize him for several days and pursue the ultrasound (which is not available until Monday at this clinic). After considering his age and how stressful the cat hotel was for him, we decided he would be most comfortable at home, surrounded by love and familiarity, until that is no longer humane. He received an IV at the second visit and seemed to improve slightly when we got home. He drank some water, ate a bit of food, and even urinated again, though the urine is light pink rather than bright red now. His energy levels are still very low, and he seems depressed and unanimated, but I am wondering how much of that might be from the pain medication and antibiotics. He is supposed to finish these medications in the next day. If he were a more social and independent cat, I would not hesitate to take the vet’s advice, but I know that hospitalization and being prodded with tubes would only bring panic and distress to his already fragile little body. I understand the importance of the ultrasound, but I also worry that if he does have cancer or a liver mass, I am not sure he can or should endure a surgical procedure. I do not know exactly what I am looking for by posting this. I suppose I just need advice, support, care, comfort, or prayers. How do I know if he is in pain, and what is truly necessary for him at this stage? How can we ensure he is comfortable, and how will we know when he no longer is? This is breaking my heart in ways I never knew possible. He is so sweet. I am also curious about mirtazapine and feeding methods. The vet did not mention this medication or euthanasia. If it could help, how can I obtain it? Would I need to see another vet? What about Purina’s hydration supplement? Thank you.",
+      "publish_time": "2025-11-03T05:31:47Z",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/Mom/comments/1on2r1q/does_my_son_not_love_me/",
+      "url": "https://www.reddit.com/r/RenalCats/comments/1on3ae4/support_for_the_most_gentle_old_man/",
       "sentiment": "negative"
     },
     {
-      "title": "3-28",
-      "publish_time": "2025-11-03T04:53:22Z",
+      "title": "As a reminder, this post is tagged **Strictly Clean/SFW**, meaning the author has indicated they are NOT seeking any adult or explicit activities. This means: * Responses to this post, whether by comments, chats, or DMs, must not ask the author for such activities, or include any explicit content. * The author must not write back unsolicited explicit messages or include any references to adult activities in their post. Please report any violation of this rule using the Report button, and follow up by messaging the mods. Unwanted explicit advances are harassment, and will result in bans and possible Reddit account suspensions. **Note to the author— If you have incorrectly tagged your post, you must remove it immediately, or you will banned for a minimum of one week.** --- Just a heads up: this post has been locked, as all posts on r/r4r are. This is because personal ads are not discussion topics, and r/r4r is not a discussion forum (except for METAs.) Responses should be PMed to OP directly. Here's a convenient link for mobile users: * **[💬 Chat](https://chat.reddit.com/user/t2_216e1sbpc2)** * **[✉ Send a private message](https://www.reddit.com/message/compose/?to=Illustrious_Loan_163)** Public comments have been locked. If there is an issue with this post and it breaks the rules, please use the report button AND message the moderators. OPs who wish to enable comments and accept low-effort responses may do so by adding `!unlock` to the body of their submissions. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/r4r) if you have any questions or concerns.*",
+      "publish_time": "2025-11-03T05:31:47Z",
       "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/AskTheWorld/comments/1on2npp/what_are_some_of_the_most_thrilling_sports/nmtwlxe/",
+      "url": "https://www.reddit.com/r/r4r/comments/1on3cf2/25m4f_looking_for_deep_passion_la_online/nmu00c5/",
+      "sentiment": "positive"
+    },
+    {
+      "title": "25[m4f] looking for deep passion #LA #online I long for the level of passion where we both feel more alive when we wake up and look into each others eyes every morning. The type of passion where both of us are excited to nourish, grow, and build a beautiful life together. I don't want casual. I want us to feel safe together, knowing the deepest, most intimate parts of each other's souls without being afraid of judgment as we discover more about who we are. First, I'll tell you a little more about myself as a person.. Besides my love for you, music is my main passion in life. If I'm not working on my own.. I'm constantly searching for new music to get lost in. A few of my favorite genres are: post punk/ indie rock/ darkwave and dream pop. I'm also very into film! Next fall, i will be moving to LA for film school. My intention is to hopefully meet you in LA when I move :p And when i'm not focusing on music or film.. i love cooking. I spend a lot of time experimenting in the kitchen and trying new recipes whenever I can. Another thing about me is that I'm a very nature oriented person. I love getting lost in the beautiful forests of my home state. It always helps me feel at peace when i'm able soak in every nature has to offer.. from the birds singing, to the smell of the pine trees lumbering over me. Do you think we have potential together? If so, I'd love to get to know you :)",
+      "publish_time": "2025-11-03T05:31:47Z",
+      "source": "reddit_post",
+      "url": "https://www.reddit.com/r/r4r/comments/1on3cf2/25m4f_looking_for_deep_passion_la_online/",
       "sentiment": "negative"
     },
     {
-      "title": "Let’s be honest , MPs don’t call the the shots the bureaucrats do. For every minister there are 3 assistant deputy ministers who have worked in said departments for 20 years. Every time the government changes or a good idea is made they are the ones you have to find a way for it to happen. Government bloat is ridiculous and most ministers are working in fields outside of their expertise, and when they are using their education the PMO just overrides them",
-      "publish_time": "2025-11-03T04:53:22Z",
+      "title": "It's semi-permanent.. I will probably be there for at least a couple years. There is a chance I might be settling in less humid regions though.",
+      "publish_time": "2025-11-03T05:31:47Z",
       "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/jobwatchcanada/comments/1on2cvv/minister_of_immigration_lena_metlege_diab/nmtvw33/",
+      "url": "https://www.reddit.com/r/AcousticGuitar/comments/1on3ebm/best_way_to_keep_my_guitar_safe_and_healthy_in/nmu14z1/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "What's a significant amount of time? What kind of guitar? How important is it to you that the guitar isn't damaged? Laminates do better with humidity changes than solid woods. Carbon fiber does better still. You could always invest in a travel instrument depending on the economic and sentimental value of your main guitar.",
+      "publish_time": "2025-11-03T05:31:47Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/AcousticGuitar/comments/1on3ebm/best_way_to_keep_my_guitar_safe_and_healthy_in/nmu18kf/",
       "sentiment": "negative"
     }
   ]
