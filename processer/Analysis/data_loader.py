@@ -214,13 +214,20 @@ class DataLoader:
                 predictor = get_predictor()
                 # 使用原始 text 列进行预测（比 clean_text 保留更多信息）
                 text_col = 'text' if 'text' in df.columns else 'content' if 'content' in df.columns else 'clean_text'
-                # ✅ 传入 Redis 客户端，让预测器实时更新队列
+                # ✅ 优化4：使用延迟 Redis 更新（速度快 5 倍）
+                defer_redis_update = self.config.get('bert', {}).get('defer_redis_update', True)
                 df = predictor.fill_missing_sentiments(
                     df, 
                     text_column=text_col,
                     redis_client=self.redis_client,
-                    queue_name=self.config['redis'].get('output_queue_name', 'clean_data_queue')
+                    queue_name=self.config['redis'].get('output_queue_name', 'clean_data_queue'),
+                    defer_redis_update=defer_redis_update  # ✅ 优化：延迟更新
                 )
+                
+                # ✅ 如果启用了延迟更新，在返回前刷新待处理的 Redis 更新
+                if defer_redis_update and self.redis_client and hasattr(df, '_pending_redis_updates'):
+                    print(f"\n📤 处理完成，现在刷新待处理的 Redis 更新...")
+                    predictor.flush_pending_redis_updates(df, self.redis_client)
             except Exception as e:
                 print(f"⚠️  BERT 预测失败，使用默认值: {e}")
                 import traceback
@@ -260,39 +267,64 @@ class DataLoader:
         return text
 
     def get_time_windows(self, df: pd.DataFrame) -> Dict[str, datetime]:
-        """获取时间窗口 - 智能适应实际数据跨度"""
-        if df.empty or 'timestamp' not in df.columns:
+        """
+        获取时间窗口 - 基于数据中的最新时间向前推 24 小时
+        
+        ✅ 关键修改：使用 created_at 而不是 timestamp，因为 created_at 是 Cleaner 传来的真实时间字段
+        
+        关键逻辑：
+        1. 找出 Cleaner 传来数据的最新时间戳（使用 created_at）
+        2. 将该时间向上取整到下一个整点（确保包含当前小时的所有数据）
+        3. 从该整点向前推 25 小时作为历史窗口起点（确保生成 25 个时间槽，即完整的 24 小时）
+        4. 保证生成的 history_data 包含 24 个整点的数据
+        """
+        # ✅ 使用 created_at 字段（Cleaner 的真实时间），不使用 timestamp
+        time_field = 'created_at' if 'created_at' in df.columns else 'timestamp'
+        
+        if df.empty or time_field not in df.columns:
             # 返回默认时间窗口
             now = datetime.now()
             current_window_minutes = self.config.get("current_window_minutes", 60)
-            history_hours = self.config.get("history_hours", 24)
             return {
                 'latest_time': now,
                 'current_window_start': now - timedelta(minutes=current_window_minutes),
-                'history_window_start': now - timedelta(hours=history_hours)
+                'history_window_start': now - timedelta(hours=24)
             }
 
-        # 使用 timestamp 字段（已转换为 datetime）
-        latest_time = df['timestamp'].max()
-        earliest_time = df['timestamp'].min()
+        # ✅ 关键步骤 1：获取 Cleaner 传来的最新数据时间（从 created_at 获取）
+        latest_time = df[time_field].max()
         
-        # 读取配置中的时间窗口设置
+        # ✅ 关键步骤 2：将最新时间向上取整到下一个整点（确保包含当前小时）
+        # 例如：09:50 → 10:00（下一个整点）
+        if latest_time.minute > 0 or latest_time.second > 0 or latest_time.microsecond > 0:
+            latest_hour = (latest_time + timedelta(hours=1)).replace(minute=0, second=0, microsecond=0)
+        else:
+            latest_hour = latest_time.replace(minute=0, second=0, microsecond=0)
+        
+        # ✅ 关键步骤 3：从该整点向前推 25 小时
+        # 这样会得到 [latest_hour - 25h, latest_hour] 的时间范围，生成 25 个 1 小时的槽
+        # 即覆盖过去 24 小时的完整数据
+        history_window_start = latest_hour - timedelta(hours=25)
+        
+        # 读取配置中的当前窗口设置
         current_window_minutes = self.config.get("current_window_minutes", 60)
-        history_hours = self.config.get("history_hours", 24)
-        
-        # 计算时间窗口
         current_window_start = latest_time - timedelta(minutes=current_window_minutes)
-        history_window_start = latest_time - timedelta(hours=history_hours)
+
+        print(f"\n📅 时间窗口计算（基于最新数据时间）:")
+        print(f"  时间字段: {time_field} ✅")
+        print(f"  最新数据时间: {latest_time.isoformat()}")
+        print(f"  最新整点（向上取整）: {latest_hour.isoformat()}")
+        print(f"  历史窗口: {history_window_start.isoformat()} ~ {latest_hour.isoformat()}")
+        print(f"  时间跨度: 25 小时（生成 24 个整点数据点）")
         
-        # 检查历史窗口是否超出实际数据范围
-        if history_window_start < earliest_time:
-            history_window_start = earliest_time
-            actual_hours = (latest_time - earliest_time).total_seconds() / 3600
-            print(f"ℹ️  实际数据跨度 {actual_hours:.1f} 小时 < 配置的 {history_hours} 小时")
-            print(f"   历史窗口已调整为: {earliest_time.isoformat()}")
+        # 验证数据覆盖情况
+        earliest_time = df[time_field].min()
+        actual_hours = (latest_time - earliest_time).total_seconds() / 3600
+        print(f"  实际数据: {earliest_time.isoformat()} ~ {latest_time.isoformat()}")
+        print(f"  实际跨度: {actual_hours:.1f} 小时")
 
         return {
-            'latest_time': latest_time,
+            'latest_time': latest_hour,  # ✅ 返回向上取整后的整点时间作为结束点
             'current_window_start': current_window_start,
             'history_window_start': history_window_start
         }

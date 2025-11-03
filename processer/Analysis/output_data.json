@@ -1,462 +1,2322 @@
 {
   "metadata": {
-    "timestamp": "2025-11-03T09:22:18Z",
+    "timestamp": "2025-11-03T14:30:26Z",
     "update_interval": 60,
     "data_version": "1.0",
     "news_sources": {
-      "reddit_comment": 9595,
-      "reddit_post": 786,
-      "rss": 389,
-      "stocktwits": 210,
-      "alphavantage": 27
+      "reddit_comment": 15256,
+      "reddit_post": 1930,
+      "rss": 1047,
+      "stocktwits": 562,
+      "alphavantage": 26
     }
   },
   "trending_keywords": [
     {
       "keyword": "like",
       "rank": 1,
-      "current_frequency": 2339,
-      "growth_rate": 100.0,
+      "current_frequency": 529,
+      "growth_rate": 538.6,
       "trend_score": 1.0,
       "sentiment": {
-        "positive": 37,
-        "negative": 63,
-        "total_comments": 1707
+        "positive": 38,
+        "negative": 62,
+        "total_comments": 2807
       }
     },
     {
       "keyword": "from",
       "rank": 2,
-      "current_frequency": 2147,
-      "growth_rate": 100.0,
-      "trend_score": 0.95,
+      "current_frequency": 508,
+      "growth_rate": 627.9,
+      "trend_score": 0.98,
       "sentiment": {
-        "positive": 39,
-        "negative": 61,
-        "total_comments": 1349
-      }
-    },
-    {
-      "keyword": "about",
-      "rank": 3,
-      "current_frequency": 1826,
-      "growth_rate": 100.0,
-      "trend_score": 0.87,
-      "sentiment": {
-        "positive": 33,
-        "negative": 67,
-        "total_comments": 1223
+        "positive": 40,
+        "negative": 60,
+        "total_comments": 2352
       }
     },
     {
       "keyword": "out",
-      "rank": 4,
-      "current_frequency": 1645,
-      "growth_rate": 100.0,
-      "trend_score": 0.82,
+      "rank": 3,
+      "current_frequency": 434,
+      "growth_rate": 242.4,
+      "trend_score": 0.89,
       "sentiment": {
-        "positive": 36,
-        "negative": 64,
-        "total_comments": 2471
+        "positive": 39,
+        "negative": 61,
+        "total_comments": 4345
       }
     },
     {
-      "keyword": "there",
-      "rank": 5,
-      "current_frequency": 1610,
-      "growth_rate": 100.0,
-      "trend_score": 0.81,
+      "keyword": "about",
+      "rank": 4,
+      "current_frequency": 434,
+      "growth_rate": 582.6,
+      "trend_score": 0.89,
       "sentiment": {
-        "positive": 30,
-        "negative": 70,
-        "total_comments": 1210
+        "positive": 36,
+        "negative": 64,
+        "total_comments": 2135
       }
     },
     {
       "keyword": "would",
-      "rank": 6,
-      "current_frequency": 1600,
-      "growth_rate": 100.0,
-      "trend_score": 0.81,
-      "sentiment": {
-        "positive": 34,
-        "negative": 66,
-        "total_comments": 1191
-      }
-    },
-    {
-      "keyword": "get",
-      "rank": 7,
-      "current_frequency": 1537,
-      "growth_rate": 100.0,
-      "trend_score": 0.79,
+      "rank": 5,
+      "current_frequency": 392,
+      "growth_rate": 567.7,
+      "trend_score": 0.84,
       "sentiment": {
         "positive": 36,
         "negative": 64,
-        "total_comments": 1600
-      }
-    },
-    {
-      "keyword": "people",
-      "rank": 8,
-      "current_frequency": 1478,
-      "growth_rate": 100.0,
-      "trend_score": 0.78,
-      "sentiment": {
-        "positive": 29,
-        "negative": 71,
-        "total_comments": 1053
+        "total_comments": 1991
       }
     },
     {
       "keyword": "one",
-      "rank": 9,
-      "current_frequency": 1307,
-      "growth_rate": 100.0,
-      "trend_score": 0.74,
+      "rank": 6,
+      "current_frequency": 376,
+      "growth_rate": 184.3,
+      "trend_score": 0.83,
       "sentiment": {
-        "positive": 37,
-        "negative": 63,
-        "total_comments": 2668
+        "positive": 39,
+        "negative": 61,
+        "total_comments": 4560
+      }
+    },
+    {
+      "keyword": "please",
+      "rank": 7,
+      "current_frequency": 375,
+      "growth_rate": 1082.7,
+      "trend_score": 0.83,
+      "sentiment": {
+        "positive": 79,
+        "negative": 21,
+        "total_comments": 840
+      }
+    },
+    {
+      "keyword": "get",
+      "rank": 8,
+      "current_frequency": 361,
+      "growth_rate": 325.7,
+      "trend_score": 0.81,
+      "sentiment": {
+        "positive": 38,
+        "negative": 62,
+        "total_comments": 2826
       }
     },
     {
       "keyword": "time",
-      "rank": 10,
-      "current_frequency": 1232,
-      "growth_rate": 100.0,
-      "trend_score": 0.72,
+      "rank": 9,
+      "current_frequency": 315,
+      "growth_rate": 407.0,
+      "trend_score": 0.76,
       "sentiment": {
-        "positive": 36,
-        "negative": 64,
-        "total_comments": 1181
+        "positive": 40,
+        "negative": 60,
+        "total_comments": 2100
+      }
+    },
+    {
+      "keyword": "there",
+      "rank": 10,
+      "current_frequency": 314,
+      "growth_rate": 408.5,
+      "trend_score": 0.76,
+      "sentiment": {
+        "positive": 35,
+        "negative": 65,
+        "total_comments": 2086
       }
     }
   ],
   "word_cloud": [
     {
       "text": "like",
-      "value": 2339
+      "value": 529
     },
     {
       "text": "from",
-      "value": 2147
-    },
-    {
-      "text": "about",
-      "value": 1826
+      "value": 508
     },
     {
       "text": "out",
-      "value": 1645
+      "value": 434
     },
     {
-      "text": "there",
-      "value": 1610
+      "text": "about",
+      "value": 434
     },
     {
       "text": "would",
-      "value": 1600
-    },
-    {
-      "text": "get",
-      "value": 1537
-    },
-    {
-      "text": "people",
-      "value": 1478
+      "value": 392
     },
     {
       "text": "one",
-      "value": 1307
+      "value": 376
+    },
+    {
+      "text": "please",
+      "value": 375
+    },
+    {
+      "text": "get",
+      "value": 361
     },
     {
       "text": "time",
-      "value": 1232
+      "value": 315
     },
     {
-      "text": "because",
-      "value": 1128
-    },
-    {
-      "text": "also",
-      "value": 1109
-    },
-    {
-      "text": "even",
-      "value": 1087
+      "text": "there",
+      "value": 314
     },
     {
       "text": "had",
-      "value": 1033
+      "value": 311
+    },
+    {
+      "text": "people",
+      "value": 294
+    },
+    {
+      "text": "also",
+      "value": 285
+    },
+    {
+      "text": "because",
+      "value": 272
     },
     {
       "text": "know",
-      "value": 1018
+      "value": 268
     },
     {
-      "text": "then",
-      "value": 970
+      "text": "even",
+      "value": 256
     },
     {
-      "text": "think",
-      "value": 932
+      "text": "here",
+      "value": 243
     },
     {
-      "text": "market",
-      "value": 886
+      "text": "post",
+      "value": 234
     },
     {
-      "text": "want",
-      "value": 880
+      "text": "subreddit",
+      "value": 228
     },
     {
-      "text": "could",
-      "value": 880
+      "text": "comments",
+      "value": 224
     }
   ],
   "history_data": {
     "like": [
       {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 28
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 42
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 35
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 35
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 34
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 42
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 33
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 54
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 62
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 62
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 36
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 60
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 60
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 69
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 63
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 39
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 34
+      },
+      {
         "timestamp": "2025-11-03T08:00:00Z",
-        "frequency": 556
+        "frequency": 52
       },
       {
         "timestamp": "2025-11-03T09:00:00Z",
-        "frequency": 1151
+        "frequency": 73
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 283
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 297
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 345
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 97
       }
     ],
     "from": [
       {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 34
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 25
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 30
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 28
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 47
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 41
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 43
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 35
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 42
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 49
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 67
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 41
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 39
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 25
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 18
+      },
+      {
         "timestamp": "2025-11-03T08:00:00Z",
-        "frequency": 427
+        "frequency": 46
       },
       {
         "timestamp": "2025-11-03T09:00:00Z",
-        "frequency": 922
-      }
-    ],
-    "about": [
-      {
-        "timestamp": "2025-11-03T08:00:00Z",
-        "frequency": 380
+        "frequency": 54
       },
       {
-        "timestamp": "2025-11-03T09:00:00Z",
-        "frequency": 843
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 268
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 270
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 294
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 83
       }
     ],
     "out": [
       {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 54
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 58
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 58
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 55
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 43
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 61
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 61
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 82
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 78
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 81
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 60
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 88
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 90
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 107
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 84
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 56
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 50
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 45
+      },
+      {
         "timestamp": "2025-11-03T08:00:00Z",
-        "frequency": 743
+        "frequency": 80
       },
       {
         "timestamp": "2025-11-03T09:00:00Z",
-        "frequency": 1728
+        "frequency": 113
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 464
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 449
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 526
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 159
       }
     ],
-    "there": [
+    "about": [
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 25
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 35
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 42
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 36
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 39
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 38
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 41
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 65
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 40
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 32
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 16
+      },
       {
         "timestamp": "2025-11-03T08:00:00Z",
-        "frequency": 368
+        "frequency": 50
       },
       {
         "timestamp": "2025-11-03T09:00:00Z",
-        "frequency": 842
+        "frequency": 62
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 237
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 260
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 270
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 74
       }
     ],
     "would": [
       {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 27
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 30
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 49
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 34
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 53
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 37
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 33
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 39
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 43
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 32
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 26
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 23
+      },
+      {
         "timestamp": "2025-11-03T08:00:00Z",
-        "frequency": 357
+        "frequency": 53
       },
       {
         "timestamp": "2025-11-03T09:00:00Z",
-        "frequency": 834
-      }
-    ],
-    "get": [
-      {
-        "timestamp": "2025-11-03T08:00:00Z",
-        "frequency": 475
+        "frequency": 50
       },
       {
-        "timestamp": "2025-11-03T09:00:00Z",
-        "frequency": 1125
-      }
-    ],
-    "people": [
-      {
-        "timestamp": "2025-11-03T08:00:00Z",
-        "frequency": 258
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 196
       },
       {
-        "timestamp": "2025-11-03T09:00:00Z",
-        "frequency": 795
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 208
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 263
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 59
       }
     ],
     "one": [
       {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 45
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 65
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 51
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 51
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 59
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 66
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 63
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 97
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 82
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 77
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 102
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 110
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 126
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 105
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 87
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 59
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 57
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 62
+      },
+      {
         "timestamp": "2025-11-03T08:00:00Z",
-        "frequency": 829
+        "frequency": 89
       },
       {
         "timestamp": "2025-11-03T09:00:00Z",
-        "frequency": 1839
+        "frequency": 114
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 454
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 441
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 512
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 158
+      }
+    ],
+    "please": [
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 146
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 161
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 225
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 76
+      }
+    ],
+    "get": [
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 25
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 41
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 32
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 42
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 47
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 61
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 49
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 52
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 47
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 70
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 65
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 69
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 56
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 38
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 26
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 44
+      },
+      {
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 71
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 304
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 304
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 383
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 107
       }
     ],
     "time": [
       {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 27
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 26
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 32
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 32
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 41
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 30
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 46
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 28
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 30
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 48
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 46
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 37
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 23
+      },
+      {
         "timestamp": "2025-11-03T08:00:00Z",
-        "frequency": 418
+        "frequency": 35
       },
       {
         "timestamp": "2025-11-03T09:00:00Z",
-        "frequency": 763
+        "frequency": 51
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 236
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 230
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 286
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 77
+      }
+    ],
+    "there": [
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 28
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 35
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 34
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 34
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 37
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 45
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 39
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 45
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 43
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 57
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 41
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 32
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 28
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 48
+      },
+      {
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 50
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 196
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 202
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 265
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 80
+      }
+    ],
+    "had": [
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 30
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 36
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 37
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 132
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 139
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 179
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 42
+      }
+    ],
+    "people": [
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 30
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 27
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 27
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 32
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 32
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 38
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 32
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 37
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 48
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 43
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 32
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 28
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 31
+      },
+      {
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 39
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 140
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 148
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 168
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 59
+      }
+    ],
+    "also": [
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 32
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 26
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 26
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 36
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 35
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 30
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 34
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 27
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 172
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 164
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 224
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 62
+      }
+    ],
+    "because": [
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 25
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 30
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 33
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 27
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 26
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 27
+      },
+      {
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 38
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 143
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 134
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 165
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 50
+      }
+    ],
+    "know": [
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 33
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 33
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 28
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 28
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 39
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 37
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 38
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 38
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 39
+      },
+      {
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 37
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 183
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 187
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 229
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 72
+      }
+    ],
+    "even": [
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 26
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 28
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 26
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 41
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 30
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 38
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 43
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 42
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 54
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 27
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 26
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 40
+      },
+      {
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 45
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 218
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 194
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 224
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 79
+      }
+    ],
+    "here": [
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 41
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 37
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 43
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 52
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 41
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 46
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 59
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 68
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 68
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 71
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 47
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 71
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 67
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 82
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 79
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 48
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 45
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 36
+      },
+      {
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 71
+      },
+      {
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 75
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 379
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 385
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 453
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 138
+      }
+    ],
+    "post": [
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 25
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 160
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 162
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 235
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 69
+      }
+    ],
+    "subreddit": [
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 1
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 115
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 132
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 176
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 58
+      }
+    ],
+    "comments": [
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 1
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 1
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-03T07:00:00Z",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-11-03T10:00:00Z",
+        "frequency": 43
+      },
+      {
+        "timestamp": "2025-11-03T11:00:00Z",
+        "frequency": 41
+      },
+      {
+        "timestamp": "2025-11-03T12:00:00Z",
+        "frequency": 66
+      },
+      {
+        "timestamp": "2025-11-03T13:00:00Z",
+        "frequency": 20
       }
     ]
   },
   "news_feed": [
     {
-      "title": "Premier to highlight US-China pact at world's largest trade fair CIIE Premier Li Qiang is expected to promote free trade, encourage foreign investment, soothe concerns about the country's slowing economy and highlight a trade deal with the US in a keynote speech as the eighth China International Import Expo (CIIE) opens on Wednesday.",
-      "publish_time": "2025-11-03T09:22:08Z",
-      "source": "alphavantage",
-      "url": "https://www.scmp.com/business/china-business/article/3331301/premier-li-qiang-highlight-us-china-pact-worlds-largest-trade-fair-ciie",
+      "title": "$PENGU.X rugged $BTC.X nonstop selling by Luca scam artist",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/ghostdemon/message/634666874",
       "sentiment": "negative"
     },
     {
-      "title": "Top Analyst Hails Tesla's FSD V14, Calls It A Huge 'Step-Up' From Previously Deployed Versions - Tesla ( NASDAQ:TSLA ) Future Fund LLC's managing director, Gary Black, has weighed in on Tesla Inc.'s ( NASDAQ:TSLA ) Full Self-Driving ( FSD ) system, hailing its progress. Check out the current price of TSLA here.",
-      "publish_time": "2025-11-03T09:22:08Z",
-      "source": "alphavantage",
-      "url": "https://www.benzinga.com/markets/tech/25/11/48583790/top-analyst-hails-teslas-fsd-v14-calls-it-a-huge-step-up-from-previously-deployed-versions",
+      "title": "Looks like ALL volume and momentum are shifting in to MTEX ! Shorts overextended and now bulls can have them trapped at the bottom. MTEX Could pull a huge multi day run - only 700k float! Don&#39;t miss MTEX ..,it&#39;s breaking out! $ILLR $BTC.X $KITT $QNRX ____",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/SqueezingBreakouts/message/634666612",
       "sentiment": "positive"
     },
     {
-      "title": "Elon Musk Teases 'Flying Car' Demo For Tesla Roadster, Says Will Have 'Crazy' Tech, Better Than James Bond's Cars - Tesla ( NASDAQ:TSLA ) Tesla Inc. ( NASDAQ:TSLA ) CEO Elon Musk has teased the arrival of a \"flying car\" demo for the highly anticipated Tesla Roadster, which is set to kick off production soon.",
-      "publish_time": "2025-11-03T09:22:08Z",
-      "source": "alphavantage",
-      "url": "https://www.benzinga.com/markets/tech/25/11/48583775/elon-musk-teases-flying-car-demo-for-tesla-roadster-says-will-have-crazy-tech-better-than-james-bond",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Sam Altman Fires Back At Elon Musk's OpenAI 'Stole' Charge, Reminds Musk Of His Own Tesla Takeover Pitch - Tesla ( NASDAQ:TSLA ) The ongoing feud between billionaire Elon Musk and Sam Altman took a new turn when Musk accused OpenAI of theft, intensifying the public dispute between the two. Musk's accusation was in response to a post by Altman about canceling a Tesla Inc. ( NASDAQ:TSLA ) order.",
-      "publish_time": "2025-11-03T09:22:08Z",
-      "source": "alphavantage",
-      "url": "https://www.benzinga.com/markets/tech/25/11/48583468/sam-altman-fires-back-at-elon-musks-openai-stole-charge-reminds-billionaire-of-his-own-tesla-takeove",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Tesla's Stock Just Got Riskier, but Is It Still a Buy? The company's plans to aggressively ramp up production are based on the assumption that its unsupervised full self-driving solutions will become a reality.",
-      "publish_time": "2025-11-03T09:22:08Z",
-      "source": "alphavantage",
-      "url": "https://www.fool.com/investing/2025/11/02/teslas-stock-just-got-riskier-but-is-it-still-a-bu/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Dave Ramsey Says We Keep Electing The 'Same Morons' To Congress. If They Worked For You, You'd 'Fire Their Butt' For Incompetence Personal finance expert Dave Ramsey delivered a sharp critique during a 2022 episode of \"The Ramsey Show,\" where he slammed Congress for what he called repeated incompetence. While the comments weren't recent, they feel especially timely as the government shutdown has dragged on for weeks.",
-      "publish_time": "2025-11-03T09:22:08Z",
-      "source": "alphavantage",
-      "url": "https://www.benzinga.com/news/topics/25/11/48581804/dave-ramsey-says-we-keep-electing-the-same-morons-to-congress-if-they-worked-for-you-youd-fire-their-",
-      "sentiment": "negative"
-    },
-    {
-      "title": "$TSLA Stock Quote - Price: $456.5600, Change: 3.7401%, Volume: 83135787",
-      "publish_time": "2025-11-03T09:21:53Z",
-      "source": "alphavantage",
-      "url": "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=TSLA",
+      "title": "$BTC.X shorts love to manipulate price with misinformation about &quot;CME gaps&quot;.. wonder why they aren&#39;t now touting an upper gap from 116k-119K ...",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/SCNC/message/634666457",
       "sentiment": "positive"
     },
     {
-      "title": "3 Brilliant Growth Stocks to Buy Now and Hold for the Long Term If you are an aggressive investor who thinks in decades, this trio of growth stocks comes with high risks but could offer huge rewards.",
-      "publish_time": "2025-11-03T09:21:39Z",
-      "source": "alphavantage",
-      "url": "https://www.fool.com/investing/2025/11/02/3-brilliant-growth-stocks-to-buy-now-and-hold-for/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "$AMZN Stock Quote - Price: $244.2200, Change: 9.5845%, Volume: 166340808",
-      "publish_time": "2025-11-03T09:21:24Z",
-      "source": "alphavantage",
-      "url": "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=AMZN",
-      "sentiment": "negative"
-    },
-    {
-      "title": "$GOOGL Stock Quote - Price: $281.1900, Change: -0.1030%, Volume: 39267945",
-      "publish_time": "2025-11-03T09:20:56Z",
-      "source": "alphavantage",
-      "url": "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=GOOGL",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Trump Says Will 'Not Let Anybody Have' Nvidia Chips-But Satya Nadella Reveals MSFT's Chips Are Lying In 'Inventory' Due To Power Shortage - Microsoft ( NASDAQ:MSFT ) Even as President Donald Trump said that the U.S. won't share Nvidia Corp.'s ( NASDAQ:NVDA ) \"advanced\" chips with China, Microsoft Corp. ( NASDAQ:MSFT ) CEO Satya Nadella has revealed that the primary bottleneck for AI growth is no longer the supply of GPUs but a lack of power and data center ...",
-      "publish_time": "2025-11-03T09:20:42Z",
-      "source": "alphavantage",
-      "url": "https://www.benzinga.com/markets/equities/25/11/48583357/trump-says-will-not-let-anybody-have-nvidia-chips-but-satya-nadella-reveals-msfts-chips-are-lyin",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Prediction: These Stocks Could Deliver Market-Beating Returns Over the Next Decade Artificial intelligence (AI) has been a key theme in driving the stock market higher for years now.",
-      "publish_time": "2025-11-03T09:20:42Z",
-      "source": "alphavantage",
-      "url": "https://www.fool.com/investing/2025/11/03/prediction-these-stocks-could-deliver-market-beati/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Should You Buy or Sell Nvidia Stock? Nvidia stock is rallying hard, begging the question whether now is a good time to follow the crowd.",
-      "publish_time": "2025-11-03T09:20:42Z",
-      "source": "alphavantage",
-      "url": "https://www.fool.com/investing/2025/11/03/should-you-buy-or-sell-nvidia-stock/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Is AI to Blame For My High Electricity Bills? Electricity Costs Soar More Than 200% Near Data Centers The cost of keeping the lights on is becoming a painful financial burden for many Americans as electricity costs are rising faster than inflation.",
-      "publish_time": "2025-11-03T09:20:42Z",
-      "source": "alphavantage",
-      "url": "https://www.benzinga.com/news/topics/25/11/48582386/is-ai-to-blame-for-my-high-electricity-bills-electricity-costs-soar-more-than-200-near-data-centers",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Dividend Stocks That Can Help You Become a Millionaire Companies that continually raise dividends can make you quite wealthy over the long haul.",
-      "publish_time": "2025-11-03T09:20:42Z",
-      "source": "alphavantage",
-      "url": "https://www.fool.com/investing/2025/11/02/dividend-stocks-that-can-help-you-become-a-million/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "1 Vanguard Index Fund Heavy on \"Magnificent Seven\" Stocks Could Turn $500 per Month Into $800,000 Investing in an S&P 500 ETF is a great way to get exposure to the \"Magnificent Seven\" companies.",
-      "publish_time": "2025-11-03T09:20:42Z",
-      "source": "alphavantage",
-      "url": "https://www.fool.com/investing/2025/11/02/1-vanguard-index-fund-heavy-on-magnificent-seven-s/",
+      "title": "$BTC.X BTC is 100% supply/demand driven. (no earnings)... For an idea of how strong BTC fundamentals are currently- and how much short leverage there is currently (the reason a big jump is coming) ...BTC supply on exchanges is the lowest its ever been (which means more BTC is owned than ever before).",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/SCNC/message/634666171",
       "sentiment": "positive"
     },
     {
-      "title": "Is This the Only Stock That Will Outperform Nvidia for the Next 3 Years? Competition could cut into Nvidia's revenue in the next few years.",
-      "publish_time": "2025-11-03T09:20:42Z",
-      "source": "alphavantage",
-      "url": "https://www.fool.com/investing/2025/11/02/is-this-the-only-stock-that-will-outperform-nvidia/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Does Qualcomm's Entry Into the AI Chip Race Spell Trouble for Nvidia? The maker of affordable high-performance mobile processors has made an unlikely leap into territory largely controlled by a much more prolific competitor.",
-      "publish_time": "2025-11-03T09:20:42Z",
-      "source": "alphavantage",
-      "url": "https://www.fool.com/investing/2025/11/02/does-qualcomms-entry-into-the-ai-chip-race-spell-t/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "nVent ( NVT ) Q3 2025 Earnings Call Transcript Image source: The Motley Fool.Friday, Oct. 31, 2025 at 9 a.m. ETNeed a quote from a Motley Fool analyst? Email pr@fool.comContinue reading ...",
-      "publish_time": "2025-11-03T09:20:42Z",
-      "source": "alphavantage",
-      "url": "https://www.fool.com/earnings/call-transcripts/2025/11/02/nvent-nvt-q3-2025-earnings-call-transcript/",
+      "title": "$PENGU.X rugpull is real . Founder sucking all funds out and getting ready to run $BTC.X",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/ghostdemon/message/634666021",
       "sentiment": "positive"
     },
     {
-      "title": "AI Needs Data Centers, and Digital Realty Trust Delivers Them This company could provide a combination of growth and income.",
-      "publish_time": "2025-11-03T09:20:42Z",
-      "source": "alphavantage",
-      "url": "https://www.fool.com/investing/2025/11/02/ai-needs-data-centers-and-digital-realty-trust-del/",
-      "sentiment": "negative"
+      "title": "$BTC.X Whales bleeding out the lil pigs",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/FedPrez/message/634665652",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X how can Democrat sheeple actually still trust their party when their leaders are literally saying that “republicans” refuse to open the govt, when it’s DEMOCRATS that are ON THE RECORD voting “NO” each and every time!! And then you have Democrat politicians that literally said that THEY KNOW IT WILL CAUSE SUFFERING, BUT ITS THEIR LEVERAGE… Aka DEMOCRATS know THEY are the ones closing govt and that they are using it for leverage.. And then they go ahead and claim it’s republicans keeping govt shutdown🤦🏼‍♂️🤦🏼‍♂️ For a CONTINUING RESOLUTION that the “DEMOCRATS” voted for around a dozen times because it’s BIDENS SPENDING CR🤦🏼‍♂️🤦🏼‍♂️🤣🤣 And then Democrats Jeffries claims that republicans/Trump is trying to shove “extreme” right wing ideology…. Umm one it’s not extreme to not want illegals getting free healthcare or to end waste fraud and abuse… AND NEWSFLASH to the DEMOCRATS, the VOTERS voted for what republicans are doing this past election. Every swing state, popular vote, and every branch.",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Stocksavior14/message/634665591",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X Daily and Monthly charts are indicating the start if a big kive higher",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/SCNC/message/634665469",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X 👇",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/GOST/message/634665385",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$SUPAI.X $SUPAI.X $SOL.X $BTC.X $PI.X",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/ador44/message/634665067",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X big drop at open",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Hodler8/message/634664902",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X ..",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/SCNC/message/634664883",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X the biggest scam in human history",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/star_mo/message/634664781",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$SUPAI.X Real community. Real conviction. 💎 $SUPAI.X more than movement 🔥 $SOL.X $BTC.X $PI.X",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Zack_1/message/634664664",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X ..",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/SCNC/message/634664652",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$ETH.X $2900 by Friday.",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Villen617Bos/message/634666939",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$ETH.X",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Joby099/message/634666084",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X $ETH.X $LINK.X",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/RubbaBandman/message/634665499",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$ETH.X worst decision i ever made was to invest in this trash",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/NuckingFuts522/message/634665182",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X don&#39;t worry Saylor says that inflation is worse :) is it ??",
+      "publish_time": "2025-11-03T13:23:46Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Dulge_Gappana/message/634666590",
+      "sentiment": "positive"
     }
   ]
 }

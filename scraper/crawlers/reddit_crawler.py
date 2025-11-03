@@ -38,9 +38,13 @@ class RedditCrawler:
             logger.error(f"Reddit API 初始化失败: {e}")
             raise
         
-        self.subreddits = config.get('subreddits', ['investing', 'finance'])
-        self.posts_limit = config.get('posts_limit', 50)
-        self.comments_limit = config.get('comments_limit', 30)
+        self.subreddits = config.get('subreddits', [])
+        self.posts_limit = config.get('posts_limit', 100)
+        self.comments_limit = config.get('comments_limit', 50)
+        
+        # 🔥 时间过滤：只抓取最近 N 小时内的帖子（避免抓到旧数据）
+        self.max_post_age_hours = config.get('max_post_age_hours', 24)  # 默认24小时
+        logger.info(f"⏰ 时间过滤: 只抓取最近 {self.max_post_age_hours} 小时内的帖子")
         self.post_filters = config.get('post_filters', {})
     
     def crawl(self) -> Dict[str, int]:
@@ -54,34 +58,41 @@ class RedditCrawler:
         
         logger.info("开始抓取 Reddit 数据（实时优先）...")
         
-        # 1. 优先抓取关键词搜索（最新内容）
-        if self.config.get('search_enabled', False):
-            search_stats = self._crawl_search_keywords()
-            stats['posts'] += search_stats.get('posts', 0)
-            stats['comments'] += search_stats.get('comments', 0)
-            stats['errors'] += search_stats.get('errors', 0)
-        
-        # 2. 抓取子版块最新内容
+        # 🔥 策略调整：优先使用 subreddit.new() 和 rising()（延迟更低）
+        # 1. 抓取子版块最新内容（延迟约1-2小时）
         for subreddit_name in self.subreddits:
             sub_posts = 0
             sub_comments = 0
             
             try:
-                logger.info(f"正在抓取子版块: r/{subreddit_name}（最新内容）")
+                logger.info(f"📊 [批量爬虫] 正在抓取子版块: r/{subreddit_name}")
                 subreddit = self.reddit.subreddit(subreddit_name)
                 
+                # 🔥 新增：先抓取 rising 帖子（正在快速上升的新帖，延迟最低）
+                logger.info(f"  🔥 抓取上升趋势帖子（Rising）...")
+                rising_count = self._crawl_rising_posts(subreddit, subreddit_name)
+                sub_posts += rising_count
+                
                 # 抓取新帖子
+                logger.info(f"  📰 抓取最新帖子（New）...")
                 post_index = 0
+                skipped_old = 0
                 for submission in subreddit.new(limit=self.posts_limit):
                     post_index += 1
+                    
+                    # 🔥 时间过滤：跳过旧帖子
+                    if self._is_post_too_old(submission):
+                        skipped_old += 1
+                        continue
                     
                     # 2.1 去重检查（Redis）
                     if self._is_post_processed(submission.id):
                         logger.debug(f"  ⏭️ 跳过已抓取帖子: {submission.id}")
                         continue
                     
-                    # 显示正在处理的帖子
-                    logger.info(f"  [{post_index}/{self.posts_limit}] 抓取帖子: {submission.title[:60]}...")
+                    # 🔥 用不同前缀区分批量爬虫和实时流
+                    age_str = self._get_post_age_str(submission)
+                    logger.info(f"📊 [批量] [{post_index}/{self.posts_limit}] {submission.title[:45]}... ({age_str})")
                     
                     # 2.2 提取帖子信息
                     post_data = self._extract_post_data(submission, subreddit_name)
@@ -110,6 +121,10 @@ class RedditCrawler:
                     # 避免请求过快
                     time.sleep(0.5)
                 
+                # 显示统计
+                if skipped_old > 0:
+                    logger.info(f"  ⏰ 已过滤 {skipped_old} 条超过 {self.max_post_age_hours} 小时的旧帖子")
+                
                 logger.info(
                     f"✓ 子版块 r/{subreddit_name} 抓取完成 - "
                     f"新帖: {sub_posts}, 评论: {sub_comments}"
@@ -127,17 +142,66 @@ class RedditCrawler:
                 logger.error(f"抓取子版块 r/{subreddit_name} 时出错: {e}")
                 stats['errors'] += 1
         
+        # 2. 补充：关键词搜索（延迟较高，8-24小时）
+        if self.config.get('search_enabled', False):
+            search_stats = self._crawl_search_keywords()
+            stats['posts'] += search_stats.get('posts', 0)
+            stats['comments'] += search_stats.get('comments', 0)
+            stats['errors'] += search_stats.get('errors', 0)
+        
         logger.info(f"抓取完成 - 新帖: {stats['posts']}, 评论: {stats['comments']}, 错误: {stats['errors']}")
-        
-        # 📢 立即发送通知给 Cleaner 进行清洗（如果爬取了数据）
-        if stats['posts'] > 0 or stats['comments'] > 0:
-            self._send_crawl_notification(stats)
-        
         return stats
+    
+    def _crawl_rising_posts(self, subreddit, subreddit_name: str) -> int:
+        """
+        抓取 rising 帖子（正在快速上升的新帖，最接近实时）
+        
+        Args:
+            subreddit: PRAW subreddit 对象
+            subreddit_name: 子版块名称
+        
+        Returns:
+            int: 抓取的帖子数量
+        """
+        count = 0
+        try:
+            # rising() 返回正在快速获得关注的新帖子（通常是1-4小时内）
+            for submission in subreddit.rising(limit=25):
+                # 🔥 时间过滤：跳过旧帖子
+                if self._is_post_too_old(submission):
+                    continue
+                
+                # 去重检查
+                if self._is_post_processed(submission.id):
+                    continue
+                
+                # 提取并过滤
+                post_data = self._extract_post_data(submission, subreddit_name)
+                if not post_data or not self._apply_post_filters(post_data):
+                    continue
+                
+                # 保存数据
+                if self.redis_client.push_data(post_data):
+                    count += 1
+                    self._mark_post_processed(submission.id)
+                    logger.debug(f"      ✓ Rising 帖子: {post_data['title'][:50]}...")
+                    
+                    # 抓取评论
+                    comments_count = self._crawl_comments(submission, subreddit_name)
+                
+                time.sleep(0.3)
+            
+            logger.info(f"      ✓ Rising 帖子抓取完成: {count} 条")
+        except Exception as e:
+            logger.error(f"      ✗ 抓取 Rising 帖子失败: {e}")
+        
+        return count
     
     def _crawl_search_keywords(self) -> Dict[str, int]:
         """
         抓取关键词搜索（最新内容）
+        ⚠️ 注意：Reddit 搜索 API 有索引延迟（8-24小时），无法获取真正实时数据
+        建议配合 subreddit.new() 使用
         
         Returns:
             dict: 搜索统计信息
@@ -145,11 +209,14 @@ class RedditCrawler:
         stats = {'posts': 0, 'comments': 0, 'errors': 0}
         keywords = self.config.get('search_keywords', [])
         search_settings = self.config.get('search_settings', {})
+        
+        # 🔥 优化：改用 'day' 而非 'hour'（hour 经常返回空结果）
         time_filter = search_settings.get('time_filter', 'day')
         sort = search_settings.get('sort', 'new')
         posts_per_kw = search_settings.get('posts_per_keyword', 15)
         
-        logger.info(f"🔍 开始关键词实时监控（{len(keywords)} 个关键词，{time_filter}内最新内容）")
+        logger.info(f"🔍 开始关键词监控（{len(keywords)} 个关键词，{time_filter}内内容）")
+        logger.warning("⚠️  Reddit 搜索有索引延迟，最新内容可能延迟8-24小时")
         
         for kw in keywords:
             try:
@@ -163,6 +230,10 @@ class RedditCrawler:
                 
                 count = 0
                 for submission in submissions:
+                    # 🔥 时间过滤：跳过旧帖子
+                    if self._is_post_too_old(submission):
+                        continue
+                    
                     # 去重检查
                     if self._is_post_processed(submission.id):
                         continue
@@ -189,6 +260,58 @@ class RedditCrawler:
                 stats['errors'] += 1
         
         return stats
+    
+    def _is_post_too_old(self, submission) -> bool:
+        """
+        检查帖子是否太旧（超过时间窗口）
+        
+        Args:
+            submission: PRAW Submission 对象
+        
+        Returns:
+            bool: 是否太旧
+        """
+        try:
+            post_time = datetime.fromtimestamp(submission.created_utc)
+            now = datetime.now()
+            age_hours = (now - post_time).total_seconds() / 3600
+            
+            if age_hours > self.max_post_age_hours:
+                # 根据时间长度选择合适的显示格式
+                if age_hours < 48:
+                    time_desc = f"{age_hours:.1f}小时前"
+                else:
+                    time_desc = f"{age_hours/24:.1f}天前"
+                logger.debug(f"  ⏭️ 跳过旧帖子: {submission.title[:40]}... (发布于 {time_desc})")
+                return True
+            return False
+        except Exception as e:
+            logger.warning(f"检查帖子时间失败: {e}")
+            return False
+    
+    def _get_post_age_str(self, submission) -> str:
+        """
+        获取帖子年龄的字符串描述
+        
+        Args:
+            submission: PRAW Submission 对象
+        
+        Returns:
+            str: 时间描述（如 "2.3h前" 或 "1.5d前"）
+        """
+        try:
+            post_time = datetime.fromtimestamp(submission.created_utc)
+            now = datetime.now()
+            age_hours = (now - post_time).total_seconds() / 3600
+            
+            if age_hours < 1:
+                return f"{age_hours*60:.0f}m前"
+            elif age_hours < 24:
+                return f"{age_hours:.1f}h前"
+            else:
+                return f"{age_hours/24:.1f}d前"
+        except:
+            return "未知"
     
     def _is_post_processed(self, post_id: str) -> bool:
         """
@@ -319,16 +442,11 @@ class RedditCrawler:
             if submission.selftext:
                 text += "\n\n" + submission.selftext
             
-            # 转换 created_utc (Unix 时间戳) 为 ISO 8601 格式字符串
-            from datetime import datetime
-            created_dt = datetime.utcfromtimestamp(submission.created_utc)
-            created_at_iso = created_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
-            
             data = {
                 # 基础字段
                 'text': text,
                 'source': 'reddit_post',
-                'created_at': created_at_iso,  # ← ISO 8601 格式字符串
+                'timestamp': int(submission.created_utc),
                 'url': f"https://www.reddit.com{submission.permalink}",
                 
                 # Reddit 特有字段
@@ -457,36 +575,6 @@ class RedditCrawler:
         except Exception as e:
             logger.error(f"提取评论数据失败: {e}")
             return None
-    
-    def _send_crawl_notification(self, stats: Dict[str, int]):
-        """
-        发送爬取完成通知给 Cleaner（每爬一次就发一次，不等待整轮完成）
-        
-        Args:
-            stats: 爬取统计信息
-        """
-        try:
-            message = {
-                'event': 'reddit_crawl_complete',
-                'timestamp': datetime.now().isoformat(),
-                'source': 'reddit',
-                'statistics': {
-                    'posts': stats['posts'],
-                    'comments': stats['comments'],
-                    'errors': stats['errors'],
-                    'total_items': stats['posts'] + stats['comments']
-                }
-            }
-            
-            # 使用 redis_client 发送通知
-            channel = 'crawler_complete'  # 与 cleaner 配置的频道一致
-            self.redis_client.publish_notification(channel, message)
-            
-            logger.info(f"📢 Reddit 爬取完成通知已发送 "
-                       f"(新帖: {stats['posts']}, 评论: {stats['comments']})")
-            
-        except Exception as e:
-            logger.error(f"发送 Reddit 爬取通知失败: {e}")
 
 
 def main():

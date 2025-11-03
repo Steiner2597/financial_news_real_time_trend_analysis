@@ -18,6 +18,8 @@ from crawlers.rss_crawler import RSSCrawler
 from crawlers.newsapi_crawler import NewsAPICrawler
 from crawlers.stocktwits_crawler import StockTwitsCrawler
 from crawlers.alphavantage_crawler import AlphaVantageCrawler  # ✅ 新增
+from crawlers.reddit_stream_crawler import RedditStreamCrawler  # 🔥 实时流式爬虫
+import threading  # 用于并发运行
 
 logger = setup_logger('control_center')
 
@@ -36,8 +38,12 @@ class CrawlerControlCenter:
         self.config = self._load_config()
         self.redis_client = None
         self.crawlers = {}
+        self.stream_crawler = None  # 🔥 实时流式爬虫
+        self.stream_thread = None   # 🔥 实时流线程
+        self.stream_enabled = False # 🔥 是否启用实时流
         self.statistics = {
             'reddit': {'posts': 0, 'comments': 0, 'errors': 0},
+            'reddit_stream': {'posts': 0, 'errors': 0},  # 🔥 实时流统计
             'newsapi': {'articles': 0, 'errors': 0},
             'rss': {'articles': 0, 'errors': 0},
             'stocktwits': {'messages': 0, 'errors': 0},
@@ -186,7 +192,28 @@ class CrawlerControlCenter:
         else:
             logger.info("○ Alpha Vantage 爬虫已禁用")
         
+        # 🔥 Reddit 实时流式爬虫（可选）
+        reddit_config = self.config.get('reddit', {})
+        self.stream_enabled = reddit_config.get('stream_enabled', False)
+        
+        if self.stream_enabled and 'reddit' in self.crawlers:
+            try:
+                self.stream_crawler = RedditStreamCrawler(
+                    reddit_config,
+                    self.redis_client
+                )
+                logger.info("✓ Reddit 实时流式爬虫初始化成功")
+                logger.info("  → 将在循环模式下自动启动")
+            except Exception as e:
+                logger.error(f"✗ Reddit 实时流式爬虫初始化失败: {e}")
+                self.stream_enabled = False
+        else:
+            if not self.stream_enabled:
+                logger.info("○ Reddit 实时流式爬虫已禁用（在 config.yaml 中设置 reddit.stream_enabled: true 启用）")
+        
         logger.info(f"\n已启用爬虫数量: {len(self.crawlers)}/5")
+        if self.stream_enabled:
+            logger.info("🔥 实时流式监听: 已启用")
     
     def run_crawler(self, name: str) -> Dict:
         """
@@ -267,9 +294,8 @@ class CrawlerControlCenter:
         # 打印总体统计
         self._print_statistics()
         
-        # 📢 注：不再在这里发送统一的通知，改为由各爬虫在完成后立即发送
-        # 这样可以实现"每爬一次就清一次"的实时处理流程
-
+        # 发送爬取完成通知
+        self._send_completion_notification()
     
     def _export_data(self):
         """根据阈值导出数据到文件"""
@@ -325,13 +351,21 @@ class CrawlerControlCenter:
         total_items = 0
         total_errors = 0
         
-        # Reddit
+        # Reddit 批量
         reddit_total = self.statistics['reddit']['posts'] + self.statistics['reddit']['comments']
         total_items += reddit_total
         total_errors += self.statistics['reddit']['errors']
-        logger.info(f"Reddit:      帖子 {self.statistics['reddit']['posts']}, "
+        logger.info(f"Reddit批量:  帖子 {self.statistics['reddit']['posts']}, "
                    f"评论 {self.statistics['reddit']['comments']}, "
                    f"错误 {self.statistics['reddit']['errors']}")
+        
+        # 🔥 Reddit 实时流
+        if self.stream_enabled:
+            total_items += self.statistics['reddit_stream']['posts']
+            total_errors += self.statistics['reddit_stream']['errors']
+            logger.info(f"Reddit实时:  帖子 {self.statistics['reddit_stream']['posts']}, "
+                       f"错误 {self.statistics['reddit_stream']['errors']} "
+                       f"{'🔴 运行中' if self.stream_thread and self.stream_thread.is_alive() else '⚫ 已停止'}")
         
         # NewsAPI
         total_items += self.statistics['newsapi']['articles']
@@ -487,6 +521,87 @@ class CrawlerControlCenter:
         # 发送通知
         self.redis_client.publish_notification(channel, message)
     
+    def start_stream_monitoring(self):
+        """🔥 启动实时流式监听（后台线程）- 持续运行直到手动关闭"""
+        if not self.stream_enabled or not self.stream_crawler:
+            return
+        
+        logger.info("\n" + "="*60)
+        logger.info("🔴 实时流式监听（后台线程）已启动")
+        logger.info("="*60)
+        logger.info("  📡 延迟: < 1分钟")
+        logger.info("  🔄 模式: 持续监听（与批量爬虫并行）")
+        logger.info("  🛡️  保护: 自动去重 + 自动重连")
+        logger.info("  💡 提示: 日志前缀 '🔴 [实时流]' 区分实时捕获的数据")
+        logger.info("="*60 + "\n")
+        
+        def stream_worker():
+            """实时流工作线程 - 无限循环监听"""
+            retry_count = 0
+            max_retries = 5
+            
+            while self.stream_enabled:
+                try:
+                    logger.info("🔴 实时流开始监听...")
+                    
+                    # 🔥 无限期监听，传入停止标志回调实现优雅中断
+                    stats = self.stream_crawler.stream_submissions(
+                        duration_seconds=None,
+                        stop_flag=lambda: not self.stream_enabled  # 🔥 返回 True 时停止
+                    )
+                    
+                    # 更新统计
+                    self.statistics['reddit_stream']['posts'] += stats.get('posts', 0)
+                    self.statistics['reddit_stream']['errors'] += stats.get('errors', 0)
+                    
+                    # 如果正常结束（不太可能），重置重试计数
+                    retry_count = 0
+                    
+                    # 短暂休息后重启（防止意外退出时立即重启）
+                    if self.stream_enabled:
+                        logger.info("🔄 实时流意外结束，5秒后重新连接...")
+                        time.sleep(5)
+                    
+                except KeyboardInterrupt:
+                    logger.info("⚠️  收到停止信号，退出实时流监听")
+                    break
+                    
+                except Exception as e:
+                    retry_count += 1
+                    self.statistics['reddit_stream']['errors'] += 1
+                    
+                    if retry_count >= max_retries:
+                        logger.error(f"❌ 实时流监听连续失败 {max_retries} 次，停止重试: {e}")
+                        break
+                    
+                    logger.warning(f"⚠️  实时流监听出错 (重试 {retry_count}/{max_retries}): {e}")
+                    wait_time = min(30 * retry_count, 300)  # 最多等5分钟
+                    logger.info(f"⏳ {wait_time}秒后自动重连...")
+                    time.sleep(wait_time)
+            
+            logger.info("🛑 实时流监听线程已退出")
+        
+        # 启动后台线程
+        self.stream_thread = threading.Thread(target=stream_worker, daemon=True)
+        self.stream_thread.start()
+        
+        logger.info("✅ 实时流式监听已在后台启动（持续监听模式）\n")
+    
+    def stop_stream_monitoring(self):
+        """🔥 停止实时流式监听"""
+        if not self.stream_enabled:
+            return
+        
+        logger.info("\n🛑 正在停止实时流式监听...")
+        self.stream_enabled = False
+        
+        if self.stream_thread and self.stream_thread.is_alive():
+            self.stream_thread.join(timeout=5)
+        
+        logger.info(f"✅ 实时流式监听已停止")
+        logger.info(f"   实时捕获统计: {self.statistics['reddit_stream']['posts']} 条帖子, "
+                   f"{self.statistics['reddit_stream']['errors']} 个错误\n")
+    
     def get_status(self) -> Dict:
         """
         获取控制中心状态
@@ -496,6 +611,7 @@ class CrawlerControlCenter:
         """
         return {
             'enabled_crawlers': list(self.crawlers.keys()),
+            'stream_enabled': self.stream_enabled,
             'statistics': self.statistics,
             'redis_queue_length': self.redis_client.get_queue_length(),
             'timestamp': datetime.now().isoformat()
@@ -517,6 +633,7 @@ def main():
                         help='循环间隔（秒），默认使用配置文件中的 crawler_control.loop_interval')
     args = parser.parse_args()
     
+    center = None  # 🔥 初始化为 None，确保 finally 块可以访问
     try:
         # 创建控制中心
         center = CrawlerControlCenter()
@@ -543,6 +660,10 @@ def main():
             logger.info("\n按 Ctrl+C 停止")
             logger.info("=" * 60)
             
+            # 🔥 启动实时流式监听（后台线程）
+            if center.stream_enabled:
+                center.start_stream_monitoring()
+            
             run_count = 0
             try:
                 while True:
@@ -568,13 +689,15 @@ def main():
                 logger.info("\n\n" + "="*60)
                 logger.info("收到停止信号 (Ctrl+C)")
                 logger.info(f"总共运行了 {run_count} 次")
+                
+                # 🔥 停止实时流监听
+                if center.stream_enabled:
+                    center.stop_stream_monitoring()
+                
                 logger.info("="*60)
         else:
             # 单次运行模式
             center.run_all_crawlers()
-        
-        # 关闭连接
-        center.close()
         
     except KeyboardInterrupt:
         logger.info("\n程序被用户中断")
@@ -582,7 +705,20 @@ def main():
         logger.error(f"程序运行出错: {e}")
         import traceback
         traceback.print_exc()
-        sys.exit(1)
+    finally:
+        # 🔥 确保停止实时流监听（如果正在运行）
+        try:
+            if center and center.stream_enabled:
+                center.stop_stream_monitoring()
+        except:
+            pass
+        
+        # 关闭连接
+        try:
+            if center:
+                center.close()
+        except:
+            pass
 
 
 if __name__ == '__main__':

@@ -116,7 +116,17 @@ class EventDrivenCleaner:
     
     def _stop(self):
         """停止运行"""
+        logger.info("🛑 正在停止各个组件...")
         self.running = False
+        
+        # 停止队列监控器（如果存在）
+        if self.queue_monitor:
+            logger.info("  • 停止队列监控器...")
+            try:
+                self.queue_monitor.stop()
+                logger.info("  ✓ 队列监控器已停止")
+            except Exception as e:
+                logger.warning(f"  ⚠️  停止队列监控器出错: {e}")
     
     def _connect_redis(self):
         """连接 Redis"""

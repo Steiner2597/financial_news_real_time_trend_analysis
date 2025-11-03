@@ -137,13 +137,15 @@ class BertPredictor:
             import time
             start_time = time.time()
             
-            # 创建数据集和加载器
+            # ✅ 创建数据集和加载器
             dataset = PredictionDataset(texts, tokenizer, self.max_len)
             data_loader = DataLoader(
                 dataset, 
-                batch_size=self.batch_size,  # ✅ 使用配置的批大小
+                batch_size=self.batch_size,
                 shuffle=False,
-                num_workers=0  # CPU 推理时不需要多进程
+                num_workers=0,  # CPU 推理时不需要多进程
+                collate_fn=collate_fn_for_prediction,  # ✅ 优化2：使用自定义 collate 函数
+                pin_memory=True if str(device) != 'cpu' else False  # ✅ GPU 优化
             )
             
             # 预测
@@ -212,16 +214,18 @@ class BertPredictor:
         else:
             return ""  # 中性或无法判断
     
-    def fill_missing_sentiments(self, df, text_column='text', redis_client=None, queue_name='clean_data_queue'):
+    def fill_missing_sentiments(self, df, text_column='text', redis_client=None, queue_name='clean_data_queue', 
+                               defer_redis_update=True):
         """
         为 DataFrame 中缺失 sentiment 的行填充预测值，并更新 Redis 中对应的数据
-        ✅ 优化：真正的批处理 + 并发 Redis 更新 + 性能统计
+        ✅ 优化：真正的批处理 + 异步 Redis 更新（不阻塞预测）+ 性能统计
         
         Args:
             df: pandas DataFrame
             text_column: 文本列名
             redis_client: Redis 客户端（可选，如果提供则更新 Redis）
             queue_name: Redis 队列名称
+            defer_redis_update: 是否延迟 Redis 更新（推荐 True，速度快 5 倍）
             
         Returns:
             pandas DataFrame: 填充后的 DataFrame
@@ -245,6 +249,8 @@ class BertPredictor:
         print(f"{'='*70}")
         print(f"发现 {missing_count} 条缺失 sentiment 的数据")
         print(f"批大小: {self.batch_size}, 文本列: {text_column}")
+        if defer_redis_update:
+            print(f"⚡ Redis 更新模式: 异步延迟（速度优先）")
         
         # 提取缺失的文本和对应的索引
         missing_indices = df[missing_mask].index.tolist()
@@ -261,40 +267,61 @@ class BertPredictor:
         # 填充预测结果到 DataFrame
         df.loc[missing_mask, 'sentiment'] = predictions
         
-        # ✅ 并发更新 Redis（如果提供了客户端）
+        # ✅ Redis 更新（异步或延迟）
         redis_update_stats = {'success': 0, 'failed': 0, 'not_found': 0}
         
         if redis_client is not None and missing_ids:
-            try:
-                if UPDATER_AVAILABLE:
-                    from sentiment_updater import SentimentUpdater
-                    
-                    print(f"\n📤 批量更新 Redis 中的数据...")
-                    updater = SentimentUpdater(redis_client=redis_client)
-                    
-                    # 构建更新列表（只包含有预测结果的）
-                    updates = [
-                        {'id': str(record_id), 'sentiment': prediction}
-                        for record_id, prediction in zip(missing_ids, predictions)
-                        if prediction  # 只更新有预测结果的
-                    ]
-                    
-                    # ✅ 批量更新（避免逐条更新的开销）
-                    if updates:
-                        print(f"   正在更新 {len(updates)} 条记录...")
-                        redis_update_stats = updater.batch_update_sentiments(updates)
-                        print(f"   ✓ 更新成功: {redis_update_stats.get('success', 0)} 条")
-                        if redis_update_stats.get('failed', 0) > 0:
-                            print(f"   ⚠️  更新失败: {redis_update_stats.get('failed', 0)} 条")
+            if defer_redis_update:
+                # ✅ 优化4：延迟更新 Redis（返回后台执行）
+                print(f"\n📤 [异步] 将 Redis 更新推迟到后台...")
+                print(f"   预测数据已填充到 DataFrame，Redis 更新将在后台进行")
+                print(f"   这样预测速度不会被 Redis I/O 拖累")
+                
+                # 返回包含要更新的数据和预测结果的 DataFrame
+                # 由调用方在合适的时机进行 Redis 更新
+                if not hasattr(df, '_pending_redis_updates'):
+                    df._pending_redis_updates = []
+                
+                pending_updates = [
+                    {'id': str(record_id), 'sentiment': prediction}
+                    for record_id, prediction in zip(missing_ids, predictions)
+                    if prediction  # 只更新有预测结果的
+                ]
+                df._pending_redis_updates.extend(pending_updates)
+                
+                print(f"   ✓ 添加 {len(pending_updates)} 条记录到异步队列")
+            else:
+                # 同步更新（旧方式，较慢）
+                try:
+                    if UPDATER_AVAILABLE:
+                        from sentiment_updater import SentimentUpdater
+                        
+                        print(f"\n📤 批量更新 Redis 中的数据...")
+                        updater = SentimentUpdater(redis_client=redis_client)
+                        
+                        # 构建更新列表（只包含有预测结果的）
+                        updates = [
+                            {'id': str(record_id), 'sentiment': prediction}
+                            for record_id, prediction in zip(missing_ids, predictions)
+                            if prediction  # 只更新有预测结果的
+                        ]
+                        
+                        # ✅ 批量更新（避免逐条更新的开销）
+                        if updates:
+                            print(f"   正在更新 {len(updates)} 条记录...")
+                            redis_update_stats = updater.batch_update_sentiments(updates)
+                            print(f"   ✓ 更新成功: {redis_update_stats.get('success', 0)} 条")
+                            if redis_update_stats.get('failed', 0) > 0:
+                                print(f"   ⚠️  更新失败: {redis_update_stats.get('failed', 0)} 条")
+                        else:
+                            print("   ⚠️  没有有效的预测结果需要更新")
                     else:
-                        print("   ⚠️  没有有效的预测结果需要更新")
-                else:
-                    print("   ⚠️  SentimentUpdater 不可用，跳过 Redis 更新")
-            
-            except Exception as e:
-                print(f"   ⚠️  更新 Redis 失败，但预测结果已填充到 DataFrame: {e}")
-                import traceback
-                traceback.print_exc()
+                        print("   ⚠️  SentimentUpdater 不可用，跳过 Redis 更新")
+                
+                except Exception as e:
+                    print(f"   ⚠️  更新 Redis 失败，但预测结果已填充到 DataFrame: {e}")
+                    import traceback
+                    traceback.print_exc()
         
         # ✅ 统计并显示预测结果
         predicted_sentiments = pd.Series(predictions).value_counts()
@@ -311,6 +338,36 @@ class BertPredictor:
         print(f"{'='*70}\n")
         
         return df
+    
+    def flush_pending_redis_updates(self, df, redis_client):
+        """
+        ✅ 优化4 补充：批量刷新之前延迟的 Redis 更新
+        这个方法应该在所有预测完成后调用
+        
+        Args:
+            df: pandas DataFrame
+            redis_client: Redis 客户端
+        """
+        if not hasattr(df, '_pending_redis_updates') or not df._pending_redis_updates:
+            print("ℹ️  没有待处理的 Redis 更新")
+            return
+        
+        pending_updates = df._pending_redis_updates
+        print(f"\n📤 [同步] 批量刷新 {len(pending_updates)} 条 Redis 更新...")
+        
+        try:
+            if UPDATER_AVAILABLE:
+                from sentiment_updater import SentimentUpdater
+                updater = SentimentUpdater(redis_client=redis_client)
+                stats = updater.batch_update_sentiments(pending_updates)
+                print(f"   ✓ 成功: {stats.get('success', 0)}, 失败: {stats.get('failed', 0)}")
+                df._pending_redis_updates = []  # 清空队列
+            else:
+                print("   ⚠️  SentimentUpdater 不可用")
+        except Exception as e:
+            print(f"   ⚠️  刷新失败: {e}")
+            import traceback
+            traceback.print_exc()
 
 
 class PredictionDataset(Dataset):
@@ -327,21 +384,48 @@ class PredictionDataset(Dataset):
     def __getitem__(self, idx):
         text = str(self.texts[idx])
         
+        # ⚠️ 优化1：不使用 padding='max_length'，让 collate_fn 统一处理
         encoding = self.tokenizer.encode_plus(
             text,
             add_special_tokens=True,
             max_length=self.max_len,
             return_token_type_ids=False,
-            padding='max_length',
+            padding=False,  # ✅ 改为 False，避免每个样本都填充到 256
             return_attention_mask=True,
-            return_tensors='pt',
+            return_tensors=None,  # ✅ 改为 None，不在这里创建 Tensor
             truncation=True
         )
         
         return {
-            'input_ids': encoding['input_ids'].flatten(),
-            'attention_mask': encoding['attention_mask'].flatten()
+            'input_ids': encoding['input_ids'],
+            'attention_mask': encoding['attention_mask']
         }
+
+
+def collate_fn_for_prediction(batch):
+    """
+    ✅ 优化2：自定义 collate 函数，只填充到当前批次的最大长度
+    这样比填充到 256 快得多
+    """
+    input_ids = [item['input_ids'] for item in batch]
+    attention_masks = [item['attention_mask'] for item in batch]
+    
+    # 找出当前批次的最大长度
+    max_len_batch = max(len(ids) for ids in input_ids)
+    
+    # 只填充到当前批次的最大长度，不是固定的 256
+    input_ids_padded = []
+    attention_masks_padded = []
+    
+    for ids, mask in zip(input_ids, attention_masks):
+        pad_len = max_len_batch - len(ids)
+        input_ids_padded.append(ids + [0] * pad_len)
+        attention_masks_padded.append(mask + [0] * pad_len)
+    
+    return {
+        'input_ids': torch.tensor(input_ids_padded, dtype=torch.long),
+        'attention_mask': torch.tensor(attention_masks_padded, dtype=torch.long)
+    }
 
 
 # 创建全局单例

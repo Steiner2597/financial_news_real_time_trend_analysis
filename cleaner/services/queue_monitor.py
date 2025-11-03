@@ -181,55 +181,67 @@ class QueueMonitor:
             consecutive_idle_rounds = 0
             max_idle_rounds = 3  # 连续3个检查周期无变化则打印一次
             
+            # 使用小粒度 sleep 以支持快速中断
+            min_sleep_unit = 0.1  # 最小 sleep 单位（秒）
+            remaining_sleep = 0  # 剩余 sleep 时间
+            
             while self.running:
                 try:
-                    time.sleep(self.check_interval_sec)
+                    # 分割 sleep 为多个小块，以实现快速响应中断信号
+                    if remaining_sleep <= 0:
+                        remaining_sleep = self.check_interval_sec
                     
-                    current_length = self._get_queue_length()
+                    sleep_time = min(min_sleep_unit, remaining_sleep)
+                    time.sleep(sleep_time)
+                    remaining_sleep -= sleep_time
                     
-                    # 检查队列是否有新数据
-                    if current_length > self.last_queue_length:
-                        # 有新数据进入
-                        new_items = current_length - self.last_queue_length
+                    # 当完成一个完整的检查间隔时，执行检查
+                    if remaining_sleep <= 0:
+                        current_length = self._get_queue_length()
                         
-                        logger.info(f"\n📊 队列更新检测到!")
-                        logger.info(f"   前次长度: {self.last_queue_length}")
-                        logger.info(f"   当前长度: {current_length}")
-                        logger.info(f"   新增数据: {new_items}")
+                        # 检查队列是否有新数据
+                        if current_length > self.last_queue_length:
+                            # 有新数据进入
+                            new_items = current_length - self.last_queue_length
+                            
+                            logger.info(f"\n📊 队列更新检测到!")
+                            logger.info(f"   前次长度: {self.last_queue_length}")
+                            logger.info(f"   当前长度: {current_length}")
+                            logger.info(f"   新增数据: {new_items}")
+                            
+                            self.last_queue_length = current_length
+                            self.update_count += 1
+                            consecutive_idle_rounds = 0
+                            
+                            # 触发回调
+                            if self.on_queue_update:
+                                logger.info(f"🔔 触发清洗回调...")
+                                try:
+                                    self.on_queue_update(new_items)
+                                except Exception as e:
+                                    logger.error(f"执行回调出错: {e}")
+                                    import traceback
+                                    traceback.print_exc()
                         
-                        self.last_queue_length = current_length
-                        self.update_count += 1
-                        consecutive_idle_rounds = 0
+                        elif current_length < self.last_queue_length:
+                            # 队列长度减少（被处理或清理）
+                            removed_items = self.last_queue_length - current_length
+                            logger.info(f"📉 队列长度减少: {removed_items} 条 "
+                                      f"({self.last_queue_length} → {current_length})")
+                            self.last_queue_length = current_length
+                            consecutive_idle_rounds = 0
                         
-                        # 触发回调
-                        if self.on_queue_update:
-                            logger.info(f"🔔 触发清洗回调...")
-                            try:
-                                self.on_queue_update(new_items)
-                            except Exception as e:
-                                logger.error(f"执行回调出错: {e}")
-                                import traceback
-                                traceback.print_exc()
-                    
-                    elif current_length < self.last_queue_length:
-                        # 队列长度减少（被处理或清理）
-                        removed_items = self.last_queue_length - current_length
-                        logger.info(f"📉 队列长度减少: {removed_items} 条 "
-                                  f"({self.last_queue_length} → {current_length})")
-                        self.last_queue_length = current_length
-                        consecutive_idle_rounds = 0
-                    
-                    else:
-                        # 队列长度无变化
-                        consecutive_idle_rounds += 1
-                        if consecutive_idle_rounds == max_idle_rounds:
-                            logger.debug(f"✓ 持续监控中... 队列长度: {current_length}")
-                            consecutive_idle_rounds = 0  # 重置计数
+                        else:
+                            # 队列长度无变化
+                            consecutive_idle_rounds += 1
+                            if consecutive_idle_rounds == max_idle_rounds:
+                                logger.debug(f"✓ 持续监控中... 队列长度: {current_length}")
+                                consecutive_idle_rounds = 0  # 重置计数
                 
                 except Exception as e:
                     if self.running:
                         logger.error(f"轮询出错: {e}")
-                        time.sleep(self.check_interval_sec)
+                        remaining_sleep = self.check_interval_sec
         
         except KeyboardInterrupt:
             logger.info("\n⚠️  收到中断信号")

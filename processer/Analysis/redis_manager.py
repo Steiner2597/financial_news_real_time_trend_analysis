@@ -155,7 +155,17 @@ class RedisManager:
             print(f"  ✓ {news_key}")
 
             # 5. 发布历史数据
+            # ✅ 关键改动：清理旧的历史数据，只保留当前的 20 个词
             history_data = processed_data.get('history_data', {})
+            
+            # 先删除所有旧的 history_data 键
+            old_history_keys = self.r.keys(f"{self.output_prefix}:history_data:*")
+            if old_history_keys:
+                print(f"  🗑️  清理旧历史数据键: {len(old_history_keys)} 个")
+                for old_key in old_history_keys:
+                    self.r.delete(old_key)
+            
+            # 然后发布新的历史数据（只有当前的 20 个词）
             for keyword, data in history_data.items():
                 history_key = f"{self.output_prefix}:history_data:{keyword}"
                 self.r.set(
@@ -164,7 +174,7 @@ class RedisManager:
                 )
                 self.r.expire(history_key, self.key_ttl)
             
-            print(f"  ✓ {len(history_data)} 条历史数据")
+            print(f"  ✓ {len(history_data)} 条历史数据（保持为 20 个）")
 
             # 可选：发布通知消息
             if "publish_channel" in CONFIG["redis"]:

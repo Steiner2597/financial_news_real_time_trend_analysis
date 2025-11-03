@@ -56,36 +56,45 @@ class MainProcessor:
         time_windows = self.data_loader.get_time_windows(df)
 
         print(f"✓ 加载了 {len(df)} 条数据")
-        print(f"  最早数据: {df['timestamp'].min().isoformat()}")
-        print(f"  最新数据: {df['timestamp'].max().isoformat()}")
+        # ✅ 使用 created_at 字段而不是 timestamp
+        time_field = 'created_at' if 'created_at' in df.columns else 'timestamp'
+        print(f"  时间字段: {time_field}")
+        print(f"  最早数据: {df[time_field].min().isoformat()}")
+        print(f"  最新数据: {df[time_field].max().isoformat()}")
 
         # 2. 获取时间窗口数据
-        # 当前窗口：最近1小时（用于计算实时趋势）
-        # 历史窗口：过去24小时（用于计算历史基准）
-        current_df = df[df['timestamp'] >= time_windows['current_window_start']]
+        # ✅ 当前窗口：最近1小时（用于计算实时趋势）
+        # ✅ 历史窗口：过去24小时（从 history_window_start 到 latest_time）
+        # ✅ 使用 created_at 字段而不是 timestamp
+        time_field = 'created_at' if 'created_at' in df.columns else 'timestamp'
+        
+        current_df = df[df[time_field] >= time_windows['current_window_start']]
+        
+        # ✅ 关键修改：历史数据应该包含整个 24 小时窗口的所有数据
         history_df = df[
-            (df['timestamp'] >= time_windows['history_window_start']) &
-            (df['timestamp'] < time_windows['current_window_start'])
+            (df[time_field] >= time_windows['history_window_start']) &
+            (df[time_field] <= time_windows['latest_time'])
         ]
 
-        print(f"✓ 当前窗口数据（最近1小时）: {len(current_df)} 条")
+        print(f"\n✓ 当前窗口数据（最近1小时）: {len(current_df)} 条")
         print(f"  时间范围: {time_windows['current_window_start'].isoformat()} ~ {time_windows['latest_time'].isoformat()}")
-        print(f"✓ 历史窗口数据（过去24小时，不含当前小时）: {len(history_df)} 条")
-        print(f"  时间范围: {time_windows['history_window_start'].isoformat()} ~ {time_windows['current_window_start'].isoformat()}")
+        print(f"✓ 历史窗口数据（完整24小时）: {len(history_df)} 条")
+        print(f"  时间范围: {time_windows['history_window_start'].isoformat()} ~ {time_windows['latest_time'].isoformat()}")
 
         # 3. 词频分析
         print("\n🔍 执行文本分析...")
         current_keywords = self.text_analyzer.extract_keywords(current_df['clean_text'].tolist())
 
-        # 计算历史24小时平均频率
-        # 获取实际的时间区间数（每小时1次）
+        # ✅ 计算历史24小时平均频率
+        # 获取实际的时间区间数（严格为 24 个整点）
         history_start = time_windows['history_window_start']
         history_end = time_windows['latest_time']
-        history_intervals = self.history_analyzer._create_time_intervals(history_start, history_end)
+        history_intervals = self.history_analyzer._create_24hour_intervals(history_start, history_end)
         total_intervals = len(history_intervals)
         
-        print(f"  📊 历史分析: {total_intervals} 个时间区间 (每小时1个)")
+        print(f"  📊 历史分析: {total_intervals} 个时间区间（应为 24 个整点小时）")
         
+        # ✅ 使用完整的 24 小时数据进行计算
         history_keywords_freq = {}
         for keyword, _ in current_keywords[:self.config['trending_keywords_count']]:
             keyword_history_df = history_df[history_df['clean_text'].str.contains(keyword, case=False, na=False)]
@@ -104,7 +113,10 @@ class MainProcessor:
 
         # 6. 生成历史数据
         print("📈 生成历史数据...")
-        top_keywords = [keyword for keyword, _ in current_keywords[:self.config['trending_keywords_count']]]
+        # ✅ 关键改动：只取频率最高的 20 个词，而不是一直增加数量
+        top_keywords_count = 20  # 固定为 20
+        top_keywords = [keyword for keyword, _ in current_keywords[:top_keywords_count]]
+        print(f"  📊 选取频率最高的 {len(top_keywords)} 个词生成历史数据")
         # ✅ 传入精确的时间窗口，确保历史数据计算与主流程一致
         history_data = self.history_analyzer.generate_history_data(df, top_keywords, time_windows)
 
