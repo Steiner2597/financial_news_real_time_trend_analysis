@@ -4,6 +4,7 @@ from data_loader import DataLoader
 from text_analyzer import TextAnalyzer
 from sentiment_analyzer import SentimentAnalyzer
 from history_analyzer import HistoryAnalyzer
+from news_processor import NewsProcessor
 from redis_manager import RedisManager  # 新增导入
 from config import CONFIG
 import pandas as pd
@@ -15,6 +16,7 @@ class MainProcessor:
         self.text_analyzer = TextAnalyzer()
         self.sentiment_analyzer = SentimentAnalyzer()
         self.history_analyzer = HistoryAnalyzer()
+        self.news_processor = NewsProcessor()
         self.redis_manager = RedisManager()  # 新增
         self.config = CONFIG
 
@@ -56,25 +58,34 @@ class MainProcessor:
         print(f"✓ 加载了 {len(df)} 条数据")
 
         # 2. 获取时间窗口数据
+        # 当前窗口：最近1小时（用于计算实时趋势）
+        # 历史窗口：过去24小时（用于计算历史基准）
         current_df = df[df['timestamp'] >= time_windows['current_window_start']]
         history_df = df[
             (df['timestamp'] >= time_windows['history_window_start']) &
             (df['timestamp'] < time_windows['current_window_start'])
         ]
 
-        print(f"✓ 当前窗口数据: {len(current_df)} 条")
-        print(f"✓ 历史窗口数据: {len(history_df)} 条")
+        print(f"✓ 当前窗口数据（最近1小时）: {len(current_df)} 条")
+        print(f"✓ 历史窗口数据（过去24小时）: {len(history_df)} 条")
 
         # 3. 词频分析
         print("\n🔍 执行文本分析...")
         current_keywords = self.text_analyzer.extract_keywords(current_df['clean_text'].tolist())
 
         # 计算历史24小时平均频率
+        # 获取实际的时间区间数（每小时1次）
+        history_start = time_windows['history_window_start']
+        history_end = time_windows['latest_time']
+        history_intervals = self.history_analyzer._create_time_intervals(history_start, history_end)
+        total_intervals = len(history_intervals)
+        
+        print(f"  📊 历史分析: {total_intervals} 个时间区间 (每小时1个)")
+        
         history_keywords_freq = {}
         for keyword, _ in current_keywords[:self.config['trending_keywords_count']]:
             keyword_history_df = history_df[history_df['clean_text'].str.contains(keyword, case=False, na=False)]
-            total_intervals = 48
-            history_avg_freq = len(keyword_history_df) / total_intervals
+            history_avg_freq = len(keyword_history_df) / total_intervals if total_intervals > 0 else 0
             history_keywords_freq[keyword] = history_avg_freq
 
         # 4. 生成热词排行榜
@@ -197,7 +208,8 @@ class MainProcessor:
         """生成最终输出数据"""
         return {
             "metadata": {
-                "timestamp": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                # ✅ ISO 8601 格式，带 UTC 时区标记
+                "timestamp": datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ"),
                 "update_interval": self.config['history_interval_minutes'],
                 "data_version": "1.0",
                 "news_sources": news_sources  # 添加新闻来源统计

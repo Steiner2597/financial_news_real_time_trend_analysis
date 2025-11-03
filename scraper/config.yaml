@@ -55,8 +55,8 @@ newsapi:
   - '"oil prices" OR "crude oil" OR "energy"'
   - '"gold prices" OR "precious metals"'
   rate_limits:
-    current_day_requests: 20
-    last_reset_date: '2025-11-02'
+    current_day_requests: 75
+    last_reset_date: '2025-11-03'
     max_requests_per_day: 100
     requests_per_run: 5
   sources: []
@@ -549,5 +549,5 @@ alphavantage:
     max_requests_per_day: 25
     requests_per_run: 5
     delay_between_requests: 12
-    current_day_requests: 25
-    last_reset_date: '2025-11-02'
+    current_day_requests: 8
+    last_reset_date: '2025-11-03'

@@ -227,6 +227,13 @@ class EventDrivenCleaner:
         """
         清理超过指定时间的旧数据
         
+        保留逻辑：只保留当前整点往前 N 小时的数据
+        时间基准：使用 created_at 字段（数据的原始发布时间），如果没有则使用 timestamp
+        
+        示例：现在是 2025-11-02 15:30:45，当前整点是 15:00
+        保留范围：2025-11-01 15:00:00 到现在
+        删除范围：2025-11-01 15:00:00 之前的所有数据
+        
         Args:
             redis_conn: Redis 连接对象（Redis 实例）
             queue_name: 队列名称
@@ -235,13 +242,26 @@ class EventDrivenCleaner:
         Returns:
             dict: 清理结果统计
         """
-        logger.info(f"\n🗑️  开始清理超过 {hours} 小时的旧数据...")
+        logger.info(f"\n🗑️  开始清理数据 - 仅保留当前整点往前 {hours} 小时的数据...")
+        logger.info(f"   📌 时间基准字段: created_at (原始发布时间) 或 timestamp (如果无 created_at)")
         
         try:
             import json
-            import time
+            from datetime import datetime, timezone
             
-            cutoff_timestamp = time.time() - (hours * 3600)
+            # 获取当前时间的整点时刻（向下取整到整点）
+            now = datetime.now(timezone.utc)
+            current_hour = now.replace(minute=0, second=0, microsecond=0)
+            
+            # 计算保留时间的下界（当前整点 - N 小时）
+            from datetime import timedelta
+            cutoff_time = current_hour - timedelta(hours=hours)
+            cutoff_timestamp = cutoff_time.timestamp()
+            
+            logger.info(f"当前时间: {now.isoformat()}")
+            logger.info(f"当前整点: {current_hour.isoformat()}")
+            logger.info(f"保留时间范围: {cutoff_time.isoformat()} 到现在")
+            logger.info(f"删除阈值 (cutoff_timestamp): {cutoff_timestamp}")
             removed_count = 0
             checked_count = 0
             
@@ -271,35 +291,42 @@ class EventDrivenCleaner:
                     checked_count += 1
                     data = json.loads(data_str)
                     
-                    # 检查时间戳
-                    if 'timestamp' not in data:
-                        logger.warning(f"数据缺少 timestamp 字段，跳过: {data_str[:100]}")
+                    # 优先使用 created_at（原始发布时间），其次使用 timestamp（处理时间）
+                    # created_at 是数据的原始发布时间（如 Reddit 帖子发布时间）
+                    # timestamp 是 Cleaner 处理数据时添加的当前时间
+                    time_field = None
+                    if 'created_at' in data:
+                        time_field = 'created_at'
+                    elif 'timestamp' in data:
+                        time_field = 'timestamp'
+                    else:
+                        logger.warning(f"数据既无 created_at 也无 timestamp，跳过: {data_str[:100]}")
                         continue
                     
-                    timestamp = data['timestamp']
+                    time_value = data[time_field]
                     
                     # 转换时间戳为浮点数（处理字符串或数字类型）
                     try:
-                        if isinstance(timestamp, str):
+                        if isinstance(time_value, str):
                             # 如果是 ISO 格式字符串，转换为时间戳
-                            if 'T' in timestamp or '-' in timestamp:
+                            if 'T' in time_value or '-' in time_value:
                                 from datetime import datetime
                                 # 处理不同的 ISO 格式
-                                ts = timestamp.replace('Z', '+00:00').replace(' ', 'T')
+                                ts = time_value.replace('Z', '+00:00').replace(' ', 'T')
                                 dt = datetime.fromisoformat(ts)
                                 timestamp = dt.timestamp()
                             else:
                                 # 尝试直接转为浮点数
-                                timestamp = float(timestamp)
-                        elif not isinstance(timestamp, (int, float)):
-                            logger.warning(f"时间戳类型不支持: {type(timestamp)}, 跳过")
+                                timestamp = float(time_value)
+                        elif isinstance(time_value, (int, float)):
+                            # 已经是数字类型
+                            timestamp = float(time_value)
+                        else:
+                            logger.warning(f"时间值类型不支持: {type(time_value)}, 跳过")
                             continue
                         
-                        # 确保是数字类型
-                        timestamp = float(timestamp)
-                        
                     except (ValueError, TypeError) as e:
-                        logger.warning(f"时间戳转换失败: {timestamp} ({type(timestamp)}), 错误: {e}")
+                        logger.warning(f"时间值转换失败: {time_value} ({type(time_value)}), 字段: {time_field}, 错误: {e}")
                         continue
                     
                     # 如果是旧数据，标记删除
@@ -337,14 +364,18 @@ class EventDrivenCleaner:
             remaining = redis_conn.llen(queue_name)
             
             logger.info(f"✅ 清理完成:")
-            logger.info(f"   - 检查了 {checked_count} 条数据")
-            logger.info(f"   - 删除了 {removed_count} 条旧数据")
-            logger.info(f"   - 剩余 {remaining} 条数据")
+            logger.info(f"   📊 总检查数据: {checked_count} 条")
+            logger.info(f"   🗑️  已删除数据: {removed_count} 条 (发布时间 < {cutoff_time.isoformat()})")
+            logger.info(f"   ✨ 保留数据: {remaining} 条 (发布时间 >= {cutoff_time.isoformat()})")
+            logger.info(f"   📌 判断依据: created_at 字段 (原始发布时间) / timestamp")
+            logger.info(f"   🎯 时间窗口: {cutoff_time.isoformat()} 到 现在")
             
             return {
                 'removed': removed_count,
                 'checked': checked_count,
-                'remaining': remaining
+                'remaining': remaining,
+                'cutoff_time': cutoff_time.isoformat(),
+                'current_hour': current_hour.isoformat()
             }
             
         except Exception as e:

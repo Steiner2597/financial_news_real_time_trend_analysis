@@ -5,11 +5,23 @@ CONFIG = {
     "output_file": "output_data.json",
     "trending_keywords_count": 10,
     "word_cloud_count": 20,
-    "history_hours": 24,
-    "history_interval_minutes": 30,
+    
+    # ⏰ 时间窗口配置
+    "current_window_minutes": 60,  # 当前窗口时长（分钟）- 用于计算当前词频
+    "history_hours": 24,  # 历史窗口时长（小时）- 用于计算历史平均频率
+    "history_interval_minutes": 60,
     
     # 持续处理配置
     "process_interval_seconds": 60,  # 处理间隔（秒），默认1分钟
+    
+    # 🤖 BERT 情感预测配置
+    "bert": {
+        "enabled": True,                    # 是否启用 BERT 预测
+        "model_path": None,                 # 模型路径（None 表示自动查找）
+        "max_len": 256,                     # 最大序列长度
+        "batch_size": 16,                   # 批处理大小
+        "fallback_to_simple": True          # 模型加载失败时使用简单规则
+    },
 
     # Redis配置
     "redis": {

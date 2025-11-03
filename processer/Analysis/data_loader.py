@@ -5,6 +5,14 @@ from datetime import datetime, timedelta
 from typing import List, Dict, Any, Optional
 from config import CONFIG
 
+# 导入 BERT 预测器（延迟加载，避免启动失败）
+try:
+    from bert_predictor import get_predictor
+    BERT_PREDICTOR_AVAILABLE = True
+except Exception as e:
+    print(f"⚠️  BERT 预测器导入失败: {e}")
+    BERT_PREDICTOR_AVAILABLE = False
+
 
 class DataLoader:
     """数据加载器 - 支持 Redis 实时流和本地文件两种模式"""
@@ -176,26 +184,47 @@ class DataLoader:
                 # 创建 created_at = timestamp
                 df['created_at'] = df['timestamp']
 
-        # 转换情感标签（如果存在）
-        if 'sentiment' in df.columns:
-            sentiment_mapping = {
-                '正面': 'Bullish',
-                '中性': 'neutral',
-                '负面': 'Bearish',
-                'Bullish': 'Bullish',
-                'neutral': 'neutral',
-                'Bearish': 'Bearish',
-            }
-            df['sentiment'] = df['sentiment'].map(sentiment_mapping)
-            df['sentiment'] = df['sentiment'].fillna('neutral')
-
-        # 清理文本数据
+        # 清理文本数据（提前做，因为 BERT 预测需要）
         if 'text' in df.columns:
             df['clean_text'] = df['text'].fillna('').apply(self._clean_text)
         elif 'content' in df.columns:
             df['clean_text'] = df['content'].fillna('').apply(self._clean_text)
         else:
             df['clean_text'] = ''
+
+        # === 🤖 BERT 情感预测集成 ===
+        # 确保 sentiment 列存在
+        if 'sentiment' not in df.columns:
+            df['sentiment'] = ''
+        
+        # 标准化已有的情感标签
+        sentiment_mapping = {
+            '正面': 'Bullish',
+            '中性': 'neutral',
+            '负面': 'Bearish',
+            'Bullish': 'Bullish',
+            'neutral': 'neutral',
+            'Bearish': 'Bearish',
+        }
+        df['sentiment'] = df['sentiment'].map(sentiment_mapping).fillna(df['sentiment'])
+        
+        # 使用 BERT 预测器为缺失 sentiment 的数据填充
+        if BERT_PREDICTOR_AVAILABLE:
+            try:
+                predictor = get_predictor()
+                # 使用原始 text 列进行预测（比 clean_text 保留更多信息）
+                text_col = 'text' if 'text' in df.columns else 'content' if 'content' in df.columns else 'clean_text'
+                df = predictor.fill_missing_sentiments(df, text_column=text_col)
+            except Exception as e:
+                print(f"⚠️  BERT 预测失败，使用默认值: {e}")
+                # 填充空值为 neutral
+                df['sentiment'] = df['sentiment'].fillna('neutral')
+                df['sentiment'] = df['sentiment'].replace('', 'neutral')
+        else:
+            # 如果 BERT 不可用，填充为 neutral
+            print("ℹ️  BERT 预测器不可用，使用默认 neutral 填充")
+            df['sentiment'] = df['sentiment'].fillna('neutral')
+            df['sentiment'] = df['sentiment'].replace('', 'neutral')
 
         return df
 
@@ -223,20 +252,36 @@ class DataLoader:
         return text
 
     def get_time_windows(self, df: pd.DataFrame) -> Dict[str, datetime]:
-        """获取时间窗口"""
+        """获取时间窗口 - 智能适应实际数据跨度"""
         if df.empty or 'timestamp' not in df.columns:
             # 返回默认时间窗口
             now = datetime.now()
+            current_window_minutes = self.config.get("current_window_minutes", 60)
+            history_hours = self.config.get("history_hours", 24)
             return {
                 'latest_time': now,
-                'current_window_start': now - timedelta(minutes=30),
-                'history_window_start': now - timedelta(hours=24)
+                'current_window_start': now - timedelta(minutes=current_window_minutes),
+                'history_window_start': now - timedelta(hours=history_hours)
             }
 
         # 使用 timestamp 字段（已转换为 datetime）
         latest_time = df['timestamp'].max()
-        current_window_start = latest_time - timedelta(minutes=30)
-        history_window_start = latest_time - timedelta(hours=24)
+        earliest_time = df['timestamp'].min()
+        
+        # 读取配置中的时间窗口设置
+        current_window_minutes = self.config.get("current_window_minutes", 60)
+        history_hours = self.config.get("history_hours", 24)
+        
+        # 计算时间窗口
+        current_window_start = latest_time - timedelta(minutes=current_window_minutes)
+        history_window_start = latest_time - timedelta(hours=history_hours)
+        
+        # 检查历史窗口是否超出实际数据范围
+        if history_window_start < earliest_time:
+            history_window_start = earliest_time
+            actual_hours = (latest_time - earliest_time).total_seconds() / 3600
+            print(f"ℹ️  实际数据跨度 {actual_hours:.1f} 小时 < 配置的 {history_hours} 小时")
+            print(f"   历史窗口已调整为: {earliest_time.isoformat()}")
 
         return {
             'latest_time': latest_time,

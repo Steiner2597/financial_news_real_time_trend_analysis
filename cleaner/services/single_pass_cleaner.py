@@ -108,6 +108,11 @@ class SinglePassCleaner:
                         
                         # 检查去重
                         item_id = self._get_item_id(data)
+                        
+                        # 调试日志（仅在有 comment_id 或 post_id 时输出）
+                        if 'comment_id' in data or 'post_id' in data:
+                            logger.debug(f"ID生成: {item_id[:50]}... (原始字段: comment_id={data.get('comment_id')}, post_id={data.get('post_id')}, id={data.get('id')})")
+                        
                         if self._is_duplicate(item_id):
                             stats['duplicates'] += 1
                             continue
@@ -185,7 +190,7 @@ class SinglePassCleaner:
     
     def _get_item_id(self, data: Dict[str, Any]) -> str:
         """
-        获取数据的唯一标识
+        获取数据的唯一标识（用于去重）
         
         Args:
             data: 数据字典
@@ -193,14 +198,49 @@ class SinglePassCleaner:
         Returns:
             唯一标识
         """
-        # 使用 ID 或生成哈希
-        if 'id' in data:
-            return str(data['id'])
+        import hashlib
+        
+        # 判断是否是评论数据（有 comment_id 或 parent_id 或 post_id 但无独立 id）
+        is_comment = (
+            'comment_id' in data or 
+            'parent_id' in data or 
+            ('post_id' in data and 'id' not in data) or
+            ('message_id' in data and 'post_id' in data)
+        )
+        
+        if is_comment:
+            # 评论数据：优先使用 comment_id
+            if data.get('comment_id'):
+                return f"comment_{data['comment_id']}"
+            
+            # 使用 post_id + message_id 组合
+            if data.get('post_id') and data.get('message_id'):
+                return f"comment_{data['post_id']}_{data['message_id']}"
+            
+            # 使用 parent_id + author + text_hash 组合
+            if data.get('parent_id'):
+                text_hash = hashlib.md5(str(data.get('text', '')).encode()).hexdigest()[:8]
+                author = data.get('author', 'unknown')
+                return f"comment_{data['parent_id']}_{author}_{text_hash}"
+            
+            # 使用 post_id + author + text_hash 组合
+            if data.get('post_id'):
+                text_hash = hashlib.md5(str(data.get('text', '')).encode()).hexdigest()[:8]
+                author = data.get('author', 'unknown')
+                return f"comment_{data['post_id']}_{author}_{text_hash}"
+        
+        # 新闻/帖子数据：优先使用各种 ID 字段
+        for id_field in ['id', 'post_id', 'tweet_id', 'guid', 'article_id']:
+            if data.get(id_field):
+                return f"post_{data[id_field]}"
+        
+        # 使用 URL
+        if data.get('url'):
+            return f"post_{hashlib.md5(data['url'].encode()).hexdigest()[:16]}"
         
         # 使用标题和来源的组合
-        import hashlib
-        content = f"{data.get('title', '')}_{data.get('source', '')}"
-        return hashlib.md5(content.encode()).hexdigest()
+        content = f"{data.get('title', '')}_{data.get('source', '')}_{data.get('text', '')[:50]}"
+        return f"post_{hashlib.md5(content.encode()).hexdigest()[:16]}"
     
     def _is_duplicate(self, item_id: str) -> bool:
         """
@@ -274,18 +314,48 @@ class SinglePassCleaner:
         
         cleaned = {}
         
-        # 1. 提取 id 字段（从多个可能的字段名中提取）
-        id_value = (data.get("id") or data.get("post_id") or data.get("comment_id") or 
-                    data.get("tweet_id") or data.get("guid") or data.get("message_id"))
-        if id_value:
-            cleaned['id'] = str(id_value)
-        elif data.get('url'):
-            # 如果没有 id，使用 URL 作为唯一标识
-            cleaned['id'] = data['url']
+        # 1. 提取 id 字段（区分新闻和评论）
+        import hashlib
+        
+        # 判断是否是评论
+        is_comment = (
+            'comment_id' in data or 
+            'parent_id' in data or 
+            ('post_id' in data and 'id' not in data) or
+            ('message_id' in data and 'post_id' in data)
+        )
+        
+        if is_comment:
+            # 评论：优先使用 comment_id，然后组合 ID
+            if data.get('comment_id'):
+                cleaned['id'] = f"comment_{data['comment_id']}"
+            elif data.get('message_id') and data.get('post_id'):
+                cleaned['id'] = f"comment_{data['post_id']}_{data['message_id']}"
+            elif data.get('parent_id'):
+                text_hash = hashlib.md5(str(data.get('text', '')).encode()).hexdigest()[:8]
+                author = data.get('author', 'unknown')
+                cleaned['id'] = f"comment_{data['parent_id']}_{author}_{text_hash}"
+            elif data.get('post_id'):
+                text_hash = hashlib.md5(str(data.get('text', '')).encode()).hexdigest()[:8]
+                author = data.get('author', 'unknown')
+                cleaned['id'] = f"comment_{data['post_id']}_{author}_{text_hash}"
+            else:
+                # 最后使用时间戳
+                import time
+                cleaned['id'] = f"comment_generated_{int(time.time() * 1000)}"
         else:
-            # 最后使用时间戳作为 id
-            import time
-            cleaned['id'] = f"generated_{int(time.time() * 1000)}"
+            # 新闻/帖子：优先使用各种 ID 字段
+            id_value = (data.get("id") or data.get("post_id") or data.get("tweet_id") or 
+                       data.get("guid") or data.get("article_id"))
+            if id_value:
+                cleaned['id'] = f"post_{id_value}"
+            elif data.get('url'):
+                # 使用 URL 的哈希作为 ID
+                cleaned['id'] = f"post_{hashlib.md5(data['url'].encode()).hexdigest()[:16]}"
+            else:
+                # 最后使用时间戳
+                import time
+                cleaned['id'] = f"post_generated_{int(time.time() * 1000)}"
         
         # 2. 提取 created_at 字段（新闻/评论的发布时间）
         created_at = None

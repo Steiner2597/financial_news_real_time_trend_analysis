@@ -35,7 +35,8 @@ class HistoryAnalyzer:
                 )
 
                 keyword_data.append({
-                    "timestamp": interval_start.strftime("%Y-%m-%d %H:%M:%S"),
+                    # ✅ ISO 8601 格式，带 UTC 时区标记
+                    "timestamp": interval_start.strftime("%Y-%m-%dT%H:%M:%SZ"),
                     "frequency": interval_count
                 })
 

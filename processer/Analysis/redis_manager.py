@@ -110,8 +110,8 @@ class RedisManager:
             with open(output_file_path, 'r', encoding='utf-8') as f:
                 processed_data = json.load(f)
 
-            # 添加发布时间戳
-            processed_data['metadata']['redis_publish_time'] = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            # 添加发布时间戳 - ✅ ISO 8601 格式，带 UTC 时区标记
+            processed_data['metadata']['redis_publish_time'] = datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
             # ==================== 使用 String 结构存储 ====================
             # 这样 Visualization 可以通过 redis.get("processed_data:metadata") 读取

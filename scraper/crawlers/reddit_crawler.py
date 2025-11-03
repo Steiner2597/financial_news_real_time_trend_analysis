@@ -314,11 +314,16 @@ class RedditCrawler:
             if submission.selftext:
                 text += "\n\n" + submission.selftext
             
+            # 转换 created_utc (Unix 时间戳) 为 ISO 8601 格式字符串
+            from datetime import datetime
+            created_dt = datetime.utcfromtimestamp(submission.created_utc)
+            created_at_iso = created_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
+            
             data = {
                 # 基础字段
                 'text': text,
                 'source': 'reddit_post',
-                'timestamp': int(submission.created_utc),
+                'created_at': created_at_iso,  # ← ISO 8601 格式字符串
                 'url': f"https://www.reddit.com{submission.permalink}",
                 
                 # Reddit 特有字段

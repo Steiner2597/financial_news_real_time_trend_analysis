@@ -1,1384 +1,1382 @@
 {
   "metadata": {
-    "timestamp": "2025-11-02 20:16:17",
-    "update_interval": 30,
+    "timestamp": "2025-11-03T05:01:48Z",
+    "update_interval": 60,
     "data_version": "1.0",
     "news_sources": {
-      "reddit_post": 991,
-      "rss": 867,
-      "newsapi": 150,
-      "alphavantage": 80,
-      "twitter": 74,
-      "reddit": 69,
-      "stocktwits": 60,
-      "reddit_comment": 1
+      "reddit_comment": 30745,
+      "reddit_post": 8433,
+      "stocktwits": 2276,
+      "rss": 1514,
+      "alphavantage": 38,
+      "newsapi": 11
     }
   },
   "trending_keywords": [
     {
-      "keyword": "market",
+      "keyword": "like",
       "rank": 1,
-      "current_frequency": 855,
-      "growth_rate": 100.0,
-      "trend_score": 1.0,
+      "current_frequency": 995,
+      "growth_rate": 78.6,
+      "trend_score": 0.91,
       "sentiment": {
-        "positive": 4,
-        "negative": 96,
-        "total_comments": 696
+        "positive": 42,
+        "negative": 58,
+        "total_comments": 7770
+      }
+    },
+    {
+      "keyword": "out",
+      "rank": 2,
+      "current_frequency": 815,
+      "growth_rate": -4.9,
+      "trend_score": 0.51,
+      "sentiment": {
+        "positive": 44,
+        "negative": 56,
+        "total_comments": 11904
       }
     },
     {
       "keyword": "from",
-      "rank": 2,
-      "current_frequency": 772,
-      "growth_rate": 100.0,
-      "trend_score": 0.94,
-      "sentiment": {
-        "positive": 1,
-        "negative": 99,
-        "total_comments": 452
-      }
-    },
-    {
-      "keyword": "nbsp",
       "rank": 3,
-      "current_frequency": 694,
-      "growth_rate": 100.0,
-      "trend_score": 0.89,
+      "current_frequency": 797,
+      "growth_rate": 64.2,
+      "trend_score": 0.74,
       "sentiment": {
-        "positive": 0,
-        "negative": 100,
-        "total_comments": 310
+        "positive": 45,
+        "negative": 55,
+        "total_comments": 6728
       }
     },
     {
       "keyword": "about",
       "rank": 4,
-      "current_frequency": 675,
-      "growth_rate": 100.0,
-      "trend_score": 0.87,
+      "current_frequency": 794,
+      "growth_rate": 81.0,
+      "trend_score": 0.8,
       "sentiment": {
-        "positive": 4,
-        "negative": 96,
-        "total_comments": 444
+        "positive": 41,
+        "negative": 59,
+        "total_comments": 6132
       }
     },
     {
-      "keyword": "like",
+      "keyword": "please",
       "rank": 5,
-      "current_frequency": 579,
-      "growth_rate": 100.0,
+      "current_frequency": 683,
+      "growth_rate": 119.5,
       "trend_score": 0.81,
       "sentiment": {
-        "positive": 0,
-        "negative": 100,
-        "total_comments": 309
+        "positive": 81,
+        "negative": 19,
+        "total_comments": 4431
       }
     },
     {
-      "keyword": "stock",
+      "keyword": "get",
       "rank": 6,
-      "current_frequency": 521,
-      "growth_rate": 100.0,
-      "trend_score": 0.77,
+      "current_frequency": 614,
+      "growth_rate": 9.3,
+      "trend_score": 0.41,
       "sentiment": {
-        "positive": 3,
-        "negative": 97,
-        "total_comments": 585
+        "positive": 43,
+        "negative": 57,
+        "total_comments": 7808
       }
     },
     {
-      "keyword": "stocks",
+      "keyword": "would",
       "rank": 7,
-      "current_frequency": 454,
-      "growth_rate": 100.0,
-      "trend_score": 0.72,
+      "current_frequency": 614,
+      "growth_rate": 54.7,
+      "trend_score": 0.59,
       "sentiment": {
-        "positive": 5,
-        "negative": 95,
-        "total_comments": 365
+        "positive": 38,
+        "negative": 62,
+        "total_comments": 5506
       }
     },
     {
-      "keyword": "time",
+      "keyword": "one",
       "rank": 8,
-      "current_frequency": 438,
-      "growth_rate": 100.0,
-      "trend_score": 0.71,
+      "current_frequency": 603,
+      "growth_rate": -30.8,
+      "trend_score": 0.49,
       "sentiment": {
-        "positive": 3,
-        "negative": 97,
-        "total_comments": 484
+        "positive": 45,
+        "negative": 55,
+        "total_comments": 12086
       }
     },
     {
-      "keyword": "new",
+      "keyword": "had",
       "rank": 9,
-      "current_frequency": 425,
-      "growth_rate": 100.0,
-      "trend_score": 0.7,
+      "current_frequency": 601,
+      "growth_rate": 128.9,
+      "trend_score": 0.76,
       "sentiment": {
-        "positive": 2,
-        "negative": 98,
-        "total_comments": 367
+        "positive": 36,
+        "negative": 64,
+        "total_comments": 3660
       }
     },
     {
-      "keyword": "investors",
+      "keyword": "there",
       "rank": 10,
-      "current_frequency": 424,
-      "growth_rate": 100.0,
-      "trend_score": 0.7,
+      "current_frequency": 582,
+      "growth_rate": 40.9,
+      "trend_score": 0.51,
       "sentiment": {
-        "positive": 5,
-        "negative": 95,
-        "total_comments": 349
+        "positive": 41,
+        "negative": 59,
+        "total_comments": 5739
       }
     }
   ],
   "word_cloud": [
     {
-      "text": "market",
-      "value": 855
-    },
-    {
-      "text": "from",
-      "value": 772
-    },
-    {
-      "text": "nbsp",
-      "value": 694
-    },
-    {
-      "text": "about",
-      "value": 675
-    },
-    {
       "text": "like",
-      "value": 579
-    },
-    {
-      "text": "stock",
-      "value": 521
-    },
-    {
-      "text": "stocks",
-      "value": 454
-    },
-    {
-      "text": "time",
-      "value": 438
-    },
-    {
-      "text": "new",
-      "value": 425
-    },
-    {
-      "text": "investors",
-      "value": 424
-    },
-    {
-      "text": "price",
-      "value": 422
+      "value": 995
     },
     {
       "text": "out",
-      "value": 415
+      "value": 815
     },
     {
-      "text": "year",
-      "value": 413
+      "text": "from",
+      "value": 797
     },
     {
-      "text": "over",
-      "value": 390
+      "text": "about",
+      "value": 794
     },
     {
-      "text": "growth",
-      "value": 387
+      "text": "please",
+      "value": 683
     },
     {
-      "text": "nasdaq",
-      "value": 382
+      "text": "get",
+      "value": 614
     },
     {
       "text": "would",
-      "value": 382
+      "value": 614
     },
     {
-      "text": "first",
-      "value": 371
+      "text": "one",
+      "value": 603
     },
     {
-      "text": "could",
-      "value": 366
+      "text": "had",
+      "value": 601
     },
     {
-      "text": "into",
-      "value": 353
+      "text": "there",
+      "value": 582
+    },
+    {
+      "text": "time",
+      "value": 539
+    },
+    {
+      "text": "because",
+      "value": 460
+    },
+    {
+      "text": "even",
+      "value": 454
+    },
+    {
+      "text": "also",
+      "value": 452
+    },
+    {
+      "text": "here",
+      "value": 430
+    },
+    {
+      "text": "post",
+      "value": 424
+    },
+    {
+      "text": "want",
+      "value": 414
+    },
+    {
+      "text": "know",
+      "value": 411
+    },
+    {
+      "text": "subreddit",
+      "value": 409
+    },
+    {
+      "text": "questions",
+      "value": 397
     }
   ],
   "history_data": {
-    "market": [
+    "like": [
       {
-        "timestamp": "2025-11-01 12:00:00",
+        "timestamp": "2025-11-02T04:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 13:00:00",
+        "timestamp": "2025-11-02T05:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 14:00:00",
+        "timestamp": "2025-11-02T06:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 15:00:00",
+        "timestamp": "2025-11-02T07:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 16:00:00",
+        "timestamp": "2025-11-02T08:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 17:00:00",
+        "timestamp": "2025-11-02T09:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 18:00:00",
+        "timestamp": "2025-11-02T10:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 19:00:00",
+        "timestamp": "2025-11-02T11:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 20:00:00",
+        "timestamp": "2025-11-02T12:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 21:00:00",
+        "timestamp": "2025-11-02T13:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 22:00:00",
+        "timestamp": "2025-11-02T14:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 23:00:00",
+        "timestamp": "2025-11-02T15:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 00:00:00",
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 2101
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 597
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 477
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 557
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 497
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 467
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 435
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 609
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 415
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 439
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 389
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 391
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 396
+      }
+    ],
+    "out": [
+      {
+        "timestamp": "2025-11-02T04:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 01:00:00",
+        "timestamp": "2025-11-02T05:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 02:00:00",
+        "timestamp": "2025-11-02T06:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 03:00:00",
+        "timestamp": "2025-11-02T07:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 04:00:00",
+        "timestamp": "2025-11-02T08:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 05:00:00",
+        "timestamp": "2025-11-02T09:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 06:00:00",
+        "timestamp": "2025-11-02T10:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 07:00:00",
+        "timestamp": "2025-11-02T11:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 08:00:00",
+        "timestamp": "2025-11-02T12:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 09:00:00",
+        "timestamp": "2025-11-02T13:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 10:00:00",
+        "timestamp": "2025-11-02T14:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 11:00:00",
+        "timestamp": "2025-11-02T15:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 12:00:00",
-        "frequency": 696
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 3186
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 953
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 763
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 822
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 735
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 695
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 688
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 973
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 630
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 647
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 640
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 603
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 569
       }
     ],
     "from": [
       {
-        "timestamp": "2025-11-01 12:00:00",
+        "timestamp": "2025-11-02T04:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 13:00:00",
+        "timestamp": "2025-11-02T05:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 14:00:00",
+        "timestamp": "2025-11-02T06:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 15:00:00",
+        "timestamp": "2025-11-02T07:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 16:00:00",
+        "timestamp": "2025-11-02T08:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 17:00:00",
+        "timestamp": "2025-11-02T09:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 18:00:00",
+        "timestamp": "2025-11-02T10:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 19:00:00",
+        "timestamp": "2025-11-02T11:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 20:00:00",
+        "timestamp": "2025-11-02T12:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 21:00:00",
+        "timestamp": "2025-11-02T13:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 22:00:00",
+        "timestamp": "2025-11-02T14:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 23:00:00",
+        "timestamp": "2025-11-02T15:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 00:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 1703
       },
       {
-        "timestamp": "2025-11-02 01:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 555
       },
       {
-        "timestamp": "2025-11-02 02:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 456
       },
       {
-        "timestamp": "2025-11-02 03:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 475
       },
       {
-        "timestamp": "2025-11-02 04:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 428
       },
       {
-        "timestamp": "2025-11-02 05:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 439
       },
       {
-        "timestamp": "2025-11-02 06:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 403
       },
       {
-        "timestamp": "2025-11-02 07:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 527
       },
       {
-        "timestamp": "2025-11-02 08:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 356
       },
       {
-        "timestamp": "2025-11-02 09:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 340
       },
       {
-        "timestamp": "2025-11-02 10:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 392
       },
       {
-        "timestamp": "2025-11-02 11:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 343
       },
       {
-        "timestamp": "2025-11-02 12:00:00",
-        "frequency": 452
-      }
-    ],
-    "nbsp": [
-      {
-        "timestamp": "2025-11-01 12:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 13:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 14:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 15:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 16:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 17:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 18:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 19:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 20:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 21:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 22:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 23:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 00:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 01:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 02:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 03:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 04:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 05:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 06:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 07:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 08:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 09:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 11:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 12:00:00",
-        "frequency": 310
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 311
       }
     ],
     "about": [
       {
-        "timestamp": "2025-11-01 12:00:00",
+        "timestamp": "2025-11-02T04:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 13:00:00",
+        "timestamp": "2025-11-02T05:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 14:00:00",
+        "timestamp": "2025-11-02T06:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 15:00:00",
+        "timestamp": "2025-11-02T07:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 16:00:00",
+        "timestamp": "2025-11-02T08:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 17:00:00",
+        "timestamp": "2025-11-02T09:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 18:00:00",
+        "timestamp": "2025-11-02T10:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 19:00:00",
+        "timestamp": "2025-11-02T11:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 20:00:00",
+        "timestamp": "2025-11-02T12:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 21:00:00",
+        "timestamp": "2025-11-02T13:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 22:00:00",
+        "timestamp": "2025-11-02T14:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 23:00:00",
+        "timestamp": "2025-11-02T15:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 00:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 1461
       },
       {
-        "timestamp": "2025-11-02 01:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 504
       },
       {
-        "timestamp": "2025-11-02 02:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 396
       },
       {
-        "timestamp": "2025-11-02 03:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 426
       },
       {
-        "timestamp": "2025-11-02 04:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 409
       },
       {
-        "timestamp": "2025-11-02 05:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 388
       },
       {
-        "timestamp": "2025-11-02 06:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 378
       },
       {
-        "timestamp": "2025-11-02 07:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 507
       },
       {
-        "timestamp": "2025-11-02 08:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 334
       },
       {
-        "timestamp": "2025-11-02 09:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 342
       },
       {
-        "timestamp": "2025-11-02 10:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 341
       },
       {
-        "timestamp": "2025-11-02 11:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 328
       },
       {
-        "timestamp": "2025-11-02 12:00:00",
-        "frequency": 444
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 318
       }
     ],
-    "like": [
+    "please": [
       {
-        "timestamp": "2025-11-01 12:00:00",
+        "timestamp": "2025-11-02T04:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 13:00:00",
+        "timestamp": "2025-11-02T05:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 14:00:00",
+        "timestamp": "2025-11-02T06:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 15:00:00",
+        "timestamp": "2025-11-02T07:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 16:00:00",
+        "timestamp": "2025-11-02T08:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 17:00:00",
+        "timestamp": "2025-11-02T09:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 18:00:00",
+        "timestamp": "2025-11-02T10:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 19:00:00",
+        "timestamp": "2025-11-02T11:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 20:00:00",
+        "timestamp": "2025-11-02T12:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 21:00:00",
+        "timestamp": "2025-11-02T13:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 22:00:00",
+        "timestamp": "2025-11-02T14:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-01 23:00:00",
+        "timestamp": "2025-11-02T15:00:00Z",
         "frequency": 0
       },
       {
-        "timestamp": "2025-11-02 00:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 01:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 02:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 03:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 04:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 05:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 06:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 07:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 08:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 09:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 11:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 12:00:00",
-        "frequency": 309
-      }
-    ],
-    "stock": [
-      {
-        "timestamp": "2025-11-01 12:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 13:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 14:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 15:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 16:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 17:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 18:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 19:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 20:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 21:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 22:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 23:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 00:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 01:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 02:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 03:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 04:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 05:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 06:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 07:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 08:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 09:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 11:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 12:00:00",
-        "frequency": 585
-      }
-    ],
-    "stocks": [
-      {
-        "timestamp": "2025-11-01 12:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 13:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 14:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 15:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 16:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 17:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 18:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 19:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 20:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 21:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 22:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 23:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 00:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 01:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 02:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 03:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 04:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 05:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 06:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 07:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 08:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 09:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 11:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 12:00:00",
-        "frequency": 365
-      }
-    ],
-    "time": [
-      {
-        "timestamp": "2025-11-01 12:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 13:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 14:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 15:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 16:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 17:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 18:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 19:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 20:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 21:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 22:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 23:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 00:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 01:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 02:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 03:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 04:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 05:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 06:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 07:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 08:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 09:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 11:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 12:00:00",
-        "frequency": 484
-      }
-    ],
-    "new": [
-      {
-        "timestamp": "2025-11-01 12:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 13:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 14:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 15:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 16:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 17:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 18:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 19:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 20:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 21:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 22:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 23:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 00:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 01:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 02:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 03:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 04:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 05:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 06:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 07:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 08:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 09:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 11:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 12:00:00",
-        "frequency": 367
-      }
-    ],
-    "investors": [
-      {
-        "timestamp": "2025-11-01 12:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 13:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 14:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 15:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 16:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 17:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 18:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 19:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 20:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 21:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 22:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-01 23:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 00:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 01:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 02:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 389
       },
       {
-        "timestamp": "2025-11-02 03:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 04:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 05:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 06:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 07:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 08:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 09:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 10:00:00",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02 11:00:00",
-        "frequency": 0
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 427
       },
       {
-        "timestamp": "2025-11-02 12:00:00",
+        "timestamp": "2025-11-02T18:00:00Z",
         "frequency": 349
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 380
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 347
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 366
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 342
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 415
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 273
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 295
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 268
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 291
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 289
+      }
+    ],
+    "get": [
+      {
+        "timestamp": "2025-11-02T04:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T05:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T06:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T07:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T08:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T09:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T10:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T11:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T12:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T13:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 1947
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 641
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 532
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 556
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 489
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 474
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 439
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 639
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 427
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 431
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 453
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 392
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 388
+      }
+    ],
+    "would": [
+      {
+        "timestamp": "2025-11-02T04:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T05:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T06:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T07:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T08:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T09:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T10:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T11:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T12:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T13:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 1480
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 409
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 382
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 372
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 346
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 316
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 308
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 458
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 315
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 300
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 297
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 268
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 255
+      }
+    ],
+    "one": [
+      {
+        "timestamp": "2025-11-02T04:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T05:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T06:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T07:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T08:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T09:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T10:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T11:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T12:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T13:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 3358
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 955
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 757
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 843
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 753
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 738
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 648
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 934
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 616
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 667
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 655
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 633
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 529
+      }
+    ],
+    "had": [
+      {
+        "timestamp": "2025-11-02T04:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T05:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T06:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T07:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T08:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T09:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T10:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T11:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T12:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T13:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 747
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 294
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 240
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 269
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 245
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 263
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 243
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 319
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 211
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 213
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 240
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 189
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 187
+      }
+    ],
+    "there": [
+      {
+        "timestamp": "2025-11-02T04:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T05:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T06:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T07:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T08:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T09:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T10:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T11:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T12:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T13:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 1544
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 458
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 383
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 380
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 383
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 329
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 329
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 422
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 315
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 326
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 317
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 271
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 282
       }
     ]
   },
   "news_feed": [
     {
-      "title": "Financial markets respond positively to recent economic data showing resilience in consumer spending and business investment. Market analysts maintain their bullish outlook for the remainder of the year despite some lingering concerns about inflation.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "alphavantage",
-      "url": "https://www.reuters.com/finance/?id=normal_56",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Trading volumes remain elevated as institutional investors continue to rotate into growth stocks. The semiconductor sector shows particular strength driven by increased demand for AI chips and computing infrastructure upgrades.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "twitter",
-      "url": "https://www.reuters.com/finance/?id=normal_182",
-      "sentiment": "negative"
-    },
-    {
-      "title": "这是超过24小时的旧数据 #19: Trading volumes remain elevated as institutional investors continue to rotate into growth stocks. The semiconductor sector shows particular strength driven by increased demand for AI chips and computing infrastructure upgrades.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "rss",
-      "url": "https://reddit.com/r/stocks/?id=old_19",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Financial markets respond positively to recent economic data showing resilience in consumer spending and business investment. Market analysts maintain their bullish outlook for the remainder of the year despite some lingering concerns about inflation.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "rss",
-      "url": "https://finance.yahoo.com/?id=normal_136",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Bulls And Bears: Microsoft, Joby Aviation, Meta - And Nvidia Tops $5 Trillion - Apple ( NASDAQ:AAPL ), Amazon.com ( NASDAQ:AMZN ). Benzinga examined the prospects for many investors' favorite stocks over the last week - here's a look at some of our top stories. Wall Street extended its record-setting rally as Nvidia Corp. ( NASDAQ:NVDA ) crossed the $5 trillion market-cap milestone - a first in history.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "stocktwits",
-      "url": "https://seekingalpha.com/market-news/?id=normal_99",
+      "title": "Awareness 🚨 Awareness Post: Crypto Trading Scam by “Safia Bint Muhammad” 🚨 Hey everyone, I wanted to share this to help others stay alert. A person named Safia Bint Muhammad reached out to me claiming to be a crypto trader who could help me earn consistent rewards through “safe investments.” She sounded very persuasive, professional, and even seemed trustworthy at first — often talking about market knowledge, blockchain codes, and how “simple” the process was. After chatting for a while, she lured me into sending some money, promising quick returns and showing “screenshots” of fake profits. Once I asked for verification or tried to withdraw, she either avoided my messages or came up with excuses. I still have WhatsApp chat history and screenshots of her messages, which clearly show how she manipulates people using charm, trust-building, and fake crypto jargon. Please be careful — • Don’t share your personal details or wallet codes. • Never invest in crypto through someone who contacts you directly. • Verify any trading opportunity through official platforms only. If anyone else has had similar interactions with this person or similar scams, feel free to share your experience below so others can learn. Stay safe, everyone. 💬",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_post",
+      "url": "https://www.reddit.com/r/islam/comments/1on2qys/awareness/",
       "sentiment": "positive"
     },
     {
-      "title": "Bulls And Bears: Microsoft, Joby Aviation, Meta - And Nvidia Tops $5 Trillion - Apple ( NASDAQ:AAPL ), Amazon.com ( NASDAQ:AMZN ). Benzinga examined the prospects for many investors' favorite stocks over the last week - here's a look at some of our top stories. Wall Street extended its record-setting rally as Nvidia Corp. ( NASDAQ:NVDA ) crossed the $5 trillion market-cap milestone - a first in history.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "newsapi",
-      "url": "https://finance.yahoo.com/?id=normal_169",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Trading volumes remain elevated as institutional investors continue to rotate into growth stocks. The semiconductor sector shows particular strength driven by increased demand for AI chips and computing infrastructure upgrades.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "twitter",
-      "url": "https://reddit.com/r/stocks/?id=normal_262",
-      "sentiment": "negative"
-    },
-    {
-      "title": "The stock market continues to show strength as major indices reach new all-time highs. Investors remain optimistic about corporate earnings and economic growth prospects. Technology stocks lead the gains with strong performance from cloud computing and artificial intelligence companies.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "newsapi",
-      "url": "https://www.bloomberg.com/quote/?id=normal_22",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Bulls And Bears: Microsoft, Joby Aviation, Meta - And Nvidia Tops $5 Trillion - Apple ( NASDAQ:AAPL ), Amazon.com ( NASDAQ:AMZN ). Benzinga examined the prospects for many investors' favorite stocks over the last week - here's a look at some of our top stories. Wall Street extended its record-setting rally as Nvidia Corp. ( NASDAQ:NVDA ) crossed the $5 trillion market-cap milestone - a first in history.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "stocktwits",
-      "url": "https://reddit.com/r/stocks/?id=normal_137",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Financial markets respond positively to recent economic data showing resilience in consumer spending and business investment. Market analysts maintain their bullish outlook for the remainder of the year despite some lingering concerns about inflation.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "newsapi",
-      "url": "https://finance.yahoo.com/?id=normal_196",
-      "sentiment": "negative"
-    },
-    {
-      "title": "这是超过24小时的旧数据 #17: Bulls And Bears: Microsoft, Joby Aviation, Meta - And Nvidia Tops $5 Trillion - Apple ( NASDAQ:AAPL ), Amazon.com ( NASDAQ:AMZN ). Benzinga examined the prospects for many investors' favorite stocks over the last week - here's a look at some of our top stories. Wall Street extended its record-setting rally as Nvidia Corp. ( NASDAQ:NVDA ) crossed the $5 trillion market-cap milestone - a first in history.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "twitter",
-      "url": "https://www.reuters.com/finance/?id=old_17",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Bulls And Bears: Microsoft, Joby Aviation, Meta - And Nvidia Tops $5 Trillion - Apple ( NASDAQ:AAPL ), Amazon.com ( NASDAQ:AMZN ). Benzinga examined the prospects for many investors' favorite stocks over the last week - here's a look at some of our top stories. Wall Street extended its record-setting rally as Nvidia Corp. ( NASDAQ:NVDA ) crossed the $5 trillion market-cap milestone - a first in history.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "reddit",
-      "url": "https://www.cnbc.com/markets/stocks/?id=normal_93",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Market sentiment improves on dovish Fed commentary suggesting patience with interest rate policy. Bond markets rally on expectations of potential rate cuts in the coming year, supporting equity valuations.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "rss",
-      "url": "https://www.reuters.com/finance/?id=normal_278",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Bulls And Bears: Microsoft, Joby Aviation, Meta - And Nvidia Tops $5 Trillion - Apple ( NASDAQ:AAPL ), Amazon.com ( NASDAQ:AMZN ). Benzinga examined the prospects for many investors' favorite stocks over the last week - here's a look at some of our top stories. Wall Street extended its record-setting rally as Nvidia Corp. ( NASDAQ:NVDA ) crossed the $5 trillion market-cap milestone - a first in history.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "twitter",
-      "url": "https://finance.yahoo.com/?id=normal_286",
+      "title": "So I found this on Facebook from another persom who found it on Twitter Summary of the Chaos Zero Korean Controversy (with a little connection to Blue Archive) ----------------------------------------------------- I want to make it perfectly clear this is not my opinion but rather a translated statement from ........hmmm judging from the evidence provided, it seems to suggest that its by a former employee or someone who is involved in the project. (The materials are confidential, so the original poster applied mosaics to them before sharing.) ----------------------------------------------------- Originally, the scenario for Chaos Zero Nightmare was being written by a four-person team led by a popular Korean Cthulhu-style novelist known as “Kazesuke” (감기도령 / Gamgi Doryeong). However, due to internal disputes within the company, involving their flagship title Epic Seven scenario team ended up joining the Chaos Zero project. (In Japan, this game is published and operated by Yostar.) - In effect, the Epic Seven side had been transferred to Chaos Zero as a form of demotion by the producer (P). However, they didn’t get along with either the producer or the Chaos Zero writing team, and relations between them were hostile. In the midst of this, the producer — who was also the company’s representative — suddenly began criticizing Kazesuke’s scenario. - One day, the producer (P) brought his own scenario plot to the team and made the employees read both his and Kazesuke’s versions, then held an internal vote to decide which one was more interesting. Naturally, since P was the company president, he won. - Furthermore, P apparently really liked the heroine, Renoa, and created an original self-insert character named “Loius” to pair him with Renoa, essentially engaging in what’s known as a “Mary Sue / self-insert fantasy” move (often called a “Yume Otoko move” in Japanese). - The person who gave this testimony also attached materials — including the scenario plot personally written by P and concept art of Loius and others — which had never been made public outside the company. Because of this, the testimony is regarded by Korean users as almost certainly true. - The producer (P) personally admitted during an emergency livestream on November 1 that he had interfered with the scenario’s content and that there had been a mass departure of the writers. - (He claimed it was because they were pressed for deadlines, but did not go into further detail.) - The situation did not end there — the former Epic Seven team not only left Chaos Zero, but also announced their departure from Epic Seven itself. In an attempt to stop this, P handed over control of Chaos Zero to the former Epic Seven team. Unable to endure such treatment, Kazesuke and the other Chaos Zero writers left the project. - According to Kazesuke himself, “It felt like I’d been sent back to a high school with a caste system.” Naturally, the original Chaos Zero scenario ended up being heavily altered and lost its original form entirely. As expected, the internally reviewed version of the rewritten scenario received mostly negative evaluations. The former Epic Seven writers, upset by this criticism, ended up resigning as a group without ever finishing the Chaos Zero scenario. - As a result, only two members of the scenario team remained. The company hurriedly recruited new staff, but those new hires also quickly left one after another. In the end, the Chaos Zero scenario was completed amid constant turnover, with the scenario team never even exceeding ten members at its peak. - The game had originally been scheduled for release late last year, but these behind-the-scenes troubles were the reason it was only released just recently. - These testimonies were posted on “Blind,” the platform that requires employee verification, the same one involved in the recent KV incident. They came from internal employees of Smilegate Group, the developer of Chaos Zero. - (There are multiple testimonies from different employees confirming these details.) - (Blue Archive’s producer Kim Yong-ha also worked at the company during their previous title, Qurare.) - Thanks to the efforts of the distribution and publishing teams, the Japanese and overseas versions didn’t show any major issues, but in the Korean version, which retained the original script, a controversy erupted. - To give an example using Blue Archive terms, the Korean text was like a scene where: “The students, ignoring their teacher who’s just been shot, are only concerned about the Shiba Inu mob character next to them.” ----------------------------------------------- However, amid the controversy, suspicions arose about the writers’ expulsion, and people began to suspect that Chaos Zero, before being altered by the Epic Seven side, was originally intended to be a “time loop” story. - Users believe that traces of this original loop concept can still be found in various elements within the game itself. ------------------------------------------------- For example, the “Ego Manifestation” system was originally meant to represent the process of reclaiming one’s fragmented and worn-down self (ego) after countless repeating loops. - Likewise, the “Inspiration” and “Memory Fragments” systems were based on the same idea — they symbolized a worldview centered on regaining one’s true self. Originally, each fragment was even supposed to include individual character illustrations. ------------------------------------------------ The reason the gacha system is called “Rescue” also traces back to this concept. Originally, it wasn’t about recovering missing crew members, but rather about finding a timeline within the repeating loops where those who had died were still alive, and dropping an anchor there to rescue them — that was the intended meaning behind the term. - Because of this, the Captain was originally meant to be portrayed as a hero who achieved a 0% death rate among their crew. ---------------------------------------------------- Furthermore, Chaos Zero’s current slogan is “Turn all despair (chaos) to zero,” but traces from before release show that the original slogan was “Even if the nightmare repeats, from 0 to 1.” It was also described as a “Cosmic loop RPG that crosses between hope and despair.” - The most definitive piece of evidence is that, before release, the game’s official description explicitly referred to it as a “Chaos Loop RPG guided by your choices.” With all this evidence combined, it became clear that Chaos Zero was originally designed as a time-loop story, but was altered into its current form due to interference from P and the Epic Seven team — and that revelation became the spark that further fueled the controversy. ----------------------------------------------------- Outraged Korean users managed to uncover parts of the original story, revealing that Renoa, who in the released version (based on the original Korean text) looked down on the protagonist, the Captain, from the very beginning, was originally the main heroine and the Captain’s rightful partner. - Meanwhile, Owen, who became the subject of the NTR (cheating) controversy in the altered version, was revealed to have originally been a son-like character to the protagonist before the scenario was rewritten. ------------------------------------------------- In other words, the Captain, who was originally meant to be portrayed as a respected protagonist, was demoted to a replaceable, disposable “Unit A” due to the interference of P and the Epic Seven team. - What further enraged users was that, rather than completely scrapping the previous story and worldbuilding, the new team only erased the traces of former writer Kazesuke, while heavily altering the main characters — including the heroines — and the core narrative. - Furthermore, testimonies about workplace bullying within the Chaos Zero scenario team did not start only after the game’s release — similar reports had already surfaced back in July, well before launch. - On top of that, the controversy kept escalating, with suspicions of AI-generated illustrations used in-game and even issues related to feminist disputes, leaving the prospects for Chaos Zero’s continued service in Korea extremely bleak. - Meanwhile, Kazesuke (감기도령), who had been expelled from Chaos Zero, was — according to his own statements and those of dydldidl (Konoka’s writer, often called “Konoka’s Papa”) — indirectly confirmed to now be working at Nexon, writing for the story of Blue Archive. -------------------------------------- Source: whttps://x.com/Brolist_kr/status/1984606978652717373?s=19",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_post",
+      "url": "https://www.reddit.com/r/ChaosZeroNightmare/comments/1on2iny/so_i_found_this_on_facebook_from_another_persom/",
       "sentiment": "positive"
     },
     {
-      "title": "Financial markets respond positively to recent economic data showing resilience in consumer spending and business investment. Market analysts maintain their bullish outlook for the remainder of the year despite some lingering concerns about inflation.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "newsapi",
-      "url": "https://www.reuters.com/finance/?id=normal_266",
+      "title": "Hello everyone, Before joining this discussion, please take a moment to review the rules of r/AskPH [here](https://www.reddit.com/r/AskPH/wiki/full-rules), as well as the [Reddit Content Policy](https://www.redditinc.com/policies/content-policy). Comments that violate these rules will be addressed accordingly. You can learn more about our rule enforcement process [here](https://www.reddit.com/r/AskPH/wiki/rule-enforcement). If you need to appeal a ban, please follow the process outlined [here](https://www.reddit.com/r/AskPH/wiki/ban-appeal-process) in r/AskPH. *** This post's original body text: *** *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/AskPH) if you have any questions or concerns.*",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/AskPH/comments/1on2okm/how_is_5060k_budget_enough_to_travel_to_south/nmtvblt/",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Ilang days? Labas na ba airfare?",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/AskPH/comments/1on2okm/how_is_5060k_budget_enough_to_travel_to_south/nmtwlqn/",
+      "sentiment": "positive"
+    },
+    {
+      "title": "A Filipino culinary archivist calls for transparency from the DOT.",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_post",
+      "url": "https://www.reddit.com/r/Philippines/comments/1on2j90/a_filipino_culinary_archivist_calls_for/",
       "sentiment": "negative"
     },
     {
-      "title": "Trading volumes remain elevated as institutional investors continue to rotate into growth stocks. The semiconductor sector shows particular strength driven by increased demand for AI chips and computing infrastructure upgrades.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "newsapi",
-      "url": "https://seekingalpha.com/market-news/?id=normal_17",
+      "title": "TLDR The OP believes the Department of Tourism invested a lot of money to invite Michelin to critique the country's culinary industry. However, the DOT allegedly isn\"t transparent about their involvement and how much taxpayer's money was spent. The OP also criticizes the DOT for investing more on marketing instead of addressing issues that have long plagued the country's tourism industry. He also points out the lack of assistance to businesses/groups in the culinary or tourism industry in general, resulting to an inferior product compared to neighboring countries.",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/Philippines/comments/1on2j90/a_filipino_culinary_archivist_calls_for/nmtw6j8/",
       "sentiment": "negative"
     },
     {
-      "title": "这是超过24小时的旧数据 #65: The stock market continues to show strength as major indices reach new all-time highs. Investors remain optimistic about corporate earnings and economic growth prospects. Technology stocks lead the gains with strong performance from cloud computing and artificial intelligence companies.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "rss",
-      "url": "https://finance.yahoo.com/?id=old_65",
+      "title": "Chances of getting hired outside of Japan? I've been teaching abroad for about 5 years in South Korea in elementary schools (2 years common core, 2 years IB PYP). I'm wanting to make the switch to Japan (specifically Tokyo). From my research, it seems most teachers working in the schools I'm looking at started off at smaller schools or even English academies in Japan before getting hired at better schools. Is it nearly impossible to get a foot in the door without living in Japan already? For further context, I have a bachelor's in elementary education and a master's degree in reading education with 6 years total of teaching experience (mostly lower grades). Are there specific schools that are good for transitioning into Japan? Thanks in advance!",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_post",
+      "url": "https://www.reddit.com/r/Internationalteachers/comments/1on2gdi/chances_of_getting_hired_outside_of_japan/",
       "sentiment": "negative"
     },
     {
-      "title": "Market sentiment improves on dovish Fed commentary suggesting patience with interest rate policy. Bond markets rally on expectations of potential rate cuts in the coming year, supporting equity valuations.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "stocktwits",
-      "url": "https://finance.yahoo.com/?id=normal_127",
+      "title": "It’s possible. I got my job from outside of Japan, as did the majority of my colleagues (exceptions are the Japanese language teachers and a couple of foreign teachers who switched schools within Japan). Don’t settle for eikawa or ALT work beforehand. It doesn’t count as experience for international schools. Do you have a teaching licence?",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/Internationalteachers/comments/1on2gdi/chances_of_getting_hired_outside_of_japan/nmtwjso/",
+      "sentiment": "positive"
+    },
+    {
+      "title": "![gif](giphy|NMHpkm0MPar2U)",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/ChaosZeroNightmare/comments/1on2iny/so_i_found_this_on_facebook_from_another_persom/nmtvs83/",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Thank you for posting on **r/Mom**! To chat, get support, and connect with other moms, **[join our moms' Discord server here](https://discord.gg/atVgaFJrYd)**. Check out our **[wiki](https://www.reddit.com/r/Mom/wiki/index/)** for resources, tips, FAQs, and helpful guides. And don't forget to check out **[the only mom guide you'll ever need](https://sarumom.short.gy/from-zero-to-mom-guide)**. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/Mom) if you have any questions or concerns.*",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/Mom/comments/1on2r1q/does_my_son_not_love_me/nmtvuda/",
+      "sentiment": "positive"
+    },
+    {
+      "title": "That producer must take blame for everything he has done to a fking potential story about cthulhu-style.",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/ChaosZeroNightmare/comments/1on2iny/so_i_found_this_on_facebook_from_another_persom/nmtwpxh/",
       "sentiment": "negative"
     },
     {
-      "title": "这是超过24小时的旧数据 #67: Market sentiment improves on dovish Fed commentary suggesting patience with interest rate policy. Bond markets rally on expectations of potential rate cuts in the coming year, supporting equity valuations.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "alphavantage",
-      "url": "https://www.reuters.com/finance/?id=old_67",
+      "title": "Difference between in 2013 and 2025 WC Final !! DY Patil Stadium was packed on Sunday as the Indian women’s team played their first home final of the ICC Women’s World Cup, facing South Africa, who also reached the final for the first time. Fans fill the DY Patil Stadium for the 2025 ICC Women's World Cup final (PTI) It was a far cry from the 2013 edition, as Australia defeated West Indies in the summit clash in front of near-empty stands at the Brabourne Stadium in Mumbai. Despite the rain, the crowd showed their determination by waiting patiently for two hours for the toss, delayed due to wet conditions. Fortunately, the match commenced in time, avoiding any loss of overs. The rain did not dampen the fans’ enthusiasm, and with the massive turnout, previous attendance records were likely to be broken.",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_post",
+      "url": "https://www.reddit.com/r/IndiaCricket/comments/1on2opg/difference_between_in_2013_and_2025_wc_final/",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Join our official [Discord server](https://discord.gg/TXyybaSwRH) for more discussions. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/IndiaCricket) if you have any questions or concerns.*",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/IndiaCricket/comments/1on2opg/difference_between_in_2013_and_2025_wc_final/nmtvcu9/",
+      "sentiment": "positive"
+    },
+    {
+      "title": "This should be the start of women’s cricket getting more mainstream. If the men’s team had a 1983, this should be 2025 for the women’s team.",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/IndiaCricket/comments/1on2opg/difference_between_in_2013_and_2025_wc_final/nmtwnls/",
       "sentiment": "negative"
     },
     {
-      "title": "这是超过24小时的旧数据 #15: Trading volumes remain elevated as institutional investors continue to rotate into growth stocks. The semiconductor sector shows particular strength driven by increased demand for AI chips and computing infrastructure upgrades.",
-      "publish_time": "2025-11-02 12:16:17",
-      "source": "newsapi",
-      "url": "https://www.bloomberg.com/quote/?id=old_15",
+      "title": "What are some of the most thrilling sports matches you watched? In the cricket world cup which concluded some hours ago, the knockouts had four big teams - Australia, South Africa, India and England. The semifinals with Australia & Finals with South Africa were some of the most thrilling cricket matches I watched.",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_post",
+      "url": "https://www.reddit.com/r/AskTheWorld/comments/1on2npp/what_are_some_of_the_most_thrilling_sports/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "F1 European GP 1999 5 different leaders, almost every single team had a chance for their best result of the year, ending in celebration for some (Herbert, Trulli, Gene) and in tears for others (Frentzen, Badoer,...)",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/AskTheWorld/comments/1on2npp/what_are_some_of_the_most_thrilling_sports/nmtvrdq/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "(How) Is 50-60K budget enough to travel to South Korea alone?",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_post",
+      "url": "https://www.reddit.com/r/AskPH/comments/1on2okm/how_is_5060k_budget_enough_to_travel_to_south/",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Does my son not love me? Let me give a bit of a backstory so it all makes sense. I had my son 14 months ago. His father and I have been happily together for 4 years and know each other for 12. We were over the moon to have a baby as we tried for quite some time. Two months after his birth, my husband was diagnosed with stage 4 Hodgkins Lymphoma and myself with severe Post Partum Depression. I was on several medications to stay functioning while my husband began his storm into chemo, treatments, medications, etc. It was hell. All while I had to work triple time just to keep our family afloat. My mother moved in with us full time and cut her work hours back to help care for my son. I make the most out of all of us so that is why I continued to work heavy amounts of over time. My work also did not pay for any form of maternity leave so I had to work OT my entire pregnancy just to create a nest egg for us. At this present time, my husband is in remission, in physical therapy and preparing to go back to work as of today to help take some of the burden off me. I have not stopped working overtime since the day I became pregnant. I ask if my son does not love me because…. I am a highly observant person and I notice little things with my son like every morning I go to greet him good morning first and he always looks past me and smiles towards my mother coming in, when I approach my son during playtime he tried to close the door on me several times today but when my husband approached, he immediately crawled over to him and tried to be picked up in his arms, when I call his name and try to play with him, he doesn’t always smile or respond playfully versus if my mom or husband do the same, he becomes excited and smiles for them, if two of us are in a room, he will crawl to the other person over me. I realize I may be projecting a lot of my insecurities but I am afraid that I have worked so much and so hard for my family that my son doesn’t have as strong of a bond with me that he does with my husband and my mother. He sees them far greater amounts than he sees me. On my days off, I spend ALL my time with him because I’m trying to make up for time lost working. I try to soak up every second with him. But, I can’t help but have a broken heart. I KNOW he’s only 14 months but children are smarter than we give them credit for. Does my son not love me?",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_post",
+      "url": "https://www.reddit.com/r/Mom/comments/1on2r1q/does_my_son_not_love_me/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "3-28",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/AskTheWorld/comments/1on2npp/what_are_some_of_the_most_thrilling_sports/nmtwlxe/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Let’s be honest , MPs don’t call the the shots the bureaucrats do. For every minister there are 3 assistant deputy ministers who have worked in said departments for 20 years. Every time the government changes or a good idea is made they are the ones you have to find a way for it to happen. Government bloat is ridiculous and most ministers are working in fields outside of their expertise, and when they are using their education the PMO just overrides them",
+      "publish_time": "2025-11-03T04:53:22Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/jobwatchcanada/comments/1on2cvv/minister_of_immigration_lena_metlege_diab/nmtvw33/",
       "sentiment": "negative"
     }
   ]
