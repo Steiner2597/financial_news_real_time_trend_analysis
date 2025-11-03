@@ -7,3 +7,7 @@ visualization/**/node_modules/*
 
 # Optional: ignore common frontend build artifacts (uncomment if desired)
 # visualization/frontend/dist/
+
+# Ignore IDE configs
+.idea/
+**/.idea/
