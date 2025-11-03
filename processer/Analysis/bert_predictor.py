@@ -4,6 +4,7 @@ BERT 情感预测器
 """
 import os
 import sys
+import json
 from pathlib import Path
 import pandas as pd
 import numpy as np
@@ -23,6 +24,13 @@ try:
 except ImportError:
     print("⚠️  警告: PyTorch/Transformers 未安装，BERT 预测功能不可用")
     print("   将使用简单规则进行 sentiment 填充")
+
+# 延迟导入，避免循环依赖
+try:
+    from sentiment_updater import SentimentUpdater
+    UPDATER_AVAILABLE = True
+except ImportError:
+    UPDATER_AVAILABLE = False
 
 
 class BertPredictor:
@@ -177,13 +185,15 @@ class BertPredictor:
         else:
             return ""  # 中性或无法判断
     
-    def fill_missing_sentiments(self, df, text_column='text'):
+    def fill_missing_sentiments(self, df, text_column='text', redis_client=None, queue_name='clean_data_queue'):
         """
-        为 DataFrame 中缺失 sentiment 的行填充预测值
+        为 DataFrame 中缺失 sentiment 的行填充预测值，并更新 Redis 中对应的数据
         
         Args:
             df: pandas DataFrame
             text_column: 文本列名
+            redis_client: Redis 客户端（可选，如果提供则更新 Redis）
+            queue_name: Redis 队列名称
             
         Returns:
             pandas DataFrame: 填充后的 DataFrame
@@ -201,8 +211,13 @@ class BertPredictor:
         
         print(f"🔮 发现 {missing_count} 条缺失 sentiment 的数据，开始预测...")
         
-        # 提取缺失的文本
+        # 提取缺失的文本和对应的索引
+        missing_indices = df[missing_mask].index.tolist()
         missing_texts = df.loc[missing_mask, text_column].fillna('').astype(str).tolist()
+        
+        # 获取记录 ID（用于 Redis 更新）
+        id_column = 'id' if 'id' in df.columns else 'post_id' if 'post_id' in df.columns else None
+        missing_ids = df.loc[missing_mask, id_column].tolist() if id_column else None
         
         # 批量预测
         predictions = self.predict_batch(missing_texts)
@@ -210,9 +225,34 @@ class BertPredictor:
         # 填充预测结果
         df.loc[missing_mask, 'sentiment'] = predictions
         
+        # ✅ 如果提供了 Redis 客户端，实时更新队列中的数据
+        if redis_client is not None and missing_ids and UPDATER_AVAILABLE:
+            try:
+                from sentiment_updater import SentimentUpdater
+                
+                print(f"\n📤 正在更新 Redis 中的数据...")
+                updater = SentimentUpdater(redis_client=redis_client)
+                
+                # 构建更新列表
+                updates = [
+                    {'id': str(record_id), 'sentiment': prediction}
+                    for record_id, prediction in zip(missing_ids, predictions)
+                    if prediction  # 只更新有预测结果的
+                ]
+                
+                # 批量更新
+                if updates:
+                    stats = updater.batch_update_sentiments(updates)
+                else:
+                    print("⚠️  没有有效的预测结果需要更新")
+                    stats = {'success': 0, 'failed': 0, 'not_found': 0}
+            
+            except Exception as e:
+                print(f"⚠️  更新 Redis 失败，但预测结果已填充到 DataFrame: {e}")
+        
         # 统计预测结果
         predicted_sentiments = pd.Series(predictions).value_counts()
-        print(f"✓ 预测完成:")
+        print(f"\n✓ 预测完成:")
         for sentiment, count in predicted_sentiments.items():
             if sentiment:  # 忽略空字符串
                 print(f"  - {sentiment}: {count} 条")

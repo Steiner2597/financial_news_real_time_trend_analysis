@@ -1,6 +1,6 @@
 import pandas as pd
 from datetime import datetime, timedelta
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 from config import CONFIG
 
 
@@ -8,13 +8,29 @@ class HistoryAnalyzer:
     def __init__(self):
         self.config = CONFIG
 
-    def generate_history_data(self, df: pd.DataFrame, keywords: List[str]) -> Dict[str, List[Dict[str, Any]]]:
-        """生成历史趋势数据"""
+    def generate_history_data(self, df: pd.DataFrame, keywords: List[str], 
+                            time_windows: Optional[Dict] = None) -> Dict[str, List[Dict[str, Any]]]:
+        """
+        生成历史趋势数据
+        
+        Args:
+            df: 数据框
+            keywords: 关键词列表
+            time_windows: 时间窗口字典，包含 'history_window_start' 和 'latest_time'
+                         如果为 None，则自动计算（不推荐）
+        """
         history_data = {}
 
         # 获取时间范围
-        end_time = df['timestamp'].max()
-        start_time = end_time - timedelta(hours=self.config['history_hours'])
+        if time_windows is not None:
+            # ✅ 使用外部传入的时间窗口（由 main.py 精确计算）
+            end_time = time_windows['latest_time']
+            start_time = time_windows['history_window_start']
+        else:
+            # ⚠️  备用方案：自动计算（可能与 main.py 的计算不一致）
+            end_time = df['timestamp'].max()
+            start_time = end_time - timedelta(hours=self.config['history_hours'])
+            print("⚠️  警告：未传入 time_windows，已自动计算，可能与主流程不一致")
 
         # 创建时间区间
         time_intervals = self._create_time_intervals(start_time, end_time)

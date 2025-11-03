@@ -56,6 +56,8 @@ class MainProcessor:
         time_windows = self.data_loader.get_time_windows(df)
 
         print(f"✓ 加载了 {len(df)} 条数据")
+        print(f"  最早数据: {df['timestamp'].min().isoformat()}")
+        print(f"  最新数据: {df['timestamp'].max().isoformat()}")
 
         # 2. 获取时间窗口数据
         # 当前窗口：最近1小时（用于计算实时趋势）
@@ -67,7 +69,9 @@ class MainProcessor:
         ]
 
         print(f"✓ 当前窗口数据（最近1小时）: {len(current_df)} 条")
-        print(f"✓ 历史窗口数据（过去24小时）: {len(history_df)} 条")
+        print(f"  时间范围: {time_windows['current_window_start'].isoformat()} ~ {time_windows['latest_time'].isoformat()}")
+        print(f"✓ 历史窗口数据（过去24小时，不含当前小时）: {len(history_df)} 条")
+        print(f"  时间范围: {time_windows['history_window_start'].isoformat()} ~ {time_windows['current_window_start'].isoformat()}")
 
         # 3. 词频分析
         print("\n🔍 执行文本分析...")
@@ -101,7 +105,8 @@ class MainProcessor:
         # 6. 生成历史数据
         print("📈 生成历史数据...")
         top_keywords = [keyword for keyword, _ in current_keywords[:self.config['trending_keywords_count']]]
-        history_data = self.history_analyzer.generate_history_data(df, top_keywords)
+        # ✅ 传入精确的时间窗口，确保历史数据计算与主流程一致
+        history_data = self.history_analyzer.generate_history_data(df, top_keywords, time_windows)
 
         # 7. 生成新闻流
         print("📰 生成新闻流...")

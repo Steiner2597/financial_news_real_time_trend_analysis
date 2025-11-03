@@ -214,9 +214,17 @@ class DataLoader:
                 predictor = get_predictor()
                 # 使用原始 text 列进行预测（比 clean_text 保留更多信息）
                 text_col = 'text' if 'text' in df.columns else 'content' if 'content' in df.columns else 'clean_text'
-                df = predictor.fill_missing_sentiments(df, text_column=text_col)
+                # ✅ 传入 Redis 客户端，让预测器实时更新队列
+                df = predictor.fill_missing_sentiments(
+                    df, 
+                    text_column=text_col,
+                    redis_client=self.redis_client,
+                    queue_name=self.config['redis'].get('output_queue_name', 'clean_data_queue')
+                )
             except Exception as e:
                 print(f"⚠️  BERT 预测失败，使用默认值: {e}")
+                import traceback
+                traceback.print_exc()
                 # 填充空值为 neutral
                 df['sentiment'] = df['sentiment'].fillna('neutral')
                 df['sentiment'] = df['sentiment'].replace('', 'neutral')

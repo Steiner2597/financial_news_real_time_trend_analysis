@@ -1,147 +1,147 @@
 {
   "metadata": {
-    "timestamp": "2025-11-03T05:41:56Z",
+    "timestamp": "2025-11-03T06:18:57Z",
     "update_interval": 60,
     "data_version": "1.0",
     "news_sources": {
-      "reddit_comment": 31342,
-      "reddit_post": 8732,
-      "stocktwits": 2356,
-      "rss": 1559,
+      "reddit_comment": 31918,
+      "reddit_post": 8999,
+      "stocktwits": 2421,
+      "rss": 1620,
       "alphavantage": 38,
-      "newsapi": 11
+      "newsapi": 16
     }
   },
   "trending_keywords": [
     {
       "keyword": "like",
       "rank": 1,
-      "current_frequency": 984,
-      "growth_rate": 83.3,
-      "trend_score": 0.93,
+      "current_frequency": 886,
+      "growth_rate": 71.0,
+      "trend_score": 0.88,
       "sentiment": {
         "positive": 42,
         "negative": 58,
-        "total_comments": 7994
+        "total_comments": 8186
       }
     },
     {
       "keyword": "from",
       "rank": 2,
-      "current_frequency": 843,
-      "growth_rate": 81.0,
-      "trend_score": 0.84,
+      "current_frequency": 832,
+      "growth_rate": 85.5,
+      "trend_score": 0.91,
       "sentiment": {
         "positive": 45,
         "negative": 55,
-        "total_comments": 6925
+        "total_comments": 7107
       }
     },
     {
       "keyword": "about",
       "rank": 3,
       "current_frequency": 797,
-      "growth_rate": 87.9,
-      "trend_score": 0.84,
+      "growth_rate": 95.0,
+      "trend_score": 0.92,
       "sentiment": {
         "positive": 41,
         "negative": 59,
-        "total_comments": 6318
+        "total_comments": 6495
       }
     },
     {
       "keyword": "out",
       "rank": 4,
-      "current_frequency": 753,
-      "growth_rate": -8.6,
-      "trend_score": 0.49,
+      "current_frequency": 672,
+      "growth_rate": -15.3,
+      "trend_score": 0.52,
       "sentiment": {
         "positive": 45,
         "negative": 55,
-        "total_comments": 12230
+        "total_comments": 12544
       }
     },
     {
-      "keyword": "please",
+      "keyword": "would",
       "rank": 5,
-      "current_frequency": 639,
-      "growth_rate": 111.6,
-      "trend_score": 0.79,
+      "current_frequency": 583,
+      "growth_rate": 58.8,
+      "trend_score": 0.63,
       "sentiment": {
-        "positive": 81,
-        "negative": 19,
-        "total_comments": 4591
+        "positive": 38,
+        "negative": 62,
+        "total_comments": 5811
       }
     },
     {
       "keyword": "get",
       "rank": 6,
-      "current_frequency": 635,
-      "growth_rate": 17.7,
-      "trend_score": 0.46,
+      "current_frequency": 537,
+      "growth_rate": 3.2,
+      "trend_score": 0.38,
       "sentiment": {
         "positive": 44,
         "negative": 56,
-        "total_comments": 8045
-      }
-    },
-    {
-      "keyword": "would",
-      "rank": 7,
-      "current_frequency": 632,
-      "growth_rate": 65.5,
-      "trend_score": 0.65,
-      "sentiment": {
-        "positive": 38,
-        "negative": 62,
-        "total_comments": 5664
-      }
-    },
-    {
-      "keyword": "had",
-      "rank": 8,
-      "current_frequency": 595,
-      "growth_rate": 135.7,
-      "trend_score": 0.76,
-      "sentiment": {
-        "positive": 35,
-        "negative": 65,
-        "total_comments": 3762
+        "total_comments": 8246
       }
     },
     {
       "keyword": "one",
-      "rank": 9,
-      "current_frequency": 582,
-      "growth_rate": -30.5,
-      "trend_score": 0.48,
+      "rank": 7,
+      "current_frequency": 537,
+      "growth_rate": -33.4,
+      "trend_score": 0.5,
       "sentiment": {
         "positive": 45,
         "negative": 55,
-        "total_comments": 12390
+        "total_comments": 12695
       }
     },
     {
-      "keyword": "there",
-      "rank": 10,
-      "current_frequency": 550,
-      "growth_rate": 38.7,
-      "trend_score": 0.49,
+      "keyword": "time",
+      "rank": 8,
+      "current_frequency": 522,
+      "growth_rate": 21.9,
+      "trend_score": 0.44,
       "sentiment": {
-        "positive": 42,
-        "negative": 58,
-        "total_comments": 5880
+        "positive": 44,
+        "negative": 56,
+        "total_comments": 6790
+      }
+    },
+    {
+      "keyword": "had",
+      "rank": 9,
+      "current_frequency": 516,
+      "growth_rate": 111.5,
+      "trend_score": 0.75,
+      "sentiment": {
+        "positive": 35,
+        "negative": 65,
+        "total_comments": 3868
+      }
+    },
+    {
+      "keyword": "please",
+      "rank": 10,
+      "current_frequency": 505,
+      "growth_rate": 71.0,
+      "trend_score": 0.63,
+      "sentiment": {
+        "positive": 81,
+        "negative": 19,
+        "total_comments": 4714
       }
     }
   ],
   "word_cloud": [
     {
       "text": "like",
-      "value": 984
+      "value": 886
     },
     {
       "text": "from",
-      "value": 843
+      "value": 832
     },
     {
       "text": "about",
@@ -149,79 +149,75 @@
     },
     {
       "text": "out",
-      "value": 753
-    },
-    {
-      "text": "please",
-      "value": 639
-    },
-    {
-      "text": "get",
-      "value": 635
+      "value": 672
     },
     {
       "text": "would",
-      "value": 632
+      "value": 583
     },
     {
-      "text": "had",
-      "value": 595
+      "text": "get",
+      "value": 537
     },
     {
       "text": "one",
-      "value": 582
-    },
-    {
-      "text": "there",
-      "value": 550
+      "value": 537
     },
     {
       "text": "time",
-      "value": 519
+      "value": 522
     },
     {
-      "text": "even",
-      "value": 468
+      "text": "had",
+      "value": 516
+    },
+    {
+      "text": "please",
+      "value": 505
+    },
+    {
+      "text": "there",
+      "value": 494
     },
     {
       "text": "because",
-      "value": 451
-    },
-    {
-      "text": "know",
-      "value": 447
-    },
-    {
-      "text": "here",
-      "value": 434
+      "value": 461
     },
     {
       "text": "want",
-      "value": 428
+      "value": 427
     },
     {
-      "text": "post",
-      "value": 423
+      "text": "here",
+      "value": 409
     },
     {
       "text": "also",
-      "value": 404
+      "value": 399
     },
     {
-      "text": "subreddit",
-      "value": 404
+      "text": "even",
+      "value": 399
     },
     {
-      "text": "questions",
-      "value": 393
+      "text": "people",
+      "value": 398
+    },
+    {
+      "text": "know",
+      "value": 386
+    },
+    {
+      "text": "after",
+      "value": 369
+    },
+    {
+      "text": "post",
+      "value": 337
     }
   ],
   "history_data": {
     "like": [
-      {
-        "timestamp": "2025-11-02T05:00:00Z",
-        "frequency": 0
-      },
       {
         "timestamp": "2025-11-02T06:00:00Z",
         "frequency": 0
@@ -316,14 +312,14 @@
       },
       {
         "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 224
+        "frequency": 306
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 110
       }
     ],
     "from": [
-      {
-        "timestamp": "2025-11-02T05:00:00Z",
-        "frequency": 0
-      },
       {
         "timestamp": "2025-11-02T06:00:00Z",
         "frequency": 0
@@ -418,14 +414,14 @@
       },
       {
         "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 197
+        "frequency": 275
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 104
       }
     ],
     "about": [
-      {
-        "timestamp": "2025-11-02T05:00:00Z",
-        "frequency": 0
-      },
       {
         "timestamp": "2025-11-02T06:00:00Z",
         "frequency": 0
@@ -520,14 +516,14 @@
       },
       {
         "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 186
+        "frequency": 265
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 98
       }
     ],
     "out": [
-      {
-        "timestamp": "2025-11-02T05:00:00Z",
-        "frequency": 0
-      },
       {
         "timestamp": "2025-11-02T06:00:00Z",
         "frequency": 0
@@ -622,218 +618,14 @@
       },
       {
         "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 326
-      }
-    ],
-    "please": [
-      {
-        "timestamp": "2025-11-02T05:00:00Z",
-        "frequency": 0
+        "frequency": 462
       },
       {
-        "timestamp": "2025-11-02T06:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T07:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T08:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T09:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T10:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T11:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T12:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T13:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T14:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T15:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 389
-      },
-      {
-        "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 427
-      },
-      {
-        "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 349
-      },
-      {
-        "timestamp": "2025-11-02T19:00:00Z",
-        "frequency": 380
-      },
-      {
-        "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 347
-      },
-      {
-        "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 366
-      },
-      {
-        "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 342
-      },
-      {
-        "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 415
-      },
-      {
-        "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 273
-      },
-      {
-        "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 295
-      },
-      {
-        "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 268
-      },
-      {
-        "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 291
-      },
-      {
-        "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 289
-      },
-      {
-        "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 160
-      }
-    ],
-    "get": [
-      {
-        "timestamp": "2025-11-02T05:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T06:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T07:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T08:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T09:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T10:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T11:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T12:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T13:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T14:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T15:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 1947
-      },
-      {
-        "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 641
-      },
-      {
-        "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 532
-      },
-      {
-        "timestamp": "2025-11-02T19:00:00Z",
-        "frequency": 556
-      },
-      {
-        "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 489
-      },
-      {
-        "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 474
-      },
-      {
-        "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 439
-      },
-      {
-        "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 639
-      },
-      {
-        "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 427
-      },
-      {
-        "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 431
-      },
-      {
-        "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 453
-      },
-      {
-        "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 392
-      },
-      {
-        "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 388
-      },
-      {
-        "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 237
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 178
       }
     ],
     "would": [
-      {
-        "timestamp": "2025-11-02T05:00:00Z",
-        "frequency": 0
-      },
       {
         "timestamp": "2025-11-02T06:00:00Z",
         "frequency": 0
@@ -928,14 +720,14 @@
       },
       {
         "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 158
+        "frequency": 221
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 84
       }
     ],
-    "had": [
-      {
-        "timestamp": "2025-11-02T05:00:00Z",
-        "frequency": 0
-      },
+    "get": [
       {
         "timestamp": "2025-11-02T06:00:00Z",
         "frequency": 0
@@ -978,66 +770,66 @@
       },
       {
         "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 747
+        "frequency": 1947
       },
       {
         "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 294
+        "frequency": 641
       },
       {
         "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 240
+        "frequency": 532
       },
       {
         "timestamp": "2025-11-02T19:00:00Z",
-        "frequency": 269
+        "frequency": 556
       },
       {
         "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 245
+        "frequency": 489
       },
       {
         "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 263
+        "frequency": 474
       },
       {
         "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 243
+        "frequency": 439
       },
       {
         "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 319
+        "frequency": 639
       },
       {
         "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 211
+        "frequency": 427
       },
       {
         "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 213
+        "frequency": 431
       },
       {
         "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 240
+        "frequency": 453
       },
       {
         "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 189
+        "frequency": 392
       },
       {
         "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 187
+        "frequency": 388
       },
       {
         "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 102
+        "frequency": 328
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 110
       }
     ],
     "one": [
-      {
-        "timestamp": "2025-11-02T05:00:00Z",
-        "frequency": 0
-      },
       {
         "timestamp": "2025-11-02T06:00:00Z",
         "frequency": 0
@@ -1132,14 +924,14 @@
       },
       {
         "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 304
+        "frequency": 438
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 171
       }
     ],
-    "there": [
-      {
-        "timestamp": "2025-11-02T05:00:00Z",
-        "frequency": 0
-      },
+    "time": [
       {
         "timestamp": "2025-11-02T06:00:00Z",
         "frequency": 0
@@ -1182,15 +974,219 @@
       },
       {
         "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 1544
+        "frequency": 1486
       },
       {
         "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 458
+        "frequency": 470
       },
       {
         "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 383
+        "frequency": 434
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 498
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 421
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 409
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 379
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 544
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 360
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 377
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 388
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 348
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 307
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 275
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 94
+      }
+    ],
+    "had": [
+      {
+        "timestamp": "2025-11-02T06:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T07:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T08:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T09:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T10:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T11:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T12:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T13:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 747
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 294
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 240
+      },
+      {
+        "timestamp": "2025-11-02T19:00:00Z",
+        "frequency": 269
+      },
+      {
+        "timestamp": "2025-11-02T20:00:00Z",
+        "frequency": 245
+      },
+      {
+        "timestamp": "2025-11-02T21:00:00Z",
+        "frequency": 263
+      },
+      {
+        "timestamp": "2025-11-02T22:00:00Z",
+        "frequency": 243
+      },
+      {
+        "timestamp": "2025-11-02T23:00:00Z",
+        "frequency": 319
+      },
+      {
+        "timestamp": "2025-11-03T00:00:00Z",
+        "frequency": 211
+      },
+      {
+        "timestamp": "2025-11-03T01:00:00Z",
+        "frequency": 213
+      },
+      {
+        "timestamp": "2025-11-03T02:00:00Z",
+        "frequency": 240
+      },
+      {
+        "timestamp": "2025-11-03T03:00:00Z",
+        "frequency": 189
+      },
+      {
+        "timestamp": "2025-11-03T04:00:00Z",
+        "frequency": 187
+      },
+      {
+        "timestamp": "2025-11-03T05:00:00Z",
+        "frequency": 144
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 64
+      }
+    ],
+    "please": [
+      {
+        "timestamp": "2025-11-02T06:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T07:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T08:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T09:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T10:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T11:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T12:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T13:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T14:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T15:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-02T16:00:00Z",
+        "frequency": 389
+      },
+      {
+        "timestamp": "2025-11-02T17:00:00Z",
+        "frequency": 427
+      },
+      {
+        "timestamp": "2025-11-02T18:00:00Z",
+        "frequency": 349
       },
       {
         "timestamp": "2025-11-02T19:00:00Z",
@@ -1198,185 +1194,189 @@
       },
       {
         "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 383
+        "frequency": 347
       },
       {
         "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 329
+        "frequency": 366
       },
       {
         "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 329
+        "frequency": 342
       },
       {
         "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 422
+        "frequency": 415
       },
       {
         "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 315
+        "frequency": 273
       },
       {
         "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 326
+        "frequency": 295
       },
       {
         "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 317
+        "frequency": 268
       },
       {
         "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 271
+        "frequency": 291
       },
       {
         "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 282
+        "frequency": 289
       },
       {
         "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 141
+        "frequency": 199
+      },
+      {
+        "timestamp": "2025-11-03T06:00:00Z",
+        "frequency": 84
       }
     ]
   },
   "news_feed": [
     {
-      "title": "Is it just me? TLDR: Complicated feeling towards bully. Does anyone else understand the feeling of hating someone who bullied you while acknowledging their success, and having this weird mixture of hate and 'woo you go girl but ughh I don't want your content on my feed\"??? Like I know they are talented and they work hard and that's great, they deserve their success because they worked for it. They've earned it, but I still feel this hatred for them that will likely never go away because they never apologised for what they did. Sometimes I don't understand why hurtful people become the most successful and publicly known for being \"kind\", while in my experience with them wasn't true. My partner suggests I am jealous, but I don't want her life style or success. Does anyone understand? AITAH? Should I just forgive and forget??",
-      "publish_time": "2025-11-03T05:31:48Z",
+      "title": "Onpoint- Earn Loyalty points for every online order and convert to free GVs Join OnPoint Using Referral Code and Earn Joining Bonus [https://on-points.com?referral=SAAVEBH5](https://on-points.com/?referral=SAAVEBH5) Get Rs 50 as joining bonus when you signup and setup profile using above link and 11% oncoins for lifetime of your referral's purchases. Purchase via any platform on Myntra, Amazon , Tata Neu and earn additional rewards now!",
+      "publish_time": "2025-11-03T06:09:46Z",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/AITAH/comments/1on3h9f/is_it_just_me/",
+      "url": "https://www.reddit.com/r/IndiaReferral/comments/1on43w2/onpoint_earn_loyalty_points_for_every_online/",
       "sentiment": "positive"
     },
     {
-      "title": "Shopping quality help I recently came back to doing Instacart after about 8 months and even before than I’ve always only had Gold cart. So I’m a little unsure about this. How do I improve that? All last week, I only had 1 refund and 1 replacement. How can I improve so I can move up to Gold cart?",
-      "publish_time": "2025-11-03T05:31:48Z",
+      "title": "My husband & I have a stray cat-related dilemma & I could use some advice (long!) This is going to be a long post but if anyone is up for reading I can really use some advice! My husband & I live in Brooklyn, NY but we also have a place in Asbury Park, NJ that we primarily use on the weekends. We had a condo there but this past April we bought a house. When we moved in to the house we noticed lots of stray cats in our back yard. (Seemed like they were coming from a house behind us. It appeared that the owner feeds and/or cares for lots of cats.) We had leftover cat food from a feral we used to feed at the condo so we started leaving food out on our back deck. What started as five or six stray cat visitors ended up as one. One cat pretty much took up residence on our back deck (& front porch). She spent most days there & seemed to claim our house as hers. It didn't take long for her to start approaching us & rubbing against our legs when we brought food out. Then she started letting us pet her. After a few months she started clawing our screen door & meowing, so we decided to let her inside to explore just for a bit. We still kept her food outside to create boundaries. Her brief indoor visits grew to more extended hangs-- we'd let her snooze on the couch while we watched TV. (She'd sit right next to us.) A few weeks ago, while hanging inside with us, she went outside to eat. It was kind of late & while she was eating she was approached by an enormous raccoon (we heard a loud hiss). There was no fighting but she seemed shaken. After that we started letting her eat inside, but we'd still put her out each night before we went to bed since we didn't have a litter box. A couple weekends ago there was a nor'easter & we felt terrible having to put her out during a storm (she hung out on our covered porch the whole night, but still). So the next week we bought a litter box & some toys & started letting her sleep over. (She took to the litter box immediately.) She actually jumps on the bed with us & sleeps there all night. We really fell for this cat. We tried making contact with the woman who lives behind us to no avail, but we took her to the vet to get scanned & there was no chip, so my husband & I started talking about formally adopting her. We hit a couple of snags though: Yesterday we took her to the vet for a full check-up & needless to say, she did NOT like that. She hated getting in the carrier & seemed extremely stressed the entire visit. (She was in good health and just needed a couple of vaccine shots.) When we got home she was very distant. She used to always sit down next to us on the couch & purr constantly, but yesterday she hung on the floor, by the sliding door that goes out to our back deck. It's like she wanted to stay away from us. She used the litter box that night but we also discovered that she pooped in our bedroom, next to our bed. Like, a lot of poop. I feel like she was sending us a message. She never came to sleep with us last night either-- she remained on the floor by the deck the whole time. The other snag we hit is that we still haven't worked out what kind of arrangement we want to have with her, since we split our time between Brooklyn & Asbury Park. The original plan was to make her our cat permanently & bring her back to Brooklyn this week while we go to work in the city, but after yesterday's reaction to the vet, we decided we didn't want to stress her out further so we canceled (or at least postponed) those plans & went back to the old arrangement of putting her outside while we headed back to the city. It broke my heart & I cried the whole way home. We're not sure what to do going forward. It seems we have 3 options: 1. Adopt the cat & bring her back & forth with us. (The car ride can be about 65 to 85 minutes, depending on traffic.) 2. Adopt the cat but leaver her in Asbury Park the whole time, getting an automatic feeder & self-cleaning litter box for when we're not there. 3. Don't adopt her & just go back to the arrangement of feeding her & letting her hang with us while we're there, putting her outside when we go back to NYC. (We'd probably get a heated outdoor house for her if she wants to hang on our deck during the winter months.) Neither scenario is perfect. I just don't know what to do. Maybe we got ourselves in a little too deep with the indoor feedings & sleepovers & the vet visits. We want to adopt her but is it cruel to put her in a carrier & drive her back & forth a couple of times a week? Will that stress her out too much? Or is it more cruel to leave her in an empty home for 3-4 day stretches? My husband & I were set on option 1 at the start of the weekend but now we are thinking of option 3. I just feel terrible about misleading this cat-- making it seem like we were taking her in permanently then putting her back out in the cold again. I guess there's a variation on option 3 where we scale back our interactions with her so as not to mislead her & give her a false sense of security. Sometimes I wonder if we made it worse giving her love & shelter for only a few days at a time. I don't want her to get too dependent on us if we're not going to be able to care for her 24/7. We're going to try hard to make contact with the woman that lives behind us to see if this cat is being cared for there. I'd feel better knowing she has shelter, but we are not so sure that's the case-- each time we come back to Asbury Park we usually find the cat sitting on our front porch, as if she's waiting for us. (We know for a fact that our next door neighbors leave food for her. And the vet said she was actually slightly overweight. So for a stray cat, we know she's eating well in the neighborhood!) Sorry for the lengthy post! I'm just really torn as to what to do! Any advice is appreciated. TLDR: My husband & I are wrestling with whether to adopt an affectionate stray cat, even though we're only part-time residents.",
+      "publish_time": "2025-11-03T06:09:46Z",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/InstacartShoppers/comments/1on3eay/shopping_quality_help/",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Teaching as a profession post bullying Sorry in advance for the long post... Has anyone here tried to become a teacher, but struggled due to past bullying? Anyone overcome that and become comfortable in the classroom? If so, what helped? During my undergrad, I was part of a Concurrent B.Ed program where you earn your teaching degree alongside your bachelor's. I enjoyed most of the program. However, I found the school placements to be incredibly stressful... Nerves were expected, but this was more than that. It was to the point where I was becoming literally sick every morning before going in and spending every other waking hour stressing about the next day. I eventually dropped the education component of the program, feeling that I am totally not fit to be a teacher. If I couldn't even handle the placements, how on earth could I ever be an effective teacher? I finished the bachelor of science and went on to grad school instead, where I am still. As part of the program I'm in now, I work as a TA and also tutor high school students on the side. I have taught large university classes, and assist with training other TAs. I am still very passionate about teaching and working with kids and teens. As I'm finishing grad school soon, I am considering the possibility of trying to return to teaching in high school as a profession. However, the thought of trying to manage a classroom full of teenagers still sends me panicking. It's not like I dislike kids/teens. Far from it. I want to get over this, but it's been years and I am still terrified of groups of teenagers in most contexts. I am in therapy, and will probably discuss this issue with my therapist at some point. But atm I'm just curious what advice others in a similar position might have to share. If anyone has any relatable experiences, I would love to hear your stories and perspectives. ------ TL;DR: I dropped out of a teaching program because of bullying-related trauma, but now I’m reconsidering teaching and wondering if anyone has overcome a similar fear.",
-      "publish_time": "2025-11-03T05:31:48Z",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/bullying/comments/1on3f3l/teaching_as_a_profession_post_bullying/",
+      "url": "https://www.reddit.com/r/Straycats/comments/1on46jt/my_husband_i_have_a_stray_catrelated_dilemma_i/",
       "sentiment": "negative"
     },
     {
-      "title": "[USA]Valid AliExpress orders placed in November qualify for an instant 20% discount on your purchase.",
-      "publish_time": "2025-11-03T05:31:48Z",
+      "title": "I will make sure he regrets it",
+      "publish_time": "2025-11-03T06:09:46Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu4llj/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "You should absolutely **not** mess with their phone numbers or accounts that would be considered harassment and possibly illegal. The mature move is to just **remove their lines** from your plan and walk away. That’s the best “reality check” you can give.",
+      "publish_time": "2025-11-03T06:09:46Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu5fma/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "What? Why didn’t you just switch to a different carrier & keep your number… ages ago?",
+      "publish_time": "2025-11-03T06:09:46Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu4s4u/",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Just cancel the plan and get a whole new one. He’ll figure it out.",
+      "publish_time": "2025-11-03T06:09:46Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu4g64/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Give up the numbers after all this time would be messy as hell. You absolutely have to do it.",
+      "publish_time": "2025-11-03T06:09:46Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu4fgq/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Haha that's brutal, you should follow thru on that",
+      "publish_time": "2025-11-03T06:09:46Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu4pvu/",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Because it was cheaper for me in a family plan",
+      "publish_time": "2025-11-03T06:09:46Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu4wah/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Pig is removed as authorized user. I will just cancel the 3 numbers and transfer to Google for one time fee of 20$ Google voice number will be tied to 3 email IDs Attitude adjustment 1 @ Reality check.com Attitude adjustment 2 @ Reality check.com Attitude adjustment 3 @ Reality check.com",
+      "publish_time": "2025-11-03T06:09:46Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu4b8w/",
+      "sentiment": "positive"
+    },
+    {
+      "title": "Don't even bother. Just cancel the plan at the next billing cycle. But just make sure to remove pig as an authorized user first, and then cancel. Numbers will likely be lost and they will probably have to pay extra to even possibly get them reassigned to them",
+      "publish_time": "2025-11-03T06:09:46Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu3lva/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Plan to take over phone numbers of my T-Mobile family plan members and fuck them up. I've been the primary account holder for my T-Mobile family plan for 11 years now. I created this family plan when I went to grad school in 2015. I took in whosoever was willing to join. One of them was this Indian undergrad guy let's call him Pig. For someone to come to US for undergraduate studies meant that this person's family was extremely well to do. From the get-go he seemed entitled to me (I can tell- there is a 12-year age gap) Over the years I have done the accounting followed up for payment and provided credit when people haven't paid up on time. It was much more easier for me to get this job done versus watch Pig run his mouth. Pig took on the authorized user provision but never owned any of the responsibilities. Pig could make changes to the plan etc and leave the calculations etc for me to determine and follow up for the payments. Recently I made it clear that I do not have the energy to continue doing this and I needed some help with it. I have been saying this since couple of years and nobody has taken charge. I'm moving back to India and wanted Pig to take over responsibility. But Pig is a 29 yr old entitled fuck. Who is unwilling and incapable of taking responsibility. He started acting over smart. Being disrespectful, abusive when we were discussing the plan. He asked to me to get an \"attitude adjustment\" and started claiming that I was rude to him etc etc. I said nothing and hung up after letting him know that I haven't abused him. I had simply pointed out to him that he is entitled and hasn't ever taken any responsibility in the 11 years. Fast forward, he sent me a passive aggressive WhatsApp message next day in 1-1 chat. I ignored. Next day he wrote a long message in the group chat when he was trying to show it like he's the nice guy and he's doing everything in his power to make things work. Again I did not respond. Today he repeated the drama in private chat. Trying to show like he's hurt but trying to show like he's trying to work it with me and I should be kind to him. Since I'm the primary account holder of the T-Mobile family plan. I plan to do exactly what he said and \"adjust my attitude\" I plan to give him a R for Reality check. In December I will disconnect all lines. The family plan now consists of Pig, his sister, his wife. I have a message drafted ready to go. I am thinking should I just let go of the numbers OR maybe port them to another service provider and post messages on their WhatsApp after resetting the passwords. I want to give him a Christmas gift 😂",
+      "publish_time": "2025-11-03T06:09:46Z",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/Dragonballsuper/comments/1on3dzg/usavalid_aliexpress_orders_placed_in_november/",
+      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/",
       "sentiment": "negative"
     },
     {
-      "title": "Hey so you might need to investigate the shopping quality section a bit more. Maybe share it here to get more refined help. I’ve done 7000+ orders but the new thing still confuses me sometimes. I fell off once and just stopped doing refunds and that’s seemed to fix it. But idk without more info",
-      "publish_time": "2025-11-03T05:31:48Z",
+      "title": "FYI if you do - I've been using the Zwave to MQTT on a Pi for years and it's worked great. I personally had terrible results because of the server location when using the stick in the HA physical location.",
+      "publish_time": "2025-11-03T06:09:46Z",
       "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/InstacartShoppers/comments/1on3eay/shopping_quality_help/nmu10jg/",
+      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/nmu57r0/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Thanks for the reply. I don't currently have Z-wave capabilities on my HA setup but that can be fixed. I will look into your recommendations. Thanks",
+      "publish_time": "2025-11-03T06:09:46Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/nmu4mcz/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "do they integrate into HA well? I would like to be able to have an automation to turn off the power to my 3d printer if that thing goes up in smoke.",
+      "publish_time": "2025-11-03T06:09:46Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/nmu5bs2/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "I have a pretty old house. I have one hardwired smoke detector and the rest is battery only. I guess a listener would be my only option to tie things into Home assistant. Main reason to connect things to HA is my 3d printer. If my printer goes up in smoke I would like to setup an automation to turn power off. Thanks for you recommendation",
+      "publish_time": "2025-11-03T06:09:46Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/nmu56mc/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "First Alert has a Zwave detector. I don't personally have it, but last I looked it had good reviews from HA users and it's a trusted brand Edit: I personally think a sound detector is ideal, but that's just me",
+      "publish_time": "2025-11-03T06:09:46Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/nmu400i/",
       "sentiment": "positive"
     },
     {
-      "title": "You need to do 1 more order for gold cart. 25",
-      "publish_time": "2025-11-03T05:31:48Z",
+      "title": "I got a few [X-Sense SC07-WX](https://amzn.to/4hO3KRS). They work well and haven’t had any issues.",
+      "publish_time": "2025-11-03T06:09:46Z",
       "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/InstacartShoppers/comments/1on3eay/shopping_quality_help/nmu0ml7/",
+      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/nmu52yn/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Ideally, get a mainstream wired smoke detector with a sealed ten year battery. Use a Zooz ZEN55 to bridge the detector to HA. I know some folks will advocate finding a system that e.g., lets you mute from HA or your phone, but ideally I don’t want any kind of control link to a safety critical system, and I have never had my CO or smoke detectors fire a false positive. If you are routinely smoking out your house, fix your extraction/ventilation.",
+      "publish_time": "2025-11-03T06:09:46Z",
+      "source": "reddit_comment",
+      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/nmu3x5x/",
       "sentiment": "positive"
     },
     {
-      "title": "Thanks for posting to /r/DragonballSuper.\\ Please report any rule breaking posts and posts that are not relevant to the subreddit. Prohibited topics include: \"What if\"/\"Who would win\" posts, polls, screenshots of YT Community/Instagram/etc., \"DBSTubers\" and AI Art. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/Dragonballsuper) if you have any questions or concerns.*",
-      "publish_time": "2025-11-03T05:31:48Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/Dragonballsuper/comments/1on3dzg/usavalid_aliexpress_orders_placed_in_november/nmu0afo/",
-      "sentiment": "positive"
-    },
-    {
-      "title": "r/onexindia requires all individuals to have a flair before posting/commenting. Please familiarize yourself with rules before proceeding further. The subreddit is heavily moderated to prevent larping and hate against individuals, and any reports shall be thoroughly investigated and users engaging in such activities shall be banned. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/onexindia) if you have any questions or concerns.*",
-      "publish_time": "2025-11-03T05:31:48Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/onexindia/comments/1on3efj/life_game_what_should_i_do_next/nmu0d87/",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Life Game: What Should I Do Next Hey folks, Lately I’ve been a bit lost. I’m 27M, working in consulting, earning around ₹1L/month. It’s okay, but I know I’m slightly behind because of a gap year and a few career detours. And now I’m stuck wondering what the next few years should look like. I feel like I’m juggling too many timelines — career, money, relationships — and not sure which ball I can afford to drop. For those who’ve crossed this phase — what worked for you? Did you grind first and balance later, or find a middle path early on? Long read below: --- Career: This one’s eating me up the most. Part of me wants to just grind hard till 35 — put in the hours, chase promotions, and build a solid cushion before the cost of living really hits. But the flip side is obvious — less time for friends, family, or even just breathing room. The other option is to move to an easier track — slower growth, but a saner life. And I genuinely don’t know what’s smarter. For those who’ve been through this: was the grind worth it, or do you wish you’d slowed down a bit earlier? --- Assets: No real assets yet. I’m clearing my education loan aggressively (almost 2x EMI) and putting over half my salary into savings + debt repayment. Still, it feels like I’m not really building anything tangible. For those who started from scratch — how did you actually begin building assets like a house, land, or something substantial while still working your way up? Is there a mental or financial framework that helped you prioritise between debt clearing, liquidity, and asset creation? --- Family & Personal Life: My family’s chill — not traditional at all. They’re not matchmaking or pushing marriage. They expect me to find someone on my own. I tried apps for a while but honestly lost interest in the swiping circus. Now I’ve kind of deprioritised dating, though I do worry I’ll be “late” if I only start looking seriously in my 30s. Thing is, I want an equal partnership — not the old-school setup — so I’m hoping it won’t be too hard later on. Still, curious how others managed this balance: career + finances + relationships without burning out or missing out. --- Disclosure: I used AI (ChatGPT) to help structure and write this post better — the thoughts are 100% mine though.",
-      "publish_time": "2025-11-03T05:31:48Z",
+      "title": "Smoke detector for HA certified for use in the US Hi there, I am relatively new to HA. I am looking for smoke detectors that can be used in the US and the Home owners Insurance won't deny claim if used. I have already come across some aliexpress brands, but i am not sure about their quality and certifications. I have been primarily been looking for smoke detectors with zigbee. I have seen a few that use a proprietary protocol and their own hubs. I have also seen Z-Wave detectors. What do you guys think about X-Sense detectors? they seem to be legit. They use their own protokol but at least can integrate into HA. Is the best option to install some Eco-Link listeners? I am trying to tie my smoke detectors into HA so that I can monitor my 3d Printer. If my printer every goes up in smoke I could have an automation turn the power to my printer off. Thanks in advance",
+      "publish_time": "2025-11-03T06:09:46Z",
       "source": "reddit_post",
-      "url": "https://www.reddit.com/r/onexindia/comments/1on3efj/life_game_what_should_i_do_next/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Thanks for posting on r/Tollywood! Don't forget to check that your post abides by our rules! Similar Subs to check out: r/TeluguMusicMelodies : Subreddit to discuss and suggest telugu music r/tollywoodmovieclips : Subreddit to post all clips from telugu movies. r/Ni_bondha : Telugu Meme community *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/tollywood) if you have any questions or concerns.*",
-      "publish_time": "2025-11-03T05:31:48Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/tollywood/comments/1on3ehe/how_do_distributers_make_do_with_such_a_little/nmu0dhi/",
-      "sentiment": "positive"
-    },
-    {
-      "title": "How do distributers make do with such a little profits? This has been bugging me for a while. We consider a movie hit, when it returns all the investments of the distributors. Is that enough though? When the movie reaches that point, it has not earned u any profits. It just returned all ur investments. Almost all the biggies in recent times that are being considered \"hits\" have given so less profits. Why would anyone want to do such business. Especially for the big movies. There is always so much demand for big films and there won't be that much demand unless huge profits are guaranteed. 50 cr investment pedithe evaraina atleast 70-80 cr expect chestharu, not 51 or 52 crs and celebrate it as profitable and hit venture. Are we missing something here?",
-      "publish_time": "2025-11-03T05:31:48Z",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/tollywood/comments/1on3ehe/how_do_distributers_make_do_with_such_a_little/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Reminders: SEE THIS STICKY POST for how to deal with bullies: https://old.reddit.com/r/bullying/comments/anesxq/some_tips_for_newcomers/?st=k3buwwik&sh=a60f6e1d **THIS SUB IS NOT A REPLACEMENT FOR PROFESSIONAL COUNSELING** **USE APPROPRIATE LANGUAGE** **ZERO TOLERANCE RULE FOR VIOLENT OR HARMFUL BEHAVIOR** This is **NOT** a sub for karma-clickbait or YouTube videos comments. Any posts deemed not appropriate by the mods will be **immediately removed and the user banned without warning.** *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/bullying) if you have any questions or concerns.*",
-      "publish_time": "2025-11-03T05:31:48Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/bullying/comments/1on3f3l/teaching_as_a_profession_post_bullying/nmu0hoz/",
-      "sentiment": "positive"
-    },
-    {
-      "title": "I can’t stop worrying about my boyfriend and this girl in their friend group Hey, so this post is gonna be really dramatic and all over the place. I am also using voice to text and I’m not going to read it over so it might be a little bit wonky. Me (18) and my bf (19) have been dating for three years. We are super super happy with each other and he has never given me a reason not to trust him. He is going to be getting his own apartment with his friend Johnny (27), and this other girl that is in their friend group. My boyfriend doesn’t even follow her on Instagram so he doesn’t really know much about her. I also wanna say that I’m pretty sure she has a girlfriend. I think it’s insecurity because I have been cheated on in the past, but every time he brings up getting the apartment or hanging out in a group with her, I literally feel like I am going to start crying. He has literally been staying at my house for the past two nights and he left a few hours ago to go hang out with them all and still I feel so awful. Neither of us are really the type of people to text when we are hanging out with friends. He told me they were going to go look at apartments and then so that they weren’t looking at apartments because it was Sunday (I don’t know what that has to do with it.) and they got a motel to spend the night in (my bf, Johnny, the girl, and two other guys.) he didn’t text me for two hours. It made me feel really anxious. And he just told me that they are playing a drinking/smoking leaf game and you know shit always turns sexual when you are planning a drinking truth or dare game. He’s not going to make a move on her and I know that, but it just makes me worried because he’s going to be seeing her a lot more than me. He says that he is not attracted to her at all and not to be worried but I know the attraction can grow especially when you’re living with a pretty girl. I’m so tired of being worried about this girl and I know that he’s not going to cheat on me- or at least not anytime soon. I’m also unhappy about the whole living situation that they are going to be having in general so it just makes the whole thing feel worse. I’m literally just sitting here in my bed worrying about the clothes that she is wearing and worrying about how she gets when she’s drunk and worrying about if if my boyfriend is laughing at her jokes or if they are even interacting at all. I hate this and it makes me feel so fucking awful because I just wanna feel normal about my relationship with my boyfriend because he is literally the best guy in the whole world. I haven’t even met the girl. What can I do to make myself feel better about this?",
-      "publish_time": "2025-11-03T05:31:47Z",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/Advice/comments/1on3ema/i_cant_stop_worrying_about_my_boyfriend_and_this/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Feeling/Not understanding a lack of community and support in my circle I wanted to come here today to get some feelings off my chest that i've had for over a year now. Ever since my ex of 10 years and I split in 2022 I have struggled with depression, anxiety and loneliness since no longer having the one person I relied a lot on for support, company, friendship etc. (my ex). Suddenly I needed a lot more support and company from friends and family, and i'm so lucky that I mostly had them when I needed them. It has still been a difficult road that has certainly made me stronger along the way. In 2024 I met my now partner who is a lovely, kind, understanding and talented human! He has slowly became that safe place I was looking for in a partner and worlds better than my long-term ex in many ways. I have begun healing and built a life that feels much more safe and comfortable. My partner is a talented musician and composer, and listening to and supporting his music has been such a delight throughout the year and a half we've been together. I joke that I know i'm not expected to be at each of his bands shows, but I genuinely enjoy their music and stage presence so much that it just feels natural to go as often as I do, aside from the fact it's important to me that his passion feels supported in our relationship. Now here's the meat n potatoes; I will absolutely go to as many of his shows as I can, whether or not I have to sit alone. Unfortunately, it is usually just me myself and I. I promote his band and upcoming shows on social media to my friends, and have in the past shared his show dates with close friends and family. I'll admit that these days I no longer ask if anyone will be attending the shows, probably because I know people are busy and in the past have gone a few times. And I don't want to pester people. I am very appreciative of the times that folks have showed up, especially close ones. And I absolutely do not feel anyone is obligated to enjoy the shows, the music or be at any/all of them, but to get to the point, i'm having a hard time understanding why it has felt as lonely as it has. I understand that this is MY partner, and a genre of music that not everyone will love, but it is legitimately good music played by talented long-time musicians at local venues that almost never charge for entry. To me, it would feel wonderful if every now and then even just one of my close friends and family would use it as an opportunity to spend an evening listening to good music, spending casual time with me, eating food etc. What happens is I end up feeling disappointed if they do not show up, and also when I go by myself and sit alone for the 20th time this year. Luckily the other spouses/family of the band members often say hello and will offer I sit with them and that definitely helps. What stings a little is when (like tonight) I got there a little late and struggled to find a place to sit while it appeared groups of people were gathered together as friends/family and I was just by myself. Wishing I belonged to a group that was eager to go listen to music and eat pizza. Meanwhile I sat alone on a folding chair and ate my pizza in my lap, in the way of the bus cart. Clearly I was/am feeling a bit down on myself about it, but it's just kind of a drag that the reality is 90% of the time if I want to support my partner and his band I have to be ok sitting alone and sharing it with no one. My partner and I chatted about this tonight as I opened up to him about how I was feeling about it, and we talked about how aside from my own feelings and thoughts in the matter (obviously the most important thing here is that my partner is feeling supported!), its also a bit sad that due to my partners closer friends and family living in other states or cities hours away, he often doesn't have visitors of his own besides me. The community they've curated is absolutely supportive and there are some friends who are there for him pretty often, but I mentioned how fun it would be to sit with his crew, get to know them and feel less alone as we cheer him and the band on together. :) Hopefully those days are coming! Regardless, I'll continue to show up as often as I feel like it whether I do it alone or not. But will continue to wonder why it feels like its not so easy for others to be as excited or motivated to come see his shows when it feels like a fairly easy and generally enjoyable way to support us both. I figure there are more folks like me out there, either artists who feel they're on a lonely journey with less support than they expected, and/or their partners who feel at times like their only cheerleader. If anyone feels like sharing about this, you're welcome to! TL;DR - It feels more difficult than i'd like to get friends and family to join me for my partner's shows, and I sit alone a lot. I still have fun, but I wish I or we had more of a community of our own to provide at least semi-regular company & support of his music. Perhaps I could do better at asking them directly and more individually.",
-      "publish_time": "2025-11-03T05:31:47Z",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/Vent/comments/1on39w9/feelingnot_understanding_a_lack_of_community_and/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Welcome to r/RenalCats; a subreddit for cats with kidney disease. Please use the report button if you encounter any rule breaking activity. Be kind, sincere and respectful. Stay on topic. No advertising or fundraising. Friendly advice is welcome but remember this community is not a replacement for a veterinarian. **If your post and/or comment does not show up:** You likely have a new and/or low karma account and are caught in the spam filter. Please allow time for a human mod to review and approve your post. **Pet loss posts:** All pet loss posts must be marked with **both** the \"pet loss\" flair *and* a spoiler tag. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/RenalCats) if you have any questions or concerns.*",
-      "publish_time": "2025-11-03T05:31:47Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/RenalCats/comments/1on3ae4/support_for_the_most_gentle_old_man/nmtzlsf/",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Support for the most gentle old man Hi everyone, I am here seeking support, advice, and words of encouragement on behalf of my 16-year-old Ragdoll boy, Marcel. He has always been a healthy cat, aside from being diagnosed with diabetes nine years ago and having some mild urinary issues after the only time he was ever separated from us, when he stayed at a cat hotel for four days. That experience was so stressful for him that we promised never to separate from him again. He is a very affectionate boy who loves spending time with everyone in the family. His eating, bathroom habits, and behavior have all been normal. Two days ago, we woke up to find blood all over the house and took him to the vet immediately. I have attached the conclusions from that visit for reference. The vet was optimistic and even talked about pre-booking his next annual checkup. We have been giving him the prescribed medicine and looking into an ultrasound, as the vet referred us to an external provider who offers it at a lower cost. The following day, Marcel still had not eaten, drunk, or used the bathroom, so we brought him back to the vet for a follow-up. This time, the vet was much more serious and advised that he would likely die if we did not hospitalize him for several days and pursue the ultrasound (which is not available until Monday at this clinic). After considering his age and how stressful the cat hotel was for him, we decided he would be most comfortable at home, surrounded by love and familiarity, until that is no longer humane. He received an IV at the second visit and seemed to improve slightly when we got home. He drank some water, ate a bit of food, and even urinated again, though the urine is light pink rather than bright red now. His energy levels are still very low, and he seems depressed and unanimated, but I am wondering how much of that might be from the pain medication and antibiotics. He is supposed to finish these medications in the next day. If he were a more social and independent cat, I would not hesitate to take the vet’s advice, but I know that hospitalization and being prodded with tubes would only bring panic and distress to his already fragile little body. I understand the importance of the ultrasound, but I also worry that if he does have cancer or a liver mass, I am not sure he can or should endure a surgical procedure. I do not know exactly what I am looking for by posting this. I suppose I just need advice, support, care, comfort, or prayers. How do I know if he is in pain, and what is truly necessary for him at this stage? How can we ensure he is comfortable, and how will we know when he no longer is? This is breaking my heart in ways I never knew possible. He is so sweet. I am also curious about mirtazapine and feeding methods. The vet did not mention this medication or euthanasia. If it could help, how can I obtain it? Would I need to see another vet? What about Purina’s hydration supplement? Thank you.",
-      "publish_time": "2025-11-03T05:31:47Z",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/RenalCats/comments/1on3ae4/support_for_the_most_gentle_old_man/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "As a reminder, this post is tagged **Strictly Clean/SFW**, meaning the author has indicated they are NOT seeking any adult or explicit activities. This means: * Responses to this post, whether by comments, chats, or DMs, must not ask the author for such activities, or include any explicit content. * The author must not write back unsolicited explicit messages or include any references to adult activities in their post. Please report any violation of this rule using the Report button, and follow up by messaging the mods. Unwanted explicit advances are harassment, and will result in bans and possible Reddit account suspensions. **Note to the author— If you have incorrectly tagged your post, you must remove it immediately, or you will banned for a minimum of one week.** --- Just a heads up: this post has been locked, as all posts on r/r4r are. This is because personal ads are not discussion topics, and r/r4r is not a discussion forum (except for METAs.) Responses should be PMed to OP directly. Here's a convenient link for mobile users: * **[💬 Chat](https://chat.reddit.com/user/t2_216e1sbpc2)** * **[✉ Send a private message](https://www.reddit.com/message/compose/?to=Illustrious_Loan_163)** Public comments have been locked. If there is an issue with this post and it breaks the rules, please use the report button AND message the moderators. OPs who wish to enable comments and accept low-effort responses may do so by adding `!unlock` to the body of their submissions. *I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/r4r) if you have any questions or concerns.*",
-      "publish_time": "2025-11-03T05:31:47Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/r4r/comments/1on3cf2/25m4f_looking_for_deep_passion_la_online/nmu00c5/",
-      "sentiment": "positive"
-    },
-    {
-      "title": "25[m4f] looking for deep passion #LA #online I long for the level of passion where we both feel more alive when we wake up and look into each others eyes every morning. The type of passion where both of us are excited to nourish, grow, and build a beautiful life together. I don't want casual. I want us to feel safe together, knowing the deepest, most intimate parts of each other's souls without being afraid of judgment as we discover more about who we are. First, I'll tell you a little more about myself as a person.. Besides my love for you, music is my main passion in life. If I'm not working on my own.. I'm constantly searching for new music to get lost in. A few of my favorite genres are: post punk/ indie rock/ darkwave and dream pop. I'm also very into film! Next fall, i will be moving to LA for film school. My intention is to hopefully meet you in LA when I move :p And when i'm not focusing on music or film.. i love cooking. I spend a lot of time experimenting in the kitchen and trying new recipes whenever I can. Another thing about me is that I'm a very nature oriented person. I love getting lost in the beautiful forests of my home state. It always helps me feel at peace when i'm able soak in every nature has to offer.. from the birds singing, to the smell of the pine trees lumbering over me. Do you think we have potential together? If so, I'd love to get to know you :)",
-      "publish_time": "2025-11-03T05:31:47Z",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/r4r/comments/1on3cf2/25m4f_looking_for_deep_passion_la_online/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "It's semi-permanent.. I will probably be there for at least a couple years. There is a chance I might be settling in less humid regions though.",
-      "publish_time": "2025-11-03T05:31:47Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/AcousticGuitar/comments/1on3ebm/best_way_to_keep_my_guitar_safe_and_healthy_in/nmu14z1/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "What's a significant amount of time? What kind of guitar? How important is it to you that the guitar isn't damaged? Laminates do better with humidity changes than solid woods. Carbon fiber does better still. You could always invest in a travel instrument depending on the economic and sentimental value of your main guitar.",
-      "publish_time": "2025-11-03T05:31:47Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/AcousticGuitar/comments/1on3ebm/best_way_to_keep_my_guitar_safe_and_healthy_in/nmu18kf/",
+      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/",
       "sentiment": "negative"
     }
   ]
