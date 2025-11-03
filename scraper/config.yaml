@@ -20,7 +20,7 @@ logging:
 newsapi:
   api_key: 00b4d0f09e164c47a1511a4e33c90385
   articles_per_keyword: 25
-  enabled: true
+  enabled: false
   hours_back: 24
   query_keywords:
   - '"Apple Inc" AND (iPhone OR earnings OR stock)'
@@ -60,6 +60,23 @@ reddit:
   - stocks
   - wallstreetbets
   - StockMarket
+  - Daytrading
+  - options
+  - pennystocks
+  - Forex
+  - CryptoCurrency
+  - Bitcoin
+  - SecurityAnalysis
+  - algotrading
+  - FinancialPlanning
+  - wallstreet
+  - ValueInvesting
+  - povertyfinance
+  - Entrepreneur
+  - startups
+  - worldnews
+  - news
+  - technology
   user_agent: FinanceDataCrawler/1.0
 redis:
   db: 0
@@ -79,7 +96,7 @@ redis:
     max_keep: 500000
     slim_mode: false
 rss:
-  enabled: true
+  enabled: false
   hours_back: 24
   feeds:
   - category: international
@@ -241,7 +258,7 @@ twitter:
     max_writes_per_month: 500
   tweets_per_keyword: 1
 alphavantage:
-  enabled: true
+  enabled: false
   api_key: 4HICKZR7VJVLCY71
   hours_back: 24
   symbols:
