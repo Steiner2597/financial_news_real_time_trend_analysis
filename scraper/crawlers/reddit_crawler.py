@@ -42,6 +42,7 @@ class RedditCrawler:
         self.posts_limit = config.get('posts_limit', 50)
         self.comments_limit = config.get('comments_limit', 30)
         self.hours_back = config.get('hours_back', 24)  # 默认 24 小时
+        self.keywords = config.get('keywords', [])  # 关键词列表（可选）
     
     def crawl(self) -> Dict[str, int]:
         """
@@ -54,6 +55,12 @@ class RedditCrawler:
         
         logger.info("开始抓取 Reddit 数据...")
         
+        # 显示关键词配置
+        if self.keywords:
+            logger.info(f"关键词过滤: 已启用 ({len(self.keywords)} 个关键词)")
+        else:
+            logger.info("关键词过滤: 未启用 (抓取所有帖子)")
+        
         # 计算时间截止点
         from datetime import datetime, timedelta
         cutoff_time = int((datetime.now() - timedelta(hours=self.hours_back)).timestamp())
@@ -63,6 +70,7 @@ class RedditCrawler:
             sub_posts = 0
             sub_comments = 0
             filtered_posts = 0
+            filtered_keywords = 0
             
             try:
                 logger.info(f"正在抓取子版块: r/{subreddit_name}")
@@ -77,6 +85,11 @@ class RedditCrawler:
                     post_time = int(submission.created_utc)
                     if post_time < cutoff_time:
                         filtered_posts += 1
+                        continue
+                    
+                    # ✅ 关键词过滤（如果配置了关键词）
+                    if self.keywords and not self._matches_keywords(submission):
+                        filtered_keywords += 1
                         continue
                     
                     # 显示正在处理的帖子
@@ -103,6 +116,7 @@ class RedditCrawler:
                     f"✓ 子版块 r/{subreddit_name} 抓取完成 - "
                     f"帖子: {sub_posts}, 评论: {sub_comments}"
                     + (f" (过滤旧帖子: {filtered_posts})" if filtered_posts > 0 else "")
+                    + (f" (关键词过滤: {filtered_keywords})" if filtered_keywords > 0 else "")
                 )
                 
             except prawcore.ResponseException as e:
@@ -138,16 +152,11 @@ class RedditCrawler:
             if submission.selftext:
                 text += "\n\n" + submission.selftext
             
-            # 转换 created_utc (Unix 时间戳) 为 ISO 8601 格式字符串
-            from datetime import datetime
-            created_dt = datetime.utcfromtimestamp(submission.created_utc)
-            created_at_iso = created_dt.strftime("%Y-%m-%dT%H:%M:%SZ")
-            
             data = {
                 # 基础字段
                 'text': text,
                 'source': 'reddit_post',
-                'created_at': created_at_iso,  # ← ISO 8601 格式字符串
+                'timestamp': int(submission.created_utc),
                 'url': f"https://www.reddit.com{submission.permalink}",
                 
                 # Reddit 特有字段
@@ -280,6 +289,30 @@ class RedditCrawler:
         except Exception as e:
             logger.error(f"提取评论数据失败: {e}")
             return None
+    
+    def _matches_keywords(self, submission) -> bool:
+        """
+        检查帖子是否匹配关键词
+        
+        Args:
+            submission: PRAW submission 对象
+        
+        Returns:
+            bool: 是否匹配任一关键词
+        """
+        if not self.keywords:
+            return True  # 如果没有配置关键词，则接受所有帖子
+        
+        # 将标题和正文转换为小写用于匹配
+        text_to_search = (submission.title + ' ' + (submission.selftext or '')).lower()
+        
+        # 检查是否匹配任一关键词
+        for keyword in self.keywords:
+            keyword_lower = keyword.lower()
+            if keyword_lower in text_to_search:
+                return True
+        
+        return False
 
 
 def main():

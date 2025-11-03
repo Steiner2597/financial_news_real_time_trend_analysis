@@ -20,7 +20,7 @@ logging:
 newsapi:
   api_key: 00b4d0f09e164c47a1511a4e33c90385
   articles_per_keyword: 25
-  enabled: false
+  enabled: true
   hours_back: 24
   query_keywords:
   - '"Apple Inc" AND (iPhone OR earnings OR stock)'
@@ -42,7 +42,7 @@ newsapi:
   - '"oil prices" OR "crude oil" OR "energy"'
   - '"gold prices" OR "precious metals"'
   rate_limits:
-    current_day_requests: 15
+    current_day_requests: 10
     last_reset_date: '2025-11-03'
     max_requests_per_day: 100
     requests_per_run: 5
@@ -52,7 +52,7 @@ reddit:
   client_secret: qsCVvxt8X0RP6K3UIL7VSH6s6aS90w
   comments_limit: 30
   enabled: true
-  hours_back: 24
+  hours_back: 24  # 只抓取最近 24 小时的帖子
   posts_limit: 50
   subreddits:
   - investing
@@ -66,17 +66,76 @@ reddit:
   - Forex
   - CryptoCurrency
   - Bitcoin
+  - ethtrader
+  - valueinvesting
   - SecurityAnalysis
   - algotrading
   - FinancialPlanning
-  - wallstreet
-  - ValueInvesting
-  - povertyfinance
-  - Entrepreneur
-  - startups
-  - worldnews
-  - news
-  - technology
+  keywords:
+  # 股票和ETF
+  - AAPL
+  - Apple
+  - TSLA
+  - Tesla
+  - NVDA
+  - Nvidia
+  - MSFT
+  - Microsoft
+  - GOOGL
+  - Google
+  - AMZN
+  - Amazon
+  - META
+  - Facebook
+  - SPY
+  - QQQ
+  - VOO
+  - VTI
+  # 加密货币
+  - Bitcoin
+  - BTC
+  - Ethereum
+  - ETH
+  - crypto
+  - cryptocurrency
+  - altcoin
+  # 市场术语
+  - earnings
+  - dividend
+  - split
+  - merger
+  - acquisition
+  - IPO
+  - bull market
+  - bear market
+  - recession
+  - inflation
+  - Fed
+  - Federal Reserve
+  - interest rate
+  - rate hike
+  - rate cut
+  # 交易策略
+  - options
+  - calls
+  - puts
+  - strike
+  - expiration
+  - theta
+  - delta
+  - gamma
+  - volatility
+  - short squeeze
+  - gamma squeeze
+  # 财务指标
+  - P/E ratio
+  - earnings per share
+  - EPS
+  - revenue
+  - profit
+  - loss
+  - guidance
+  - forecast
   user_agent: FinanceDataCrawler/1.0
 redis:
   db: 0
@@ -96,7 +155,7 @@ redis:
     max_keep: 500000
     slim_mode: false
 rss:
-  enabled: false
+  enabled: true
   hours_back: 24
   feeds:
   - category: international
@@ -219,7 +278,7 @@ scheduler:
 stocktwits:
   access_token: null
   enabled: false
-  hours_back: 24
+  hours_back: 24  # 只抓取最近 24 小时的消息
   messages_per_symbol: 30
   watch_symbols:
   - SPY
@@ -258,7 +317,7 @@ twitter:
     max_writes_per_month: 500
   tweets_per_keyword: 1
 alphavantage:
-  enabled: false
+  enabled: true
   api_key: 4HICKZR7VJVLCY71
   hours_back: 24
   symbols:
@@ -279,7 +338,5 @@ alphavantage:
     max_requests_per_day: 25
     requests_per_run: 5
     delay_between_requests: 12
-    current_day_requests: 28
-    last_reset_date: '2025-11-03'
-    current_day_requests: 5
+    current_day_requests: 20
     last_reset_date: '2025-11-03'
