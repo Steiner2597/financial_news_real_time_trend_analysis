@@ -73,6 +73,11 @@ class AlphaVantageCrawler:
         
         logger.info("开始抓取 Alpha Vantage 数据...")
         
+        # 时间过滤配置
+        hours_back = self.config.get('hours_back', 24)  # 默认抓取 24 小时内
+        cutoff_time = int(datetime.now().timestamp()) - (hours_back * 3600)
+        logger.info(f"时间过滤: 只保留 {hours_back} 小时内的数据 (>{datetime.fromtimestamp(cutoff_time).strftime('%Y-%m-%d %H:%M:%S')})")
+        
         # 限制处理的股票数量（避免超出配额）
         symbols_to_process = self.symbols[:self.requests_per_run]
         requests_used = 0
@@ -93,7 +98,7 @@ class AlphaVantageCrawler:
                         
                         elif data_type == 'news':
                             # 新闻
-                            news_items = self._fetch_news_sentiment(symbol)
+                            news_items = self._fetch_news_sentiment(symbol, cutoff_time)
                             stats['items'] += len(news_items)
                             requests_used += 1
                         
@@ -198,12 +203,13 @@ class AlphaVantageCrawler:
             logger.error(f"获取 {symbol} 报价失败: {e}")
             return None
     
-    def _fetch_news_sentiment(self, symbol: str) -> List[Dict[str, Any]]:
+    def _fetch_news_sentiment(self, symbol: str, cutoff_time: int) -> List[Dict[str, Any]]:
         """
         抓取新闻 (NEWS_SENTIMENT)
         
         Args:
             symbol: 股票代码
+            cutoff_time: 时间截止点（Unix 时间戳）
         
         Returns:
             list: 新闻列表（统一格式）
@@ -236,7 +242,17 @@ class AlphaVantageCrawler:
                 return []
             
             news_items = []
+            filtered_count = 0
+            
             for article in feed[:10]:  # 只取前 10 条
+                # 解析时间戳
+                article_timestamp = self._parse_time(article.get('time_published', ''))
+                
+                # 时间过滤：只保留最近的新闻
+                if article_timestamp < cutoff_time:
+                    filtered_count += 1
+                    continue
+                
                 # ✅ 统一格式：text = 标题 + 摘要
                 title = article.get('title', '')
                 summary = article.get('summary', '')[:300]  # 限制摘要长度
@@ -250,7 +266,7 @@ class AlphaVantageCrawler:
                     # 核心字段（必需）
                     'text': text,
                     'source': 'alphavantage',
-                    'timestamp': self._parse_time(article.get('time_published', '')),
+                    'timestamp': article_timestamp,
                     'url': article.get('url', ''),
                     
                     # Alpha Vantage 特有字段（可选）
@@ -265,7 +281,10 @@ class AlphaVantageCrawler:
                 if self.redis_client.push_data(news_data):
                     news_items.append(news_data)
             
-            logger.info(f"  ✓ 新闻: {len(news_items)} 条")
+            if filtered_count > 0:
+                logger.info(f"  ✓ 新闻: {len(news_items)} 条 (过滤旧新闻: {filtered_count})")
+            else:
+                logger.info(f"  ✓ 新闻: {len(news_items)} 条")
             return news_items
             
         except Exception as e:

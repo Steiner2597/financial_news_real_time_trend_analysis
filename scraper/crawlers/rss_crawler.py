@@ -49,6 +49,11 @@ class RSSCrawler:
         
         logger.info("开始抓取 RSS 数据...")
         
+        # 时间过滤配置
+        hours_back = self.config.get('hours_back', 72)  # 默认抓取 72 小时内（3天）
+        cutoff_time = int(time.time()) - (hours_back * 3600)
+        logger.info(f"时间过滤: 只保留 {hours_back} 小时内的文章 (>{datetime.fromtimestamp(cutoff_time).strftime('%Y-%m-%d %H:%M:%S')})")
+        
         for feed_config in self.feeds:
             feed_name = feed_config.get('name', 'Unknown')
             feed_url = feed_config.get('url')
@@ -70,12 +75,26 @@ class RSSCrawler:
                     continue
                 
                 # 提取文章
+                feed_article_count = 0
+                filtered_count = 0
+                
                 for entry in feed.entries:
                     article_data = self._extract_article_data(entry, feed_name, feed_config)
-                    if article_data and self.redis_client.push_data(article_data):
+                    
+                    if not article_data:
+                        continue
+                    
+                    # 时间过滤：只保留最近的文章
+                    article_timestamp = article_data.get('timestamp', 0)
+                    if article_timestamp < cutoff_time:
+                        filtered_count += 1
+                        continue
+                    
+                    if self.redis_client.push_data(article_data):
                         stats['articles'] += 1
+                        feed_article_count += 1
                 
-                logger.info(f"RSS 源 {feed_name} 抓取完成，文章数: {len(feed.entries)}")
+                logger.info(f"RSS 源 {feed_name} 抓取完成，文章数: {feed_article_count} (过滤旧文章: {filtered_count})")
                 
                 # 避免请求过快
                 time.sleep(1)
