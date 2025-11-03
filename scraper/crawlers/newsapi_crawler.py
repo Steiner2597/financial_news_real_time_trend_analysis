@@ -84,9 +84,16 @@ class NewsAPICrawler:
         language = self.config.get('language', 'en')
         articles_per_keyword = self.config.get('articles_per_keyword', 20)
         
-        # ✅ 修复：NewsAPI 免费版有 12-24 小时延迟，改为抓取最近 7 天
+        # 时间范围配置
         now = datetime.now()
-        from_7days = (now - timedelta(days=1)).strftime('%Y-%m-%d')  # 改为 7 天
+        hours_back = self.config.get('hours_back', 24)  # 默认抓取 24 小时内
+        # NewsAPI 需要 ISO 8601 格式: YYYY-MM-DDTHH:MM:SS
+        from_24hours = (now - timedelta(hours=24)).strftime('%Y-%m-%dT%H:%M:%S')
+        to_time = now.strftime('%Y-%m-%dT%H:%M:%S')
+        # 计算精确的截止时间戳（用于后续过滤）
+        cutoff_timestamp = int((now - timedelta(hours=hours_back)).timestamp())
+        
+        logger.info(f"抓取时间范围: 最近 {hours_back} 小时 (>{datetime.fromtimestamp(cutoff_timestamp).strftime('%Y-%m-%d %H:%M:%S')})")
         
         requests_used = 0
         
@@ -96,13 +103,14 @@ class NewsAPICrawler:
                 
                 articles = []
                 
-                # ✅ 修复：使用 everything 端点 + 7天时间范围
+                # 使用 everything 端点 + 指定时间范围
                 try:
                     response = self.newsapi.get_everything(
                         q=query,
                         language=language,
-                        from_param=from_7days,  # ✅ 改为 7 天
-                        sort_by='publishedAt',  # 按发布时间排序
+                        from_param=from_24hours,  # 使用24小时前的时间
+                        to=to_time,               # 到现在
+                        sort_by='publishedAt',    # 按发布时间排序
                         page_size=articles_per_keyword
                     )
                     requests_used += 1
@@ -122,17 +130,27 @@ class NewsAPICrawler:
                     stats['errors'] += 1
                     continue
                 
-                # 保存文章
+                # 保存文章（增加时间过滤）
                 keyword_count = 0
+                filtered_count = 0
                 for article in articles:
                     article_data = self._extract_article_data(article, query)
-                    if article_data and self.redis_client.push_data(article_data):
+                    if not article_data:
+                        continue
+                    
+                    # ✅ 检查文章时间戳是否在范围内
+                    if article_data['timestamp'] < cutoff_timestamp:
+                        filtered_count += 1
+                        continue
+                    
+                    if self.redis_client.push_data(article_data):
                         stats['articles'] += 1
                         keyword_count += 1
                 
                 logger.info(
                     f"✓ 关键词 '{query}' 抓取完成 - "
                     f"获取: {len(articles)} 篇, 保存: {keyword_count} 篇"
+                    + (f" (过滤旧文章: {filtered_count})" if filtered_count > 0 else "")
                 )
                 
                 # 避免请求过快
