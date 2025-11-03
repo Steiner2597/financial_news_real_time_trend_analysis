@@ -11,3 +11,15 @@ visualization/**/node_modules/*
 # Ignore IDE configs
 .idea/
 **/.idea/
+
+# Ignore Python bytecode and cache directories
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
