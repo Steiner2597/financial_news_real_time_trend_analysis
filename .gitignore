@@ -1,2 +1,9 @@
 "processer/Bert_Model/*.pth" 
 processer/Bert_Model/best_model.pth
+
+# Ignore node_modules inside visualization (frontend/backend or any subfolder)
+visualization/**/node_modules/
+visualization/**/node_modules/*
+
+# Optional: ignore common frontend build artifacts (uncomment if desired)
+# visualization/frontend/dist/

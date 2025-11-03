@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="36810380-09f6-4cee-9ba2-433878c084a1" name="变更" comment="test">
+      <change afterPath="$PROJECT_DIR$/backend/app/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/models/schemas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routes/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routes/news.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routes/trends.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routes/websocket_routes.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/routes/wordcloud.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/data_processor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/data_sync_service.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/redis_client.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/redis_publisher.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/scheduler.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/app/services/websocket_manager.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/requirement.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tests/test_data_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/tests/test_redis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/Layout.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/NewsFeed.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/SentimentBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/TrendChart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/TrendingKeywords.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/components/WordCloud.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/services/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/services/trendService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/stores/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/stores/trendStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/views/Dashboard.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/backend/run.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="34Q47yUnWq0I6ZuvA0A118PzHYM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/backend" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SE\workspace\CS5481-visualization\backend\app" />
+      <recent name="D:\SE\workspace\CS5481-visualization\backend\app\models" />
+      <recent name="D:\SE\workspace\CS5481-visualization\backend\app\services" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\SE\workspace\CS5481-visualization\backend" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.run">
+    <configuration name="data_loader" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CS5481-visualization" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/app/services/data_loader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CS5481-visualization" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/app/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mock_data_generator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CS5481-visualization" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/app/services" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/app/services/mock_data_generator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="redis_client (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CS5481-visualization" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/visualization_app/services" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/visualization_app/services/redis_client.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="CS5481-visualization" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/run.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scheduler" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CS5481-visualization" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend/app/services" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/app/services/scheduler.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_data_loader" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="CS5481-visualization" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/backend" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/backend/tests/test_data_loader.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.run" />
+      <item itemvalue="Python.test_data_loader" />
+      <item itemvalue="Python.data_loader" />
+      <item itemvalue="Python.redis_client (1)" />
+      <item itemvalue="Python.mock_data_generator" />
+      <item itemvalue="Python.scheduler" />
+      <item itemvalue="Python.main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.scheduler" />
+        <item itemvalue="Python.data_loader" />
+        <item itemvalue="Python.mock_data_generator" />
+        <item itemvalue="Python.redis_client (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="36810380-09f6-4cee-9ba2-433878c084a1" name="变更" comment="" />
+      <created>1761132298932</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1761132298932</updated>
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1761133087864</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1761133087864</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
+</project>
