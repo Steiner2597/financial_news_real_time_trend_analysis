@@ -32,13 +32,27 @@
 </template>
 
 <script setup>
-import { computed, ref, onMounted } from 'vue'
+import { computed, ref, onMounted, watch } from 'vue'
 import { useTrendStore } from '@/stores/trendStore'
 
 const store = useTrendStore()
 const loading = ref(false)
 
 const wordCloudData = computed(() => store.wordCloudData)
+
+// 监听 wordCloudData 变化，自动触发重新渲染
+watch(() => store.wordCloudData, (newVal) => {
+  if (newVal && newVal.length > 0) {
+    console.log('👁️ WordCloud 检测到数据变化，自动刷新')
+  }
+}, { deep: true })
+
+// 监听更新源
+watch(() => store.updateSource, (newVal) => {
+  if (newVal === 'websocket') {
+    console.log('🌐 WordCloud 数据来自 WebSocket 实时推送')
+  }
+})
 
 // 生成随机旋转角度和位移
 const getRandomTransform = (seed) => {

@@ -23,7 +23,7 @@
 </template>
 
 <script setup>
-import { computed, ref, onMounted, nextTick } from 'vue'
+import { computed, ref, onMounted, nextTick, watch } from 'vue'
 import { useTrendStore } from '@/stores/trendStore'
 import { use } from 'echarts/core'
 import { CanvasRenderer } from 'echarts/renderers'
@@ -38,6 +38,20 @@ const loading = ref(false)
 
 // 获取历史数据
 const historyData = computed(() => store.historyData || {})
+
+// 监听历史数据变化，自动刷新图表
+watch(() => store.historyData, (newVal) => {
+  if (newVal && Object.keys(newVal).length > 0) {
+    console.log('👁️ TrendChart 检测到数据变化，自动刷新')
+  }
+}, { deep: true })
+
+// 监听更新源
+watch(() => store.updateSource, (newVal) => {
+  if (newVal === 'websocket') {
+    console.log('🌐 TrendChart 数据来自 WebSocket 实时推送')
+  }
+})
 
 // 处理历史数据为图表格式
 const processedData = computed(() => {

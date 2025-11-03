@@ -70,7 +70,7 @@
 </template>
 
 <script setup>
-import { computed, ref, onMounted, onBeforeUnmount } from 'vue'
+import { computed, ref, onMounted, onBeforeUnmount, watch } from 'vue'
 import { useTrendStore } from '@/stores/trendStore'
 import SentimentBar from './SentimentBar.vue'
 
@@ -80,6 +80,20 @@ let refreshTimer = null
 
 const trendingKeywords = computed(() => store.trendingKeywords)
 const metadata = computed(() => store.metadata)
+
+// 监听 trendingKeywords 变化，自动触发重新渲染
+watch(() => store.trendingKeywords, (newVal) => {
+  if (newVal && newVal.length > 0) {
+    console.log('👁️ TrendingKeywords 检测到数据变化，自动刷新')
+  }
+}, { deep: true })
+
+// 监听更新源，记录是否来自 WebSocket
+watch(() => store.updateSource, (newVal) => {
+  if (newVal === 'websocket') {
+    console.log('🌐 数据来自 WebSocket 实时推送')
+  }
+})
 
 // 获取排名奖牌
 function getRankMedal(rank) {

@@ -110,6 +110,22 @@
     })
   })
   
+  // 监听新闻数据变化，自动刷新
+  watch(() => store.newsFeed, (newVal) => {
+    if (newVal && newVal.length > 0) {
+      console.log('👁️ NewsFeed 检测到数据变化，自动刷新')
+      // 重置滚动位置
+      currentIndex.value = 0
+    }
+  }, { deep: true })
+  
+  // 监听更新源
+  watch(() => store.updateSource, (newVal) => {
+    if (newVal === 'websocket') {
+      console.log('🌐 NewsFeed 数据来自 WebSocket 实时推送')
+    }
+  })
+  
   // 显示的新闻列表（循环滚动）
   const displayNewsList = computed(() => {
     if (newsList.value.length === 0) return []

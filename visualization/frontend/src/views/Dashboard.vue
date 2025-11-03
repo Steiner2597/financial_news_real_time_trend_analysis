@@ -113,15 +113,34 @@ function startAutoRefresh() {
 
 // 组件挂载
 onMounted(async () => {
+  console.log('📺 Dashboard 组件已挂载')
+  
+  // 先加载初始数据
   await refreshAllData()
+  
+  // 初始化 WebSocket 实时连接
+  try {
+    console.log('🔗 正在初始化 WebSocket 连接...')
+    await store.initWebSocket()
+    console.log('✅ WebSocket 连接已初始化')
+  } catch (error) {
+    console.error('❌ WebSocket 初始化失败:', error)
+  }
+  
+  // 启动定时刷新（作为备选方案）
   startAutoRefresh()
 })
 
 // 组件卸载
 onBeforeUnmount(() => {
+  console.log('👋 Dashboard 组件正在卸载')
+  
   if (updateTimer) {
     clearInterval(updateTimer)
   }
+  
+  // 断开 WebSocket 连接
+  store.disconnectWebSocket()
 })
 </script>
 

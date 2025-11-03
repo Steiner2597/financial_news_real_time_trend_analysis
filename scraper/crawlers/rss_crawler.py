@@ -85,6 +85,11 @@ class RSSCrawler:
                 stats['errors'] += 1
         
         logger.info(f"RSS 抓取完成 - 文章: {stats['articles']}, 错误: {stats['errors']}")
+        
+        # 📢 立即发送通知给 Cleaner 进行清洗（如果爬取了数据）
+        if stats['articles'] > 0:
+            self._send_crawl_notification(stats)
+        
         return stats
     
     def _fetch_feed_with_timeout(self, url: str, feed_name: str, timeout: int = 10, max_retries: int = 2):
@@ -481,6 +486,34 @@ class RSSCrawler:
         # 如果都失败，使用当前时间
         logger.warning(f"无法提取文章时间，使用当前时间")
         return int(datetime.now().timestamp())
+    
+    def _send_crawl_notification(self, stats: Dict[str, int]):
+        """
+        发送爬取完成通知给 Cleaner（每爬一次就发一次，不等待整轮完成）
+        
+        Args:
+            stats: 爬取统计信息
+        """
+        try:
+            message = {
+                'event': 'rss_crawl_complete',
+                'timestamp': datetime.now().isoformat(),
+                'source': 'rss',
+                'statistics': {
+                    'articles': stats['articles'],
+                    'errors': stats['errors'],
+                    'total_items': stats['articles']
+                }
+            }
+            
+            # 使用 redis_client 发送通知
+            channel = 'crawler_complete'  # 与 cleaner 配置的频道一致
+            self.redis_client.publish_notification(channel, message)
+            
+            logger.info(f"📢 RSS 爬取完成通知已发送 (文章: {stats['articles']})")
+            
+        except Exception as e:
+            logger.error(f"发送 RSS 爬取通知失败: {e}")
 
 
 def main():

@@ -128,6 +128,11 @@ class RedditCrawler:
                 stats['errors'] += 1
         
         logger.info(f"抓取完成 - 新帖: {stats['posts']}, 评论: {stats['comments']}, 错误: {stats['errors']}")
+        
+        # 📢 立即发送通知给 Cleaner 进行清洗（如果爬取了数据）
+        if stats['posts'] > 0 or stats['comments'] > 0:
+            self._send_crawl_notification(stats)
+        
         return stats
     
     def _crawl_search_keywords(self) -> Dict[str, int]:
@@ -452,6 +457,36 @@ class RedditCrawler:
         except Exception as e:
             logger.error(f"提取评论数据失败: {e}")
             return None
+    
+    def _send_crawl_notification(self, stats: Dict[str, int]):
+        """
+        发送爬取完成通知给 Cleaner（每爬一次就发一次，不等待整轮完成）
+        
+        Args:
+            stats: 爬取统计信息
+        """
+        try:
+            message = {
+                'event': 'reddit_crawl_complete',
+                'timestamp': datetime.now().isoformat(),
+                'source': 'reddit',
+                'statistics': {
+                    'posts': stats['posts'],
+                    'comments': stats['comments'],
+                    'errors': stats['errors'],
+                    'total_items': stats['posts'] + stats['comments']
+                }
+            }
+            
+            # 使用 redis_client 发送通知
+            channel = 'crawler_complete'  # 与 cleaner 配置的频道一致
+            self.redis_client.publish_notification(channel, message)
+            
+            logger.info(f"📢 Reddit 爬取完成通知已发送 "
+                       f"(新帖: {stats['posts']}, 评论: {stats['comments']})")
+            
+        except Exception as e:
+            logger.error(f"发送 Reddit 爬取通知失败: {e}")
 
 
 def main():

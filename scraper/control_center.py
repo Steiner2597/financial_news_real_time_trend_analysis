@@ -267,8 +267,9 @@ class CrawlerControlCenter:
         # 打印总体统计
         self._print_statistics()
         
-        # 发送爬取完成通知
-        self._send_completion_notification()
+        # 📢 注：不再在这里发送统一的通知，改为由各爬虫在完成后立即发送
+        # 这样可以实现"每爬一次就清一次"的实时处理流程
+
     
     def _export_data(self):
         """根据阈值导出数据到文件"""

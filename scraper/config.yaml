@@ -549,5 +549,5 @@ alphavantage:
     max_requests_per_day: 25
     requests_per_run: 5
     delay_between_requests: 12
-    current_day_requests: 10
+    current_day_requests: 20
     last_reset_date: '2025-11-03'

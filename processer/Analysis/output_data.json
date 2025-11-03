@@ -1,1382 +1,461 @@
 {
   "metadata": {
-    "timestamp": "2025-11-03T06:18:57Z",
+    "timestamp": "2025-11-03T09:22:18Z",
     "update_interval": 60,
     "data_version": "1.0",
     "news_sources": {
-      "reddit_comment": 31918,
-      "reddit_post": 8999,
-      "stocktwits": 2421,
-      "rss": 1620,
-      "alphavantage": 38,
-      "newsapi": 16
+      "reddit_comment": 9595,
+      "reddit_post": 786,
+      "rss": 389,
+      "stocktwits": 210,
+      "alphavantage": 27
     }
   },
   "trending_keywords": [
     {
       "keyword": "like",
       "rank": 1,
-      "current_frequency": 886,
-      "growth_rate": 71.0,
-      "trend_score": 0.88,
+      "current_frequency": 2339,
+      "growth_rate": 100.0,
+      "trend_score": 1.0,
       "sentiment": {
-        "positive": 42,
-        "negative": 58,
-        "total_comments": 8186
+        "positive": 37,
+        "negative": 63,
+        "total_comments": 1707
       }
     },
     {
       "keyword": "from",
       "rank": 2,
-      "current_frequency": 832,
-      "growth_rate": 85.5,
-      "trend_score": 0.91,
+      "current_frequency": 2147,
+      "growth_rate": 100.0,
+      "trend_score": 0.95,
       "sentiment": {
-        "positive": 45,
-        "negative": 55,
-        "total_comments": 7107
+        "positive": 39,
+        "negative": 61,
+        "total_comments": 1349
       }
     },
     {
       "keyword": "about",
       "rank": 3,
-      "current_frequency": 797,
-      "growth_rate": 95.0,
-      "trend_score": 0.92,
+      "current_frequency": 1826,
+      "growth_rate": 100.0,
+      "trend_score": 0.87,
       "sentiment": {
-        "positive": 41,
-        "negative": 59,
-        "total_comments": 6495
+        "positive": 33,
+        "negative": 67,
+        "total_comments": 1223
       }
     },
     {
       "keyword": "out",
       "rank": 4,
-      "current_frequency": 672,
-      "growth_rate": -15.3,
-      "trend_score": 0.52,
+      "current_frequency": 1645,
+      "growth_rate": 100.0,
+      "trend_score": 0.82,
       "sentiment": {
-        "positive": 45,
-        "negative": 55,
-        "total_comments": 12544
+        "positive": 36,
+        "negative": 64,
+        "total_comments": 2471
+      }
+    },
+    {
+      "keyword": "there",
+      "rank": 5,
+      "current_frequency": 1610,
+      "growth_rate": 100.0,
+      "trend_score": 0.81,
+      "sentiment": {
+        "positive": 30,
+        "negative": 70,
+        "total_comments": 1210
       }
     },
     {
       "keyword": "would",
-      "rank": 5,
-      "current_frequency": 583,
-      "growth_rate": 58.8,
-      "trend_score": 0.63,
+      "rank": 6,
+      "current_frequency": 1600,
+      "growth_rate": 100.0,
+      "trend_score": 0.81,
       "sentiment": {
-        "positive": 38,
-        "negative": 62,
-        "total_comments": 5811
+        "positive": 34,
+        "negative": 66,
+        "total_comments": 1191
       }
     },
     {
       "keyword": "get",
-      "rank": 6,
-      "current_frequency": 537,
-      "growth_rate": 3.2,
-      "trend_score": 0.38,
+      "rank": 7,
+      "current_frequency": 1537,
+      "growth_rate": 100.0,
+      "trend_score": 0.79,
       "sentiment": {
-        "positive": 44,
-        "negative": 56,
-        "total_comments": 8246
+        "positive": 36,
+        "negative": 64,
+        "total_comments": 1600
+      }
+    },
+    {
+      "keyword": "people",
+      "rank": 8,
+      "current_frequency": 1478,
+      "growth_rate": 100.0,
+      "trend_score": 0.78,
+      "sentiment": {
+        "positive": 29,
+        "negative": 71,
+        "total_comments": 1053
       }
     },
     {
       "keyword": "one",
-      "rank": 7,
-      "current_frequency": 537,
-      "growth_rate": -33.4,
-      "trend_score": 0.5,
+      "rank": 9,
+      "current_frequency": 1307,
+      "growth_rate": 100.0,
+      "trend_score": 0.74,
       "sentiment": {
-        "positive": 45,
-        "negative": 55,
-        "total_comments": 12695
+        "positive": 37,
+        "negative": 63,
+        "total_comments": 2668
       }
     },
     {
       "keyword": "time",
-      "rank": 8,
-      "current_frequency": 522,
-      "growth_rate": 21.9,
-      "trend_score": 0.44,
-      "sentiment": {
-        "positive": 44,
-        "negative": 56,
-        "total_comments": 6790
-      }
-    },
-    {
-      "keyword": "had",
-      "rank": 9,
-      "current_frequency": 516,
-      "growth_rate": 111.5,
-      "trend_score": 0.75,
-      "sentiment": {
-        "positive": 35,
-        "negative": 65,
-        "total_comments": 3868
-      }
-    },
-    {
-      "keyword": "please",
       "rank": 10,
-      "current_frequency": 505,
-      "growth_rate": 71.0,
-      "trend_score": 0.63,
+      "current_frequency": 1232,
+      "growth_rate": 100.0,
+      "trend_score": 0.72,
       "sentiment": {
-        "positive": 81,
-        "negative": 19,
-        "total_comments": 4714
+        "positive": 36,
+        "negative": 64,
+        "total_comments": 1181
       }
     }
   ],
   "word_cloud": [
     {
       "text": "like",
-      "value": 886
+      "value": 2339
     },
     {
       "text": "from",
-      "value": 832
+      "value": 2147
     },
     {
       "text": "about",
-      "value": 797
+      "value": 1826
     },
     {
       "text": "out",
-      "value": 672
-    },
-    {
-      "text": "would",
-      "value": 583
-    },
-    {
-      "text": "get",
-      "value": 537
-    },
-    {
-      "text": "one",
-      "value": 537
-    },
-    {
-      "text": "time",
-      "value": 522
-    },
-    {
-      "text": "had",
-      "value": 516
-    },
-    {
-      "text": "please",
-      "value": 505
+      "value": 1645
     },
     {
       "text": "there",
-      "value": 494
+      "value": 1610
     },
     {
-      "text": "because",
-      "value": 461
+      "text": "would",
+      "value": 1600
     },
     {
-      "text": "want",
-      "value": 427
-    },
-    {
-      "text": "here",
-      "value": 409
-    },
-    {
-      "text": "also",
-      "value": 399
-    },
-    {
-      "text": "even",
-      "value": 399
+      "text": "get",
+      "value": 1537
     },
     {
       "text": "people",
-      "value": 398
+      "value": 1478
+    },
+    {
+      "text": "one",
+      "value": 1307
+    },
+    {
+      "text": "time",
+      "value": 1232
+    },
+    {
+      "text": "because",
+      "value": 1128
+    },
+    {
+      "text": "also",
+      "value": 1109
+    },
+    {
+      "text": "even",
+      "value": 1087
+    },
+    {
+      "text": "had",
+      "value": 1033
     },
     {
       "text": "know",
-      "value": 386
+      "value": 1018
     },
     {
-      "text": "after",
-      "value": 369
+      "text": "then",
+      "value": 970
     },
     {
-      "text": "post",
-      "value": 337
+      "text": "think",
+      "value": 932
+    },
+    {
+      "text": "market",
+      "value": 886
+    },
+    {
+      "text": "want",
+      "value": 880
+    },
+    {
+      "text": "could",
+      "value": 880
     }
   ],
   "history_data": {
     "like": [
       {
-        "timestamp": "2025-11-02T06:00:00Z",
-        "frequency": 0
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 556
       },
       {
-        "timestamp": "2025-11-02T07:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T08:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T09:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T10:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T11:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T12:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T13:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T14:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T15:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 2101
-      },
-      {
-        "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 597
-      },
-      {
-        "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 477
-      },
-      {
-        "timestamp": "2025-11-02T19:00:00Z",
-        "frequency": 557
-      },
-      {
-        "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 497
-      },
-      {
-        "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 467
-      },
-      {
-        "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 435
-      },
-      {
-        "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 609
-      },
-      {
-        "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 415
-      },
-      {
-        "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 439
-      },
-      {
-        "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 389
-      },
-      {
-        "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 391
-      },
-      {
-        "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 396
-      },
-      {
-        "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 306
-      },
-      {
-        "timestamp": "2025-11-03T06:00:00Z",
-        "frequency": 110
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 1151
       }
     ],
     "from": [
       {
-        "timestamp": "2025-11-02T06:00:00Z",
-        "frequency": 0
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 427
       },
       {
-        "timestamp": "2025-11-02T07:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T08:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T09:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T10:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T11:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T12:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T13:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T14:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T15:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 1703
-      },
-      {
-        "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 555
-      },
-      {
-        "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 456
-      },
-      {
-        "timestamp": "2025-11-02T19:00:00Z",
-        "frequency": 475
-      },
-      {
-        "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 428
-      },
-      {
-        "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 439
-      },
-      {
-        "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 403
-      },
-      {
-        "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 527
-      },
-      {
-        "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 356
-      },
-      {
-        "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 340
-      },
-      {
-        "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 392
-      },
-      {
-        "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 343
-      },
-      {
-        "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 311
-      },
-      {
-        "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 275
-      },
-      {
-        "timestamp": "2025-11-03T06:00:00Z",
-        "frequency": 104
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 922
       }
     ],
     "about": [
       {
-        "timestamp": "2025-11-02T06:00:00Z",
-        "frequency": 0
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 380
       },
       {
-        "timestamp": "2025-11-02T07:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T08:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T09:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T10:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T11:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T12:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T13:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T14:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T15:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 1461
-      },
-      {
-        "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 504
-      },
-      {
-        "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 396
-      },
-      {
-        "timestamp": "2025-11-02T19:00:00Z",
-        "frequency": 426
-      },
-      {
-        "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 409
-      },
-      {
-        "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 388
-      },
-      {
-        "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 378
-      },
-      {
-        "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 507
-      },
-      {
-        "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 334
-      },
-      {
-        "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 342
-      },
-      {
-        "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 341
-      },
-      {
-        "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 328
-      },
-      {
-        "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 318
-      },
-      {
-        "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 265
-      },
-      {
-        "timestamp": "2025-11-03T06:00:00Z",
-        "frequency": 98
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 843
       }
     ],
     "out": [
       {
-        "timestamp": "2025-11-02T06:00:00Z",
-        "frequency": 0
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 743
       },
       {
-        "timestamp": "2025-11-02T07:00:00Z",
-        "frequency": 0
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 1728
+      }
+    ],
+    "there": [
+      {
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 368
       },
       {
-        "timestamp": "2025-11-02T08:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T09:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T10:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T11:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T12:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T13:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T14:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T15:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 3186
-      },
-      {
-        "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 953
-      },
-      {
-        "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 763
-      },
-      {
-        "timestamp": "2025-11-02T19:00:00Z",
-        "frequency": 822
-      },
-      {
-        "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 735
-      },
-      {
-        "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 695
-      },
-      {
-        "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 688
-      },
-      {
-        "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 973
-      },
-      {
-        "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 630
-      },
-      {
-        "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 647
-      },
-      {
-        "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 640
-      },
-      {
-        "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 603
-      },
-      {
-        "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 569
-      },
-      {
-        "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 462
-      },
-      {
-        "timestamp": "2025-11-03T06:00:00Z",
-        "frequency": 178
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 842
       }
     ],
     "would": [
       {
-        "timestamp": "2025-11-02T06:00:00Z",
-        "frequency": 0
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 357
       },
       {
-        "timestamp": "2025-11-02T07:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T08:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T09:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T10:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T11:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T12:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T13:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T14:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T15:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 1480
-      },
-      {
-        "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 409
-      },
-      {
-        "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 382
-      },
-      {
-        "timestamp": "2025-11-02T19:00:00Z",
-        "frequency": 372
-      },
-      {
-        "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 346
-      },
-      {
-        "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 316
-      },
-      {
-        "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 308
-      },
-      {
-        "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 458
-      },
-      {
-        "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 315
-      },
-      {
-        "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 300
-      },
-      {
-        "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 297
-      },
-      {
-        "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 268
-      },
-      {
-        "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 255
-      },
-      {
-        "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 221
-      },
-      {
-        "timestamp": "2025-11-03T06:00:00Z",
-        "frequency": 84
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 834
       }
     ],
     "get": [
       {
-        "timestamp": "2025-11-02T06:00:00Z",
-        "frequency": 0
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 475
       },
       {
-        "timestamp": "2025-11-02T07:00:00Z",
-        "frequency": 0
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 1125
+      }
+    ],
+    "people": [
+      {
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 258
       },
       {
-        "timestamp": "2025-11-02T08:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T09:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T10:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T11:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T12:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T13:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T14:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T15:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 1947
-      },
-      {
-        "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 641
-      },
-      {
-        "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 532
-      },
-      {
-        "timestamp": "2025-11-02T19:00:00Z",
-        "frequency": 556
-      },
-      {
-        "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 489
-      },
-      {
-        "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 474
-      },
-      {
-        "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 439
-      },
-      {
-        "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 639
-      },
-      {
-        "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 427
-      },
-      {
-        "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 431
-      },
-      {
-        "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 453
-      },
-      {
-        "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 392
-      },
-      {
-        "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 388
-      },
-      {
-        "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 328
-      },
-      {
-        "timestamp": "2025-11-03T06:00:00Z",
-        "frequency": 110
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 795
       }
     ],
     "one": [
       {
-        "timestamp": "2025-11-02T06:00:00Z",
-        "frequency": 0
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 829
       },
       {
-        "timestamp": "2025-11-02T07:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T08:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T09:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T10:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T11:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T12:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T13:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T14:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T15:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 3358
-      },
-      {
-        "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 955
-      },
-      {
-        "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 757
-      },
-      {
-        "timestamp": "2025-11-02T19:00:00Z",
-        "frequency": 843
-      },
-      {
-        "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 753
-      },
-      {
-        "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 738
-      },
-      {
-        "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 648
-      },
-      {
-        "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 934
-      },
-      {
-        "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 616
-      },
-      {
-        "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 667
-      },
-      {
-        "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 655
-      },
-      {
-        "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 633
-      },
-      {
-        "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 529
-      },
-      {
-        "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 438
-      },
-      {
-        "timestamp": "2025-11-03T06:00:00Z",
-        "frequency": 171
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 1839
       }
     ],
     "time": [
       {
-        "timestamp": "2025-11-02T06:00:00Z",
-        "frequency": 0
+        "timestamp": "2025-11-03T08:00:00Z",
+        "frequency": 418
       },
       {
-        "timestamp": "2025-11-02T07:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T08:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T09:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T10:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T11:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T12:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T13:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T14:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T15:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 1486
-      },
-      {
-        "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 470
-      },
-      {
-        "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 434
-      },
-      {
-        "timestamp": "2025-11-02T19:00:00Z",
-        "frequency": 498
-      },
-      {
-        "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 421
-      },
-      {
-        "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 409
-      },
-      {
-        "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 379
-      },
-      {
-        "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 544
-      },
-      {
-        "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 360
-      },
-      {
-        "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 377
-      },
-      {
-        "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 388
-      },
-      {
-        "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 348
-      },
-      {
-        "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 307
-      },
-      {
-        "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 275
-      },
-      {
-        "timestamp": "2025-11-03T06:00:00Z",
-        "frequency": 94
-      }
-    ],
-    "had": [
-      {
-        "timestamp": "2025-11-02T06:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T07:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T08:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T09:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T10:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T11:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T12:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T13:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T14:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T15:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 747
-      },
-      {
-        "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 294
-      },
-      {
-        "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 240
-      },
-      {
-        "timestamp": "2025-11-02T19:00:00Z",
-        "frequency": 269
-      },
-      {
-        "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 245
-      },
-      {
-        "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 263
-      },
-      {
-        "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 243
-      },
-      {
-        "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 319
-      },
-      {
-        "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 211
-      },
-      {
-        "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 213
-      },
-      {
-        "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 240
-      },
-      {
-        "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 189
-      },
-      {
-        "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 187
-      },
-      {
-        "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 144
-      },
-      {
-        "timestamp": "2025-11-03T06:00:00Z",
-        "frequency": 64
-      }
-    ],
-    "please": [
-      {
-        "timestamp": "2025-11-02T06:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T07:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T08:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T09:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T10:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T11:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T12:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T13:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T14:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T15:00:00Z",
-        "frequency": 0
-      },
-      {
-        "timestamp": "2025-11-02T16:00:00Z",
-        "frequency": 389
-      },
-      {
-        "timestamp": "2025-11-02T17:00:00Z",
-        "frequency": 427
-      },
-      {
-        "timestamp": "2025-11-02T18:00:00Z",
-        "frequency": 349
-      },
-      {
-        "timestamp": "2025-11-02T19:00:00Z",
-        "frequency": 380
-      },
-      {
-        "timestamp": "2025-11-02T20:00:00Z",
-        "frequency": 347
-      },
-      {
-        "timestamp": "2025-11-02T21:00:00Z",
-        "frequency": 366
-      },
-      {
-        "timestamp": "2025-11-02T22:00:00Z",
-        "frequency": 342
-      },
-      {
-        "timestamp": "2025-11-02T23:00:00Z",
-        "frequency": 415
-      },
-      {
-        "timestamp": "2025-11-03T00:00:00Z",
-        "frequency": 273
-      },
-      {
-        "timestamp": "2025-11-03T01:00:00Z",
-        "frequency": 295
-      },
-      {
-        "timestamp": "2025-11-03T02:00:00Z",
-        "frequency": 268
-      },
-      {
-        "timestamp": "2025-11-03T03:00:00Z",
-        "frequency": 291
-      },
-      {
-        "timestamp": "2025-11-03T04:00:00Z",
-        "frequency": 289
-      },
-      {
-        "timestamp": "2025-11-03T05:00:00Z",
-        "frequency": 199
-      },
-      {
-        "timestamp": "2025-11-03T06:00:00Z",
-        "frequency": 84
+        "timestamp": "2025-11-03T09:00:00Z",
+        "frequency": 763
       }
     ]
   },
   "news_feed": [
     {
-      "title": "Onpoint- Earn Loyalty points for every online order and convert to free GVs Join OnPoint Using Referral Code and Earn Joining Bonus [https://on-points.com?referral=SAAVEBH5](https://on-points.com/?referral=SAAVEBH5) Get Rs 50 as joining bonus when you signup and setup profile using above link and 11% oncoins for lifetime of your referral's purchases. Purchase via any platform on Myntra, Amazon , Tata Neu and earn additional rewards now!",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/IndiaReferral/comments/1on43w2/onpoint_earn_loyalty_points_for_every_online/",
+      "title": "Premier to highlight US-China pact at world's largest trade fair CIIE Premier Li Qiang is expected to promote free trade, encourage foreign investment, soothe concerns about the country's slowing economy and highlight a trade deal with the US in a keynote speech as the eighth China International Import Expo (CIIE) opens on Wednesday.",
+      "publish_time": "2025-11-03T09:22:08Z",
+      "source": "alphavantage",
+      "url": "https://www.scmp.com/business/china-business/article/3331301/premier-li-qiang-highlight-us-china-pact-worlds-largest-trade-fair-ciie",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Top Analyst Hails Tesla's FSD V14, Calls It A Huge 'Step-Up' From Previously Deployed Versions - Tesla ( NASDAQ:TSLA ) Future Fund LLC's managing director, Gary Black, has weighed in on Tesla Inc.'s ( NASDAQ:TSLA ) Full Self-Driving ( FSD ) system, hailing its progress. Check out the current price of TSLA here.",
+      "publish_time": "2025-11-03T09:22:08Z",
+      "source": "alphavantage",
+      "url": "https://www.benzinga.com/markets/tech/25/11/48583790/top-analyst-hails-teslas-fsd-v14-calls-it-a-huge-step-up-from-previously-deployed-versions",
       "sentiment": "positive"
     },
     {
-      "title": "My husband & I have a stray cat-related dilemma & I could use some advice (long!) This is going to be a long post but if anyone is up for reading I can really use some advice! My husband & I live in Brooklyn, NY but we also have a place in Asbury Park, NJ that we primarily use on the weekends. We had a condo there but this past April we bought a house. When we moved in to the house we noticed lots of stray cats in our back yard. (Seemed like they were coming from a house behind us. It appeared that the owner feeds and/or cares for lots of cats.) We had leftover cat food from a feral we used to feed at the condo so we started leaving food out on our back deck. What started as five or six stray cat visitors ended up as one. One cat pretty much took up residence on our back deck (& front porch). She spent most days there & seemed to claim our house as hers. It didn't take long for her to start approaching us & rubbing against our legs when we brought food out. Then she started letting us pet her. After a few months she started clawing our screen door & meowing, so we decided to let her inside to explore just for a bit. We still kept her food outside to create boundaries. Her brief indoor visits grew to more extended hangs-- we'd let her snooze on the couch while we watched TV. (She'd sit right next to us.) A few weeks ago, while hanging inside with us, she went outside to eat. It was kind of late & while she was eating she was approached by an enormous raccoon (we heard a loud hiss). There was no fighting but she seemed shaken. After that we started letting her eat inside, but we'd still put her out each night before we went to bed since we didn't have a litter box. A couple weekends ago there was a nor'easter & we felt terrible having to put her out during a storm (she hung out on our covered porch the whole night, but still). So the next week we bought a litter box & some toys & started letting her sleep over. (She took to the litter box immediately.) She actually jumps on the bed with us & sleeps there all night. We really fell for this cat. We tried making contact with the woman who lives behind us to no avail, but we took her to the vet to get scanned & there was no chip, so my husband & I started talking about formally adopting her. We hit a couple of snags though: Yesterday we took her to the vet for a full check-up & needless to say, she did NOT like that. She hated getting in the carrier & seemed extremely stressed the entire visit. (She was in good health and just needed a couple of vaccine shots.) When we got home she was very distant. She used to always sit down next to us on the couch & purr constantly, but yesterday she hung on the floor, by the sliding door that goes out to our back deck. It's like she wanted to stay away from us. She used the litter box that night but we also discovered that she pooped in our bedroom, next to our bed. Like, a lot of poop. I feel like she was sending us a message. She never came to sleep with us last night either-- she remained on the floor by the deck the whole time. The other snag we hit is that we still haven't worked out what kind of arrangement we want to have with her, since we split our time between Brooklyn & Asbury Park. The original plan was to make her our cat permanently & bring her back to Brooklyn this week while we go to work in the city, but after yesterday's reaction to the vet, we decided we didn't want to stress her out further so we canceled (or at least postponed) those plans & went back to the old arrangement of putting her outside while we headed back to the city. It broke my heart & I cried the whole way home. We're not sure what to do going forward. It seems we have 3 options: 1. Adopt the cat & bring her back & forth with us. (The car ride can be about 65 to 85 minutes, depending on traffic.) 2. Adopt the cat but leaver her in Asbury Park the whole time, getting an automatic feeder & self-cleaning litter box for when we're not there. 3. Don't adopt her & just go back to the arrangement of feeding her & letting her hang with us while we're there, putting her outside when we go back to NYC. (We'd probably get a heated outdoor house for her if she wants to hang on our deck during the winter months.) Neither scenario is perfect. I just don't know what to do. Maybe we got ourselves in a little too deep with the indoor feedings & sleepovers & the vet visits. We want to adopt her but is it cruel to put her in a carrier & drive her back & forth a couple of times a week? Will that stress her out too much? Or is it more cruel to leave her in an empty home for 3-4 day stretches? My husband & I were set on option 1 at the start of the weekend but now we are thinking of option 3. I just feel terrible about misleading this cat-- making it seem like we were taking her in permanently then putting her back out in the cold again. I guess there's a variation on option 3 where we scale back our interactions with her so as not to mislead her & give her a false sense of security. Sometimes I wonder if we made it worse giving her love & shelter for only a few days at a time. I don't want her to get too dependent on us if we're not going to be able to care for her 24/7. We're going to try hard to make contact with the woman that lives behind us to see if this cat is being cared for there. I'd feel better knowing she has shelter, but we are not so sure that's the case-- each time we come back to Asbury Park we usually find the cat sitting on our front porch, as if she's waiting for us. (We know for a fact that our next door neighbors leave food for her. And the vet said she was actually slightly overweight. So for a stray cat, we know she's eating well in the neighborhood!) Sorry for the lengthy post! I'm just really torn as to what to do! Any advice is appreciated. TLDR: My husband & I are wrestling with whether to adopt an affectionate stray cat, even though we're only part-time residents.",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/Straycats/comments/1on46jt/my_husband_i_have_a_stray_catrelated_dilemma_i/",
+      "title": "Elon Musk Teases 'Flying Car' Demo For Tesla Roadster, Says Will Have 'Crazy' Tech, Better Than James Bond's Cars - Tesla ( NASDAQ:TSLA ) Tesla Inc. ( NASDAQ:TSLA ) CEO Elon Musk has teased the arrival of a \"flying car\" demo for the highly anticipated Tesla Roadster, which is set to kick off production soon.",
+      "publish_time": "2025-11-03T09:22:08Z",
+      "source": "alphavantage",
+      "url": "https://www.benzinga.com/markets/tech/25/11/48583775/elon-musk-teases-flying-car-demo-for-tesla-roadster-says-will-have-crazy-tech-better-than-james-bond",
       "sentiment": "negative"
     },
     {
-      "title": "I will make sure he regrets it",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu4llj/",
+      "title": "Sam Altman Fires Back At Elon Musk's OpenAI 'Stole' Charge, Reminds Musk Of His Own Tesla Takeover Pitch - Tesla ( NASDAQ:TSLA ) The ongoing feud between billionaire Elon Musk and Sam Altman took a new turn when Musk accused OpenAI of theft, intensifying the public dispute between the two. Musk's accusation was in response to a post by Altman about canceling a Tesla Inc. ( NASDAQ:TSLA ) order.",
+      "publish_time": "2025-11-03T09:22:08Z",
+      "source": "alphavantage",
+      "url": "https://www.benzinga.com/markets/tech/25/11/48583468/sam-altman-fires-back-at-elon-musks-openai-stole-charge-reminds-billionaire-of-his-own-tesla-takeove",
       "sentiment": "negative"
     },
     {
-      "title": "You should absolutely **not** mess with their phone numbers or accounts that would be considered harassment and possibly illegal. The mature move is to just **remove their lines** from your plan and walk away. That’s the best “reality check” you can give.",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu5fma/",
+      "title": "Tesla's Stock Just Got Riskier, but Is It Still a Buy? The company's plans to aggressively ramp up production are based on the assumption that its unsupervised full self-driving solutions will become a reality.",
+      "publish_time": "2025-11-03T09:22:08Z",
+      "source": "alphavantage",
+      "url": "https://www.fool.com/investing/2025/11/02/teslas-stock-just-got-riskier-but-is-it-still-a-bu/",
       "sentiment": "negative"
     },
     {
-      "title": "What? Why didn’t you just switch to a different carrier & keep your number… ages ago?",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu4s4u/",
+      "title": "Dave Ramsey Says We Keep Electing The 'Same Morons' To Congress. If They Worked For You, You'd 'Fire Their Butt' For Incompetence Personal finance expert Dave Ramsey delivered a sharp critique during a 2022 episode of \"The Ramsey Show,\" where he slammed Congress for what he called repeated incompetence. While the comments weren't recent, they feel especially timely as the government shutdown has dragged on for weeks.",
+      "publish_time": "2025-11-03T09:22:08Z",
+      "source": "alphavantage",
+      "url": "https://www.benzinga.com/news/topics/25/11/48581804/dave-ramsey-says-we-keep-electing-the-same-morons-to-congress-if-they-worked-for-you-youd-fire-their-",
+      "sentiment": "negative"
+    },
+    {
+      "title": "$TSLA Stock Quote - Price: $456.5600, Change: 3.7401%, Volume: 83135787",
+      "publish_time": "2025-11-03T09:21:53Z",
+      "source": "alphavantage",
+      "url": "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=TSLA",
       "sentiment": "positive"
     },
     {
-      "title": "Just cancel the plan and get a whole new one. He’ll figure it out.",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu4g64/",
+      "title": "3 Brilliant Growth Stocks to Buy Now and Hold for the Long Term If you are an aggressive investor who thinks in decades, this trio of growth stocks comes with high risks but could offer huge rewards.",
+      "publish_time": "2025-11-03T09:21:39Z",
+      "source": "alphavantage",
+      "url": "https://www.fool.com/investing/2025/11/02/3-brilliant-growth-stocks-to-buy-now-and-hold-for/",
       "sentiment": "negative"
     },
     {
-      "title": "Give up the numbers after all this time would be messy as hell. You absolutely have to do it.",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu4fgq/",
+      "title": "$AMZN Stock Quote - Price: $244.2200, Change: 9.5845%, Volume: 166340808",
+      "publish_time": "2025-11-03T09:21:24Z",
+      "source": "alphavantage",
+      "url": "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=AMZN",
       "sentiment": "negative"
     },
     {
-      "title": "Haha that's brutal, you should follow thru on that",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu4pvu/",
+      "title": "$GOOGL Stock Quote - Price: $281.1900, Change: -0.1030%, Volume: 39267945",
+      "publish_time": "2025-11-03T09:20:56Z",
+      "source": "alphavantage",
+      "url": "https://www.alphavantage.co/query?function=GLOBAL_QUOTE&symbol=GOOGL",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Trump Says Will 'Not Let Anybody Have' Nvidia Chips-But Satya Nadella Reveals MSFT's Chips Are Lying In 'Inventory' Due To Power Shortage - Microsoft ( NASDAQ:MSFT ) Even as President Donald Trump said that the U.S. won't share Nvidia Corp.'s ( NASDAQ:NVDA ) \"advanced\" chips with China, Microsoft Corp. ( NASDAQ:MSFT ) CEO Satya Nadella has revealed that the primary bottleneck for AI growth is no longer the supply of GPUs but a lack of power and data center ...",
+      "publish_time": "2025-11-03T09:20:42Z",
+      "source": "alphavantage",
+      "url": "https://www.benzinga.com/markets/equities/25/11/48583357/trump-says-will-not-let-anybody-have-nvidia-chips-but-satya-nadella-reveals-msfts-chips-are-lyin",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Prediction: These Stocks Could Deliver Market-Beating Returns Over the Next Decade Artificial intelligence (AI) has been a key theme in driving the stock market higher for years now.",
+      "publish_time": "2025-11-03T09:20:42Z",
+      "source": "alphavantage",
+      "url": "https://www.fool.com/investing/2025/11/03/prediction-these-stocks-could-deliver-market-beati/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Should You Buy or Sell Nvidia Stock? Nvidia stock is rallying hard, begging the question whether now is a good time to follow the crowd.",
+      "publish_time": "2025-11-03T09:20:42Z",
+      "source": "alphavantage",
+      "url": "https://www.fool.com/investing/2025/11/03/should-you-buy-or-sell-nvidia-stock/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Is AI to Blame For My High Electricity Bills? Electricity Costs Soar More Than 200% Near Data Centers The cost of keeping the lights on is becoming a painful financial burden for many Americans as electricity costs are rising faster than inflation.",
+      "publish_time": "2025-11-03T09:20:42Z",
+      "source": "alphavantage",
+      "url": "https://www.benzinga.com/news/topics/25/11/48582386/is-ai-to-blame-for-my-high-electricity-bills-electricity-costs-soar-more-than-200-near-data-centers",
+      "sentiment": "negative"
+    },
+    {
+      "title": "Dividend Stocks That Can Help You Become a Millionaire Companies that continually raise dividends can make you quite wealthy over the long haul.",
+      "publish_time": "2025-11-03T09:20:42Z",
+      "source": "alphavantage",
+      "url": "https://www.fool.com/investing/2025/11/02/dividend-stocks-that-can-help-you-become-a-million/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "1 Vanguard Index Fund Heavy on \"Magnificent Seven\" Stocks Could Turn $500 per Month Into $800,000 Investing in an S&P 500 ETF is a great way to get exposure to the \"Magnificent Seven\" companies.",
+      "publish_time": "2025-11-03T09:20:42Z",
+      "source": "alphavantage",
+      "url": "https://www.fool.com/investing/2025/11/02/1-vanguard-index-fund-heavy-on-magnificent-seven-s/",
       "sentiment": "positive"
     },
     {
-      "title": "Because it was cheaper for me in a family plan",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu4wah/",
+      "title": "Is This the Only Stock That Will Outperform Nvidia for the Next 3 Years? Competition could cut into Nvidia's revenue in the next few years.",
+      "publish_time": "2025-11-03T09:20:42Z",
+      "source": "alphavantage",
+      "url": "https://www.fool.com/investing/2025/11/02/is-this-the-only-stock-that-will-outperform-nvidia/",
       "sentiment": "negative"
     },
     {
-      "title": "Pig is removed as authorized user. I will just cancel the 3 numbers and transfer to Google for one time fee of 20$ Google voice number will be tied to 3 email IDs Attitude adjustment 1 @ Reality check.com Attitude adjustment 2 @ Reality check.com Attitude adjustment 3 @ Reality check.com",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu4b8w/",
+      "title": "Does Qualcomm's Entry Into the AI Chip Race Spell Trouble for Nvidia? The maker of affordable high-performance mobile processors has made an unlikely leap into territory largely controlled by a much more prolific competitor.",
+      "publish_time": "2025-11-03T09:20:42Z",
+      "source": "alphavantage",
+      "url": "https://www.fool.com/investing/2025/11/02/does-qualcomms-entry-into-the-ai-chip-race-spell-t/",
+      "sentiment": "negative"
+    },
+    {
+      "title": "nVent ( NVT ) Q3 2025 Earnings Call Transcript Image source: The Motley Fool.Friday, Oct. 31, 2025 at 9 a.m. ETNeed a quote from a Motley Fool analyst? Email pr@fool.comContinue reading ...",
+      "publish_time": "2025-11-03T09:20:42Z",
+      "source": "alphavantage",
+      "url": "https://www.fool.com/earnings/call-transcripts/2025/11/02/nvent-nvt-q3-2025-earnings-call-transcript/",
       "sentiment": "positive"
     },
     {
-      "title": "Don't even bother. Just cancel the plan at the next billing cycle. But just make sure to remove pig as an authorized user first, and then cancel. Numbers will likely be lost and they will probably have to pay extra to even possibly get them reassigned to them",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/nmu3lva/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Plan to take over phone numbers of my T-Mobile family plan members and fuck them up. I've been the primary account holder for my T-Mobile family plan for 11 years now. I created this family plan when I went to grad school in 2015. I took in whosoever was willing to join. One of them was this Indian undergrad guy let's call him Pig. For someone to come to US for undergraduate studies meant that this person's family was extremely well to do. From the get-go he seemed entitled to me (I can tell- there is a 12-year age gap) Over the years I have done the accounting followed up for payment and provided credit when people haven't paid up on time. It was much more easier for me to get this job done versus watch Pig run his mouth. Pig took on the authorized user provision but never owned any of the responsibilities. Pig could make changes to the plan etc and leave the calculations etc for me to determine and follow up for the payments. Recently I made it clear that I do not have the energy to continue doing this and I needed some help with it. I have been saying this since couple of years and nobody has taken charge. I'm moving back to India and wanted Pig to take over responsibility. But Pig is a 29 yr old entitled fuck. Who is unwilling and incapable of taking responsibility. He started acting over smart. Being disrespectful, abusive when we were discussing the plan. He asked to me to get an \"attitude adjustment\" and started claiming that I was rude to him etc etc. I said nothing and hung up after letting him know that I haven't abused him. I had simply pointed out to him that he is entitled and hasn't ever taken any responsibility in the 11 years. Fast forward, he sent me a passive aggressive WhatsApp message next day in 1-1 chat. I ignored. Next day he wrote a long message in the group chat when he was trying to show it like he's the nice guy and he's doing everything in his power to make things work. Again I did not respond. Today he repeated the drama in private chat. Trying to show like he's hurt but trying to show like he's trying to work it with me and I should be kind to him. Since I'm the primary account holder of the T-Mobile family plan. I plan to do exactly what he said and \"adjust my attitude\" I plan to give him a R for Reality check. In December I will disconnect all lines. The family plan now consists of Pig, his sister, his wife. I have a message drafted ready to go. I am thinking should I just let go of the numbers OR maybe port them to another service provider and post messages on their WhatsApp after resetting the passwords. I want to give him a Christmas gift 😂",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/EntitledPeople/comments/1on3q6g/plan_to_take_over_phone_numbers_of_my_tmobile/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "FYI if you do - I've been using the Zwave to MQTT on a Pi for years and it's worked great. I personally had terrible results because of the server location when using the stick in the HA physical location.",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/nmu57r0/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Thanks for the reply. I don't currently have Z-wave capabilities on my HA setup but that can be fixed. I will look into your recommendations. Thanks",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/nmu4mcz/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "do they integrate into HA well? I would like to be able to have an automation to turn off the power to my 3d printer if that thing goes up in smoke.",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/nmu5bs2/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "I have a pretty old house. I have one hardwired smoke detector and the rest is battery only. I guess a listener would be my only option to tie things into Home assistant. Main reason to connect things to HA is my 3d printer. If my printer goes up in smoke I would like to setup an automation to turn power off. Thanks for you recommendation",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/nmu56mc/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "First Alert has a Zwave detector. I don't personally have it, but last I looked it had good reviews from HA users and it's a trusted brand Edit: I personally think a sound detector is ideal, but that's just me",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/nmu400i/",
-      "sentiment": "positive"
-    },
-    {
-      "title": "I got a few [X-Sense SC07-WX](https://amzn.to/4hO3KRS). They work well and haven’t had any issues.",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/nmu52yn/",
-      "sentiment": "negative"
-    },
-    {
-      "title": "Ideally, get a mainstream wired smoke detector with a sealed ten year battery. Use a Zooz ZEN55 to bridge the detector to HA. I know some folks will advocate finding a system that e.g., lets you mute from HA or your phone, but ideally I don’t want any kind of control link to a safety critical system, and I have never had my CO or smoke detectors fire a false positive. If you are routinely smoking out your house, fix your extraction/ventilation.",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_comment",
-      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/nmu3x5x/",
-      "sentiment": "positive"
-    },
-    {
-      "title": "Smoke detector for HA certified for use in the US Hi there, I am relatively new to HA. I am looking for smoke detectors that can be used in the US and the Home owners Insurance won't deny claim if used. I have already come across some aliexpress brands, but i am not sure about their quality and certifications. I have been primarily been looking for smoke detectors with zigbee. I have seen a few that use a proprietary protocol and their own hubs. I have also seen Z-Wave detectors. What do you guys think about X-Sense detectors? they seem to be legit. They use their own protokol but at least can integrate into HA. Is the best option to install some Eco-Link listeners? I am trying to tie my smoke detectors into HA so that I can monitor my 3d Printer. If my printer every goes up in smoke I could have an automation turn the power to my printer off. Thanks in advance",
-      "publish_time": "2025-11-03T06:09:46Z",
-      "source": "reddit_post",
-      "url": "https://www.reddit.com/r/homeassistant/comments/1on3swr/smoke_detector_for_ha_certified_for_use_in_the_us/",
+      "title": "AI Needs Data Centers, and Digital Realty Trust Delivers Them This company could provide a combination of growth and income.",
+      "publish_time": "2025-11-03T09:20:42Z",
+      "source": "alphavantage",
+      "url": "https://www.fool.com/investing/2025/11/02/ai-needs-data-centers-and-digital-realty-trust-del/",
       "sentiment": "negative"
     }
   ]

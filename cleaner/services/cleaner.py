@@ -1,6 +1,9 @@
 """
 事件驱动清洗器主类
 整合各个组件，提供完整的事件驱动清洗功能
+
+改进：改为基于 data_queue 的变化来自动触发清洗
+不再依赖 scraper 的显式通知
 """
 import logging
 import time
@@ -31,13 +34,14 @@ from .notification_handler import NotificationHandler
 from .cache_manager import CacheManager
 from .signal_handler import SignalHandler
 from .single_pass_cleaner import SinglePassCleaner
+from .queue_monitor import QueueMonitor, BatchedQueueMonitor
 
 # 配置日志
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s [%(levelname)s] %(message)s',
     handlers=[
-        logging.FileHandler(LOG_DIR / "event_driven_cleaner.log", encoding='utf-8'),
+        logging.FileHandler(LOG_DIR / "queue_driven_cleaner.log", encoding='utf-8'),
         logging.StreamHandler()
     ]
 )
@@ -45,17 +49,25 @@ logger = logging.getLogger(__name__)
 
 
 class EventDrivenCleaner:
-    """事件驱动的清洗器"""
+    """事件驱动的清洗器 - 现在改为基于队列变化自动触发清洗"""
     
     def __init__(self):
         """初始化清洗器"""
         self.config = CONFIG
         
-        # 监听配置（从 Scraper 接收）
+        # 队列监控配置（新）
+        self.queue_monitor_config = self.config.get('redis', {}).get('queue_monitor', {})
+        self.monitor_enabled = self.queue_monitor_config.get('enabled', True)
+        self.monitor_mode = self.queue_monitor_config.get('mode', 'batched')  # 'realtime' 或 'batched'
+        self.batch_size = self.queue_monitor_config.get('batch_size', 10)
+        self.max_wait_sec = self.queue_monitor_config.get('max_wait_sec', 5.0)
+        self.check_interval = self.queue_monitor_config.get('check_interval_sec', 0.5)
+        
+        # 旧配置（兼容，用于可选的通知发送）
         self.notification_listen = self.config.get('redis', {}).get('notification_listen', {})
         self.listen_enabled = self.notification_listen.get('enabled', False)
         self.listen_channel = self.notification_listen.get('channel', 'crawler_complete')
-        self.mode = self.notification_listen.get('mode', 'event_driven')
+        self.mode = self.notification_listen.get('mode', 'queue_driven')  # 改为 'queue_driven'
         
         # 发送配置（发送给 Processor）
         self.notification_send = self.config.get('redis', {}).get('notification_send', {})
@@ -71,8 +83,9 @@ class EventDrivenCleaner:
         # 初始化组件
         self.redis_manager = RedisConnectionManager(REDIS_HOST, REDIS_PORT)
         self.signal_handler = SignalHandler(self._stop)
-        self.notification_handler = None  # 稍后初始化
+        self.notification_handler = None  # 可选初始化
         self.cache_manager = None  # 稍后初始化
+        self.queue_monitor = None  # 队列监控器
         
         # 设置信号处理
         self.signal_handler.setup()
@@ -83,11 +96,17 @@ class EventDrivenCleaner:
     def _log_initialization(self):
         """记录初始化信息"""
         logger.info("=" * 70)
-        logger.info("事件驱动清洗器初始化")
+        logger.info("✨ 事件驱动清洗器初始化（基于队列变化触发）")
         logger.info("=" * 70)
-        logger.info(f"模式: {self.mode}")
-        logger.info(f"监听频道: {self.listen_channel} (启用: {self.listen_enabled})")
-        logger.info(f"发送频道: {self.send_channel} (启用: {self.send_enabled})")
+        logger.info(f"监控模式: {self.monitor_mode}")
+        logger.info(f"监控启用: {self.monitor_enabled}")
+        
+        if self.monitor_mode == 'batched':
+            logger.info(f"批量大小: {self.batch_size} 条数据")
+            logger.info(f"最长等待: {self.max_wait_sec} 秒")
+        
+        logger.info(f"检查间隔: {self.check_interval} 秒")
+        logger.info(f"发送通知: {self.send_enabled} ({self.send_channel})")
         logger.info("-" * 70)
         logger.info(f"去重模式: {self.dedup_config.get('mode', 'permanent')}")
         if self.dedup_config.get('mode') == 'time_window':
@@ -389,10 +408,139 @@ class EventDrivenCleaner:
                 'error': str(e)
             }
     
-    def run_event_driven(self):
-        """事件驱动模式：等待通知"""
+    def run_queue_driven(self):
+        """
+        基于队列变化触发的运行模式（新方式）
+        监控 data_queue，只要有新数据就自动触发清洗
+        """
         logger.info("\n" + "=" * 70)
-        logger.info("🎧 事件驱动数据清洗器已就绪")
+        logger.info("✨ 基于队列变化的自动清洗模式启动")
+        logger.info("=" * 70)
+        logger.info(f"监控队列: {QUEUE_IN}")
+        logger.info(f"监控模式: {self.monitor_mode}")
+        logger.info("按 Ctrl+C 停止")
+        logger.info("=" * 70 + "\n")
+        
+        try:
+            # 初始化缓存管理器
+            import redis
+            class SimpleConnector:
+                def __init__(self, host, port, db):
+                    self.r = redis.Redis(host=host, port=port, db=db, decode_responses=True)
+            
+            r_out = SimpleConnector(REDIS_HOST, REDIS_PORT, DB_OUT)
+            self.cache_manager = CacheManager(r_out, ID_CACHE_KEY, self.dedup_config)
+            
+            if self.dedup_config.get('clear_on_start', False):
+                self.cache_manager.clear_cache()
+            
+            # 初始化通知处理器（可选，仅用于发送完成通知）
+            if self.send_enabled:
+                r_publish = redis.Redis(
+                    host=REDIS_HOST,
+                    port=REDIS_PORT,
+                    db=DB_OUT,
+                    decode_responses=True
+                )
+                self.notification_handler = NotificationHandler(
+                    r_publish,
+                    self.send_enabled,
+                    self.send_channel
+                )
+            
+            # 创建队列监控器
+            if self.monitor_mode == 'batched':
+                # 批量模式：累积到指定数量或超时才清洗
+                self.queue_monitor = BatchedQueueMonitor(
+                    redis_host=REDIS_HOST,
+                    redis_port=REDIS_PORT,
+                    queue_name=QUEUE_IN,
+                    db=DB_IN,
+                    on_queue_update=self._on_queue_update,
+                    batch_size=self.batch_size,
+                    max_wait_sec=self.max_wait_sec,
+                    check_interval_sec=self.check_interval
+                )
+            else:
+                # 实时模式：有任何变化都立即清洗
+                self.queue_monitor = QueueMonitor(
+                    redis_host=REDIS_HOST,
+                    redis_port=REDIS_PORT,
+                    queue_name=QUEUE_IN,
+                    db=DB_IN,
+                    on_queue_update=self._on_queue_update,
+                    min_batch_size=1,
+                    check_interval_sec=self.check_interval
+                )
+            
+            # 启动监控
+            self.queue_monitor.run()
+        
+        except KeyboardInterrupt:
+            logger.info("\n⚠️  收到中断信号")
+        except Exception as e:
+            logger.error(f"队列驱动模式出错: {e}")
+            import traceback
+            traceback.print_exc()
+        finally:
+            self._cleanup()
+    
+    def _on_queue_update(self, new_items: int):
+        """
+        队列更新回调 - 执行清洗
+        
+        Args:
+            new_items: 新增的数据条数
+        """
+        logger.info(f"\n📨 队列更新回调: 新增 {new_items} 条数据")
+        
+        try:
+            # 显示清洗前的缓存状态
+            if self.cache_manager:
+                self.cache_manager.log_cache_status("清洗前")
+            
+            # 执行清洗
+            cleaned_count = self._run_cleaning()
+            
+            # 显示清洗后的缓存状态
+            if self.cache_manager:
+                self.cache_manager.log_cache_status("清洗后")
+            
+            # 清理超过 24 小时的旧数据
+            logger.info("\n🧹 清理超过 24 小时的旧数据...")
+            import redis
+            r_out = redis.Redis(
+                host=REDIS_HOST,
+                port=REDIS_PORT,
+                db=DB_OUT,
+                decode_responses=True
+            )
+            clean_result = self._clean_old_data(r_out, QUEUE_OUT, hours=24)
+            queue_length = r_out.llen(QUEUE_OUT)
+            r_out.close()
+            
+            # 发送完成通知（如果启用）
+            if self.send_enabled and self.notification_handler:
+                logger.info("📤 发送清洗完成通知...")
+                self.notification_handler.send_completion_notification(
+                    cleaned_count,
+                    queue_length,
+                    {'new_items': new_items}
+                )
+            
+            logger.info("=" * 70)
+            logger.info(f"✨ 本次清洗完成: {cleaned_count} 条数据")
+            logger.info("=" * 70 + "\n")
+            
+        except Exception as e:
+            logger.error(f"清洗回调出错: {e}")
+            import traceback
+            traceback.print_exc()
+    
+    def run_event_driven(self):
+        """事件驱动模式：等待通知（兼容旧模式）"""
+        logger.info("\n" + "=" * 70)
+        logger.info("🎧 事件驱动数据清洗器已就绪（基于 crawler_complete 通知）")
         logger.info("=" * 70)
         logger.info("监听频道: %s", self.listen_channel)
         logger.info("发送频道: %s", self.send_channel)
@@ -483,12 +631,14 @@ class EventDrivenCleaner:
     
     def run(self):
         """根据配置运行"""
-        if not self.listen_enabled:
-            logger.warning("⚠️  通知功能未启用，使用持续模式")
-            self.run_continuous()
-        elif self.mode == 'event_driven':
+        # 优先使用基于队列监控的新方式
+        if self.monitor_enabled and self.mode == 'queue_driven':
+            self.run_queue_driven()
+        # 兼容旧的基于通知的方式
+        elif self.listen_enabled and self.mode == 'event_driven':
             self.run_event_driven()
         else:
+            logger.warning("⚠️  两种模式都未启用，使用持续轮询模式作为备用")
             self.run_continuous()
 
 

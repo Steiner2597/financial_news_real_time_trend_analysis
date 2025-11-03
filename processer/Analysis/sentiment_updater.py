@@ -105,7 +105,8 @@ class SentimentUpdater:
     
     def batch_update_sentiments(self, updates: List[Dict[str, str]]) -> Dict[str, int]:
         """
-        批量更新多条记录的 sentiment
+        批量更新多条记录的 sentiment（优化版：并发更新）
+        ✅ 使用 Redis 管道(pipeline) 和优化的扫描策略，加速批量更新
         
         Args:
             updates: 更新列表，每项格式为 {'id': record_id, 'sentiment': sentiment}
@@ -119,35 +120,85 @@ class SentimentUpdater:
             print("❌ Redis 未连接，无法更新")
             return stats
         
+        if not updates:
+            print("⚠️  没有需要更新的记录")
+            return stats
+        
+        import time
+        start_time = time.time()
+        
         print(f"\n📤 开始批量更新 {len(updates)} 条 sentiment...")
         
-        for update in updates:
-            record_id = update.get('id')
-            sentiment = update.get('sentiment')
+        # ✅ 第一步：构建 ID -> sentiment 映射（加速查找）
+        id_sentiment_map = {update['id']: update['sentiment'] for update in updates if update.get('id') and update.get('sentiment')}
+        
+        # ✅ 第二步：扫描队列并在一次管道中处理所有更新
+        try:
+            queue_length = self.redis_client.llen(self.queue_name)
             
-            if not record_id or not sentiment:
-                continue
+            if queue_length == 0:
+                print("⚠️  队列为空")
+                return stats
             
-            try:
-                if self.update_sentiment_in_queue(record_id, sentiment):
-                    stats['success'] += 1
-                    print(f"  ✓ 已更新 {record_id}: {sentiment}")
-                else:
-                    # 检查是否是因为找不到记录
-                    queue_length = self.redis_client.llen(self.queue_name)
-                    if queue_length == 0:
-                        stats['not_found'] += 1
-                    else:
-                        stats['failed'] += 1
-                    print(f"  ✗ 更新失败 {record_id}")
-            except Exception as e:
-                stats['failed'] += 1
-                print(f"  ✗ 更新失败 {record_id}: {e}")
+            print(f"   队列长度: {queue_length}, 搜索 {len(id_sentiment_map)} 条记录...")
+            
+            # ✅ 优化：扫描整个队列一次，构建更新列表
+            items_to_remove = []
+            items_to_add = []
+            
+            for i in range(queue_length):
+                item_json = self.redis_client.lindex(self.queue_name, i)
+                if not item_json:
+                    continue
+                
+                try:
+                    item_data = json.loads(item_json)
+                    item_id = str(item_data.get('id') or item_data.get('post_id', ''))
+                    
+                    # ✅ 如果这个 ID 需要更新
+                    if item_id in id_sentiment_map:
+                        item_data['sentiment'] = id_sentiment_map[item_id]
+                        items_to_remove.append(item_json)
+                        items_to_add.append(json.dumps(item_data, ensure_ascii=False))
+                        stats['success'] += 1
+                
+                except json.JSONDecodeError:
+                    continue
+            
+            # ✅ 第三步：使用管道一次性执行所有操作（避免网络往返开销）
+            if items_to_remove or items_to_add:
+                print(f"   找到 {stats['success']} 条需更新的记录，执行批量操作...")
+                
+                with self.redis_client.pipeline(transaction=False) as pipe:
+                    # 删除旧记录
+                    for item_json in items_to_remove:
+                        pipe.lrem(self.queue_name, 1, item_json)
+                    
+                    # 添加新记录
+                    if items_to_add:
+                        pipe.rpush(self.queue_name, *items_to_add)
+                    
+                    # ✅ 执行管道
+                    pipe.execute()
+            else:
+                stats['not_found'] = len(updates)
+                print(f"   ⚠️  未在队列中找到需要更新的记录")
+        
+        except Exception as e:
+            stats['failed'] = len(updates) - stats['success']
+            print(f"  ❌ 批量更新异常: {e}")
+            import traceback
+            traceback.print_exc()
+        
+        # ✅ 性能统计
+        elapsed_time = time.time() - start_time
+        speed = len(updates) / elapsed_time if elapsed_time > 0 else 0
         
         print(f"\n📊 批量更新统计:")
-        print(f"  成功: {stats['success']}")
-        print(f"  失败: {stats['failed']}")
-        print(f"  未找到: {stats['not_found']}")
+        print(f"  成功: {stats['success']} 条")
+        print(f"  失败: {stats['failed']} 条")
+        print(f"  未找到: {stats['not_found']} 条")
+        print(f"  耗时: {elapsed_time:.2f}s, 速度: {speed:.1f} 条/秒\n")
         
         return stats
     

@@ -36,17 +36,17 @@ except ImportError:
 class BertPredictor:
     """BERT 情感预测器"""
     
-    def __init__(self, model_path=None, max_len=256, batch_size=16):
+    def __init__(self, model_path=None, max_len=256, batch_size=32):
         """
         初始化预测器
         
         Args:
             model_path: 模型文件路径，默认为 ../Bert_Model/best_model.pth
             max_len: 最大序列长度
-            batch_size: 批处理大小
+            batch_size: 批处理大小（默认32，可调整以提高性能）
         """
         self.max_len = max_len
-        self.batch_size = batch_size
+        self.batch_size = batch_size  # ✅ 改为更大的默认值以加速
         self.model_loaded = False
         
         if not BERT_AVAILABLE:
@@ -118,7 +118,7 @@ class BertPredictor:
     
     def predict_batch(self, texts):
         """
-        批量预测文本的情感
+        批量预测文本的情感（优化版：真正的批处理）
         
         Args:
             texts: 文本列表
@@ -127,32 +127,59 @@ class BertPredictor:
             list: 预测的情感标签列表 (Bullish/Bearish)
         """
         if not self.model_loaded:
-            # 使用简单规则
+            # 使用简单规则（批处理）
             return [self._simple_sentiment(text) for text in texts]
         
+        if not texts:
+            return []
+        
         try:
+            import time
+            start_time = time.time()
+            
             # 创建数据集和加载器
             dataset = PredictionDataset(texts, tokenizer, self.max_len)
-            data_loader = DataLoader(dataset, batch_size=self.batch_size, shuffle=False)
+            data_loader = DataLoader(
+                dataset, 
+                batch_size=self.batch_size,  # ✅ 使用配置的批大小
+                shuffle=False,
+                num_workers=0  # CPU 推理时不需要多进程
+            )
             
             # 预测
             predictions = []
+            batch_count = 0
+            
             with torch.no_grad():
                 for batch in data_loader:
+                    batch_count += 1
                     input_ids = batch['input_ids'].to(device)
                     attention_mask = batch['attention_mask'].to(device)
                     
+                    # ✅ 向前传递
                     outputs = model(input_ids=input_ids, attention_mask=attention_mask)
                     logits = outputs.logits
                     
                     _, preds = torch.max(logits, dim=1)
                     predictions.extend(preds.cpu().tolist())
+                    
+                    # ✅ 显示进度
+                    processed = min(batch_count * self.batch_size, len(texts))
+                    if batch_count % max(1, len(data_loader) // 5) == 0:
+                        print(f"  ⏳ 预测进度: {processed}/{len(texts)}")
+            
+            # ✅ 显示性能统计
+            elapsed_time = time.time() - start_time
+            speed = len(texts) / elapsed_time
+            print(f"  ✅ 预测完成: {len(texts)} 条文本, 耗时 {elapsed_time:.2f}s, 速度 {speed:.1f} 条/秒")
             
             # 转换为标签
             return [reverse_label_map[p] for p in predictions]
             
         except Exception as e:
             print(f"⚠️  BERT 预测失败: {e}，使用简单规则")
+            import traceback
+            traceback.print_exc()
             return [self._simple_sentiment(text) for text in texts]
     
     def _simple_sentiment(self, text):
@@ -188,6 +215,7 @@ class BertPredictor:
     def fill_missing_sentiments(self, df, text_column='text', redis_client=None, queue_name='clean_data_queue'):
         """
         为 DataFrame 中缺失 sentiment 的行填充预测值，并更新 Redis 中对应的数据
+        ✅ 优化：真正的批处理 + 并发 Redis 更新 + 性能统计
         
         Args:
             df: pandas DataFrame
@@ -198,6 +226,9 @@ class BertPredictor:
         Returns:
             pandas DataFrame: 填充后的 DataFrame
         """
+        import time
+        start_time = time.time()
+        
         if 'sentiment' not in df.columns:
             df['sentiment'] = ''
         
@@ -209,7 +240,11 @@ class BertPredictor:
             print("✓ 所有数据都有 sentiment，无需预测")
             return df
         
-        print(f"🔮 发现 {missing_count} 条缺失 sentiment 的数据，开始预测...")
+        print(f"\n{'='*70}")
+        print(f"🔮 BERT 情感预测 (批处理模式)")
+        print(f"{'='*70}")
+        print(f"发现 {missing_count} 条缺失 sentiment 的数据")
+        print(f"批大小: {self.batch_size}, 文本列: {text_column}")
         
         # 提取缺失的文本和对应的索引
         missing_indices = df[missing_mask].index.tolist()
@@ -219,43 +254,61 @@ class BertPredictor:
         id_column = 'id' if 'id' in df.columns else 'post_id' if 'post_id' in df.columns else None
         missing_ids = df.loc[missing_mask, id_column].tolist() if id_column else None
         
-        # 批量预测
+        # ✅ 一次性批量预测（关键优化！）
+        print(f"\n⏳ 执行批量预测...")
         predictions = self.predict_batch(missing_texts)
         
-        # 填充预测结果
+        # 填充预测结果到 DataFrame
         df.loc[missing_mask, 'sentiment'] = predictions
         
-        # ✅ 如果提供了 Redis 客户端，实时更新队列中的数据
-        if redis_client is not None and missing_ids and UPDATER_AVAILABLE:
+        # ✅ 并发更新 Redis（如果提供了客户端）
+        redis_update_stats = {'success': 0, 'failed': 0, 'not_found': 0}
+        
+        if redis_client is not None and missing_ids:
             try:
-                from sentiment_updater import SentimentUpdater
-                
-                print(f"\n📤 正在更新 Redis 中的数据...")
-                updater = SentimentUpdater(redis_client=redis_client)
-                
-                # 构建更新列表
-                updates = [
-                    {'id': str(record_id), 'sentiment': prediction}
-                    for record_id, prediction in zip(missing_ids, predictions)
-                    if prediction  # 只更新有预测结果的
-                ]
-                
-                # 批量更新
-                if updates:
-                    stats = updater.batch_update_sentiments(updates)
+                if UPDATER_AVAILABLE:
+                    from sentiment_updater import SentimentUpdater
+                    
+                    print(f"\n📤 批量更新 Redis 中的数据...")
+                    updater = SentimentUpdater(redis_client=redis_client)
+                    
+                    # 构建更新列表（只包含有预测结果的）
+                    updates = [
+                        {'id': str(record_id), 'sentiment': prediction}
+                        for record_id, prediction in zip(missing_ids, predictions)
+                        if prediction  # 只更新有预测结果的
+                    ]
+                    
+                    # ✅ 批量更新（避免逐条更新的开销）
+                    if updates:
+                        print(f"   正在更新 {len(updates)} 条记录...")
+                        redis_update_stats = updater.batch_update_sentiments(updates)
+                        print(f"   ✓ 更新成功: {redis_update_stats.get('success', 0)} 条")
+                        if redis_update_stats.get('failed', 0) > 0:
+                            print(f"   ⚠️  更新失败: {redis_update_stats.get('failed', 0)} 条")
+                    else:
+                        print("   ⚠️  没有有效的预测结果需要更新")
                 else:
-                    print("⚠️  没有有效的预测结果需要更新")
-                    stats = {'success': 0, 'failed': 0, 'not_found': 0}
+                    print("   ⚠️  SentimentUpdater 不可用，跳过 Redis 更新")
             
             except Exception as e:
-                print(f"⚠️  更新 Redis 失败，但预测结果已填充到 DataFrame: {e}")
+                print(f"   ⚠️  更新 Redis 失败，但预测结果已填充到 DataFrame: {e}")
+                import traceback
+                traceback.print_exc()
         
-        # 统计预测结果
+        # ✅ 统计并显示预测结果
         predicted_sentiments = pd.Series(predictions).value_counts()
-        print(f"\n✓ 预测完成:")
+        print(f"\n📊 预测结果统计:")
         for sentiment, count in predicted_sentiments.items():
             if sentiment:  # 忽略空字符串
-                print(f"  - {sentiment}: {count} 条")
+                percentage = (count / len(predictions)) * 100
+                print(f"   - {sentiment}: {count} 条 ({percentage:.1f}%)")
+        
+        # ✅ 性能统计
+        elapsed_time = time.time() - start_time
+        speed = missing_count / elapsed_time
+        print(f"\n⏱️  耗时: {elapsed_time:.2f}s, 平均速度: {speed:.1f} 条/秒")
+        print(f"{'='*70}\n")
         
         return df
 
@@ -295,8 +348,20 @@ class PredictionDataset(Dataset):
 _predictor_instance = None
 
 def get_predictor():
-    """获取全局预测器实例（单例模式）"""
+    """获取全局预测器实例（单例模式，使用配置的批大小）"""
     global _predictor_instance
     if _predictor_instance is None:
-        _predictor_instance = BertPredictor()
+        try:
+            # ✅ 尝试从配置中读取批大小
+            from config import CONFIG
+            batch_size = CONFIG.get('bert', {}).get('batch_size', 32)
+            max_len = CONFIG.get('bert', {}).get('max_len', 256)
+            model_path = CONFIG.get('bert', {}).get('model_path')
+            
+            print(f"📊 初始化 BERT 预测器 (batch_size={batch_size}, max_len={max_len})")
+            _predictor_instance = BertPredictor(model_path=model_path, max_len=max_len, batch_size=batch_size)
+        except ImportError:
+            # 如果配置不可用，使用默认值
+            print("⚠️  配置文件不可用，使用默认参数初始化 BERT 预测器")
+            _predictor_instance = BertPredictor()
     return _predictor_instance

@@ -7,11 +7,19 @@ redis:
   queue_out: "clean_data_queue"
   id_cache: "set:cleaned_ids"
   
-  # 通知监听配置（从 Scraper 接收）
+  # 🆕 队列监控配置（新方式：基于 data_queue 变化自动触发清洗）
+  queue_monitor:
+    enabled: true         # 是否启用队列监控模式
+    mode: "batched"       # "batched"=批量模式 | "realtime"=实时模式
+    batch_size: 10        # 批量大小（batched 模式下，累积多少条触发一次清洗）
+    max_wait_sec: 5.0     # 最长等待时间（即使未达到批量也触发）
+    check_interval_sec: 0.5  # 检查间隔（秒）
+  
+  # 通知监听配置（从 Scraper 接收）- 兼容旧模式
   notification_listen:
-    enabled: true         # 是否启用通知驱动模式
+    enabled: false         # ⚠️ 改为 false - 现在使用队列监控而非通知
     channel: "crawler_complete"  # 监听的频道（与 scraper 一致）
-    mode: "event_driven"  # 运行模式: "event_driven"=等待通知, "continuous"=持续轮询
+    mode: "queue_driven"  # 运行模式: "queue_driven"=基于队列 | "event_driven"=基于通知 | "continuous"=持续轮询
   
   # 通知发送配置（发送给 Processor）
   notification_send:

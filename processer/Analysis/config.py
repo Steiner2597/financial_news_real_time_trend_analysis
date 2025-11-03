@@ -19,7 +19,7 @@ CONFIG = {
         "enabled": True,                    # 是否启用 BERT 预测
         "model_path": None,                 # 模型路径（None 表示自动查找）
         "max_len": 256,                     # 最大序列长度
-        "batch_size": 16,                   # 批处理大小
+        "batch_size": 32,                   # ✅ 批处理大小（默认32，可调高以加速）
         "fallback_to_simple": True          # 模型加载失败时使用简单规则
     },
 
