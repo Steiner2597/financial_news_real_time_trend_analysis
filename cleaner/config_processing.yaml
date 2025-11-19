@@ -1,0 +1,74 @@
+redis:
+  host: "localhost"
+  port: 6379
+  db_in: 0                # 原始数据在 db0（只读）
+  db_out: 1               # 清洗结果/游标/统计在 db1
+  queue_in: "data_queue"
+  queue_out: "clean_data_queue"
+  id_cache: "set:cleaned_ids"
+  
+  # 🆕 队列监控配置（新方式：基于 data_queue 变化自动触发清洗）
+  queue_monitor:
+    enabled: true         # 是否启用队列监控模式
+    mode: "batched"       # "batched"=批量模式 | "realtime"=实时模式
+    batch_size: 10        # 批量大小（batched 模式下，累积多少条触发一次清洗）
+    max_wait_sec: 5.0     # 最长等待时间（即使未达到批量也触发）
+    check_interval_sec: 0.5  # 检查间隔（秒）
+  
+  # 通知监听配置（从 Scraper 接收）- 兼容旧模式
+  notification_listen:
+    enabled: false         # ⚠️ 改为 false - 现在使用队列监控而非通知
+    channel: "crawler_complete"  # 监听的频道（与 scraper 一致）
+    mode: "queue_driven"  # 运行模式: "queue_driven"=基于队列 | "event_driven"=基于通知 | "continuous"=持续轮询
+  
+  # 通知发送配置（发送给 Processor）
+  notification_send:
+    enabled: true         # 是否发送完成通知
+    channel: "cleaner_complete"  # 通知频道
+
+paths:
+  logs: "./logs"          # => project/processing/logs
+  samples: "./samples"    # => project/processing/samples
+  output: "./output"      # => project/processing/output
+
+sampling:
+  sample_rate: 1000       # 每 1000 条抽样一次
+  sample_count: 5         # 每次抽 5 条
+
+stats:
+  enabled: true
+  reset_on_start: true
+  accepted_key: "stats:accepted"
+  discarded_key: "stats:discarded"
+
+reader:
+  mode: "cursor"
+  cursor_key: "cursor:data_queue"
+  batch_size: 200
+  poll_interval_ms: 500
+
+monitor:
+  progress_every: 50
+  rate_window_sec: 10
+  idle_rounds_to_finish: 6
+  log_level: "info"
+
+# 新增：正文长度最小阈值（小于此值丢弃）
+text_min_length: 10
+
+# 去重策略
+deduplication:
+  # 去重模式: "permanent" (永久) | "time_window" (时间窗口)
+  mode: "permanent"
+  # mode: "time_window"
+  # 时间窗口（小时）- 只在 time_window 模式下有效
+  # 超过此时间的 ID 会被自动清除，允许重新处理
+  # window_hours: 1
+  # 是否在启动时清空 ID 缓存
+  clear_on_start: false
+
+# 输出相关
+output:
+  realtime: false           # true=边清洗边写 JSONL（processing/output/cleaned_YYYY-MM-DD.jsonl）
+  realtime_every: 1         # 实时输出节流（每 N 条写一次）
+  pretty_in_redis: false    # true=以缩进分行写入 Redis（方便 RDM 直接读），false=紧凑单行（省存储）

@@ -1,0 +1,2324 @@
+{
+  "metadata": {
+    "timestamp": "2025-11-19T13:12:21Z",
+    "update_interval": 60,
+    "data_version": "1.0",
+    "news_sources": {
+      "reddit_comment": 24318,
+      "reddit_post": 6264,
+      "rss": 1981,
+      "stocktwits": 1472,
+      "newsapi": 138,
+      "alphavantage": 41,
+      "reddit_stream": 28
+    }
+  },
+  "trending_keywords": [
+    {
+      "keyword": "esp",
+      "rank": 1,
+      "current_frequency": 634,
+      "growth_rate": 490.0,
+      "trend_score": 1.0,
+      "sentiment": {
+        "positive": 49,
+        "negative": 51,
+        "total_comments": 2716
+      }
+    },
+    {
+      "keyword": "questions",
+      "rank": 2,
+      "current_frequency": 255,
+      "growth_rate": 136.6,
+      "trend_score": 0.64,
+      "sentiment": {
+        "positive": 82,
+        "negative": 18,
+        "total_comments": 2640
+      }
+    },
+    {
+      "keyword": "moderators",
+      "rank": 3,
+      "current_frequency": 212,
+      "growth_rate": 138.3,
+      "trend_score": 0.6,
+      "sentiment": {
+        "positive": 89,
+        "negative": 11,
+        "total_comments": 2169
+      }
+    },
+    {
+      "keyword": "concerns",
+      "rank": 4,
+      "current_frequency": 207,
+      "growth_rate": 117.9,
+      "trend_score": 0.6,
+      "sentiment": {
+        "positive": 85,
+        "negative": 15,
+        "total_comments": 2339
+      }
+    },
+    {
+      "keyword": "bot",
+      "rank": 5,
+      "current_frequency": 203,
+      "growth_rate": 21.3,
+      "trend_score": 0.28,
+      "sentiment": {
+        "positive": 69,
+        "negative": 31,
+        "total_comments": 4171
+      }
+    },
+    {
+      "keyword": "performed",
+      "rank": 6,
+      "current_frequency": 191,
+      "growth_rate": 115.3,
+      "trend_score": 0.58,
+      "sentiment": {
+        "positive": 88,
+        "negative": 12,
+        "total_comments": 2167
+      }
+    },
+    {
+      "keyword": "compose",
+      "rank": 7,
+      "current_frequency": 188,
+      "growth_rate": 114.8,
+      "trend_score": 0.58,
+      "sentiment": {
+        "positive": 89,
+        "negative": 11,
+        "total_comments": 2134
+      }
+    },
+    {
+      "keyword": "feel",
+      "rank": 8,
+      "current_frequency": 180,
+      "growth_rate": 79.6,
+      "trend_score": 0.49,
+      "sentiment": {
+        "positive": 40,
+        "negative": 60,
+        "total_comments": 2489
+      }
+    },
+    {
+      "keyword": "patch",
+      "rank": 9,
+      "current_frequency": 150,
+      "growth_rate": 2690.7,
+      "trend_score": 0.54,
+      "sentiment": {
+        "positive": 70,
+        "negative": 30,
+        "total_comments": 133
+      }
+    },
+    {
+      "keyword": "great",
+      "rank": 10,
+      "current_frequency": 139,
+      "growth_rate": 172.3,
+      "trend_score": 0.53,
+      "sentiment": {
+        "positive": 43,
+        "negative": 57,
+        "total_comments": 1272
+      }
+    }
+  ],
+  "word_cloud": [
+    {
+      "text": "esp",
+      "value": 634
+    },
+    {
+      "text": "questions",
+      "value": 255
+    },
+    {
+      "text": "moderators",
+      "value": 212
+    },
+    {
+      "text": "concerns",
+      "value": 207
+    },
+    {
+      "text": "bot",
+      "value": 203
+    },
+    {
+      "text": "performed",
+      "value": 191
+    },
+    {
+      "text": "compose",
+      "value": 188
+    },
+    {
+      "text": "feel",
+      "value": 180
+    },
+    {
+      "text": "patch",
+      "value": 150
+    },
+    {
+      "text": "great",
+      "value": 139
+    },
+    {
+      "text": "clean",
+      "value": 130
+    },
+    {
+      "text": "fit",
+      "value": 129
+    },
+    {
+      "text": "game",
+      "value": 123
+    },
+    {
+      "text": "feels",
+      "value": 121
+    },
+    {
+      "text": "rules",
+      "value": 120
+    },
+    {
+      "text": "comment",
+      "value": 120
+    },
+    {
+      "text": "jks",
+      "value": 120
+    },
+    {
+      "text": "check",
+      "value": 116
+    },
+    {
+      "text": "days",
+      "value": 111
+    },
+    {
+      "text": "reddit",
+      "value": 111
+    }
+  ],
+  "history_data": {
+    "esp": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 35
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 31
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 35
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 43
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 55
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 49
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 53
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 68
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 74
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 97
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 124
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 203
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 196
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 204
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 168
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 162
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 143
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 153
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 144
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 127
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 111
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 229
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 24
+      }
+    ],
+    "questions": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 26
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 27
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 44
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 25
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 46
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 91
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 208
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 246
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 231
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 203
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 184
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 201
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 190
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 201
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 197
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 105
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 224
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 25
+      }
+    ],
+    "moderators": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 30
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 36
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 69
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 176
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 197
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 184
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 164
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 161
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 171
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 168
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 168
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 170
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 88
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 197
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 23
+      }
+    ],
+    "concerns": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 28
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 26
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 33
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 36
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 75
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 180
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 220
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 183
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 171
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 173
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 184
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 173
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 177
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 180
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 91
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 204
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 28
+      }
+    ],
+    "bot": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 31
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 30
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 40
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 52
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 48
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 58
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 67
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 59
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 97
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 80
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 112
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 165
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 339
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 347
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 310
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 291
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 256
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 274
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 254
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 278
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 272
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 142
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 328
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 47
+      }
+    ],
+    "performed": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 26
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 32
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 35
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 71
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 166
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 200
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 176
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 163
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 162
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 174
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 165
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 168
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 171
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 89
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 199
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 23
+      }
+    ],
+    "compose": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 31
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 34
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 66
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 167
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 196
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 172
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 165
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 161
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 171
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 162
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 169
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 169
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 87
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 198
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 23
+      }
+    ],
+    "feel": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 31
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 36
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 38
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 49
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 42
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 63
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 78
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 99
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 197
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 210
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 207
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 191
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 166
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 154
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 173
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 144
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 174
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 75
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 166
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 16
+      }
+    ],
+    "patch": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 1
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 1
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 1
+      }
+    ],
+    "great": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 35
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 30
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 36
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 42
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 47
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 68
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 103
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 75
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 116
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 78
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 67
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 74
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 52
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 57
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 60
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 45
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 117
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 14
+      }
+    ],
+    "clean": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 25
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 33
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 33
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 35
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 60
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 34
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 35
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 46
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 28
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 69
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 7
+      }
+    ],
+    "fit": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 27
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 31
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 42
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 49
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 45
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 42
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 56
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 91
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 88
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 95
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 78
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 67
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 61
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 67
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 70
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 75
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 38
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 116
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 14
+      }
+    ],
+    "game": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 32
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 33
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 26
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 33
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 47
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 46
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 105
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 116
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 126
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 87
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 62
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 73
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 74
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 73
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 86
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 32
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 83
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 8
+      }
+    ],
+    "feels": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 45
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 48
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 56
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 40
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 54
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 38
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 51
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 50
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 54
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 59
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 4
+      }
+    ],
+    "rules": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 26
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 49
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 88
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 106
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 92
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 88
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 89
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 79
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 95
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 82
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 84
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 49
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 82
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 18
+      }
+    ],
+    "comment": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 30
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 40
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 33
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 49
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 58
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 129
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 147
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 133
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 112
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 110
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 103
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 112
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 102
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 102
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 60
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 124
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 17
+      }
+    ],
+    "jks": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 0
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 1
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 0
+      }
+    ],
+    "check": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 26
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 41
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 38
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 31
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 41
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 68
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 121
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 120
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 115
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 118
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 85
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 87
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 89
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 126
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 88
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 55
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 117
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 12
+      }
+    ],
+    "days": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 34
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 24
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 44
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 44
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 97
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 91
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 77
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 80
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 75
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 66
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 65
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 93
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 59
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 31
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 98
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 11
+      }
+    ],
+    "reddit": [
+      {
+        "timestamp": "2025-11-18T14:00:00Z",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-11-18T15:00:00Z",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-11-18T16:00:00Z",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-11-18T17:00:00Z",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-11-18T18:00:00Z",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-11-18T19:00:00Z",
+        "frequency": 27
+      },
+      {
+        "timestamp": "2025-11-18T20:00:00Z",
+        "frequency": 38
+      },
+      {
+        "timestamp": "2025-11-18T21:00:00Z",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-11-18T22:00:00Z",
+        "frequency": 49
+      },
+      {
+        "timestamp": "2025-11-18T23:00:00Z",
+        "frequency": 29
+      },
+      {
+        "timestamp": "2025-11-19T00:00:00Z",
+        "frequency": 54
+      },
+      {
+        "timestamp": "2025-11-19T01:00:00Z",
+        "frequency": 88
+      },
+      {
+        "timestamp": "2025-11-19T02:00:00Z",
+        "frequency": 224
+      },
+      {
+        "timestamp": "2025-11-19T03:00:00Z",
+        "frequency": 242
+      },
+      {
+        "timestamp": "2025-11-19T04:00:00Z",
+        "frequency": 227
+      },
+      {
+        "timestamp": "2025-11-19T05:00:00Z",
+        "frequency": 199
+      },
+      {
+        "timestamp": "2025-11-19T06:00:00Z",
+        "frequency": 185
+      },
+      {
+        "timestamp": "2025-11-19T07:00:00Z",
+        "frequency": 195
+      },
+      {
+        "timestamp": "2025-11-19T08:00:00Z",
+        "frequency": 204
+      },
+      {
+        "timestamp": "2025-11-19T09:00:00Z",
+        "frequency": 197
+      },
+      {
+        "timestamp": "2025-11-19T10:00:00Z",
+        "frequency": 200
+      },
+      {
+        "timestamp": "2025-11-19T11:00:00Z",
+        "frequency": 103
+      },
+      {
+        "timestamp": "2025-11-19T12:00:00Z",
+        "frequency": 245
+      },
+      {
+        "timestamp": "2025-11-19T13:00:00Z",
+        "frequency": 33
+      }
+    ]
+  },
+  "news_feed": [
+    {
+      "title": "$QQQ Maybe it doesn’t matter what NVDA provides. Crazy to hitch all markets on one or two stocks. We know all of them are too fat no matter the denial we hold onto.",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Sliver/message/636709181",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$ASST Yep! LOL! Today’s the day! I KNOW the billionaires have there war chests ready and only sprinkled a little fairy dust on $BTC.X last night.",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Porsh408/message/636708565",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X $75-80K but if it gets there",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/rossr/message/636708415",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X Looking like the dead cat bounced! Careful here.",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Electroyal/message/636708401",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X check all of the comments; sentiment is washed. This week is the bottom, guaranteed. They&#39;ll use the jobs report tomorrow to make it look like the end, then we pump.",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Weak_Hands_McGee/message/636708388",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X yes we know. It’s all about the hourly 50 $GLXY",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/knash/message/636708381",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X Flat or red. No movement back up whatsoever. F*ing garbage!",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Nunya123456/message/636708181",
+      "sentiment": "negative"
+    },
+    {
+      "title": "$QQQ whales want the price higher today for better short entries. Could see a nice melt up today.",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/EekAPoodle/message/636708552",
+      "sentiment": "negative"
+    },
+    {
+      "title": "$BTC.X in wif another fitty",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/tigbimmy/message/636708104",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X When is it a good level to go in",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/ESCAPE8TO5/message/636707975",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$SPY $DJT $BTC.X The decision comes after a newly reevaluated analysis of Revelation 13:15-18, which contains a famously difficult-to-interpret number, which most translators have rendered as &quot;666.&quot; New insight, however, indicates that the proper translation choice should be &quot;67.&quot;",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Honest_Abe_/message/636707906",
+      "sentiment": "negative"
+    },
+    {
+      "title": "$BTC.X dead cat bounce to 100K?",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Holdmybagz/message/636707827",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X Why is it turning green today??",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Tomtwitss/message/636707673",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X unfortunately there is no way to recover with this administration. We need a stable trustworthy leader and somebody with a real plan to drive growth in the markets. This admin flips everything upside down and reverses course based on no evidence and against all economists.. until that changes, I fear we are doomed for a true recovery.",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Duncanp64/message/636707554",
+      "sentiment": "negative"
+    },
+    {
+      "title": "$BTC.X i was off by an hour",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/ANDR3/message/636707507",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X Who are the 7% who think Bitcoin can hit $130,000 EOY??? LOL",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/McWhale/message/636707474",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X Bitcoin just logged its first weekly close below the 50-week moving average since the start of 2023. It’s a significant level that has historically separated healthy uptrends from full-fledged bear markets. The recent move also triggered the first death cross (50-day SMA dipping below the 200-day) since May, confirming a loss in short-term momentum.",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/bionicman1969/message/636707429",
+      "sentiment": "negative"
+    },
+    {
+      "title": "$BTC.X LOSING IT’S MOJO",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/Specialist001/message/636707301",
+      "sentiment": "positive"
+    },
+    {
+      "title": "$BTC.X $ETH.X $SOL.X $MSTX MSTX has tanked, I&#39;m in direct bets on cryptos but this&#39;s interesting for gamblers. Keeping dry powder if 78-80K happens but continuing dip buying. - Analyst Says Bitcoin Selloff Is Complete. Standard Chartered&#39;s Geoffrey Kendrick thinks Bitcoin&#39;s 30% drop is finally over. Bitcoin crashed below $90,000 Tuesday, but Kendrick says the selloff fits a pattern - this is the third major correction since spot ETF approval. Key market indicators suggest sellers are exhausted, with MicroStrategy&#39;s modified NAV dropping to zero. Bitcoin bounced to under $93,000 on Tuesday, up 3.8% from overnight lows. https://coinmarketcap.com/academy/article/bitcoin-sell-off-may-be-complete-year-end-rally-possible-says-standard-chartered?lid=appodv38l71q",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/RolandXV/message/636708447",
+      "sentiment": "negative"
+    },
+    {
+      "title": "$ETH.X 400% COMING IN DAT $ GAME Goldman Sachs and Blackrock BUY DAT GAMESQUARE 1. Goldman Sachs buys into Gamesquare 2. Blackrock buys into Gamesquare, 1M shares. FILING: fintel.io/so/us/game * GAME ALSO HAS $100M IN CORE REVENUES * ETH STAKED YIELD AT 8% IS EXTRA * AND GAME IS BUYING BACK STOCK WITH YIELD",
+      "publish_time": "2025-11-19T13:11:48Z",
+      "source": "stocktwits",
+      "url": "https://stocktwits.com/DD_First/message/636707945",
+      "sentiment": "positive"
+    }
+  ]
+}

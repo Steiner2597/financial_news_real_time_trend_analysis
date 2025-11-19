@@ -1,0 +1,2330 @@
+{
+  "metadata": {
+    "timestamp": "2025-10-24 11:23:29",
+    "update_interval": 30,
+    "data_version": "1.0"
+  },
+  "trending_keywords": [
+    {
+      "keyword": "人工智能",
+      "rank": 1,
+      "current_frequency": 38,
+      "growth_rate": 318.0,
+      "trend_score": 1.0,
+      "sentiment": {
+        "positive": 81,
+        "neutral": 18,
+        "negative": 1,
+        "total_comments": 1080
+      }
+    },
+    {
+      "keyword": "加息",
+      "rank": 2,
+      "current_frequency": 49,
+      "growth_rate": 322.0,
+      "trend_score": 0.92,
+      "sentiment": {
+        "positive": 64,
+        "neutral": 18,
+        "negative": 18,
+        "total_comments": 1743
+      }
+    },
+    {
+      "keyword": "降息",
+      "rank": 3,
+      "current_frequency": 35,
+      "growth_rate": 324.0,
+      "trend_score": 0.84,
+      "sentiment": {
+        "positive": 68,
+        "neutral": 19,
+        "negative": 13,
+        "total_comments": 1904
+      }
+    },
+    {
+      "keyword": "银行股",
+      "rank": 4,
+      "current_frequency": 46,
+      "growth_rate": 184.0,
+      "trend_score": 0.76,
+      "sentiment": {
+        "positive": 65,
+        "neutral": 12,
+        "negative": 23,
+        "total_comments": 1191
+      }
+    },
+    {
+      "keyword": "新能源",
+      "rank": 5,
+      "current_frequency": 41,
+      "growth_rate": 171.0,
+      "trend_score": 0.68,
+      "sentiment": {
+        "positive": 56,
+        "neutral": 27,
+        "negative": 17,
+        "total_comments": 844
+      }
+    },
+    {
+      "keyword": "区块链",
+      "rank": 6,
+      "current_frequency": 39,
+      "growth_rate": 107.0,
+      "trend_score": 0.6,
+      "sentiment": {
+        "positive": 61,
+        "neutral": 22,
+        "negative": 17,
+        "total_comments": 667
+      }
+    },
+    {
+      "keyword": "国债",
+      "rank": 7,
+      "current_frequency": 30,
+      "growth_rate": 59.0,
+      "trend_score": 0.52,
+      "sentiment": {
+        "positive": 47,
+        "neutral": 21,
+        "negative": 32,
+        "total_comments": 718
+      }
+    },
+    {
+      "keyword": "汇率",
+      "rank": 8,
+      "current_frequency": 30,
+      "growth_rate": 100.0,
+      "trend_score": 0.44,
+      "sentiment": {
+        "positive": 51,
+        "neutral": 17,
+        "negative": 32,
+        "total_comments": 1529
+      }
+    },
+    {
+      "keyword": "比特币",
+      "rank": 9,
+      "current_frequency": 35,
+      "growth_rate": 90.0,
+      "trend_score": 0.36,
+      "sentiment": {
+        "positive": 36,
+        "neutral": 23,
+        "negative": 41,
+        "total_comments": 706
+      }
+    },
+    {
+      "keyword": "A股",
+      "rank": 10,
+      "current_frequency": 49,
+      "growth_rate": 84.0,
+      "trend_score": 0.28,
+      "sentiment": {
+        "positive": 49,
+        "neutral": 26,
+        "negative": 25,
+        "total_comments": 911
+      }
+    }
+  ],
+  "word_cloud": [
+    {
+      "text": "区块链",
+      "value": 99
+    },
+    {
+      "text": "人工智能",
+      "value": 97
+    },
+    {
+      "text": "美股",
+      "value": 93
+    },
+    {
+      "text": "人民币",
+      "value": 90
+    },
+    {
+      "text": "比特币",
+      "value": 87
+    },
+    {
+      "text": "通胀",
+      "value": 81
+    },
+    {
+      "text": "黄金",
+      "value": 79
+    },
+    {
+      "text": "原油",
+      "value": 74
+    },
+    {
+      "text": "汇率",
+      "value": 66
+    },
+    {
+      "text": "港股",
+      "value": 64
+    },
+    {
+      "text": "A股",
+      "value": 63
+    },
+    {
+      "text": "加息",
+      "value": 62
+    },
+    {
+      "text": "新能源",
+      "value": 56
+    },
+    {
+      "text": "降息",
+      "value": 55
+    },
+    {
+      "text": "银行股",
+      "value": 54
+    },
+    {
+      "text": "房地产",
+      "value": 49
+    },
+    {
+      "text": "美联储",
+      "value": 44
+    },
+    {
+      "text": "美元",
+      "value": 21
+    },
+    {
+      "text": "国债",
+      "value": 16
+    },
+    {
+      "text": "科技股",
+      "value": 11
+    }
+  ],
+  "history_data": {
+    "人工智能": [
+      {
+        "timestamp": "2025-10-23 11:23:29",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-10-23 11:53:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 12:23:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-23 12:53:29",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-10-23 13:23:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 13:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 14:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-23 14:53:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-23 15:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-23 15:53:29",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-10-23 16:23:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-23 16:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-23 17:23:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-23 17:53:29",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-10-23 18:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-23 18:53:29",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-10-23 19:23:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-23 19:53:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-23 20:23:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-23 20:53:29",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-10-23 21:23:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-23 21:53:29",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-10-23 22:23:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-23 22:53:29",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-10-23 23:23:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 23:53:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-24 00:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 00:53:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-24 01:23:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-24 01:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 02:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 02:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 03:23:29",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-10-24 03:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 04:23:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-24 04:53:29",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-10-24 05:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-24 05:53:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-24 06:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 06:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 07:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 07:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 08:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 08:53:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-24 09:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 09:53:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 10:23:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-24 10:53:29",
+        "frequency": 14
+      }
+    ],
+    "加息": [
+      {
+        "timestamp": "2025-10-23 11:23:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-23 11:53:29",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-10-23 12:23:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-23 12:53:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-23 13:23:29",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-10-23 13:53:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-23 14:23:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-23 14:53:29",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-10-23 15:23:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-23 15:53:29",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-10-23 16:23:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 16:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 17:23:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-23 17:53:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-23 18:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 18:53:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-23 19:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-23 19:53:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-23 20:23:29",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-10-23 20:53:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-23 21:23:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 21:53:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-23 22:23:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-23 22:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 23:23:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 23:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 00:23:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 00:53:29",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-10-24 01:23:29",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-10-24 01:53:29",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-10-24 02:23:29",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-10-24 02:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 03:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-24 03:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-24 04:23:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-24 04:53:29",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-10-24 05:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 05:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 06:23:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-24 06:53:29",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-10-24 07:23:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-24 07:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-24 08:23:29",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-10-24 08:53:29",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-10-24 09:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 09:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-24 10:23:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-24 10:53:29",
+        "frequency": 4
+      }
+    ],
+    "降息": [
+      {
+        "timestamp": "2025-10-23 11:23:29",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-10-23 11:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-23 12:23:29",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-10-23 12:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 13:23:29",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-10-23 13:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 14:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-23 14:53:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 15:23:29",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-10-23 15:53:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-23 16:23:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 16:53:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-23 17:23:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 17:53:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-23 18:23:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-23 18:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 19:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 19:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 20:23:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-23 20:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-23 21:23:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-23 21:53:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-23 22:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-23 22:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-23 23:23:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-23 23:53:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-24 00:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 00:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 01:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-24 01:53:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-24 02:23:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-24 02:53:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-24 03:23:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-24 03:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-24 04:23:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-24 04:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 05:23:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-24 05:53:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 06:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-24 06:53:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-24 07:23:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-24 07:53:29",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-10-24 08:23:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-24 08:53:29",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-10-24 09:23:29",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-10-24 09:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 10:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 10:53:29",
+        "frequency": 16
+      }
+    ],
+    "银行股": [
+      {
+        "timestamp": "2025-10-23 11:23:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 11:53:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-23 12:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 12:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-23 13:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-23 13:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 14:23:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 14:53:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-23 15:23:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-23 15:53:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-23 16:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-23 16:53:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-23 17:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-23 17:53:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-23 18:23:29",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-10-23 18:53:29",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-10-23 19:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-23 19:53:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 20:23:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-23 20:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 21:23:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 21:53:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-23 22:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-23 22:53:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-23 23:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-23 23:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-24 00:23:29",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-10-24 00:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-24 01:23:29",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-10-24 01:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-24 02:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-24 02:53:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-24 03:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-24 03:53:29",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-10-24 04:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-24 04:53:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-24 05:23:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-24 05:53:29",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-10-24 06:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 06:53:29",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-10-24 07:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 07:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 08:23:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-24 08:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 09:23:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-24 09:53:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-24 10:23:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-24 10:53:29",
+        "frequency": 20
+      }
+    ],
+    "新能源": [
+      {
+        "timestamp": "2025-10-23 11:23:29",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-10-23 11:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 12:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-23 12:53:29",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-10-23 13:23:29",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-10-23 13:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 14:23:29",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-10-23 14:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 15:23:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-23 15:53:29",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-10-23 16:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-23 16:53:29",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-10-23 17:23:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-23 17:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-23 18:23:29",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-10-23 18:53:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-23 19:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-23 19:53:29",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-10-23 20:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-23 20:53:29",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-10-23 21:23:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 21:53:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-23 22:23:29",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-10-23 22:53:29",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-10-23 23:23:29",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-10-23 23:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-24 00:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-24 00:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 01:23:29",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-10-24 01:53:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-24 02:23:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 02:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-24 03:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 03:53:29",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-10-24 04:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 04:53:29",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-10-24 05:23:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-24 05:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 06:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-24 06:53:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-24 07:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 07:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-24 08:23:29",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-10-24 08:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 09:23:29",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-10-24 09:53:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 10:23:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 10:53:29",
+        "frequency": 10
+      }
+    ],
+    "区块链": [
+      {
+        "timestamp": "2025-10-23 11:23:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 11:53:29",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-10-23 12:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-23 12:53:29",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-10-23 13:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 13:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 14:23:29",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-10-23 14:53:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-23 15:23:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-23 15:53:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 16:23:29",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-10-23 16:53:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-23 17:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-23 17:53:29",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-10-23 18:23:29",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-10-23 18:53:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-23 19:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-23 19:53:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 20:23:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 20:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 21:23:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 21:53:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-23 22:23:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-23 22:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-23 23:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-23 23:53:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-24 00:23:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 00:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 01:23:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-24 01:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 02:23:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-24 02:53:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 03:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 03:53:29",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-10-24 04:23:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-24 04:53:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 05:23:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-24 05:53:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 06:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 06:53:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-24 07:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 07:53:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-24 08:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-24 08:53:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-24 09:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 09:53:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-24 10:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 10:53:29",
+        "frequency": 5
+      }
+    ],
+    "国债": [
+      {
+        "timestamp": "2025-10-23 11:23:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-23 11:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 12:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-23 12:53:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-23 13:23:29",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-10-23 13:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-23 14:23:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 14:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 15:23:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-23 15:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 16:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 16:53:29",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-10-23 17:23:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 17:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-23 18:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-23 18:53:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-23 19:23:29",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-10-23 19:53:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-23 20:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-23 20:53:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-23 21:23:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-23 21:53:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-23 22:23:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-23 22:53:29",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-10-23 23:23:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-23 23:53:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-24 00:23:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-24 00:53:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-24 01:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 01:53:29",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-10-24 02:23:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-24 02:53:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 03:23:29",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-10-24 03:53:29",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-10-24 04:23:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-24 04:53:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-24 05:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-24 05:53:29",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-10-24 06:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 06:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 07:23:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-24 07:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-24 08:23:29",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-10-24 08:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 09:23:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-24 09:53:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 10:23:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 10:53:29",
+        "frequency": 17
+      }
+    ],
+    "汇率": [
+      {
+        "timestamp": "2025-10-23 11:23:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-23 11:53:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-23 12:23:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-23 12:53:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 13:23:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 13:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 14:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-23 14:53:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-23 15:23:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 15:53:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-23 16:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-23 16:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 17:23:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 17:53:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-23 18:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-23 18:53:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-23 19:23:29",
+        "frequency": 5
+      },
+      {
+        "timestamp": "2025-10-23 19:53:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-23 20:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-23 20:53:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-23 21:23:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-23 21:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 22:23:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-23 22:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 23:23:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-23 23:53:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-24 00:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 00:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 01:23:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-24 01:53:29",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-10-24 02:23:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-24 02:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 03:23:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 03:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 04:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 04:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 05:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-24 05:53:29",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-10-24 06:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-24 06:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 07:23:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-24 07:53:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 08:23:29",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-10-24 08:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 09:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 09:53:29",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-10-24 10:23:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-24 10:53:29",
+        "frequency": 14
+      }
+    ],
+    "比特币": [
+      {
+        "timestamp": "2025-10-23 11:23:29",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-10-23 11:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 12:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 12:53:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-23 13:23:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-23 13:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 14:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-23 14:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 15:23:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-23 15:53:29",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-10-23 16:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-23 16:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 17:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-23 17:53:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-23 18:23:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-23 18:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-23 19:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-23 19:53:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-23 20:23:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 20:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 21:23:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-23 21:53:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-23 22:23:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 22:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-23 23:23:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-23 23:53:29",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-10-24 00:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 00:53:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-24 01:23:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 01:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 02:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 02:53:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 03:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-24 03:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-24 04:23:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-24 04:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-24 05:23:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-24 05:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-24 06:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 06:53:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-24 07:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-24 07:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 08:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-24 08:53:29",
+        "frequency": 22
+      },
+      {
+        "timestamp": "2025-10-24 09:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 09:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-24 10:23:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-24 10:53:29",
+        "frequency": 10
+      }
+    ],
+    "A股": [
+      {
+        "timestamp": "2025-10-23 11:23:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 11:53:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 12:23:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-23 12:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-23 13:23:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-23 13:53:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-23 14:23:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-23 14:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 15:23:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-23 15:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 16:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 16:53:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-23 17:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-23 17:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 18:23:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-23 18:53:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 19:23:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 19:53:29",
+        "frequency": 9
+      },
+      {
+        "timestamp": "2025-10-23 20:23:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-23 20:53:29",
+        "frequency": 8
+      },
+      {
+        "timestamp": "2025-10-23 21:23:29",
+        "frequency": 23
+      },
+      {
+        "timestamp": "2025-10-23 21:53:29",
+        "frequency": 17
+      },
+      {
+        "timestamp": "2025-10-23 22:23:29",
+        "frequency": 18
+      },
+      {
+        "timestamp": "2025-10-23 22:53:29",
+        "frequency": 13
+      },
+      {
+        "timestamp": "2025-10-23 23:23:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-23 23:53:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-24 00:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 00:53:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-24 01:23:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-24 01:53:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-24 02:23:29",
+        "frequency": 15
+      },
+      {
+        "timestamp": "2025-10-24 02:53:29",
+        "frequency": 16
+      },
+      {
+        "timestamp": "2025-10-24 03:23:29",
+        "frequency": 12
+      },
+      {
+        "timestamp": "2025-10-24 03:53:29",
+        "frequency": 7
+      },
+      {
+        "timestamp": "2025-10-24 04:23:29",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-10-24 04:53:29",
+        "frequency": 20
+      },
+      {
+        "timestamp": "2025-10-24 05:23:29",
+        "frequency": 2
+      },
+      {
+        "timestamp": "2025-10-24 05:53:29",
+        "frequency": 10
+      },
+      {
+        "timestamp": "2025-10-24 06:23:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-24 06:53:29",
+        "frequency": 14
+      },
+      {
+        "timestamp": "2025-10-24 07:23:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-24 07:53:29",
+        "frequency": 11
+      },
+      {
+        "timestamp": "2025-10-24 08:23:29",
+        "frequency": 3
+      },
+      {
+        "timestamp": "2025-10-24 08:53:29",
+        "frequency": 21
+      },
+      {
+        "timestamp": "2025-10-24 09:23:29",
+        "frequency": 4
+      },
+      {
+        "timestamp": "2025-10-24 09:53:29",
+        "frequency": 6
+      },
+      {
+        "timestamp": "2025-10-24 10:23:29",
+        "frequency": 19
+      },
+      {
+        "timestamp": "2025-10-24 10:53:29",
+        "frequency": 18
+      }
+    ]
+  },
+  "news_feed": [
+    {
+      "title": "A股基本面稳健，长期价值凸显",
+      "publish_time": "2025-10-24 11:23:29",
+      "source": "同花顺",
+      "sentiment": {
+        "positive": 65,
+        "neutral": 16,
+        "negative": 19,
+        "total_comments": 879
+      }
+    },
+    {
+      "title": "港股监管政策收紧，市场波动加大",
+      "publish_time": "2025-10-24 10:53:29",
+      "source": "东方财富",
+      "sentiment": {
+        "positive": 44,
+        "neutral": 26,
+        "negative": 30,
+        "total_comments": 1283
+      }
+    },
+    {
+      "title": "降息技术面强劲，多头占据优势",
+      "publish_time": "2025-10-24 10:23:29",
+      "source": "同花顺",
+      "sentiment": {
+        "positive": 76,
+        "neutral": 23,
+        "negative": 1,
+        "total_comments": 1608
+      }
+    },
+    {
+      "title": "新能源政策利好，行业前景看好",
+      "publish_time": "2025-10-24 09:53:29",
+      "source": "东方财富",
+      "sentiment": {
+        "positive": 85,
+        "neutral": 14,
+        "negative": 1,
+        "total_comments": 1961
+      }
+    },
+    {
+      "title": "比特币基本面稳健，长期价值凸显",
+      "publish_time": "2025-10-24 09:23:29",
+      "source": "雪球",
+      "sentiment": {
+        "positive": 67,
+        "neutral": 13,
+        "negative": 20,
+        "total_comments": 1697
+      }
+    },
+    {
+      "title": "汇率监管政策收紧，市场波动加大",
+      "publish_time": "2025-10-24 08:53:29",
+      "source": "财联社",
+      "sentiment": {
+        "positive": 31,
+        "neutral": 29,
+        "negative": 40,
+        "total_comments": 676
+      }
+    },
+    {
+      "title": "房地产面临调整压力，投资者谨慎观望",
+      "publish_time": "2025-10-24 08:23:29",
+      "source": "同花顺",
+      "sentiment": {
+        "positive": 54,
+        "neutral": 22,
+        "negative": 24,
+        "total_comments": 1187
+      }
+    },
+    {
+      "title": "科技股基本面稳健，长期价值凸显",
+      "publish_time": "2025-10-24 07:53:29",
+      "source": "新浪财经",
+      "sentiment": {
+        "positive": 70,
+        "neutral": 11,
+        "negative": 19,
+        "total_comments": 1718
+      }
+    },
+    {
+      "title": "美联储技术面强劲，多头占据优势",
+      "publish_time": "2025-10-24 07:23:29",
+      "source": "同花顺",
+      "sentiment": {
+        "positive": 80,
+        "neutral": 19,
+        "negative": 1,
+        "total_comments": 1893
+      }
+    },
+    {
+      "title": "比特币政策利好，行业前景看好",
+      "publish_time": "2025-10-24 06:53:29",
+      "source": "雪球",
+      "sentiment": {
+        "positive": 87,
+        "neutral": 12,
+        "negative": 1,
+        "total_comments": 572
+      }
+    },
+    {
+      "title": "科技股出现重大突破，市场反应热烈",
+      "publish_time": "2025-10-24 06:23:29",
+      "source": "同花顺",
+      "sentiment": {
+        "positive": 71,
+        "neutral": 28,
+        "negative": 1,
+        "total_comments": 1039
+      }
+    },
+    {
+      "title": "房地产基本面稳健，长期价值凸显",
+      "publish_time": "2025-10-24 05:53:29",
+      "source": "新浪财经",
+      "sentiment": {
+        "positive": 57,
+        "neutral": 24,
+        "negative": 19,
+        "total_comments": 943
+      }
+    },
+    {
+      "title": "汇率面临调整压力，投资者谨慎观望",
+      "publish_time": "2025-10-24 05:23:29",
+      "source": "新浪财经",
+      "sentiment": {
+        "positive": 52,
+        "neutral": 12,
+        "negative": 36,
+        "total_comments": 1705
+      }
+    },
+    {
+      "title": "比特币监管政策收紧，市场波动加大",
+      "publish_time": "2025-10-24 04:53:29",
+      "source": "新浪财经",
+      "sentiment": {
+        "positive": 45,
+        "neutral": 30,
+        "negative": 25,
+        "total_comments": 1053
+      }
+    },
+    {
+      "title": "国债监管政策收紧，市场波动加大",
+      "publish_time": "2025-10-24 04:23:29",
+      "source": "雪球",
+      "sentiment": {
+        "positive": 35,
+        "neutral": 25,
+        "negative": 40,
+        "total_comments": 969
+      }
+    }
+  ]
+}

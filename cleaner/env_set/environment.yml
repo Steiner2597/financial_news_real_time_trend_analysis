@@ -1,0 +1,33 @@
+name: cs5481
+channels:
+  - conda-forge
+  - defaults
+channel_priority: strict
+
+dependencies:
+  # 基础
+  - python=3.11
+  - pip
+
+  # —— 必需：Redis 通讯 / 爬虫常用 / 解析 / 数据处理 —— #
+  - redis-py            # Python 客户端（避免与 pip 的 redis 重复）
+  - requests
+  - beautifulsoup4
+  - lxml
+  - feedparser          # RSS 解析
+  - pyyaml              # 读取 config.yaml
+  - pandas              # 可选但常用（导出/调试）
+  - tqdm                # 进度条（可选）
+  - praw                # Reddit 爬虫（若用到）
+  - prawcore
+
+  # 交互/调试（可选）
+  - ipykernel
+  - jupyter_client
+  - colorama
+  - rich
+
+  # pip 段尽量留空，避免 Windows 上编译失败
+  - pip:
+      # 留空：如果以后要补库，再在这里添加
+      - ""

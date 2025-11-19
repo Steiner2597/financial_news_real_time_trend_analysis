@@ -1,0 +1,72 @@
+# 添加 .gitignore 文件
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 日志文件
+logs/*.log
+!logs/.gitkeep
+
+# 数据导出文件
+data_exports/*.json
+data_exports/*.parquet
+data_exports/*.csv
+data_exports/*.gz
+data_exports/archive/*
+!data_exports/.gitkeep
+!data_exports/archive/.gitkeep
+!data_exports/README.md
+
+# 配置文件（包含敏感信息）
+config.yaml
+
+# 备份文件
+*.backup
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# Redis 数据文件
+dump.rdb
+appendonly.aof
+
+# Redis Docker 数据目录
+redis_data/
+redis_config/redis.conf
+
+# 测试
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 文档
+抓取模块执行计划.pdf

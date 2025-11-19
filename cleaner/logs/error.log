@@ -1,0 +1,2 @@
+初始化统计键失败: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
+程序异常终止: Error 10061 connecting to localhost:6379. 由于目标计算机积极拒绝，无法连接。.
